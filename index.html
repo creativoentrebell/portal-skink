@@ -6,505 +6,186 @@
 <title>Entrebell Skin — Catálogo Mayorista</title>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --beige: #f4e8d8;
-    --beige-light: #faf4ec;
-    --beige-mid: #ede0cc;
-    --taupe: #b19b84;
-    --taupe-dark: #8a7362;
-    --taupe-xdark: #5c4d3e;
-    --text: #2e2520;
-    --text-mid: #6b5a4e;
-    --text-light: #9e8b7e;
-    --white: #ffffff;
-    --badge-new: #d4a853;
-    --badge-out: #c0392b;
-    --radius: 12px;
-    --radius-sm: 6px;
-    --shadow: 0 2px 12px rgba(46,37,32,0.08);
-    --shadow-hover: 0 8px 28px rgba(46,37,32,0.15);
-  }
+:root {
+  --beige: #f4e8d8;
+  --beige-light: #faf4ec;
+  --beige-mid: #ede0cc;
+  --taupe: #b19b84;
+  --taupe-dark: #8a7362;
+  --taupe-xdark: #5c4d3e;
+  --text: #2e2520;
+  --text-mid: #6b5a4e;
+  --text-light: #9e8b7e;
+  --white: #ffffff;
+  --badge-new: #d4a853;
+  --badge-out: #c0392b;
+  --radius: 12px;
+  --shadow: 0 2px 12px rgba(46,37,32,0.08);
+  --shadow-hover: 0 8px 28px rgba(46,37,32,0.15);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Fira Sans', sans-serif; background: var(--beige-light); color: var(--text); min-height: 100vh; }
 
-  * { box-sizing: border-box; margin: 0; padding: 0; }
+/* ── HEADER ── */
+header { background: var(--white); border-bottom: 1px solid var(--beige-mid); padding: 0 24px; position: sticky; top: 0; z-index: 100; box-shadow: 0 1px 8px rgba(46,37,32,0.06); }
+.header-inner { max-width: 1400px; margin: 0 auto; display: flex; align-items: center; gap: 16px; height: 68px; }
+.logo-area { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
+.header-logo { height: 46px; width: auto; object-fit: contain; }
+.brand-subtitle { font-size: 11px; font-weight: 400; color: var(--text-light); letter-spacing: 0.08em; text-transform: uppercase; }
+.header-spacer { flex: 1; }
+.header-stats { font-size: 12px; color: var(--text-light); white-space: nowrap; }
 
-  body {
-    font-family: 'Fira Sans', sans-serif;
-    background: var(--beige-light);
-    color: var(--text);
-    min-height: 100vh;
-  }
+/* ── FILTERS ── */
+.filters-bar { background: var(--white); border-bottom: 1px solid var(--beige-mid); padding: 12px 24px; position: sticky; top: 68px; z-index: 99; }
+.filters-inner { max-width: 1400px; margin: 0 auto; display: flex; flex-direction: column; gap: 10px; }
+.filters-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.view-toggle { display: flex; background: var(--beige); border-radius: 8px; padding: 3px; flex-shrink: 0; }
+.view-toggle button { background: none; border: none; padding: 6px 14px; border-radius: 6px; font-size: 13px; font-weight: 500; cursor: pointer; color: var(--text-mid); font-family: inherit; transition: all 0.18s; }
+.view-toggle button.active { background: var(--taupe); color: var(--white); }
+.search-wrap { position: relative; flex: 1; min-width: 200px; max-width: 380px; }
+.search-wrap input { width: 100%; padding: 8px 34px 8px 14px; border: 1.5px solid var(--beige-mid); border-radius: 8px; font-size: 13px; font-family: inherit; color: var(--text); background: var(--beige-light); outline: none; transition: border-color 0.18s; }
+.search-wrap input:focus { border-color: var(--taupe); }
+.search-wrap input::placeholder { color: var(--text-light); }
+.search-icon { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); color: var(--text-light); pointer-events: none; font-size: 14px; }
+.search-clear { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: none; border: none; cursor: pointer; color: var(--text-light); font-size: 15px; padding: 2px; display: none; }
+.toggle-label { display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 13px; color: var(--text-mid); white-space: nowrap; flex-shrink: 0; }
+.toggle-label input[type="checkbox"] { display: none; }
+.toggle-switch { width: 36px; height: 20px; background: var(--beige-mid); border-radius: 10px; position: relative; transition: background 0.2s; flex-shrink: 0; }
+.toggle-switch::after { content: ''; position: absolute; width: 14px; height: 14px; background: var(--white); border-radius: 50%; top: 3px; left: 3px; transition: transform 0.2s; box-shadow: 0 1px 3px rgba(0,0,0,0.2); }
+.toggle-label input:checked + .toggle-switch { background: var(--taupe); }
+.toggle-label input:checked + .toggle-switch::after { transform: translateX(16px); }
+.nuevo-btn { display: flex; align-items: center; gap: 6px; padding: 6px 12px; border: 1.5px solid var(--beige-mid); border-radius: 8px; background: var(--white); font-size: 12px; font-family: inherit; color: var(--text-mid); cursor: pointer; transition: all 0.18s; font-weight: 500; white-space: nowrap; flex-shrink: 0; }
+.nuevo-btn.active { background: var(--badge-new); border-color: var(--badge-new); color: var(--white); }
+.nuevo-btn .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--badge-new); }
+.nuevo-btn.active .dot { background: rgba(255,255,255,0.7); }
+.sort-select { padding: 7px 10px; border: 1.5px solid var(--beige-mid); border-radius: 8px; font-size: 12px; font-family: inherit; color: var(--text-mid); background: var(--white); cursor: pointer; outline: none; flex-shrink: 0; }
+.sort-select:focus { border-color: var(--taupe); }
+.pills-row { display: flex; gap: 6px; flex-wrap: wrap; }
+.pill { padding: 5px 13px; border-radius: 20px; border: 1.5px solid var(--beige-mid); background: var(--white); font-size: 12px; font-weight: 500; cursor: pointer; color: var(--text-mid); font-family: inherit; transition: all 0.18s; white-space: nowrap; }
+.pill:hover { border-color: var(--taupe); color: var(--taupe-dark); }
+.pill.active { background: var(--taupe); border-color: var(--taupe); color: var(--white); }
 
-  /* ── HEADER ── */
-  header {
-    background: var(--white);
-    border-bottom: 1px solid var(--beige-mid);
-    padding: 0 24px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 1px 8px rgba(46,37,32,0.06);
-  }
-  .header-inner {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    height: 68px;
-  }
-  .logo-area {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    flex-shrink: 0;
-  }
-  .header-logo {
-    height: 46px;
-    width: auto;
-    object-fit: contain;
-  }
-  .brand-subtitle {
-    font-size: 11px;
-    font-weight: 400;
-    color: var(--text-light);
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    display: block;
-  }
-  .header-spacer { flex: 1; }
-  .header-stats {
-    font-size: 12px;
-    color: var(--text-light);
-    white-space: nowrap;
-    font-weight: 400;
-  }
+/* ── MAIN ── */
+.main { max-width: 1400px; margin: 0 auto; padding: 24px; }
+.results-count { font-size: 12px; color: var(--text-light); padding-bottom: 14px; }
+.section-label { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--taupe); padding: 20px 0 12px; border-bottom: 1px solid var(--beige-mid); margin-bottom: 14px; display: flex; align-items: center; justify-content: space-between; }
+.section-label span { font-weight: 400; color: var(--text-light); font-size: 10px; }
 
-  /* ── FILTERS BAR ── */
-  .filters-bar {
-    background: var(--white);
-    border-bottom: 1px solid var(--beige-mid);
-    padding: 12px 24px;
-    position: sticky;
-    top: 68px;
-    z-index: 99;
-  }
-  .filters-inner {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-  .filters-row {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    flex-wrap: wrap;
-  }
+/* ── GRID — 4 columnas ── */
+.product-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+@media (max-width: 1100px) { .product-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 720px)  { .product-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 420px)  { .product-grid { grid-template-columns: 1fr; } }
 
-  /* ── VIEW TOGGLE ── */
-  .view-toggle {
-    display: flex;
-    background: var(--beige);
-    border-radius: 8px;
-    padding: 3px;
-    flex-shrink: 0;
-  }
-  .view-toggle button {
-    background: none;
-    border: none;
-    padding: 6px 14px;
-    border-radius: 6px;
-    font-size: 13px;
-    font-weight: 500;
-    cursor: pointer;
-    color: var(--text-mid);
-    font-family: inherit;
-    transition: all 0.18s ease;
-  }
-  .view-toggle button.active {
-    background: var(--taupe);
-    color: var(--white);
-  }
+/* ── TARJETA ── */
+.card { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); transition: box-shadow 0.22s ease, transform 0.22s ease; display: flex; flex-direction: column; position: relative; cursor: pointer; }
+.card:hover { box-shadow: var(--shadow-hover); transform: translateY(-3px); }
+.card.agotado { opacity: 0.62; }
+.card-img-wrap { aspect-ratio: 1; background: var(--beige-light); display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; }
+.card-img-wrap img { width: 100%; height: 100%; object-fit: contain; padding: 12px; }
+.card-img-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: var(--taupe); font-size: 10px; font-weight: 500; letter-spacing: 0.05em; text-align: center; padding: 12px; text-transform: uppercase; }
+.card-body { padding: 12px 13px 13px; flex: 1; display: flex; flex-direction: column; }
+.card-marca { font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--taupe); margin-bottom: 3px; }
+.card-name { font-size: 12.5px; font-weight: 400; color: var(--text); line-height: 1.35; flex: 1; margin-bottom: 6px; }
+.card-ref { font-size: 11px; color: var(--text-light); margin-bottom: 8px; }
+.card-footer { display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-top: auto; }
+.card-price { font-size: 15px; font-weight: 600; color: var(--taupe-dark); }
+.card-price.pendiente { font-size: 11px; font-weight: 400; color: var(--text-light); font-style: italic; }
+.card-hint { font-size: 10px; color: var(--text-light); opacity: 0.7; }
 
-  /* ── SEARCH ── */
-  .search-wrap {
-    position: relative;
-    flex: 1;
-    min-width: 200px;
-    max-width: 380px;
-  }
-  .search-wrap input {
-    width: 100%;
-    padding: 8px 36px 8px 14px;
-    border: 1.5px solid var(--beige-mid);
-    border-radius: 8px;
-    font-size: 13px;
-    font-family: inherit;
-    color: var(--text);
-    background: var(--beige-light);
-    outline: none;
-    transition: border-color 0.18s;
-  }
-  .search-wrap input:focus { border-color: var(--taupe); }
-  .search-wrap input::placeholder { color: var(--text-light); }
-  .search-icon {
-    position: absolute;
-    right: 10px; top: 50%;
-    transform: translateY(-50%);
-    color: var(--text-light);
-    pointer-events: none;
-    font-size: 15px;
-  }
-  .search-clear {
-    position: absolute;
-    right: 10px; top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: var(--text-light);
-    font-size: 16px;
-    padding: 2px;
-    display: none;
-  }
+/* Badges on card */
+.card-top-badges { position: absolute; top: 8px; right: 8px; display: flex; flex-direction: column; gap: 4px; align-items: flex-end; z-index: 1; }
+.badge { font-size: 9px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 7px; border-radius: 4px; }
+.badge-agotado { background: #fdecea; color: var(--badge-out); }
+.badge-nuevo { background: #fef6e4; color: var(--badge-new); }
 
-  /* ── AGOTADO TOGGLE ── */
-  .toggle-label {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-    font-size: 13px;
-    color: var(--text-mid);
-    white-space: nowrap;
-    flex-shrink: 0;
-  }
-  .toggle-label input[type="checkbox"] { display: none; }
-  .toggle-switch {
-    width: 36px; height: 20px;
-    background: var(--beige-mid);
-    border-radius: 10px;
-    position: relative;
-    transition: background 0.2s;
-    flex-shrink: 0;
-  }
-  .toggle-switch::after {
-    content: '';
-    position: absolute;
-    width: 14px; height: 14px;
-    background: var(--white);
-    border-radius: 50%;
-    top: 3px; left: 3px;
-    transition: transform 0.2s;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-  }
-  .toggle-label input:checked + .toggle-switch { background: var(--taupe); }
-  .toggle-label input:checked + .toggle-switch::after { transform: translateX(16px); }
+/* Color dots on card (small) */
+.card-color-dots { display: flex; gap: 4px; padding: 6px 13px 0; flex-wrap: wrap; }
+.card-color-dot { width: 14px; height: 14px; border-radius: 50%; border: 1.5px solid var(--beige-mid); overflow: hidden; flex-shrink: 0; }
+.card-color-dot img { width: 100%; height: 100%; object-fit: cover; }
 
-  /* ── NUEVO FILTER ── */
-  .nuevo-btn {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    padding: 6px 12px;
-    border: 1.5px solid var(--beige-mid);
-    border-radius: 8px;
-    background: var(--white);
-    font-size: 12px;
-    font-family: inherit;
-    color: var(--text-mid);
-    cursor: pointer;
-    transition: all 0.18s;
-    font-weight: 500;
-    white-space: nowrap;
-    flex-shrink: 0;
-  }
-  .nuevo-btn.active {
-    background: var(--badge-new);
-    border-color: var(--badge-new);
-    color: var(--white);
-  }
-  .nuevo-btn .dot {
-    width: 6px; height: 6px;
-    border-radius: 50%;
-    background: var(--badge-new);
-    flex-shrink: 0;
-  }
-  .nuevo-btn.active .dot { background: rgba(255,255,255,0.7); }
+/* ── MODAL ── */
+.modal-overlay {
+  position: fixed; inset: 0;
+  background: rgba(30,20,15,0.55);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 200;
+  display: flex; align-items: center; justify-content: center;
+  padding: 20px;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+.modal-overlay.open { opacity: 1; pointer-events: all; }
 
-  /* ── CATEGORY PILLS ROW ── */
-  .pills-row {
-    display: flex;
-    gap: 6px;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  .pill {
-    padding: 5px 13px;
-    border-radius: 20px;
-    border: 1.5px solid var(--beige-mid);
-    background: var(--white);
-    font-size: 12px;
-    font-weight: 500;
-    cursor: pointer;
-    color: var(--text-mid);
-    font-family: inherit;
-    transition: all 0.18s;
-    white-space: nowrap;
-  }
-  .pill:hover { border-color: var(--taupe); color: var(--taupe-dark); }
-  .pill.active {
-    background: var(--taupe);
-    border-color: var(--taupe);
-    color: var(--white);
-  }
+.modal {
+  background: var(--white);
+  border-radius: 16px;
+  max-width: 780px; width: 100%;
+  max-height: 90vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 24px 60px rgba(30,20,15,0.25);
+  transform: translateY(16px) scale(0.97);
+  transition: transform 0.28s cubic-bezier(0.34,1.56,0.64,1);
+}
+.modal-overlay.open .modal { transform: translateY(0) scale(1); }
 
-  /* ── MAIN CONTENT ── */
-  .main {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 24px;
-  }
+/* Modal: foto izquierda */
+.modal-img-side {
+  width: 300px; flex-shrink: 0;
+  background: var(--beige-light);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  position: relative; overflow: hidden;
+}
+.modal-img-side img { width: 100%; height: 100%; object-fit: contain; padding: 24px; }
+.modal-img-placeholder { color: var(--taupe); font-size: 11px; text-align: center; padding: 24px; text-transform: uppercase; letter-spacing: 0.06em; }
 
-  /* ── SECTION HEADER (for grouping) ── */
-  .section-label {
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--taupe);
-    padding: 20px 0 12px;
-    border-bottom: 1px solid var(--beige-mid);
-    margin-bottom: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .section-label span { font-weight: 400; color: var(--text-light); font-size: 10px; }
+/* Color dots in modal */
+.modal-dots { display: flex; gap: 8px; padding: 12px 16px; justify-content: center; flex-wrap: wrap; background: rgba(255,255,255,0.7); width: 100%; }
+.modal-dot { width: 26px; height: 26px; border-radius: 50%; border: 2px solid var(--beige-mid); cursor: pointer; overflow: hidden; flex-shrink: 0; transition: border-color 0.15s, transform 0.15s; }
+.modal-dot:hover { border-color: var(--taupe); transform: scale(1.1); }
+.modal-dot.active { border-color: var(--taupe-dark); box-shadow: 0 0 0 2px var(--taupe-dark); }
+.modal-dot img { width: 100%; height: 100%; object-fit: cover; }
 
-  /* ── PRODUCT GRID ── */
-  .product-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 14px;
-  }
-  @media (max-width: 900px) { .product-grid { grid-template-columns: 1fr; } }
+/* Modal: info derecha */
+.modal-info { flex: 1; padding: 32px 28px; overflow-y: auto; display: flex; flex-direction: column; min-width: 0; }
+.modal-close { position: absolute; top: 14px; right: 14px; background: var(--white); border: none; border-radius: 50%; width: 32px; height: 32px; font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center; color: var(--text-mid); box-shadow: var(--shadow); transition: background 0.15s; z-index: 10; }
+.modal-close:hover { background: var(--beige); }
+.modal-badges { display: flex; gap: 6px; margin-bottom: 14px; flex-wrap: wrap; }
+.modal-marca { font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--taupe); margin-bottom: 6px; }
+.modal-nombre { font-size: 20px; font-weight: 500; color: var(--text); line-height: 1.25; margin-bottom: 4px; }
+.modal-ref { font-size: 12px; color: var(--text-light); margin-bottom: 20px; }
+.modal-desc-label { font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--taupe); margin-bottom: 8px; }
+.modal-desc { font-size: 13.5px; color: var(--text-mid); line-height: 1.65; font-weight: 300; flex: 1; margin-bottom: 24px; }
+.modal-footer { padding-top: 18px; border-top: 1px solid var(--beige-mid); }
+.modal-price { font-size: 24px; font-weight: 600; color: var(--taupe-dark); }
+.modal-price.pendiente { font-size: 14px; font-weight: 400; color: var(--text-light); font-style: italic; }
 
-  /* ── PRODUCT CARD — horizontal layout ── */
-  .card {
-    background: var(--white);
-    border-radius: var(--radius);
-    overflow: hidden;
-    box-shadow: var(--shadow);
-    transition: box-shadow 0.22s ease, transform 0.22s ease;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    min-height: 180px;
-  }
-  .card:hover {
-    box-shadow: var(--shadow-hover);
-    transform: translateY(-2px);
-  }
-  .card.agotado { opacity: 0.65; }
+/* Modal responsive — mobile */
+@media (max-width: 600px) {
+  .modal { flex-direction: column; max-height: 92vh; border-radius: 16px 16px 0 0; align-self: flex-end; }
+  .modal-overlay { align-items: flex-end; padding: 0; }
+  .modal-img-side { width: 100%; height: 220px; }
+  .modal-info { padding: 20px 20px 28px; }
+  .modal-nombre { font-size: 17px; }
+}
 
-  /* Left: square photo */
-  .card-img-wrap {
-    width: 180px;
-    flex-shrink: 0;
-    background: var(--beige-light);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-  }
-  .card-img-wrap img {
-    width: 100%; height: 100%;
-    object-fit: contain;
-    padding: 12px;
-  }
-  .card-img-placeholder {
-    width: 100%; height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--taupe);
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: 0.05em;
-    text-align: center;
-    padding: 12px;
-    text-transform: uppercase;
-  }
+/* Loading / empty */
+#loading { text-align: center; padding: 80px 24px; color: var(--text-light); }
+.spinner { width: 32px; height: 32px; border: 3px solid var(--beige-mid); border-top-color: var(--taupe); border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 16px; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.empty-state { text-align: center; padding: 64px 24px; color: var(--text-light); }
+.empty-state .icon { font-size: 40px; margin-bottom: 12px; }
 
-  /* Color variant dots — inside image area, bottom */
-  .color-dots {
-    display: flex;
-    gap: 5px;
-    padding: 6px 8px;
-    flex-wrap: wrap;
-    justify-content: center;
-    background: rgba(255,255,255,0.85);
-    width: 100%;
-  }
-  .color-dot {
-    width: 18px; height: 18px;
-    border-radius: 50%;
-    border: 2px solid var(--beige-mid);
-    cursor: pointer;
-    overflow: hidden;
-    flex-shrink: 0;
-    transition: border-color 0.15s;
-  }
-  .color-dot:hover { border-color: var(--taupe); }
-  .color-dot.active { border-color: var(--taupe-dark); }
-  .color-dot img { width: 100%; height: 100%; object-fit: cover; }
-
-  /* Right: info */
-  .card-body {
-    padding: 16px 18px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-  }
-  .card-marca {
-    font-size: 10px;
-    font-weight: 600;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--taupe);
-    margin-bottom: 5px;
-  }
-  .card-name {
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--text);
-    line-height: 1.35;
-    margin-bottom: 4px;
-  }
-  .card-ref {
-    font-size: 11px;
-    color: var(--text-light);
-    margin-bottom: 10px;
-    font-weight: 400;
-  }
-  .card-desc {
-    font-size: 12.5px;
-    color: var(--text-mid);
-    line-height: 1.55;
-    margin-bottom: 14px;
-    font-weight: 300;
-    flex: 1;
-  }
-  .card-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-    padding-top: 10px;
-    border-top: 1px solid var(--beige-mid);
-  }
-  .card-price {
-    font-size: 17px;
-    font-weight: 600;
-    color: var(--taupe-dark);
-  }
-  .card-price.pendiente {
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--text-light);
-    font-style: italic;
-  }
-
-  /* Badges */
-  .badge {
-    font-size: 10px;
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    padding: 3px 8px;
-    border-radius: 4px;
-  }
-  .badge-agotado { background: #fdecea; color: var(--badge-out); }
-  .badge-nuevo { background: #fef6e4; color: var(--badge-new); }
-
-  /* Badges inside card-body (top right) */
-  .card-top-badges {
-    position: absolute;
-    top: 10px; right: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    align-items: flex-end;
-    z-index: 1;
-  }
-
-  /* Mobile: collapse to vertical */
-  @media (max-width: 600px) {
-    .card { flex-direction: column; min-height: unset; }
-    .card-img-wrap { width: 100%; height: 200px; }
-    .card-body { padding: 14px; }
-  }
-
-  /* ── EMPTY STATE ── */
-  .empty-state {
-    text-align: center;
-    padding: 64px 24px;
-    color: var(--text-light);
-  }
-  .empty-state .icon { font-size: 40px; margin-bottom: 12px; }
-  .empty-state p { font-size: 14px; line-height: 1.6; }
-
-  /* ── LOADING ── */
-  #loading {
-    text-align: center;
-    padding: 80px 24px;
-    color: var(--text-light);
-  }
-  .spinner {
-    width: 32px; height: 32px;
-    border: 3px solid var(--beige-mid);
-    border-top-color: var(--taupe);
-    border-radius: 50%;
-    animation: spin 0.8s linear infinite;
-    margin: 0 auto 16px;
-  }
-  @keyframes spin { to { transform: rotate(360deg); } }
-
-  /* ── SORT SELECT ── */
-  .sort-select {
-    padding: 7px 10px;
-    border: 1.5px solid var(--beige-mid);
-    border-radius: 8px;
-    font-size: 12px;
-    font-family: inherit;
-    color: var(--text-mid);
-    background: var(--white);
-    cursor: pointer;
-    outline: none;
-    flex-shrink: 0;
-  }
-  .sort-select:focus { border-color: var(--taupe); }
-
-  /* Results count */
-  .results-count {
-    font-size: 12px;
-    color: var(--text-light);
-    padding-bottom: 16px;
-  }
-
-  @media (max-width: 600px) {
-    .filters-bar { padding: 10px 14px; }
-    .main { padding: 16px 14px; }
-    .header-inner { padding: 0; }
-    header { padding: 0 14px; }
-    .brand-name { font-size: 15px; }
-    .header-stats { display: none; }
-  }
+@media (max-width: 600px) {
+  .main { padding: 14px; }
+  .filters-bar { padding: 10px 14px; }
+  header { padding: 0 14px; }
+  .header-stats { display: none; }
+}
 </style>
 </head>
 <body>
@@ -525,7 +206,6 @@
 <!-- FILTERS -->
 <div class="filters-bar">
   <div class="filters-inner">
-    <!-- Row 1: View toggle + Search + Toggles -->
     <div class="filters-row">
       <div class="view-toggle">
         <button id="btnRutina" class="active" onclick="setView('rutina')">Por Rutina</button>
@@ -552,300 +232,294 @@
         <option value="brand-asc">Marca A→Z</option>
       </select>
     </div>
-    <!-- Row 2: Category pills -->
     <div class="pills-row" id="pillsRow"></div>
   </div>
 </div>
 
 <!-- MAIN -->
 <main class="main">
-  <div id="loading">
-    <div class="spinner"></div>
-    <p>Cargando catálogo…</p>
-  </div>
+  <div id="loading"><div class="spinner"></div><p>Cargando catálogo…</p></div>
   <div id="catalogContent" style="display:none"></div>
 </main>
 
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModalIfOutside(event)">
+  <div class="modal" id="modal">
+    <button class="modal-close" onclick="closeModal()" title="Cerrar">✕</button>
+
+    <div class="modal-img-side" id="modalImgSide">
+      <img id="modalImg" src="" alt="">
+      <div class="modal-dots" id="modalDots" style="display:none"></div>
+    </div>
+
+    <div class="modal-info">
+      <div class="modal-badges" id="modalBadges"></div>
+      <div class="modal-marca" id="modalMarca"></div>
+      <div class="modal-nombre" id="modalNombre"></div>
+      <div class="modal-ref" id="modalRef"></div>
+      <div id="modalDescWrap" style="display:none">
+        <div class="modal-desc-label">Descripción</div>
+        <div class="modal-desc" id="modalDesc"></div>
+      </div>
+      <div class="modal-footer">
+        <div id="modalPrice" class="modal-price"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
-// ─── STATE ───────────────────────────────────────────
+const RUTINAS = ['Primera Limpieza','Segunda Limpieza','Tónico','Esencia','Sérum','Hidratación','Contorno de Ojos','Mascarillas','Protección Solar','Maquillaje','Labial','Capilar','Sets y Kits','Accesorios','Vitaminas','Parches','Exfoliante','Bruma'];
+
 let allProducts = [];
-let view = 'rutina'; // 'rutina' | 'marca'
+let view = 'rutina';
 let activeFilter = 'all';
 let searchText = '';
-let showAgotados = false;
 let showNuevo = false;
 
-// ─── CATEGORIES & BRANDS ──────────────────────────────
-const RUTINAS = [
-  'Primera Limpieza','Segunda Limpieza','Tónico','Esencia','Sérum',
-  'Hidratación','Contorno de Ojos','Mascarillas','Protección Solar',
-  'Maquillaje','Labial','Capilar','Sets y Kits','Accesorios',
-  'Vitaminas','Parches','Exfoliante','Bruma'
-];
-
-// ─── CURRENCY FORMAT ──────────────────────────────────
-function formatPrice(precio) {
-  if (precio === 'pendiente') return 'Precio pendiente';
-  return '$' + Number(precio).toLocaleString('es-CO');
+function fmtPrice(p) {
+  if (p === 'pendiente') return 'Precio por definir';
+  return '$ ' + Number(p).toLocaleString('es-CO');
 }
 
-// ─── FETCH DATA ───────────────────────────────────────
+// ── LOAD ───────────────────────────────────────────────────────
 fetch('productos.json')
   .then(r => r.json())
   .then(data => {
     allProducts = data;
     document.getElementById('loading').style.display = 'none';
     document.getElementById('catalogContent').style.display = 'block';
-    updateStats();
-    render();
+    updateStats(); render();
   })
-  .catch(err => {
-    document.getElementById('loading').innerHTML =
-      '<p style="color:#c0392b">Error cargando productos.json.<br>Asegúrate de que el archivo esté en la misma carpeta.</p>';
+  .catch(() => {
+    document.getElementById('loading').innerHTML = '<p style="color:#c0392b">Error cargando productos.json.</p>';
   });
 
-// ─── VIEW TOGGLE ──────────────────────────────────────
+// ── FILTERS ────────────────────────────────────────────────────
 function setView(v) {
-  view = v;
-  activeFilter = 'all';
-  document.getElementById('btnRutina').classList.toggle('active', v === 'rutina');
-  document.getElementById('btnMarca').classList.toggle('active', v === 'marca');
+  view = v; activeFilter = 'all';
+  document.getElementById('btnRutina').classList.toggle('active', v==='rutina');
+  document.getElementById('btnMarca').classList.toggle('active', v==='marca');
   render();
 }
-
-// ─── SEARCH ──────────────────────────────────────────
 function onSearch(val) {
-  searchText = val.toLowerCase().trim();
-  activeFilter = 'all'; // reset pills when searching
-  const clearBtn = document.getElementById('searchClear');
-  const icon = document.getElementById('searchIcon');
-  clearBtn.style.display = searchText ? 'block' : 'none';
-  icon.style.display = searchText ? 'none' : 'block';
+  searchText = val.toLowerCase().trim(); activeFilter = 'all';
+  document.getElementById('searchClear').style.display = searchText ? 'block' : 'none';
+  document.getElementById('searchIcon').style.display  = searchText ? 'none'  : 'block';
   render();
 }
-function clearSearch() {
-  document.getElementById('searchInput').value = '';
-  onSearch('');
-}
-
-// ─── NUEVO TOGGLE ─────────────────────────────────────
+function clearSearch() { document.getElementById('searchInput').value=''; onSearch(''); }
 function toggleNuevo() {
   showNuevo = !showNuevo;
   document.getElementById('nuevoBtn').classList.toggle('active', showNuevo);
   render();
 }
 
-// ─── FILTER PRODUCTS ──────────────────────────────────
 function filterProducts() {
-  showAgotados = document.getElementById('toggleAgotados').checked;
-
+  const showAgot = document.getElementById('toggleAgotados').checked;
   return allProducts.filter(p => {
-    // Agotado filter
-    if (!showAgotados && p.agotado) return false;
-    // Nuevo filter
+    if (!showAgot && p.agotado) return false;
     if (showNuevo && !p.nuevo) return false;
-    // Search filter
     if (searchText) {
-      const match = p.nombre.toLowerCase().includes(searchText)
-        || p.referencia.toLowerCase().includes(searchText)
-        || p.marca.toLowerCase().includes(searchText);
-      if (!match) return false;
+      if (!( p.nombre.toLowerCase().includes(searchText)
+          || p.referencia.toLowerCase().includes(searchText)
+          || p.marca.toLowerCase().includes(searchText))) return false;
     }
-    // Category/brand filter
     if (activeFilter !== 'all') {
-      if (view === 'rutina' && p.categoria !== activeFilter) return false;
-      if (view === 'marca' && p.marca !== activeFilter) return false;
+      if (view==='rutina' && p.categoria!==activeFilter) return false;
+      if (view==='marca'  && p.marca!==activeFilter)    return false;
     }
     return true;
   });
 }
 
-// ─── SORT PRODUCTS ────────────────────────────────────
 function sortProducts(arr) {
-  const sortVal = document.getElementById('sortSelect').value;
-  const sorted = [...arr];
-  if (sortVal === 'price-asc') {
-    sorted.sort((a,b) => {
-      const pa = a.precio === 'pendiente' ? Infinity : a.precio;
-      const pb = b.precio === 'pendiente' ? Infinity : b.precio;
-      return pa - pb;
-    });
-  } else if (sortVal === 'price-desc') {
-    sorted.sort((a,b) => {
-      const pa = a.precio === 'pendiente' ? -Infinity : a.precio;
-      const pb = b.precio === 'pendiente' ? -Infinity : b.precio;
-      return pb - pa;
-    });
-  } else if (sortVal === 'name-asc') {
-    sorted.sort((a,b) => a.nombre.localeCompare(b.nombre, 'es'));
-  } else if (sortVal === 'brand-asc') {
-    sorted.sort((a,b) => a.marca.localeCompare(b.marca, 'es') || a.nombre.localeCompare(b.nombre, 'es'));
-  }
-  return sorted;
+  const v = document.getElementById('sortSelect').value;
+  const s = [...arr];
+  const num = p => p.precio==='pendiente' ? (v==='price-asc'?Infinity:-Infinity) : p.precio;
+  if (v==='price-asc')  s.sort((a,b)=>num(a)-num(b));
+  if (v==='price-desc') s.sort((a,b)=>num(b)-num(a));
+  if (v==='name-asc')   s.sort((a,b)=>a.nombre.localeCompare(b.nombre,'es'));
+  if (v==='brand-asc')  s.sort((a,b)=>a.marca.localeCompare(b.marca,'es')||a.nombre.localeCompare(b.nombre,'es'));
+  return s;
 }
 
-// ─── PILLS ────────────────────────────────────────────
-function buildPills(products) {
-  const pillsRow = document.getElementById('pillsRow');
-  pillsRow.innerHTML = '';
-
-  // Get available groups from current unfiltered products (same search, same agotado, same nuevo but no category filter)
-  const showAgotadosNow = document.getElementById('toggleAgotados').checked;
-  const baseProducts = allProducts.filter(p => {
-    if (!showAgotadosNow && p.agotado) return false;
+// ── PILLS ──────────────────────────────────────────────────────
+function buildPills() {
+  const showAgot = document.getElementById('toggleAgotados').checked;
+  const base = allProducts.filter(p => {
+    if (!showAgot && p.agotado) return false;
     if (showNuevo && !p.nuevo) return false;
-    if (searchText) {
-      return p.nombre.toLowerCase().includes(searchText)
-        || p.referencia.toLowerCase().includes(searchText)
-        || p.marca.toLowerCase().includes(searchText);
-    }
+    if (searchText) return p.nombre.toLowerCase().includes(searchText)||p.referencia.toLowerCase().includes(searchText)||p.marca.toLowerCase().includes(searchText);
     return true;
   });
-
-  let groups;
-  if (view === 'rutina') {
-    const cats = [...new Set(baseProducts.map(p => p.categoria))];
-    groups = RUTINAS.filter(r => cats.includes(r));
-  } else {
-    const brands = [...new Set(baseProducts.map(p => p.marca))].sort((a,b) => a.localeCompare(b,'es'));
-    groups = brands;
-  }
-
-  // All pill
-  const allCount = baseProducts.length;
-  const allPill = makePill('all', `Todos (${allCount})`);
-  pillsRow.appendChild(allPill);
-
-  groups.forEach(g => {
-    const count = baseProducts.filter(p => view === 'rutina' ? p.categoria === g : p.marca === g).length;
-    pillsRow.appendChild(makePill(g, `${g} (${count})`));
+  const groups = view==='rutina'
+    ? RUTINAS.filter(r=>base.some(p=>p.categoria===r))
+    : [...new Set(base.map(p=>p.marca))].sort((a,b)=>a.localeCompare(b,'es'));
+  const row = document.getElementById('pillsRow');
+  row.innerHTML = '';
+  [['all','Todos ('+base.length+')'], ...groups.map(g=>[g,g+' ('+base.filter(p=>view==='rutina'?p.categoria===g:p.marca===g).length+')'])].forEach(([val,lbl])=>{
+    const b = document.createElement('button');
+    b.className = 'pill'+(activeFilter===val?' active':'');
+    b.textContent = lbl;
+    b.onclick = ()=>{ activeFilter=val; render(); };
+    row.appendChild(b);
   });
 }
 
-function makePill(value, label) {
-  const btn = document.createElement('button');
-  btn.className = 'pill' + (activeFilter === value ? ' active' : '');
-  btn.textContent = label;
-  btn.onclick = () => {
-    activeFilter = value;
-    render();
-  };
-  return btn;
+// ── CARD ───────────────────────────────────────────────────────
+function cardHTML(p) {
+  const mainImg = p.colores ? p.colores[0] : p.imagen;
+  const priceClass = p.precio==='pendiente' ? 'card-price pendiente' : 'card-price';
+  let badges = '';
+  if (p.agotado) badges += '<span class="badge badge-agotado">Agotado</span>';
+  if (p.nuevo)   badges += '<span class="badge badge-nuevo">Nuevo</span>';
+
+  // Tiny color preview dots
+  let dots = '';
+  if (p.colores && p.colores.length > 1) {
+    dots = '<div class="card-color-dots">'
+      + p.colores.map(src=>'<div class="card-color-dot"><img src="'+src+'" onerror="this.parentElement.style.background=\'var(--beige-mid)\'"></div>').join('')
+      + '</div>';
+  }
+
+  const idx = allProducts.indexOf(p);
+  return '<div class="card'+(p.agotado?' agotado':'')+'" onclick="openModal('+idx+')">'
+    + '<div class="card-top-badges">'+badges+'</div>'
+    + '<div class="card-img-wrap">'
+    +   '<img src="'+mainImg+'" alt="'+p.referencia+'"'
+    +   ' onerror="this.parentElement.innerHTML=\'<div class=\\\'card-img-placeholder\\\'>'+p.referencia+'</div>\'">'
+    + '</div>'
+    + dots
+    + '<div class="card-body">'
+    +   '<div class="card-marca">'+p.marca+'</div>'
+    +   '<div class="card-name">'+p.nombre+'</div>'
+    +   '<div class="card-ref">Ref: '+p.referencia+'</div>'
+    +   '<div class="card-footer">'
+    +     '<div class="'+priceClass+'">'+fmtPrice(p.precio)+'</div>'
+    +     '<span class="card-hint">Ver más →</span>'
+    +   '</div>'
+    + '</div></div>';
 }
 
-// ─── CARD HTML ────────────────────────────────────────
-function cardHTML(p) {
-  const hasImg = true; // Assume image exists; if not, onerror shows placeholder
-  const priceStr = p.precio === 'pendiente' ? 'pendiente' : '';
-  const priceClass = p.precio === 'pendiente' ? 'card-price pendiente' : 'card-price';
-  const priceDisplay = p.precio === 'pendiente' ? 'Precio por definir' : formatPrice(p.precio);
+// ── MODAL ──────────────────────────────────────────────────────
+let currentProduct = null;
+
+function openModal(idx) {
+  const p = allProducts[idx];
+  currentProduct = p;
+  const mainImg = p.colores ? p.colores[0] : p.imagen;
+
+  // Image
+  const modalImg = document.getElementById('modalImg');
+  modalImg.src = mainImg;
+  modalImg.alt = p.nombre;
+  modalImg.onerror = function() {
+    this.parentElement.innerHTML = '<div class="modal-img-placeholder">'+p.referencia+'</div>';
+  };
+
+  // Color dots
+  const dotsEl = document.getElementById('modalDots');
+  if (p.colores && p.colores.length > 1) {
+    dotsEl.style.display = 'flex';
+    dotsEl.innerHTML = p.colores.map((src,i)=>
+      '<div class="modal-dot'+(i===0?' active':'')+'" onclick="modalSwap(\''+src+'\',this)">'
+      +'<img src="'+src+'" onerror="this.parentElement.style.background=\'var(--beige-mid)\'">'
+      +'</div>'
+    ).join('');
+  } else {
+    dotsEl.style.display = 'none';
+    dotsEl.innerHTML = '';
+  }
 
   // Badges
   let badges = '';
-  if (p.agotado) badges += `<span class="badge badge-agotado">Agotado</span>`;
-  if (p.nuevo) badges += `<span class="badge badge-nuevo">Nuevo</span>`;
+  if (p.agotado) badges += '<span class="badge badge-agotado">Agotado</span>';
+  if (p.nuevo)   badges += '<span class="badge badge-nuevo">Nuevo</span>';
+  document.getElementById('modalBadges').innerHTML = badges;
 
-  // Main image
-  const mainImg = p.colores ? p.colores[0] : p.imagen;
-  const imgEl = `<img src="${mainImg}" alt="${p.nombre}" 
-    onerror="this.parentElement.innerHTML='<div class=\\'card-img-placeholder\\'>${p.referencia}</div>'"
-    id="img-${p.referencia}">`;
+  // Text fields
+  document.getElementById('modalMarca').textContent  = p.marca;
+  document.getElementById('modalNombre').textContent = p.nombre;
+  document.getElementById('modalRef').textContent    = 'Ref: ' + p.referencia;
 
-  // Color dots (if variants)
-  let colorDotsHTML = '';
-  if (p.colores && p.colores.length > 1) {
-    const dots = p.colores.map((src, i) =>
-      `<div class="color-dot${i===0?' active':''}" onclick="swapImg('${p.referencia}','${src}',this)">
-        <img src="${src}" alt="color ${i+1}" onerror="this.parentElement.style.background='var(--beige-mid)'">
-      </div>`
-    ).join('');
-    colorDotsHTML = `<div class="color-dots">${dots}</div>`;
+  // Description
+  const descWrap = document.getElementById('modalDescWrap');
+  const descEl   = document.getElementById('modalDesc');
+  if (p.descripcion && p.descripcion.trim()) {
+    descEl.textContent = p.descripcion;
+    descWrap.style.display = 'block';
+  } else {
+    descWrap.style.display = 'none';
   }
 
-  const descHTML = p.descripcion ? '<div class="card-desc">' + p.descripcion + '</div>' : '';
+  // Price
+  const priceEl = document.getElementById('modalPrice');
+  priceEl.textContent = fmtPrice(p.precio);
+  priceEl.className   = 'modal-price' + (p.precio==='pendiente' ? ' pendiente' : '');
 
-    return `
-    <div class="card${p.agotado ? ' agotado' : ''}">
-      <div class="card-top-badges">${badges}</div>
-      <div class="card-img-wrap">
-        <img src="${mainImg}" alt="${p.nombre}"
-          onerror="this.parentElement.innerHTML='<div class=\'card-img-placeholder\'>${p.referencia}</div>'"
-          id="img-${p.referencia}" style="display:block">
-        ${colorDotsHTML}
-      </div>
-      <div class="card-body">
-        <div class="card-marca">${p.marca}</div>
-        <div class="card-name">${p.nombre}</div>
-        <div class="card-ref">Ref: ${p.referencia}</div>
-        ${descHTML}
-        <div class="card-footer">
-          <div class="${priceClass}">${priceDisplay}</div>
-        </div>
-      </div>
-    </div>`;
+  // Open
+  document.getElementById('modalOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
 }
 
-function swapImg(ref, src, dotEl) {
-  const img = document.getElementById('img-' + ref);
+function closeModal() {
+  document.getElementById('modalOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+  currentProduct = null;
+}
+
+function closeModalIfOutside(e) {
+  if (e.target === document.getElementById('modalOverlay')) closeModal();
+}
+
+function modalSwap(src, dot) {
+  const img = document.getElementById('modalImg');
   if (img) img.src = src;
-  // Update active dot
-  const parent = dotEl.parentElement;
-  parent.querySelectorAll('.color-dot').forEach(d => d.classList.remove('active'));
-  dotEl.classList.add('active');
+  document.getElementById('modalDots').querySelectorAll('.modal-dot').forEach(d=>d.classList.remove('active'));
+  dot.classList.add('active');
 }
 
-// ─── RENDER ───────────────────────────────────────────
+// Close with Escape key
+document.addEventListener('keydown', e => { if (e.key==='Escape') closeModal(); });
+
+// ── RENDER ────────────────────────────────────────────────────
 function render() {
-  const products = filterProducts();
-  const sorted = sortProducts(products);
+  const filtered = filterProducts();
+  const sorted   = sortProducts(filtered);
+  buildPills(); updateStats();
 
-  buildPills(products);
-  updateStats();
-
-  const container = document.getElementById('catalogContent');
-
-  if (sorted.length === 0) {
-    container.innerHTML = `
-      <div class="empty-state">
-        <div class="icon">🔍</div>
-        <p>No se encontraron productos con los filtros actuales.<br>Prueba con otra búsqueda o ajusta los filtros.</p>
-      </div>`;
+  const el = document.getElementById('catalogContent');
+  if (!sorted.length) {
+    el.innerHTML = '<div class="empty-state"><div class="icon">🔍</div><p>No se encontraron productos.</p></div>';
     return;
   }
 
-  // Group by view
-  let html = `<div class="results-count">${sorted.length} producto${sorted.length !== 1 ? 's' : ''}</div>`;
+  let html = '<div class="results-count">'+sorted.length+' producto'+(sorted.length!==1?'s':'')+'</div>';
+  const gk = view==='rutina' ? 'categoria' : 'marca';
+  const groups = view==='rutina'
+    ? RUTINAS
+    : [...new Set(sorted.map(p=>p.marca))].sort((a,b)=>a.localeCompare(b,'es'));
 
-  if (activeFilter === 'all' && !searchText) {
-    // Group by category or brand
-    const groupKey = view === 'rutina' ? 'categoria' : 'marca';
-    const groups = view === 'rutina' ? RUTINAS : [...new Set(sorted.map(p => p.marca))].sort((a,b) => a.localeCompare(b,'es'));
-
+  if (activeFilter==='all' && !searchText) {
     groups.forEach(g => {
-      const groupProducts = sorted.filter(p => p[groupKey] === g);
-      if (groupProducts.length === 0) return;
-      html += `<div class="section-label">${g} <span>${groupProducts.length} productos</span></div>`;
-      html += `<div class="product-grid">`;
-      groupProducts.forEach(p => { html += cardHTML(p); });
-      html += `</div>`;
+      const gp = sorted.filter(p=>p[gk]===g);
+      if (!gp.length) return;
+      html += '<div class="section-label">'+g+' <span>'+gp.length+' productos</span></div>';
+      html += '<div class="product-grid">'+gp.map(cardHTML).join('')+'</div>';
     });
   } else {
-    // Flat grid when filtered
-    html += `<div class="product-grid">`;
-    sorted.forEach(p => { html += cardHTML(p); });
-    html += `</div>`;
+    html += '<div class="product-grid">'+sorted.map(cardHTML).join('')+'</div>';
   }
-
-  container.innerHTML = html;
+  el.innerHTML = html;
 }
 
 function updateStats() {
-  const total = allProducts.length;
-  const disponibles = allProducts.filter(p => !p.agotado).length;
-  const nuevos = allProducts.filter(p => p.nuevo).length;
-  const marcas = [...new Set(allProducts.map(p => p.marca))].length;
-  document.getElementById('headerStats').textContent =
-    `${total} referencias · ${disponibles} disponibles · ${nuevos} nuevos · ${marcas} marcas`;
+  const t = allProducts.length;
+  const d = allProducts.filter(p=>!p.agotado).length;
+  const n = allProducts.filter(p=>p.nuevo).length;
+  const m = new Set(allProducts.map(p=>p.marca)).size;
+  document.getElementById('headerStats').textContent = t+' referencias · '+d+' disponibles · '+n+' nuevos · '+m+' marcas';
 }
 </script>
 </body>
