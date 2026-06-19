@@ -526,12 +526,10 @@ function render() {
     getGroup = g => sorted.filter(p=>(p.tipos_piel||[]).includes(g));
   }
 
-  if (activeFilter==='all' && !searchText) {
+  if (activeFilter==='all' && !searchText && groups.length > 0) {
     const seen = new Set();
     groups.forEach(g => {
       const gp = getGroup(g).filter(p => {
-        // In tipo_piel view, avoid showing same product twice in different sections
-        // (show in first matching section only)
         if (view==='tipo_piel') {
           if (seen.has(p.referencia)) return false;
           seen.add(p.referencia);
