@@ -210,6 +210,7 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
       <div class="view-toggle">
         <button id="btnRutina" class="active" onclick="setView('rutina')">Por Rutina</button>
         <button id="btnMarca" onclick="setView('marca')">Por Marca</button>
+        <button id="btnPiel" onclick="setView('tipo_piel')">Por Tipo de Piel</button>
       </div>
       <div class="search-wrap">
         <input type="text" id="searchInput" placeholder="Buscar por nombre o referencia..." oninput="onSearch(this.value)">
@@ -300,6 +301,7 @@ function setView(v) {
   view = v; activeFilter = 'all';
   document.getElementById('btnRutina').classList.toggle('active', v==='rutina');
   document.getElementById('btnMarca').classList.toggle('active', v==='marca');
+  document.getElementById('btnPiel').classList.toggle('active', v==='tipo_piel');
   render();
 }
 function onSearch(val) {
@@ -326,8 +328,9 @@ function filterProducts() {
           || p.marca.toLowerCase().includes(searchText))) return false;
     }
     if (activeFilter !== 'all') {
-      if (view==='rutina' && p.categoria!==activeFilter) return false;
-      if (view==='marca'  && p.marca!==activeFilter)    return false;
+      if (view==='rutina'    && p.categoria!==activeFilter) return false;
+      if (view==='marca'     && p.marca!==activeFilter)     return false;
+      if (view==='tipo_piel' && !(p.tipos_piel||[]).includes(activeFilter)) return false;
     }
     return true;
   });
@@ -353,12 +356,25 @@ function buildPills() {
     if (searchText) return p.nombre.toLowerCase().includes(searchText)||p.referencia.toLowerCase().includes(searchText)||p.marca.toLowerCase().includes(searchText);
     return true;
   });
-  const groups = view==='rutina'
-    ? RUTINAS.filter(r=>base.some(p=>p.categoria===r))
-    : [...new Set(base.map(p=>p.marca))].sort((a,b)=>a.localeCompare(b,'es'));
+  let groups;
+  if (view==='rutina') {
+    groups = RUTINAS.filter(r=>base.some(p=>p.categoria===r));
+  } else if (view==='marca') {
+    groups = [...new Set(base.map(p=>p.marca))].sort((a,b)=>a.localeCompare(b,'es'));
+  } else {
+    // tipo_piel: collect all unique types, sorted by count desc
+    const typeCount = {};
+    base.forEach(p=>(p.tipos_piel||[]).forEach(t=>{ typeCount[t]=(typeCount[t]||0)+1; }));
+    groups = Object.keys(typeCount).sort((a,b)=>typeCount[b]-typeCount[a]);
+  }
+  const countForGroup = (g) => {
+    if (view==='rutina')    return base.filter(p=>p.categoria===g).length;
+    if (view==='marca')     return base.filter(p=>p.marca===g).length;
+    return base.filter(p=>(p.tipos_piel||[]).includes(g)).length;
+  };
   const row = document.getElementById('pillsRow');
   row.innerHTML = '';
-  [['all','Todos ('+base.length+')'], ...groups.map(g=>[g,g+' ('+base.filter(p=>view==='rutina'?p.categoria===g:p.marca===g).length+')'])].forEach(([val,lbl])=>{
+  [['all','Todos ('+base.length+')'], ...groups.map(g=>[g,g+' ('+countForGroup(g)+')'])].forEach(([val,lbl])=>{
     const b = document.createElement('button');
     b.className = 'pill'+(activeFilter===val?' active':'');
     b.textContent = lbl;
@@ -496,14 +512,32 @@ function render() {
   }
 
   let html = '<div class="results-count">'+sorted.length+' producto'+(sorted.length!==1?'s':'')+'</div>';
-  const gk = view==='rutina' ? 'categoria' : 'marca';
-  const groups = view==='rutina'
-    ? RUTINAS
-    : [...new Set(sorted.map(p=>p.marca))].sort((a,b)=>a.localeCompare(b,'es'));
+  let groups, getGroup;
+  if (view==='rutina') {
+    groups = RUTINAS;
+    getGroup = g => sorted.filter(p=>p.categoria===g);
+  } else if (view==='marca') {
+    groups = [...new Set(sorted.map(p=>p.marca))].sort((a,b)=>a.localeCompare(b,'es'));
+    getGroup = g => sorted.filter(p=>p.marca===g);
+  } else {
+    const typeCount = {};
+    sorted.forEach(p=>(p.tipos_piel||[]).forEach(t=>{ typeCount[t]=(typeCount[t]||0)+1; }));
+    groups = Object.keys(typeCount).sort((a,b)=>typeCount[b]-typeCount[a]);
+    getGroup = g => sorted.filter(p=>(p.tipos_piel||[]).includes(g));
+  }
 
   if (activeFilter==='all' && !searchText) {
+    const seen = new Set();
     groups.forEach(g => {
-      const gp = sorted.filter(p=>p[gk]===g);
+      const gp = getGroup(g).filter(p => {
+        // In tipo_piel view, avoid showing same product twice in different sections
+        // (show in first matching section only)
+        if (view==='tipo_piel') {
+          if (seen.has(p.referencia)) return false;
+          seen.add(p.referencia);
+        }
+        return true;
+      });
       if (!gp.length) return;
       html += '<div class="section-label">'+g+' <span>'+gp.length+' productos</span></div>';
       html += '<div class="product-grid">'+gp.map(cardHTML).join('')+'</div>';
