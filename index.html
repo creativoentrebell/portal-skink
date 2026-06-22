@@ -173,6 +173,133 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
   .modal-nombre { font-size: 17px; }
 }
 
+
+/* ── PRICE MODE TOGGLE ── */
+.price-mode-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background: var(--beige);
+  border-radius: 8px;
+  padding: 3px;
+  flex-shrink: 0;
+}
+.price-mode-toggle button {
+  background: none;
+  border: none;
+  padding: 6px 13px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--text-mid);
+  font-family: inherit;
+  transition: all 0.18s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+.price-mode-toggle button.active {
+  background: var(--taupe);
+  color: var(--white);
+}
+.lock-icon { font-size: 11px; opacity: 0.7; }
+
+/* ── PASSWORD MODAL ── */
+.pwd-overlay {
+  position: fixed; inset: 0;
+  background: rgba(30,20,15,0.45);
+  backdrop-filter: blur(4px);
+  z-index: 300;
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.2s;
+}
+.pwd-overlay.open { opacity: 1; pointer-events: all; }
+.pwd-modal {
+  background: var(--white);
+  border-radius: 14px;
+  padding: 32px 28px;
+  width: 100%;
+  max-width: 340px;
+  box-shadow: 0 16px 48px rgba(30,20,15,0.2);
+  transform: translateY(12px);
+  transition: transform 0.22s cubic-bezier(0.34,1.56,0.64,1);
+  text-align: center;
+}
+.pwd-overlay.open .pwd-modal { transform: translateY(0); }
+.pwd-modal h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--taupe-xdark);
+  margin-bottom: 6px;
+}
+.pwd-modal p {
+  font-size: 12.5px;
+  color: var(--text-light);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.pwd-input-wrap {
+  position: relative;
+  margin-bottom: 10px;
+}
+.pwd-input-wrap input {
+  width: 100%;
+  padding: 11px 40px 11px 16px;
+  border: 1.5px solid var(--beige-mid);
+  border-radius: 8px;
+  font-size: 20px;
+  font-family: inherit;
+  letter-spacing: 6px;
+  text-align: center;
+  outline: none;
+  color: var(--text);
+  transition: border-color 0.18s;
+}
+.pwd-input-wrap input:focus { border-color: var(--taupe); }
+.pwd-input-wrap input.error { border-color: var(--badge-out); animation: shake 0.35s ease; }
+.pwd-show-btn {
+  position: absolute;
+  right: 12px; top: 50%;
+  transform: translateY(-50%);
+  background: none; border: none;
+  cursor: pointer; color: var(--text-light); font-size: 15px;
+}
+.pwd-error-msg {
+  font-size: 12px;
+  color: var(--badge-out);
+  min-height: 18px;
+  margin-bottom: 12px;
+}
+.pwd-submit {
+  width: 100%;
+  padding: 11px;
+  background: var(--taupe);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+.pwd-submit:hover { background: var(--taupe-dark); }
+.pwd-cancel {
+  margin-top: 10px;
+  background: none; border: none;
+  color: var(--text-light); font-size: 12px;
+  cursor: pointer; font-family: inherit;
+  text-decoration: underline;
+}
+@keyframes shake {
+  0%,100% { transform: translateX(0); }
+  20%,60% { transform: translateX(-6px); }
+  40%,80% { transform: translateX(6px); }
+}
+
 /* Loading / empty */
 #loading { text-align: center; padding: 80px 24px; color: var(--text-light); }
 .spinner { width: 32px; height: 32px; border: 3px solid var(--beige-mid); border-top-color: var(--taupe); border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 16px; }
@@ -200,6 +327,10 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
     </div>
     <div class="header-spacer"></div>
     <div class="header-stats" id="headerStats"></div>
+    <div class="price-mode-toggle">
+      <button id="btnDetal" class="active" onclick="setDetal()">Detal</button>
+      <button id="btnMayorista" onclick="requestMayorista()">Mayorista <span class="lock-icon" id="lockIcon">🔒</span></button>
+    </div>
   </div>
 </header>
 
@@ -278,10 +409,75 @@ let activeFilter = 'all';
 let searchText = '';
 let showNuevo = false;
 
+
+// ── PRICE MODE ────────────────────────────────────────────────
+const PWD = '000000';
+let priceMode = 'detal'; // 'detal' | 'mayorista'
+
 function fmtPrice(p) {
-  if (p === 'pendiente') return 'Precio por definir';
+  if (p === 'pendiente' || p === undefined || p === null) return 'Precio por definir';
   return '$ ' + Number(p).toLocaleString('es-CO');
 }
+
+function getPrice(p) {
+  if (priceMode === 'mayorista') {
+    return p.precio_mayorista !== undefined ? p.precio_mayorista : p.precio;
+  }
+  return p.precio;
+}
+
+function setDetal() {
+  priceMode = 'detal';
+  document.getElementById('btnDetal').classList.add('active');
+  document.getElementById('btnMayorista').classList.remove('active');
+  document.getElementById('lockIcon').textContent = '🔒';
+  render();
+}
+
+function requestMayorista() {
+  if (priceMode === 'mayorista') { setDetal(); return; }
+  document.getElementById('pwdInput').value = '';
+  document.getElementById('pwdError').textContent = '';
+  document.getElementById('pwdInput').classList.remove('error');
+  document.getElementById('pwdOverlay').classList.add('open');
+  setTimeout(() => document.getElementById('pwdInput').focus(), 50);
+}
+
+function checkPwd() {
+  const val = document.getElementById('pwdInput').value;
+  if (val === PWD) {
+    closePwd();
+    priceMode = 'mayorista';
+    document.getElementById('btnMayorista').classList.add('active');
+    document.getElementById('btnDetal').classList.remove('active');
+    document.getElementById('lockIcon').textContent = '🔓';
+    render();
+  } else {
+    const input = document.getElementById('pwdInput');
+    input.classList.add('error');
+    document.getElementById('pwdError').textContent = 'Contraseña incorrecta';
+    setTimeout(() => input.classList.remove('error'), 400);
+    input.value = '';
+    input.focus();
+  }
+}
+
+function closePwd() {
+  document.getElementById('pwdOverlay').classList.remove('open');
+}
+
+function togglePwdVisibility() {
+  const input = document.getElementById('pwdInput');
+  input.type = input.type === 'password' ? 'text' : 'password';
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    closePwd();
+    closeModal();
+  }
+});
+
 
 // ── LOAD ───────────────────────────────────────────────────────
 fetch('productos.json')
@@ -471,8 +667,9 @@ function openModal(idx) {
 
   // Price
   const priceEl = document.getElementById('modalPrice');
-  priceEl.textContent = fmtPrice(p.precio);
-  priceEl.className   = 'modal-price' + (p.precio==='pendiente' ? ' pendiente' : '');
+  const mPrice = getPrice(p);
+  priceEl.textContent = fmtPrice(mPrice);
+  priceEl.className   = 'modal-price' + (mPrice==='pendiente'||mPrice===undefined ? ' pendiente' : '');
 
   // Open
   document.getElementById('modalOverlay').classList.add('open');
@@ -554,5 +751,23 @@ function updateStats() {
   document.getElementById('headerStats').textContent = t+' referencias · '+d+' disponibles · '+n+' nuevos · '+m+' marcas';
 }
 </script>
+
+<!-- PASSWORD MODAL -->
+<div class="pwd-overlay" id="pwdOverlay">
+  <div class="pwd-modal">
+    <h3>Catálogo Mayorista</h3>
+    <p>Ingresa la contraseña para ver los precios mayoristas</p>
+    <div class="pwd-input-wrap">
+      <input type="password" id="pwdInput" maxlength="20"
+             placeholder="••••••" onkeydown="if(event.key==='Enter')checkPwd()">
+      <button class="pwd-show-btn" onclick="togglePwdVisibility()" title="Mostrar/ocultar">👁</button>
+    </div>
+    <div class="pwd-error-msg" id="pwdError"></div>
+    <button class="pwd-submit" onclick="checkPwd()">Acceder</button>
+    <br>
+    <button class="pwd-cancel" onclick="closePwd()">Cancelar</button>
+  </div>
+</div>
+
 </body>
 </html>
