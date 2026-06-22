@@ -412,22 +412,19 @@ let showNuevo = false;
 
 // ── PRICE MODE ────────────────────────────────────────────────
 const PWD = '000000';
-let priceMode = 'detal'; // 'detal' | 'mayorista'
+let priceMode = 'detal';
+let detalProducts = [];
+let mayoristasProducts = [];
+let mayoristasLoaded = false;
 
-function fmtPrice(p) {
-  if (p === 'pendiente' || p === undefined || p === null) return 'Precio por definir';
-  return '$ ' + Number(p).toLocaleString('es-CO');
-}
-
-function getPrice(p) {
-  if (priceMode === 'mayorista') {
-    return p.precio_mayorista !== undefined ? p.precio_mayorista : p.precio;
-  }
-  return p.precio;
+function fmtPrice(precio) {
+  if (precio === 'pendiente' || precio === undefined || precio === null) return 'Precio por definir';
+  return '$ ' + Number(precio).toLocaleString('es-CO');
 }
 
 function setDetal() {
   priceMode = 'detal';
+  allProducts = detalProducts;
   document.getElementById('btnDetal').classList.add('active');
   document.getElementById('btnMayorista').classList.remove('active');
   document.getElementById('lockIcon').textContent = '🔒';
@@ -447,11 +444,7 @@ function checkPwd() {
   const val = document.getElementById('pwdInput').value;
   if (val === PWD) {
     closePwd();
-    priceMode = 'mayorista';
-    document.getElementById('btnMayorista').classList.add('active');
-    document.getElementById('btnDetal').classList.remove('active');
-    document.getElementById('lockIcon').textContent = '🔓';
-    render();
+    activateMayorista();
   } else {
     const input = document.getElementById('pwdInput');
     input.classList.add('error');
@@ -460,6 +453,33 @@ function checkPwd() {
     input.value = '';
     input.focus();
   }
+}
+
+function activateMayorista() {
+  if (mayoristasLoaded) {
+    switchToMayorista();
+    return;
+  }
+  // First time: fetch productos_mayorista.json
+  fetch('productos_mayorista.json')
+    .then(r => r.json())
+    .then(data => {
+      mayoristasProducts = data;
+      mayoristasLoaded = true;
+      switchToMayorista();
+    })
+    .catch(() => {
+      alert('No se pudo cargar el catálogo mayorista.');
+    });
+}
+
+function switchToMayorista() {
+  priceMode = 'mayorista';
+  allProducts = mayoristasProducts;
+  document.getElementById('btnMayorista').classList.add('active');
+  document.getElementById('btnDetal').classList.remove('active');
+  document.getElementById('lockIcon').textContent = '🔓';
+  render();
 }
 
 function closePwd() {
@@ -484,6 +504,7 @@ fetch('productos.json')
   .then(r => r.json())
   .then(data => {
     allProducts = data;
+    detalProducts = data;
     document.getElementById('loading').style.display = 'none';
     document.getElementById('catalogContent').style.display = 'block';
     updateStats(); render();
@@ -667,9 +688,8 @@ function openModal(idx) {
 
   // Price
   const priceEl = document.getElementById('modalPrice');
-  const mPrice = getPrice(p);
-  priceEl.textContent = fmtPrice(mPrice);
-  priceEl.className   = 'modal-price' + (mPrice==='pendiente'||mPrice===undefined ? ' pendiente' : '');
+  priceEl.textContent = fmtPrice(p.precio);
+  priceEl.className   = 'modal-price' + (p.precio==='pendiente'||p.precio===undefined ? ' pendiente' : '');
 
   // Open
   document.getElementById('modalOverlay').classList.add('open');
