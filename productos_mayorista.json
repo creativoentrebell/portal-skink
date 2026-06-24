@@ -7246,6 +7246,81 @@
     ]
   },
   {
+    "id": "MOEV-01",
+    "referencia": "MOEV-01",
+    "nombre": "Hair Steamer Pro (Cepillo capilar inalámbrico con microvibración)",
+    "marca": "MOEV",
+    "precio": 810000,
+    "categoria": "Capilar",
+    "descripcion": "Cabello brillante con un solo uso: hidrata y nutre el cabello dañado, dejándolo suave, brillante y sin enredos. El suave masaje de microvibración ayuda a tonificar y revitalizar el cuero cabelludo sin irritarlo. Cepillo inalámbrico ligero y compacto, fácil de usar en cualquier momento y lugar.",
+    "imagen": "img/skink/MOEV-01.jpg",
+    "agotado": false,
+    "nuevo": false,
+    "tipos_piel": [
+      "Capilar"
+    ]
+  },
+  {
+    "id": "MOEV-02",
+    "referencia": "MOEV-02",
+    "nombre": "Annurcatin Hair Oil Essence 80ml",
+    "marca": "MOEV",
+    "precio": 190000,
+    "categoria": "Capilar",
+    "descripcion": "Esencia de aceite capilar nutritivo enriquecida con extracto de manzana y biotina para mejorar la elasticidad y el grosor del cabello, promoviendo su crecimiento. Formulada sin siliconas ni sulfatos potencialmente dañinos. Ingredientes clave: semilla de uva, aceite de camellia, aceite de coco, aceite de manzana, aceite de oliva, semilla de soja.",
+    "imagen": "img/skink/MOEV-02.jpg",
+    "agotado": false,
+    "nuevo": false,
+    "tipos_piel": [
+      "Capilar"
+    ]
+  },
+  {
+    "id": "MOEV-03",
+    "referencia": "MOEV-03",
+    "nombre": "Annurcatin Hair Tonic 150ml",
+    "marca": "MOEV",
+    "precio": 89000,
+    "categoria": "Capilar",
+    "descripcion": "Tónico capilar nutritivo formulado con cafeína y 50 tipos de proteínas para brindar una hidratación duradera al cabello encrespado y añadir brillo a las hebras opacas, ayudando a reducir la caída del cabello. Ingredientes clave: aceite glutámico, ácido cítrico, extracto de manzana, ceramida, ácido hialurónico, tomillo.",
+    "imagen": "img/skink/MOEV-03.jpg",
+    "agotado": false,
+    "nuevo": false,
+    "tipos_piel": [
+      "Capilar"
+    ]
+  },
+  {
+    "id": "MOEV-04",
+    "referencia": "MOEV-04",
+    "nombre": "Annurcatin Shampoo 300ml",
+    "marca": "MOEV",
+    "precio": 92000,
+    "categoria": "Capilar",
+    "descripcion": "Champú ligeramente ácido con infusión de cafeína y biotina para estimular los folículos pilosos y promover el crecimiento del cabello, eliminando eficazmente las impurezas del cabello y el cuero cabelludo. Ingredientes clave: ácido de coco, cafeína, extracto de manzana, ácido cítrico.",
+    "imagen": "img/skink/MOEV-04.jpg",
+    "agotado": false,
+    "nuevo": false,
+    "tipos_piel": [
+      "Capilar"
+    ]
+  },
+  {
+    "id": "MOEV-05",
+    "referencia": "MOEV-05",
+    "nombre": "Annurcatin Treatment 200g",
+    "marca": "MOEV",
+    "precio": 85000,
+    "categoria": "Capilar",
+    "descripcion": "Tratamiento nutritivo para el cabello con extracto de manzana y biotina para mejorar la elasticidad y el grosor del cabello, dejando el cabello áspero y encrespado suave y sedoso. Textura de gel hidratante sin residuos. Ingredientes clave: aceite de semilla de camelia, niacinamida, cafeína, semilla de uva, aceite de jojoba, ceramidas.",
+    "imagen": "img/skink/MOEV-05.jpg",
+    "agotado": false,
+    "nuevo": false,
+    "tipos_piel": [
+      "Capilar"
+    ]
+  },
+  {
     "id": "MOEV-06",
     "referencia": "MOEV-06",
     "nombre": "Mini Duo Shampoo 50ml & Treatment 50g",
