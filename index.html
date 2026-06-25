@@ -328,8 +328,8 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
     <div class="header-spacer"></div>
     <div class="header-stats" id="headerStats"></div>
     <div class="price-mode-toggle">
-      <button id="btnDetal" class="active" onclick="setDetal()">Detal</button>
-      <button id="btnMayorista" onclick="requestMayorista()">Mayorista <span class="lock-icon" id="lockIcon">🔒</span></button>
+      <button id="btnDetal" onclick="requestMode('detal')">Detal <span class="lock-icon" id="lockDetal">🔒</span></button>
+      <button id="btnMayorista" onclick="requestMode('mayorista')">Mayorista <span class="lock-icon" id="lockMay">🔒</span></button>
     </div>
   </div>
 </header>
@@ -411,28 +411,36 @@ let showNuevo = false;
 
 
 // ── PRICE MODE ────────────────────────────────────────────────
-const PWD = '000000';
-let priceMode = 'detal';
+const PWD_DETAL = '121212';
+const PWD_MAY   = '000000';
+let pendingMode = null;
+let priceMode = 'publico';
 let detalProducts = [];
 let mayoristasProducts = [];
 let mayoristasLoaded = false;
 
 function fmtPrice(precio) {
   if (precio === 'pendiente' || precio === undefined || precio === null) return 'Precio por definir';
+  if (typeof precio === 'string') return precio;
   return '$ ' + Number(precio).toLocaleString('es-CO');
 }
 
-function setDetal() {
-  priceMode = 'detal';
+function goPublico() {
+  priceMode   = 'publico';
   allProducts = detalProducts;
-  document.getElementById('btnDetal').classList.add('active');
+  document.getElementById('btnDetal').classList.remove('active');
   document.getElementById('btnMayorista').classList.remove('active');
-  document.getElementById('lockIcon').textContent = '🔒';
+  document.getElementById('lockDetal').textContent = '🔒';
+  document.getElementById('lockMay').textContent   = '🔒';
   render();
 }
 
-function requestMayorista() {
-  if (priceMode === 'mayorista') { setDetal(); return; }
+function requestMode(mode) {
+  if (priceMode === mode) { goPublico(); return; }
+  pendingMode = mode;
+  const isMay = mode === 'mayorista';
+  document.getElementById('pwdTitle').textContent = isMay ? 'Catálogo Mayorista' : 'Catálogo Detal';
+  document.getElementById('pwdDesc').textContent  = isMay ? 'Ingresa la contraseña para ver precios mayoristas' : 'Ingresa la contraseña para ver precios detal';
   document.getElementById('pwdInput').value = '';
   document.getElementById('pwdError').textContent = '';
   document.getElementById('pwdInput').classList.remove('error');
@@ -441,10 +449,12 @@ function requestMayorista() {
 }
 
 function checkPwd() {
-  const val = document.getElementById('pwdInput').value;
-  if (val === PWD) {
+  const val      = document.getElementById('pwdInput').value;
+  const expected = pendingMode === 'mayorista' ? PWD_MAY : PWD_DETAL;
+  if (val === expected) {
     closePwd();
-    activateMayorista();
+    if (pendingMode === 'mayorista') activateMayorista();
+    else activateDetal();
   } else {
     const input = document.getElementById('pwdInput');
     input.classList.add('error');
@@ -455,30 +465,35 @@ function checkPwd() {
   }
 }
 
+function activateDetal() {
+  priceMode   = 'detal';
+  allProducts = detalProducts;
+  document.getElementById('btnDetal').classList.add('active');
+  document.getElementById('btnMayorista').classList.remove('active');
+  document.getElementById('lockDetal').textContent = '🔓';
+  document.getElementById('lockMay').textContent   = '🔒';
+  render();
+}
+
 function activateMayorista() {
-  if (mayoristasLoaded) {
-    switchToMayorista();
-    return;
-  }
-  // First time: fetch productos_mayorista.json
+  if (mayoristasLoaded) { switchToMayorista(); return; }
   fetch('productos_mayorista.json')
     .then(r => r.json())
     .then(data => {
       mayoristasProducts = data;
-      mayoristasLoaded = true;
+      mayoristasLoaded   = true;
       switchToMayorista();
     })
-    .catch(() => {
-      alert('No se pudo cargar el catálogo mayorista.');
-    });
+    .catch(() => alert('No se pudo cargar el catálogo mayorista.'));
 }
 
 function switchToMayorista() {
-  priceMode = 'mayorista';
+  priceMode   = 'mayorista';
   allProducts = mayoristasProducts;
   document.getElementById('btnMayorista').classList.add('active');
   document.getElementById('btnDetal').classList.remove('active');
-  document.getElementById('lockIcon').textContent = '🔓';
+  document.getElementById('lockMay').textContent   = '🔓';
+  document.getElementById('lockDetal').textContent = '🔒';
   render();
 }
 
@@ -503,7 +518,7 @@ document.addEventListener('keydown', e => {
 fetch('productos.json')
   .then(r => r.json())
   .then(data => {
-    allProducts = data;
+    allProducts   = data;
     detalProducts = data;
     document.getElementById('loading').style.display = 'none';
     document.getElementById('catalogContent').style.display = 'block';
@@ -604,6 +619,7 @@ function buildPills() {
 function cardHTML(p) {
   const mainImg = p.colores ? p.colores[0] : p.imagen;
   const priceClass = p.precio==='pendiente' ? 'card-price pendiente' : 'card-price';
+  const priceHTML  = priceMode === 'publico' ? '' : '<div class="'+priceClass+'">'+fmtPrice(p.precio)+'</div>';
   let badges = '';
   if (p.agotado) badges += '<span class="badge badge-agotado">Agotado</span>';
   if (p.nuevo)   badges += '<span class="badge badge-nuevo">Nuevo</span>';
@@ -629,7 +645,7 @@ function cardHTML(p) {
     +   '<div class="card-name">'+p.nombre+'</div>'
     +   '<div class="card-ref">Ref: '+p.referencia+'</div>'
     +   '<div class="card-footer">'
-    +     '<div class="'+priceClass+'">'+fmtPrice(p.precio)+'</div>'
+    +     priceHTML
     +     '<span class="card-hint">Ver más →</span>'
     +   '</div>'
     + '</div></div>';
@@ -688,8 +704,14 @@ function openModal(idx) {
 
   // Price
   const priceEl = document.getElementById('modalPrice');
-  priceEl.textContent = fmtPrice(p.precio);
-  priceEl.className   = 'modal-price' + (p.precio==='pendiente'||p.precio===undefined ? ' pendiente' : '');
+  if (priceMode === 'publico') {
+    priceEl.textContent = '';
+    priceEl.style.display = 'none';
+  } else {
+    priceEl.style.display = '';
+    priceEl.textContent = fmtPrice(p.precio);
+    priceEl.className   = 'modal-price' + (p.precio==='pendiente'||p.precio===undefined ? ' pendiente' : '');
+  }
 
   // Open
   document.getElementById('modalOverlay').classList.add('open');
@@ -775,8 +797,8 @@ function updateStats() {
 <!-- PASSWORD MODAL -->
 <div class="pwd-overlay" id="pwdOverlay">
   <div class="pwd-modal">
-    <h3>Catálogo Mayorista</h3>
-    <p>Ingresa la contraseña para ver los precios mayoristas</p>
+    <h3 id="pwdTitle">Catálogo Detal</h3>
+    <p id="pwdDesc">Ingresa la contraseña para ver precios detal</p>
     <div class="pwd-input-wrap">
       <input type="password" id="pwdInput" maxlength="20"
              placeholder="••••••" onkeydown="if(event.key==='Enter')checkPwd()">
