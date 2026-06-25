@@ -328,6 +328,7 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
     <div class="header-spacer"></div>
     <div class="header-stats" id="headerStats"></div>
     <div class="price-mode-toggle">
+      <button id="btnCatalogo" class="active" onclick="goPublico()">Catálogo</button>
       <button id="btnDetal" onclick="requestMode('detal')">Detal <span class="lock-icon" id="lockDetal">🔒</span></button>
       <button id="btnMayorista" onclick="requestMode('mayorista')">Mayorista <span class="lock-icon" id="lockMay">🔒</span></button>
     </div>
@@ -428,6 +429,7 @@ function fmtPrice(precio) {
 function goPublico() {
   priceMode   = 'publico';
   allProducts = detalProducts;
+  document.getElementById('btnCatalogo').classList.add('active');
   document.getElementById('btnDetal').classList.remove('active');
   document.getElementById('btnMayorista').classList.remove('active');
   document.getElementById('lockDetal').textContent = '🔒';
@@ -436,7 +438,7 @@ function goPublico() {
 }
 
 function requestMode(mode) {
-  if (priceMode === mode) { goPublico(); return; }
+  if (priceMode === mode) return;
   pendingMode = mode;
   const isMay = mode === 'mayorista';
   document.getElementById('pwdTitle').textContent = isMay ? 'Catálogo Mayorista' : 'Catálogo Detal';
@@ -468,6 +470,7 @@ function checkPwd() {
 function activateDetal() {
   priceMode   = 'detal';
   allProducts = detalProducts;
+  document.getElementById('btnCatalogo').classList.remove('active');
   document.getElementById('btnDetal').classList.add('active');
   document.getElementById('btnMayorista').classList.remove('active');
   document.getElementById('lockDetal').textContent = '🔓';
@@ -490,6 +493,7 @@ function activateMayorista() {
 function switchToMayorista() {
   priceMode   = 'mayorista';
   allProducts = mayoristasProducts;
+  document.getElementById('btnCatalogo').classList.remove('active');
   document.getElementById('btnMayorista').classList.add('active');
   document.getElementById('btnDetal').classList.remove('active');
   document.getElementById('lockMay').textContent   = '🔓';
