@@ -594,8 +594,8 @@
 <div class="search-wrap">
   <div class="search-controls">
     <div class="mode-toggle">
-      <button class="mode-btn active" id="btn-detal"     onclick="setMode('detal')">Detal</button>
-      <button class="mode-btn"        id="btn-mayorista" onclick="openPwModal()">Mayorista</button>
+      <button class="mode-btn" id="btn-detal"     onclick="openPwDetaModal()">Detal</button>
+      <button class="mode-btn" id="btn-mayorista" onclick="openPwModal()">Mayorista</button>
     </div>
     <div class="search-controls-right">
       <button class="btn-solo-nuevos" id="btn-nuevos" onclick="toggleNuevos()">✦ Solo Nuevos</button>
@@ -678,7 +678,6 @@ let PRECIOS_MAY = {};
 /* ── UTILS ──────────────────────────────────── */
 function fmtPrice(p) {
   if (p === 'pendiente') return 'Consultar precio';
-  if (typeof p === 'string') return p;
   return '$' + Number(p).toLocaleString('es-CO');
 }
 function getColor(p) { return p.color_blob || '#CCCCCC'; }
@@ -771,6 +770,7 @@ function filterCat(cat) {
 
 /* ── MODO DETAL / MAYORISTA ─────────────────── */
 function getDisplayPrice(p) {
+  if (currentMode === '') return '—';
   if (currentMode === 'mayorista') {
     const _may = PRECIOS_MAY[p.referencia]; if (!_may || _may === 'pendiente') return 'Consultar'; return fmtPrice(_may);
   }
@@ -1060,7 +1060,7 @@ function buildModalInfo() {
 /* ── ESTADO GLOBAL ──────────────────────────── */
 let activeCat    = 'Todos';
 let searchQuery  = '';
-let currentMode  = 'detal';
+let currentMode  = '';
 let showAgotados = false;
 let soloNuevos   = false;
 
@@ -1095,6 +1095,7 @@ Promise.all([
 ]).then(([productos, precios]) => {
   PRECIOS_MAY = precios;
   init(productos);
+  openPwDetaModal();
 }).catch(err => {
   console.error('Error cargando datos:', err);
   document.getElementById('products-main').innerHTML =
@@ -1102,6 +1103,7 @@ Promise.all([
 });
 /* ── CONTRASEÑA MAYORISTA ───────────────────── */
 const PW_MAYORISTA = '000000';
+const PW_DETAL     = '121212';
 
 function openPwModal() {
   const overlay = document.getElementById('pw-overlay');
@@ -1131,6 +1133,35 @@ document.getElementById('pw-overlay').addEventListener('click', e => {
   if (e.target === e.currentTarget) closePwModal();
 });
 
+/* ── CONTRASEÑA DETAL ───────────────────────── */
+function openPwDetaModal() {
+  const overlay = document.getElementById('pw-overlay-detal');
+  overlay.style.display = 'flex';
+  document.getElementById('pw-detal-input').value = '';
+  document.getElementById('pw-detal-error').textContent = '';
+  setTimeout(() => document.getElementById('pw-detal-input').focus(), 80);
+}
+
+function closePwDetaModal() {
+  document.getElementById('pw-overlay-detal').style.display = 'none';
+}
+
+function submitPwDetal() {
+  const val = document.getElementById('pw-detal-input').value;
+  if (val === PW_DETAL) {
+    closePwDetaModal();
+    setMode('detal');
+  } else {
+    document.getElementById('pw-detal-error').textContent = 'Contraseña incorrecta';
+    document.getElementById('pw-detal-input').value = '';
+    document.getElementById('pw-detal-input').focus();
+  }
+}
+
+document.getElementById('pw-overlay-detal').addEventListener('click', e => {
+  if (e.target === e.currentTarget) closePwDetaModal();
+});
+
 </script>
 <!-- Modal contraseña mayorista -->
 <div id="pw-overlay" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.45); z-index:300; align-items:center; justify-content:center;">
@@ -1144,6 +1175,22 @@ document.getElementById('pw-overlay').addEventListener('click', e => {
     <div style="display:flex; gap:8px; margin-top:20px;">
       <button onclick="closePwModal()" style="flex:1; padding:10px; border:1px solid #E9E9E9; border-radius:8px; background:#fff; cursor:pointer; font-family:'Instrument Sans',sans-serif; font-size:0.82rem; color:#585856;">Cancelar</button>
       <button onclick="submitPw()" style="flex:1; padding:10px; border:none; border-radius:8px; background:#383838; color:#fff; cursor:pointer; font-family:'Instrument Sans',sans-serif; font-size:0.82rem; font-weight:500;">Ingresar</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal contraseña detal -->
+<div id="pw-overlay-detal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.45); z-index:300; align-items:center; justify-content:center;">
+  <div style="background:#fff; border-radius:14px; padding:36px 32px 28px; width:300px; text-align:center; box-shadow:0 20px 60px rgba(0,0,0,0.15);">
+    <div style="font-size:9.5px; font-weight:500; letter-spacing:2px; text-transform:uppercase; color:#585856; margin-bottom:12px;">Modo Detal</div>
+    <div style="font-size:0.88rem; color:#383838; margin-bottom:24px; line-height:1.5;">Ingresa la contraseña<br>para ver precios detal</div>
+    <input id="pw-detal-input" type="password" maxlength="6" placeholder="······"
+      style="width:100%; text-align:center; letter-spacing:10px; font-size:1.5rem; border:1px solid #E9E9E9; border-radius:8px; padding:12px 8px; outline:none; font-family:'Instrument Sans',sans-serif; background:#F7F7F7; color:#383838;"
+      onkeydown="if(event.key==='Enter')submitPwDetal()">
+    <div id="pw-detal-error" style="color:#b0392b; font-size:0.76rem; margin-top:10px; min-height:16px; font-style:italic;"></div>
+    <div style="display:flex; gap:8px; margin-top:20px;">
+      <button onclick="closePwDetaModal()" style="flex:1; padding:10px; border:1px solid #E9E9E9; border-radius:8px; background:#fff; cursor:pointer; font-family:'Instrument Sans',sans-serif; font-size:0.82rem; color:#585856;">Cancelar</button>
+      <button onclick="submitPwDetal()" style="flex:1; padding:10px; border:none; border-radius:8px; background:#383838; color:#fff; cursor:pointer; font-family:'Instrument Sans',sans-serif; font-size:0.82rem; font-weight:500;">Ingresar</button>
     </div>
   </div>
 </div>
