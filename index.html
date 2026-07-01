@@ -307,6 +307,10 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
 .empty-state { text-align: center; padding: 64px 24px; color: var(--text-light); }
 .empty-state .icon { font-size: 40px; margin-bottom: 12px; }
 
+/* ── LAZY LOAD / SCROLL INFINITO ── */
+#scroll-sentinel { height: 10px; }
+.card-img-wrap img[data-src] { background: var(--beige-light); }
+
 @media (max-width: 600px) {
   .main { padding: 14px; }
   .filters-bar { padding: 10px 14px; }
@@ -404,12 +408,23 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
 <script>
 const RUTINAS = ['Primera Limpieza','Segunda Limpieza','Tónico','Esencia','Sérum','Hidratación','Contorno de Ojos','Mascarillas','Protección Solar','Maquillaje','Labial','Capilar','Sets y Kits','Accesorios','Vitaminas','Parches','Exfoliante','Bruma'];
 
+const PAGE_SIZE   = 48;   // tarjetas por lote en scroll infinito
+const EAGER_COUNT = 12;   // primeras N imágenes cargan de inmediato (sin lazy)
+
 let allProducts = [];
 let view = 'rutina';
 let activeFilter = 'all';
 let searchText = '';
 let showNuevo = false;
 
+// Estado del scroll infinito
+let renderList   = [];
+let renderOffset = 0;
+let eagerCount   = 0;
+
+// IntersectionObservers
+let sentinelObserver = null;
+let imgObserver      = null;
 
 // ── PRICE MODE ────────────────────────────────────────────────
 const PWD_DETAL = '121212';
@@ -510,11 +525,9 @@ function togglePwdVisibility() {
   input.type = input.type === 'password' ? 'text' : 'password';
 }
 
+// Un solo listener para Escape
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') {
-    closePwd();
-    closeModal();
-  }
+  if (e.key === 'Escape') { closePwd(); closeModal(); }
 });
 
 
@@ -620,15 +633,18 @@ function buildPills() {
 }
 
 // ── CARD ───────────────────────────────────────────────────────
-function cardHTML(p) {
-  const mainImg = p.colores ? p.colores[0] : p.imagen;
+// GIF 1×1 transparente — placeholder para imágenes lazy
+const LAZY_PH = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
+
+function cardHTML(p, eager) {
+  const mainImg    = p.colores ? p.colores[0] : p.imagen;
   const priceClass = p.precio==='pendiente' ? 'card-price pendiente' : 'card-price';
   const priceHTML  = priceMode === 'publico' ? '' : '<div class="'+priceClass+'">'+fmtPrice(p.precio)+'</div>';
   let badges = '';
   if (p.agotado) badges += '<span class="badge badge-agotado">Agotado</span>';
   if (p.nuevo)   badges += '<span class="badge badge-nuevo">Nuevo</span>';
 
-  // Tiny color preview dots
+  // Tiny color preview dots (siempre eager — son miniaturas pequeñas)
   let dots = '';
   if (p.colores && p.colores.length > 1) {
     dots = '<div class="card-color-dots">'
@@ -636,11 +652,16 @@ function cardHTML(p) {
       + '</div>';
   }
 
+  // Imagen principal: eager (src directo) o lazy (data-src + GIF placeholder)
+  const imgAttr = (eager || !mainImg)
+    ? 'src="'+(mainImg||'')+'"'
+    : 'data-src="'+mainImg+'" src="'+LAZY_PH+'"';
+
   const idx = allProducts.indexOf(p);
   return '<div class="card'+(p.agotado?' agotado':'')+'" onclick="openModal('+idx+')">'
     + '<div class="card-top-badges">'+badges+'</div>'
     + '<div class="card-img-wrap">'
-    +   '<img src="'+mainImg+'" alt="'+p.referencia+'"'
+    +   '<img '+imgAttr+' alt="'+p.referencia+'"'
     +   ' onerror="this.parentElement.innerHTML=\'<div class=\\\'card-img-placeholder\\\'>'+p.referencia+'</div>\'">'
     + '</div>'
     + dots
@@ -739,54 +760,162 @@ function modalSwap(src, dot) {
   dot.classList.add('active');
 }
 
-// Close with Escape key
-document.addEventListener('keydown', e => { if (e.key==='Escape') closeModal(); });
+// ── LAZY LOADING ───────────────────────────────────────────────
+// Crea un nuevo IntersectionObserver para imágenes. Se llama cada vez que
+// render() resetea el catálogo para descartar observaciones anteriores.
+function resetLazyObserver() {
+  if (imgObserver) imgObserver.disconnect();
+  imgObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const img = entry.target;
+      const src = img.dataset.src;
+      if (src) { img.src = src; img.removeAttribute('data-src'); }
+      imgObserver.unobserve(img);
+    });
+  }, { rootMargin: '400px' });   // empieza a cargar 400px antes de entrar al viewport
+}
+
+// Añade al observer todas las imágenes lazy nuevas (sin re-observar las ya registradas)
+function observeNewImages() {
+  document.querySelectorAll('#catalogContent img[data-src]').forEach(img => {
+    imgObserver.observe(img);
+  });
+}
+
+// ── BUILD RENDER LIST ──────────────────────────────────────────
+// Genera una lista plana de {type:'header'|'card', ...} con todo el catálogo
+// filtrado. Los headers de sección se intercalan entre las tarjetas.
+function buildRenderList() {
+  const sorted = sortProducts(filterProducts());
+  const items  = [];
+
+  if (activeFilter === 'all' && !searchText && sorted.length > 0) {
+    if (view === 'rutina') {
+      RUTINAS.forEach(g => {
+        const gp = sorted.filter(p => p.categoria === g);
+        if (!gp.length) return;
+        items.push({ type: 'header', label: g, count: gp.length });
+        gp.forEach(p => items.push({ type: 'card', p }));
+      });
+    } else if (view === 'marca') {
+      const groups = [...new Set(sorted.map(p=>p.marca))].sort((a,b)=>a.localeCompare(b,'es'));
+      groups.forEach(g => {
+        const gp = sorted.filter(p => p.marca === g);
+        if (!gp.length) return;
+        items.push({ type: 'header', label: g, count: gp.length });
+        gp.forEach(p => items.push({ type: 'card', p }));
+      });
+    } else { // tipo_piel
+      const typeCount = {};
+      sorted.forEach(p => (p.tipos_piel||[]).forEach(t => { typeCount[t]=(typeCount[t]||0)+1; }));
+      const groups = Object.keys(typeCount).sort((a,b) => typeCount[b]-typeCount[a]);
+      const seen = new Set();
+      groups.forEach(g => {
+        const gp = sorted.filter(p => {
+          if (!(p.tipos_piel||[]).includes(g)) return false;
+          if (seen.has(p.referencia)) return false;
+          seen.add(p.referencia);
+          return true;
+        });
+        if (!gp.length) return;
+        items.push({ type: 'header', label: g, count: gp.length });
+        gp.forEach(p => items.push({ type: 'card', p }));
+      });
+    }
+  } else {
+    sorted.forEach(p => items.push({ type: 'card', p }));
+  }
+  return items;
+}
+
+// ── APPEND PAGE ────────────────────────────────────────────────
+// Renderiza hasta PAGE_SIZE tarjetas desde renderOffset.
+// Usa la clase .product-grid-open para rastrear el grid activo y poder
+// continuar un grupo que quedó partido entre dos lotes sin duplicar headers.
+function appendPage() {
+  const el       = document.getElementById('catalogContent');
+  const sentinel = document.getElementById('scroll-sentinel');
+  let cardsRendered = 0;
+
+  // Si el grupo anterior se partió entre páginas, reutiliza su grid abierto
+  let grid = el.querySelector('.product-grid-open');
+
+  while (renderOffset < renderList.length && cardsRendered < PAGE_SIZE) {
+    const item = renderList[renderOffset];
+
+    if (item.type === 'header') {
+      if (grid) { grid.classList.remove('product-grid-open'); grid = null; }
+      const lbl = document.createElement('div');
+      lbl.className = 'section-label';
+      lbl.innerHTML = item.label + ' <span>' + item.count + ' productos</span>';
+      el.insertBefore(lbl, sentinel);
+    } else {
+      if (!grid) {
+        grid = document.createElement('div');
+        grid.className = 'product-grid product-grid-open';
+        el.insertBefore(grid, sentinel);
+      }
+      const eager = eagerCount < EAGER_COUNT;
+      if (eager) eagerCount++;
+      const tmp = document.createElement('div');
+      tmp.innerHTML = cardHTML(item.p, eager);
+      grid.appendChild(tmp.firstChild);
+      cardsRendered++;
+    }
+    renderOffset++;
+  }
+
+  observeNewImages();
+
+  if (renderOffset >= renderList.length) {
+    if (grid) grid.classList.remove('product-grid-open');
+    if (sentinelObserver) { sentinelObserver.disconnect(); sentinelObserver = null; }
+  }
+}
 
 // ── RENDER ────────────────────────────────────────────────────
 function render() {
-  const filtered = filterProducts();
-  const sorted   = sortProducts(filtered);
   buildPills(); updateStats();
 
+  // Resetear estado de paginado
+  renderList   = buildRenderList();
+  renderOffset = 0;
+  eagerCount   = 0;
+  resetLazyObserver();
+  if (sentinelObserver) { sentinelObserver.disconnect(); sentinelObserver = null; }
+
   const el = document.getElementById('catalogContent');
-  if (!sorted.length) {
+  el.innerHTML = '';
+
+  if (!renderList.length) {
     el.innerHTML = '<div class="empty-state"><div class="icon">🔍</div><p>No se encontraron productos.</p></div>';
     return;
   }
 
-  let html = '<div class="results-count">'+sorted.length+' producto'+(sorted.length!==1?'s':'')+'</div>';
-  let groups, getGroup;
-  if (view==='rutina') {
-    groups = RUTINAS;
-    getGroup = g => sorted.filter(p=>p.categoria===g);
-  } else if (view==='marca') {
-    groups = [...new Set(sorted.map(p=>p.marca))].sort((a,b)=>a.localeCompare(b,'es'));
-    getGroup = g => sorted.filter(p=>p.marca===g);
-  } else {
-    const typeCount = {};
-    sorted.forEach(p=>(p.tipos_piel||[]).forEach(t=>{ typeCount[t]=(typeCount[t]||0)+1; }));
-    groups = Object.keys(typeCount).sort((a,b)=>typeCount[b]-typeCount[a]);
-    getGroup = g => sorted.filter(p=>(p.tipos_piel||[]).includes(g));
-  }
+  // Contador de resultados (solo tarjetas, sin headers)
+  const cardCount = renderList.filter(i => i.type === 'card').length;
+  const countDiv = document.createElement('div');
+  countDiv.className = 'results-count';
+  countDiv.textContent = cardCount + ' producto' + (cardCount !== 1 ? 's' : '');
+  el.appendChild(countDiv);
 
-  if (activeFilter==='all' && !searchText && groups.length > 0) {
-    const seen = new Set();
-    groups.forEach(g => {
-      const gp = getGroup(g).filter(p => {
-        if (view==='tipo_piel') {
-          if (seen.has(p.referencia)) return false;
-          seen.add(p.referencia);
-        }
-        return true;
-      });
-      if (!gp.length) return;
-      html += '<div class="section-label">'+g+' <span>'+gp.length+' productos</span></div>';
-      html += '<div class="product-grid">'+gp.map(cardHTML).join('')+'</div>';
-    });
-  } else {
-    html += '<div class="product-grid">'+sorted.map(cardHTML).join('')+'</div>';
+  // Centinela: elemento invisible al final del contenido rendereizado
+  // que dispara la carga del siguiente lote al entrar al viewport
+  const sentinel = document.createElement('div');
+  sentinel.id = 'scroll-sentinel';
+  el.appendChild(sentinel);
+
+  // Primera página (48 tarjetas)
+  appendPage();
+
+  // Activar observer del centinela solo si hay más productos por renderizar
+  if (renderOffset < renderList.length) {
+    sentinelObserver = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting) appendPage();
+    }, { rootMargin: '200px' });
+    sentinelObserver.observe(sentinel);
   }
-  el.innerHTML = html;
 }
 
 function updateStats() {
