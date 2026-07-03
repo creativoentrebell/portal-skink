@@ -348,7 +348,7 @@
     "categoria": "Protección Solar",
     "descripcion": "(Loción solar diaria VITA SOFT) es el aliado perfecto para proteger y cuidar tu piel sensible y propensa al acné. Este antisolar en formato de sérum ha sido especialmente desarrollado para ofrecer una defensa efectiva contra los rayos UV, mientras calma y cuida tu piel. este sérum solar es la elección ideal para las pieles más delicadas. Ingredientes claves: Niacinamida, ácido hialurónico, extracto de centella, extracto de aloe, ácido madecásico.",
     "imagen": "img/skink/TOCOBO36.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -498,7 +498,7 @@
     "categoria": "Protección Solar",
     "descripcion": "",
     "imagen": "img/skink/TOCOBO14.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Protección Solar"
@@ -513,7 +513,7 @@
     "categoria": "Protección Solar",
     "descripcion": "",
     "imagen": "img/skink/TOCOBO35.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Piel Sensible y Calmante",
@@ -560,7 +560,7 @@
     "categoria": "Hidratación",
     "descripcion": "",
     "imagen": "img/skink/TOCOBO51.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Hidratación Profunda"
@@ -1531,7 +1531,7 @@
     "categoria": "Sérum",
     "descripcion": "PDRN Hyaluronic Acid Capsule hialurónico) Suero que contiene PDRN, ácido hialurónico y colágeno para mejorar instantáneamente la hidratación y proporcionar un efecto rellenador. Los ingredientes de PDRN, derivados del ADN del salmón, ayudan a mantener una piel saludable y luminosa.",
     "imagen": "img/skink/ANUA15.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -2356,7 +2356,7 @@
     "categoria": "Mascarillas",
     "descripcion": "Mascarilla de hidrogel vitamínico con ingredientes de mezcla multivitamínica ayuda a mejorar el tono, la textura y la luminosidad de la piel. Ingredientes claves: extracto de cólageno, extracto de fruta, agua de rosas, fermento bífido. Ingredientes claves: Niacinamida, agua de piña, acido hialurónico, extracto de pera, agua de rosa.",
     "imagen": "img/skink/BIODANCE3.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Brillo y Luminosidad",
@@ -2426,7 +2426,7 @@
     "categoria": "Segunda Limpieza",
     "descripcion": "Ingredientes claves: Aceite de soja, aceite de jojoba, ácido salicílico, extracto de fruta, extracto de macadamia. Marca coreana líder en cuidado de la piel con respaldo dermatológico. Sus productos están clínicamente probados para tratar imperfecciones, reducir arrugas y mejorar la hidratación. DEEP CLEANSING OIL (Aceite limpiador) Espuma limpiadora profunda con cápsulas de exosomas, lo que permite limpiar en profundidad sin resecar. Ingredientes claves: Ácido cítrico, centella asiatica, extracto de semilla decafé, ácido salicílico.",
     "imagen": "img/skink/MEDICUBE34.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -2722,7 +2722,7 @@
     "categoria": "Protección Solar",
     "descripcion": "Con un factor de protección FPS 50+ PA++++, esta fórmula avanzada defiende la piel de los rayos UVA y UVB sin dejar residuos blancos ni sensación grasosa. Enriquecido con un 99% de PDRN, revitaliza la piel desde el interior, mejorando su firmeza, elasticidad y luminosidad natural. Ingredientes claves: Niacinamida, ácido hialuronico, Ácido esteárico, extracto de colágeno.",
     "imagen": "img/skink/MEDICUBE55.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -3765,7 +3765,7 @@
     "categoria": "Accesorios",
     "descripcion": "MASK (Mascarilla péptidos) (Mascarilla calmante) Esta funda con forma de cabeza de oso rosa es exclusiva para AGE-R Booster Pro. Puede ayudar a proteger el dispositivo de las impurezas y prevenir daños. Tamaño: 6g. Ingredientes claves: Manteca de Karité, ácido esteárico, aceite de semilla de camelia.",
     "imagen": "img/skink/MEDICUBE53.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": []
   },
@@ -3879,7 +3879,7 @@
     "categoria": "Parches",
     "descripcion": "",
     "imagen": "img/skink/MEDICUBE85.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Acné",
@@ -4418,7 +4418,7 @@
     "categoria": "Tónico",
     "descripcion": "Limpiador facial espumoso diseñado para ofrecer una limpieza profunda y suave a la vez. Formulado con extracto de centella asiática, este limpiador elimina la suciedad, el exceso de sebo y las impurezas diarias sin resecar la piel.",
     "imagen": "img/skink/SKIN1004-14.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Manchas e Hiperpigmentación",
@@ -4435,7 +4435,7 @@
     "categoria": "Tónico",
     "descripcion": "(Mixta +15) Madagascar Centella Poremizing Deep Cleansing Foam (espuma limpiadora) Serum formulado con extracto de centella asiática, es perfecto para calmar, hidratar y aliviar los daños en la piel, incluyendo manchas oscuras, hiperpigmentación y enrojecimiento. Cema ligera, con textura en gel, elaborada para proporcionar una sensación refrescante y una hidratación profunda a la piel, dejándola suave y con un radiante acabado húmedo. Ingredientes claves: extracto de centella, extracto de hoja de aloe, pantenol, ácido hialurónico.",
     "imagen": "img/skink/SKIN1004-6.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -4507,7 +4507,7 @@
     "categoria": "Sets y Kits",
     "descripcion": "(Ideal grasa) Madagascar Centella Poremizing Velvet Finish Sunscreen (Protector solar) Ingredientes claves: Niacinamida, extracto de centella asíatica, extracto de semillas, sal marina, glicerina. (Poremizing) Control poros y Este kit de viaje para poros con centella de Madagascar contiene: Espuma limpiadora tamaño mini, 20 ml Tónico facial transparente 30 ml. Ampolla mini refrescante para poros con Centella de Madagascar, 30 ml Crema en gel ligera tamaño mini 30 ml. Ingredientes claves: extracto de centella, extracto de hoja de aloe, pantenol, ácido hialurónico, extracto de cúrcuma.",
     "imagen": "img/skink/SKIN1004-84.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Brillo y Luminosidad",
@@ -4622,7 +4622,7 @@
     "categoria": "Sérum",
     "descripcion": "Serum facial hidratante y calmante enriquecida con un 92% de extracto de centella asiática y ácido hialurónico. Esta fórmula única ayuda a hidratar profundamente la piel, calmar la irritación y fortalecer la barrera cutánea, dejándola suave, tersa y radiante. Ingredientes claves: Extracto de centella, niacinamida, ácido hialuronico.",
     "imagen": "img/skink/SKIN1004-9.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -4695,7 +4695,7 @@
     "categoria": "Tónico",
     "descripcion": "Equipada con SPF 50+ PA++++, esta barra solar química aprovecha los poderes humectantes del extracto de cica y el ácido hialurónico para mantener altos los niveles de hidratación de la piel y al mismo tiempo brindar protección solar de amplio espectro. Ingredientes claves: Extracto de flor, extracto de fruta, ácido hialurónico. Ingredientes claves: Extracto de centella, extracto de hoja de alba, ácido hialurónico.",
     "imagen": "img/skink/SKIN1004-38.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -4731,7 +4731,7 @@
     "categoria": "Tónico",
     "descripcion": "Ingredientes claves: Extracto de centella asiática, complejo de ácido hialurónico, ceramida",
     "imagen": "img/skink/SKIN1004-49.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -5123,7 +5123,7 @@
     "categoria": "Sérum",
     "descripcion": "Crema de reparación intensiva, que contiene Centella asiatica fermentada de Madagascar y ceramidas, ayuda a estimular el poder natural de la piel para reparar la barrera cutánea dañada. Ingredientes claves: Extracto de centella, ceramida, macadamia. SKIN 1004 (Probio-Cica) Previene daños y protege Una ampolla solar de vanguardia que combina una protección superior con una nutrición intensiva para tu piel, con un potente SPF 50 PA+, este innovador protector solar no solo defiende tu piel de los daños UV, sino que tambien rejuvenece gracias a su formula enriquecida con centella asiática fermentada probióticos y cica-ceramidas.",
     "imagen": "img/skink/SKIN1004-12.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -5391,7 +5391,7 @@
     "categoria": "Primera Limpieza",
     "descripcion": "Un aceite limpiador vegano proporciona una limpieza suave y profunda del maquillaje, las impurezas de la piel y los contaminantes externos como el polvo fino. La textura ligera proporciona una limpieza sin dejar sensación grasosa ni pegajosa. Ingredientes claves: Semilla de cartamo, agua de romero, aceite de naranja, extracto de curcuma, semilla de jojoba ceramida. Gentle Pore Cleansing Oil (Aceite limpiador suave de poros)",
     "imagen": "img/skink/DR-ALTHEA8.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -6459,7 +6459,7 @@
     "categoria": "Contorno de Ojos",
     "descripcion": "",
     "imagen": "img/skink/VT-COS23.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Contorno de Ojos"
@@ -7132,7 +7132,7 @@
     "categoria": "Sérum",
     "descripcion": "",
     "imagen": "img/skink/AREN-07.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Anti-edad"
@@ -7147,7 +7147,7 @@
     "categoria": "Sérum",
     "descripcion": "",
     "imagen": "img/skink/AREN-08.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Manchas e Hiperpigmentación"
@@ -7627,7 +7627,7 @@
     "categoria": "Sérum",
     "descripcion": "",
     "imagen": "img/skink/SUNGBOON-01.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Anti-edad",
@@ -7643,7 +7643,7 @@
     "categoria": "Sérum",
     "descripcion": "",
     "imagen": "img/skink/PURI-03.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Piel Sensible y Calmante"
@@ -7654,7 +7654,7 @@
     "referencia": "PURI-05",
     "nombre": "Wonder Releaf Centella Eye Cream Unscented Muestra",
     "marca": "PURITO SEOUL",
-    "precio": "Muestra",
+    "precio": 2000,
     "categoria": "Contorno de Ojos",
     "descripcion": "",
     "imagen": "img/skink/PURI-05.jpg",
