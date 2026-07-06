@@ -569,7 +569,7 @@
   {
     "id": "TOCOBO55",
     "referencia": "TOCOBO55",
-    "nombre": "Vita Tone Up Sun Cream Deluxe SPF50+ PA++++ 10ml",
+    "nombre": "Bio Watery Sun Cream Deluxe SPF50+ PA++++ 10ml",
     "marca": "TOCOBO",
     "precio": 18000,
     "categoria": "Protección Solar",
@@ -600,7 +600,7 @@
   {
     "id": "TOCOBO62",
     "referencia": "TOCOBO62",
-    "nombre": "Mini Sun Cushion Keyring",
+    "nombre": "Double Cleanser Mini Duo (15ml + 20ml)",
     "marca": "TOCOBO",
     "precio": 35000,
     "categoria": "Maquillaje",
@@ -1787,7 +1787,7 @@
   {
     "id": "ANUA23",
     "referencia": "ANUA23",
-    "nombre": "Vitamin C Blemish Serum Mask 35g",
+    "nombre": "Vitamin C Blemish Serum Mask 25ml",
     "marca": "ANUA",
     "precio": 18900,
     "categoria": "Mascarillas",
@@ -4095,7 +4095,7 @@
   {
     "id": "SKIN1004-13",
     "referencia": "SKIN1004-13",
-    "nombre": "Madagascar Centella Hyalu-Cica Cleansing Foam 150ml",
+    "nombre": "Madagascar Centella Tea-Trica Purifying Toner 210ml",
     "marca": "SKIN 1004",
     "precio": 82900,
     "categoria": "Segunda Limpieza",
@@ -4129,7 +4129,7 @@
   {
     "id": "SKIN1004-66",
     "referencia": "SKIN1004-66",
-    "nombre": "Madagascar Centella Probio-Cica Soothing Toner 210ml",
+    "nombre": "Madagascar Centella Tea-Trica Relief Ampoule 30ml",
     "marca": "SKIN 1004",
     "precio": 35900,
     "categoria": "Tónico",
@@ -4147,7 +4147,7 @@
   {
     "id": "SKIN1004-44",
     "referencia": "SKIN1004-44",
-    "nombre": "Madagascar Centella Ampoule 100ml",
+    "nombre": "Madagascar Centella Tea-Trica B5 Cream 75ml",
     "marca": "SKIN 1004",
     "precio": 59000,
     "categoria": "Sérum",
@@ -4165,7 +4165,7 @@
   {
     "id": "SKIN1004-36",
     "referencia": "SKIN1004-36",
-    "nombre": "Madagascar Centella Hyalu-Cica Serum 30ml",
+    "nombre": "Madagascar Centella Tea-Trica Soothing Sun Milk 50ml",
     "marca": "SKIN 1004",
     "precio": 75000,
     "categoria": "Sérum",
@@ -4183,7 +4183,7 @@
   {
     "id": "SKIN1004-34",
     "referencia": "SKIN1004-34",
-    "nombre": "Madagascar Centella Hyalu-Cica Watery Sun Gel SPF50+ 50ml",
+    "nombre": "Madagascar Centella Tea-Trica Spot Cream 20ml",
     "marca": "SKIN 1004",
     "precio": 54900,
     "categoria": "Protección Solar",
@@ -4220,7 +4220,7 @@
   {
     "id": "SKIN1004-74",
     "referencia": "SKIN1004-74",
-    "nombre": "Madagascar Centella Teca Cream 50ml",
+    "nombre": "Madagascar Centella Tea-Trica Mild Peeling Gel 125ml",
     "marca": "SKIN 1004",
     "precio": 62900,
     "categoria": "Hidratación",
@@ -4256,7 +4256,7 @@
   {
     "id": "SKIN1004-20",
     "referencia": "SKIN1004-20",
-    "nombre": "Madagascar Centella Probio-Cica Bakuchiol Eye Cream 20ml",
+    "nombre": "Madagascar Centella Tone Brightening Boosting Toner 210ml",
     "marca": "SKIN 1004",
     "precio": 79900,
     "categoria": "Contorno de Ojos",
@@ -4294,7 +4294,7 @@
   {
     "id": "SKIN1004-42",
     "referencia": "SKIN1004-42",
-    "nombre": "Madagascar Centella Hyalu-Cica Skin Booster 210ml",
+    "nombre": "Madagascar Centella Tone Brightening Capsule Cream 75ml",
     "marca": "SKIN 1004",
     "precio": 68900,
     "categoria": "Tónico",
@@ -4345,7 +4345,7 @@
   {
     "id": "SKIN1004-37",
     "referencia": "SKIN1004-37",
-    "nombre": "Madagascar Centella Spot Solution 22ml",
+    "nombre": "Madagascar Centella Tone Brightening Tone-Up Sunscreen 50ml",
     "marca": "SKIN 1004",
     "precio": 78000,
     "categoria": "Sérum",
@@ -4396,7 +4396,7 @@
   {
     "id": "SKIN1004-40",
     "referencia": "SKIN1004-40",
-    "nombre": "Madagascar Centella Calming Active Cream 75ml",
+    "nombre": "Madagascar Centella Poremizing Clear Toner 210ml",
     "marca": "SKIN 1004",
     "precio": 79900,
     "categoria": "Hidratación",
@@ -4482,7 +4482,7 @@
   {
     "id": "SKIN1004-75",
     "referencia": "SKIN1004-75",
-    "nombre": "Madagascar Centella Calming Active Gel Cream 75ml",
+    "nombre": "Madagascar Centella Poremizing Velvet Finish Sunscreen 50ml",
     "marca": "SKIN 1004",
     "precio": 65000,
     "categoria": "Hidratación",
@@ -4583,7 +4583,7 @@
   {
     "id": "SKIN1004-70",
     "referencia": "SKIN1004-70",
-    "nombre": "Madagascar Centella Probio-Cica Bakuchiol Serum 30ml",
+    "nombre": "Madagascar Centella Hyalu-Cica Gentle Cleansing Milk 200ml",
     "marca": "SKIN 1004",
     "precio": 71000,
     "categoria": "Sérum",
@@ -4599,7 +4599,7 @@
   {
     "id": "SKIN1004-23",
     "referencia": "SKIN1004-23",
-    "nombre": "Madagascar Centella Air Fit Soothing Gel Miniature 30ml",
+    "nombre": "Madagascar Centella Hyalu-Cica Brightening Toner 210ml",
     "marca": "SKIN 1004",
     "precio": 79900,
     "categoria": "Sérum",
@@ -4634,7 +4634,7 @@
   {
     "id": "SKIN1004-19",
     "referencia": "SKIN1004-19",
-    "nombre": "Madagascar Centella Tone-Bridging Ampoule 55ml",
+    "nombre": "Madagascar Centella Hyalu-Cica Blue Serum 30ml",
     "marca": "SKIN 1004",
     "precio": 42000,
     "categoria": "Sérum",
@@ -4654,7 +4654,7 @@
   {
     "id": "SKIN1004-62",
     "referencia": "SKIN1004-62",
-    "nombre": "Madagascar Centella Probio-Cica Bakuchiol Toner 210ml",
+    "nombre": "Madagascar Centella Hyalu-Cica Moisture Cream 75ml",
     "marca": "SKIN 1004",
     "precio": 70900,
     "categoria": "Tónico",
@@ -4778,7 +4778,7 @@
   {
     "id": "SKIN1004-25",
     "referencia": "SKIN1004-25",
-    "nombre": "Madagascar Centella Aqua Soothing Sun Cream SPF50+ 50ml",
+    "nombre": "Madagascar Centella Toning Toner 210ml",
     "marca": "SKIN 1004",
     "precio": 79900,
     "categoria": "Protección Solar",
@@ -4895,7 +4895,7 @@
   {
     "id": "SKIN1004-35",
     "referencia": "SKIN1004-35",
-    "nombre": "Madagascar Centella Teca Soothing Toner 210ml",
+    "nombre": "Madagascar Centella Air-Fit Suncream Light SPF30 PA++++ 50ml",
     "marca": "SKIN 1004",
     "precio": 72000,
     "categoria": "Tónico",
@@ -4929,7 +4929,7 @@
   {
     "id": "SKIN1004-59",
     "referencia": "SKIN1004-59",
-    "nombre": "Madagascar Centella Probio-Cica Cleansing Foam 200ml",
+    "nombre": "Madagascar Centella Soothing Cream 75ml",
     "marca": "SKIN 1004",
     "precio": 74900,
     "categoria": "Segunda Limpieza",
@@ -4982,7 +4982,7 @@
   {
     "id": "SKIN1004-50",
     "referencia": "SKIN1004-50",
-    "nombre": "Madagascar Centella Probio-Cica Bakuchiol Cream 75ml",
+    "nombre": "Madagascar Centella Air-Fit Suncream Plus 50ml",
     "marca": "SKIN 1004",
     "precio": 72000,
     "categoria": "Hidratación",
@@ -4998,7 +4998,7 @@
   {
     "id": "SKIN1004-57",
     "referencia": "SKIN1004-57",
-    "nombre": "Madagascar Centella Hyalu-Cica Watery Sun Gel SPF50+ Mini 15ml",
+    "nombre": "Madagascar Centella Double Cleansing Duo (aceite + espuma limpiadora)",
     "marca": "SKIN 1004",
     "precio": 125900,
     "categoria": "Protección Solar",
@@ -5046,26 +5046,9 @@
     ]
   },
   {
-    "id": "SKIN1004-72",
-    "referencia": "SKIN1004-72",
-    "nombre": "Madagascar Centella Hyalu-Cica Travel Kit",
-    "marca": "SKIN 1004",
-    "precio": 105000,
-    "categoria": "Sets y Kits",
-    "descripcion": "Todo tipo de piel (+15) (Contorno de ojos) Ingredientes claves: Extracto de centella asiatica, extracto de macadamia, pantenol. Contorno de ojos (Probio-Cica) Previene daños y Todo tipo de piel (+15) (Contorno de ojos) Caja contorno de ojos por dos unidades, formulado con centella fermentada vegana, que no solo calma la piel y fortalece la barrera cutánea, sino que también ofrece una solución completa para los signos tempranos de envejecimiento alrededor de los ojos y la. Ingredientes claves: Extracto de centella fermentada, ceramidas, pantenol.",
-    "imagen": "img/skink/SKIN1004-72.webp",
-    "agotado": true,
-    "nuevo": false,
-    "tipos_piel": [
-      "Contorno de Ojos",
-      "Hidratación Profunda",
-      "Piel Sensible y Calmante"
-    ]
-  },
-  {
     "id": "SKIN1004-63",
     "referencia": "SKIN1004-63",
-    "nombre": "Madagascar Centella Probio-Cica Calming Serum 55ml",
+    "nombre": "Madagascar Centella Probio-Cica Intensive Ampoule 30ml",
     "marca": "SKIN 1004",
     "precio": 40900,
     "categoria": "Sérum",
@@ -5082,7 +5065,7 @@
   {
     "id": "SKIN1004-27",
     "referencia": "SKIN1004-27",
-    "nombre": "Madagascar Centella Hyalu-Cica Skin Booster 75ml",
+    "nombre": "Madagascar Centella Probio-Cica Essence Toner 210ml",
     "marca": "SKIN 1004",
     "precio": 79900,
     "categoria": "Tónico",
@@ -5099,7 +5082,7 @@
   {
     "id": "SKIN1004-41",
     "referencia": "SKIN1004-41",
-    "nombre": "Madagascar Centella Calming Active Toner 210ml (alt)",
+    "nombre": "Madagascar Centella Probio-Cica Intensive Ampoule 95ml",
     "marca": "SKIN 1004",
     "precio": 104900,
     "categoria": "Tónico",
@@ -5136,7 +5119,7 @@
   {
     "id": "SKIN1004-30",
     "referencia": "SKIN1004-30",
-    "nombre": "Madagascar Centella Cotton Soft Sun Stick SPF50+",
+    "nombre": "Madagascar Centella Probio-Cica Glow Sun Ampoule 50ml",
     "marca": "SKIN 1004",
     "precio": 81000,
     "categoria": "Protección Solar",
@@ -5155,7 +5138,7 @@
   {
     "id": "SKIN1004-82",
     "referencia": "SKIN1004-82",
-    "nombre": "Madagascar Centella Amposcure Ampoule 50ml",
+    "nombre": "Madagascar Centella Teca Cream 75ml",
     "marca": "SKIN 1004",
     "precio": 59000,
     "categoria": "Sérum",
@@ -5171,7 +5154,7 @@
   {
     "id": "SKIN1004-81",
     "referencia": "SKIN1004-81",
-    "nombre": "Madagascar Centella Teca Soothing Toner (Probio-Cica) 210ml",
+    "nombre": "Madagascar Centella Teca Soothing Toner 210ml",
     "marca": "SKIN 1004",
     "precio": 82900,
     "categoria": "Tónico",
@@ -5700,7 +5683,7 @@
   {
     "id": "DR-ALTHEA18",
     "referencia": "DR-ALTHEA18",
-    "nombre": "Melaclear Cream 50ml",
+    "nombre": "Melaclear Cream 20g",
     "marca": "DR-ALTHEA",
     "precio": 75000,
     "categoria": "Hidratación",
@@ -5807,7 +5790,7 @@
   {
     "id": "ROUND-LAB4",
     "referencia": "ROUND-LAB4",
-    "nombre": "Birch Juice Moisturizing Serum 30ml",
+    "nombre": "Birch Juice Moisturizing Serum 50ml",
     "marca": "ROUND-LAB",
     "precio": 91000,
     "categoria": "Sérum",
@@ -6086,7 +6069,7 @@
   {
     "id": "VT-COS3",
     "referencia": "VT-COS3",
-    "nombre": "Reti-A Reedle Shot 50ml",
+    "nombre": "Reedle Shot 700 50ml",
     "marca": "VT COSMETICS",
     "precio": 145000,
     "categoria": "Sérum",
@@ -6359,7 +6342,7 @@
   {
     "id": "VT-COS17",
     "referencia": "VT-COS17",
-    "nombre": "Reedle Shot 300 (nueva fórmula) 50ml",
+    "nombre": "Reti-A Reedle Shot 100",
     "marca": "VT COSMETICS",
     "precio": 135000,
     "categoria": "Sérum",
@@ -6376,7 +6359,7 @@
   {
     "id": "VT-COS18",
     "referencia": "VT-COS18",
-    "nombre": "Reedle Shot 700 50ml",
+    "nombre": "Shining Holiday Set",
     "marca": "VT COSMETICS",
     "precio": 280000,
     "categoria": "Sérum",
@@ -6396,7 +6379,7 @@
   {
     "id": "VT-COS16",
     "referencia": "VT-COS16",
-    "nombre": "Reedle Shot Pro 50ml",
+    "nombre": "PDRN Reedle Shot 100",
     "marca": "VT COSMETICS",
     "precio": 140000,
     "categoria": "Sérum",
