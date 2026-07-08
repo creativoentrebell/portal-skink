@@ -515,7 +515,7 @@ function activateDetal() {
 
 function activateMayorista() {
   if (mayoristasLoaded) { switchToMayorista(); return; }
-  fetch('productos_mayorista.json')
+  fetch('skink_productos_mayorista.json')
     .then(r => r.json())
     .then(data => {
       mayoristasProducts = data;
@@ -552,7 +552,7 @@ document.addEventListener('keydown', e => {
 
 
 // ── LOAD ───────────────────────────────────────────────────────
-fetch('productos.json')
+fetch('skink_productos.json')
   .then(r => r.json())
   .then(data => {
     allProducts   = data;
@@ -562,7 +562,7 @@ fetch('productos.json')
     updateStats(); render();
   })
   .catch(() => {
-    document.getElementById('loading').innerHTML = '<p style="color:#c0392b">Error cargando productos.json.</p>';
+    document.getElementById('loading').innerHTML = '<p style="color:#c0392b">Error cargando skink_productos.json.</p>';
   });
 
 // ── FILTERS ────────────────────────────────────────────────────
