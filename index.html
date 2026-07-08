@@ -65,6 +65,21 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
 .pill:hover { border-color: var(--taupe); color: var(--taupe-dark); }
 .pill.active { background: var(--taupe); border-color: var(--taupe); color: var(--white); }
 
+/* ── BOTÓN FILTROS COLAPSABLES (solo móvil) ── */
+.filters-toggle-btn { display: none; align-items: center; gap: 6px; padding: 6px 12px; border: 1.5px solid var(--beige-mid); border-radius: 8px; background: var(--white); font-size: 12px; font-family: inherit; color: var(--text-mid); cursor: pointer; font-weight: 500; white-space: nowrap; flex-shrink: 0; transition: all 0.18s; }
+.filters-toggle-btn .chev { font-size: 9px; transition: transform 0.2s; }
+.filters-bar.filters-open .filters-toggle-btn { background: var(--taupe); border-color: var(--taupe); color: var(--white); }
+.filters-bar.filters-open .filters-toggle-btn .chev { transform: rotate(180deg); }
+.filters-extra { display: contents; }
+
+@media (max-width: 600px) {
+  .filters-toggle-btn { display: flex; }
+  .filters-extra { display: none; }
+  .pills-row { display: none; }
+  .filters-bar.filters-open .filters-extra { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; width: 100%; }
+  .filters-bar.filters-open .pills-row { display: flex; }
+}
+
 /* ── MAIN ── */
 .main { max-width: 1400px; margin: 0 auto; padding: 24px; }
 .results-count { font-size: 12px; color: var(--text-light); padding-bottom: 14px; }
@@ -353,21 +368,26 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
         <span class="search-icon" id="searchIcon">🔍</span>
         <button class="search-clear" id="searchClear" onclick="clearSearch()">✕</button>
       </div>
-      <label class="toggle-label">
-        <input type="checkbox" id="toggleAgotados" onchange="render()">
-        <div class="toggle-switch"></div>
-        Mostrar agotados
-      </label>
-      <button class="nuevo-btn" id="nuevoBtn" onclick="toggleNuevo()">
-        <span class="dot"></span> Solo nuevos
+      <button class="filters-toggle-btn" id="filtersToggleBtn" onclick="toggleFilters()">
+        Filtros <span class="chev">▼</span>
       </button>
-      <select class="sort-select" id="sortSelect" onchange="render()">
-        <option value="default">Ordenar por defecto</option>
-        <option value="price-asc">Precio: menor a mayor</option>
-        <option value="price-desc">Precio: mayor a menor</option>
-        <option value="name-asc">Nombre A→Z</option>
-        <option value="brand-asc">Marca A→Z</option>
-      </select>
+      <div class="filters-extra">
+        <label class="toggle-label">
+          <input type="checkbox" id="toggleAgotados" onchange="render()">
+          <div class="toggle-switch"></div>
+          Mostrar agotados
+        </label>
+        <button class="nuevo-btn" id="nuevoBtn" onclick="toggleNuevo()">
+          <span class="dot"></span> Solo nuevos
+        </button>
+        <select class="sort-select" id="sortSelect" onchange="render()">
+          <option value="default">Ordenar por defecto</option>
+          <option value="price-asc">Precio: menor a mayor</option>
+          <option value="price-desc">Precio: mayor a menor</option>
+          <option value="name-asc">Nombre A→Z</option>
+          <option value="brand-asc">Marca A→Z</option>
+        </select>
+      </div>
     </div>
     <div class="pills-row" id="pillsRow"></div>
   </div>
@@ -560,6 +580,16 @@ function onSearch(val) {
   render();
 }
 function clearSearch() { document.getElementById('searchInput').value=''; onSearch(''); }
+
+// ── FILTROS COLAPSABLES (móvil) ────────────────────────────────
+function toggleFilters() {
+  document.querySelector('.filters-bar').classList.toggle('filters-open');
+}
+function collapseFiltersMobile() {
+  if (window.innerWidth <= 600) {
+    document.querySelector('.filters-bar').classList.remove('filters-open');
+  }
+}
 function toggleNuevo() {
   showNuevo = !showNuevo;
   document.getElementById('nuevoBtn').classList.toggle('active', showNuevo);
@@ -627,7 +657,7 @@ function buildPills() {
     const b = document.createElement('button');
     b.className = 'pill'+(activeFilter===val?' active':'');
     b.textContent = lbl;
-    b.onclick = ()=>{ activeFilter=val; render(); };
+    b.onclick = ()=>{ activeFilter=val; render(); collapseFiltersMobile(); };
     row.appendChild(b);
   });
 }
