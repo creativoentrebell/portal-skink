@@ -179,13 +179,83 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
 .modal-price { font-size: 24px; font-weight: 600; color: var(--taupe-dark); }
 .modal-price.pendiente { font-size: 14px; font-weight: 400; color: var(--text-light); font-style: italic; }
 
+/* ── CARRUSEL FOTO / FICHA TÉCNICA EN MODAL ── */
+.modal-arrow {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  width: 34px; height: 34px; border-radius: 50%;
+  background: var(--white); border: 1px solid var(--beige-mid);
+  color: var(--taupe-dark); font-size: 16px; line-height: 1;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  box-shadow: var(--shadow); z-index: 5;
+  transition: background 0.15s, transform 0.15s;
+}
+.modal-arrow:hover { background: var(--beige); transform: translateY(-50%) scale(1.08); }
+.modal-arrow.prev { left: 10px; }
+.modal-arrow.next { right: 10px; }
+
+.modal-slide-tabs {
+  display: flex; gap: 6px; justify-content: center;
+  padding: 8px 12px; background: rgba(255,255,255,0.85); width: 100%;
+}
+.modal-slide-tab {
+  font-size: 10px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+  padding: 5px 12px; border-radius: 20px; cursor: pointer;
+  color: var(--taupe); background: transparent; border: 1px solid var(--beige-mid);
+  transition: all 0.15s;
+}
+.modal-slide-tab.active { background: var(--taupe-dark); color: var(--white); border-color: var(--taupe-dark); }
+.modal-slide-tab:hover:not(.active) { background: var(--beige); }
+
+.modal-img-side img.is-ficha { cursor: zoom-in; padding: 10px; }
+.ficha-zoom-hint {
+  position: absolute; bottom: 44px; left: 50%; transform: translateX(-50%);
+  font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;
+  background: rgba(30,20,15,0.65); color: #fff;
+  padding: 4px 12px; border-radius: 20px; pointer-events: none;
+  white-space: nowrap;
+}
+
+/* ── LIGHTBOX FICHA TÉCNICA (pantalla completa, scroll vertical) ── */
+.ficha-overlay {
+  position: fixed; inset: 0;
+  background: rgba(20,14,10,0.92);
+  z-index: 400;
+  display: none;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 48px 12px 32px;
+}
+.ficha-overlay.open { display: block; }
+.ficha-overlay img {
+  display: block;
+  width: 100%;
+  max-width: 620px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: #fff;
+}
+.ficha-close {
+  position: fixed; top: 14px; right: 14px;
+  background: var(--white); border: none; border-radius: 50%;
+  width: 38px; height: 38px; font-size: 19px; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text-mid); box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  z-index: 401;
+}
+.ficha-close:hover { background: var(--beige); }
+
 /* Modal responsive — mobile */
 @media (max-width: 600px) {
   .modal { flex-direction: column; max-height: 92vh; border-radius: 16px 16px 0 0; align-self: flex-end; }
   .modal-overlay { align-items: flex-end; padding: 0; }
   .modal-img-side { width: 100%; height: 220px; }
+  .modal-img-side.showing-ficha { height: 340px; }
   .modal-info { padding: 20px 20px 28px; }
   .modal-nombre { font-size: 17px; }
+  .modal-arrow { width: 30px; height: 30px; font-size: 14px; }
+  .ficha-overlay { padding: 56px 0 24px; }
+  .ficha-overlay img { border-radius: 0; }
 }
 
 
@@ -405,7 +475,11 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
     <button class="modal-close" onclick="closeModal()" title="Cerrar">✕</button>
 
     <div class="modal-img-side" id="modalImgSide">
+      <button class="modal-arrow prev" id="modalArrowPrev" style="display:none" onclick="modalPrevSlide(event)" title="Anterior">‹</button>
       <img id="modalImg" src="" alt="">
+      <button class="modal-arrow next" id="modalArrowNext" style="display:none" onclick="modalNextSlide(event)" title="Siguiente">›</button>
+      <div class="ficha-zoom-hint" id="fichaZoomHint" style="display:none">Toca para ampliar</div>
+      <div class="modal-slide-tabs" id="modalSlideTabs" style="display:none"></div>
       <div class="modal-dots" id="modalDots" style="display:none"></div>
     </div>
 
@@ -423,6 +497,12 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
       </div>
     </div>
   </div>
+</div>
+
+<!-- LIGHTBOX FICHA TÉCNICA -->
+<div class="ficha-overlay" id="fichaOverlay" onclick="closeFicha(event)">
+  <button class="ficha-close" onclick="closeFicha()" title="Cerrar">✕</button>
+  <img id="fichaFullImg" src="" alt="Ficha técnica">
 </div>
 
 <script>
@@ -547,7 +627,11 @@ function togglePwdVisibility() {
 
 // Un solo listener para Escape
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') { closePwd(); closeModal(); }
+  if (e.key === 'Escape') {
+    const fichaOv = document.getElementById('fichaOverlay');
+    if (fichaOv && fichaOv.classList.contains('open')) { closeFicha(); return; }
+    closePwd(); closeModal();
+  }
 });
 
 
@@ -708,19 +792,45 @@ function cardHTML(p, eager) {
 
 // ── MODAL ──────────────────────────────────────────────────────
 let currentProduct = null;
+let modalSlide = 0;        // 0 = foto producto · 1 = ficha técnica
+let modalColorSrc = null;  // foto activa cuando hay variantes de color
 
 function openModal(idx) {
   const p = allProducts[idx];
   currentProduct = p;
-  const mainImg = p.colores ? p.colores[0] : p.imagen;
+  modalSlide = 0;
+  modalColorSrc = p.colores ? p.colores[0] : p.imagen;
 
-  // Image
+  // Image (slide inicial: foto del producto)
   const modalImg = document.getElementById('modalImg');
-  modalImg.src = mainImg;
+  modalImg.classList.remove('is-ficha');
+  modalImg.onclick = null;
+  modalImg.src = modalColorSrc;
   modalImg.alt = p.nombre;
   modalImg.onerror = function() {
     this.parentElement.innerHTML = '<div class="modal-img-placeholder">'+p.referencia+'</div>';
   };
+
+  // Carrusel foto / ficha técnica
+  const hasFicha = !!(p.ficha && p.ficha.trim && p.ficha.trim());
+  const arrowPrev = document.getElementById('modalArrowPrev');
+  const arrowNext = document.getElementById('modalArrowNext');
+  const tabsEl    = document.getElementById('modalSlideTabs');
+  document.getElementById('fichaZoomHint').style.display = 'none';
+  document.getElementById('modalImgSide').classList.remove('showing-ficha');
+  if (hasFicha) {
+    arrowPrev.style.display = 'flex';
+    arrowNext.style.display = 'flex';
+    tabsEl.style.display = 'flex';
+    tabsEl.innerHTML =
+      '<div class="modal-slide-tab active" onclick="modalGoSlide(0)">Foto</div>'
+      + '<div class="modal-slide-tab" onclick="modalGoSlide(1)">Ficha técnica</div>';
+  } else {
+    arrowPrev.style.display = 'none';
+    arrowNext.style.display = 'none';
+    tabsEl.style.display = 'none';
+    tabsEl.innerHTML = '';
+  }
 
   // Color dots
   const dotsEl = document.getElementById('modalDots');
@@ -784,10 +894,59 @@ function closeModalIfOutside(e) {
 }
 
 function modalSwap(src, dot) {
+  modalColorSrc = src;
+  if (modalSlide !== 0) modalGoSlide(0);   // al elegir un color, volver a la foto
   const img = document.getElementById('modalImg');
   if (img) img.src = src;
   document.getElementById('modalDots').querySelectorAll('.modal-dot').forEach(d=>d.classList.remove('active'));
   dot.classList.add('active');
+}
+
+// ── CARRUSEL FOTO / FICHA TÉCNICA ──────────────────────────────
+function modalGoSlide(n) {
+  if (!currentProduct) return;
+  const p = currentProduct;
+  const hasFicha = !!(p.ficha && p.ficha.trim && p.ficha.trim());
+  if (n === 1 && !hasFicha) return;
+  modalSlide = n;
+
+  const img     = document.getElementById('modalImg');
+  const dotsEl  = document.getElementById('modalDots');
+  const hint    = document.getElementById('fichaZoomHint');
+  const imgSide = document.getElementById('modalImgSide');
+  const tabs    = document.getElementById('modalSlideTabs').querySelectorAll('.modal-slide-tab');
+  tabs.forEach((t,i)=>t.classList.toggle('active', i===n));
+
+  if (n === 1) {
+    img.classList.add('is-ficha');
+    img.src = p.ficha;
+    img.alt = 'Ficha técnica ' + p.referencia;
+    img.onclick = function(){ openFicha(p.ficha); };
+    img.onerror = function(){ this.onerror=null; modalGoSlide(0); };
+    hint.style.display = 'block';
+    imgSide.classList.add('showing-ficha');
+    if (p.colores && p.colores.length > 1) dotsEl.style.display = 'none';
+  } else {
+    img.classList.remove('is-ficha');
+    img.src = modalColorSrc || p.imagen;
+    img.alt = p.nombre;
+    img.onclick = null;
+    hint.style.display = 'none';
+    imgSide.classList.remove('showing-ficha');
+    if (p.colores && p.colores.length > 1) dotsEl.style.display = 'flex';
+  }
+}
+function modalNextSlide(e) { if (e) e.stopPropagation(); modalGoSlide(modalSlide === 0 ? 1 : 0); }
+function modalPrevSlide(e) { if (e) e.stopPropagation(); modalGoSlide(modalSlide === 0 ? 1 : 0); }
+
+// ── LIGHTBOX FICHA (pantalla completa) ─────────────────────────
+function openFicha(src) {
+  document.getElementById('fichaFullImg').src = src;
+  document.getElementById('fichaOverlay').classList.add('open');
+}
+function closeFicha(e) {
+  if (e && e.target === document.getElementById('fichaFullImg')) return;
+  document.getElementById('fichaOverlay').classList.remove('open');
 }
 
 // ── LAZY LOADING ───────────────────────────────────────────────

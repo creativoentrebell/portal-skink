@@ -12,7 +12,8 @@
     "nuevo": false,
     "tipos_piel": [
       "Piel Grasa y Poros"
-    ]
+    ],
+    "ficha": "img/fichas/TOCOBO7.jpg"
   },
   {
     "id": "TOCOBO3",
@@ -27,7 +28,8 @@
     "nuevo": false,
     "tipos_piel": [
       "Piel Grasa y Poros"
-    ]
+    ],
+    "ficha": "img/fichas/TOCOBO3.jpg"
   },
   {
     "id": "TOCOBO8",
@@ -44,7 +46,8 @@
       "Brillo y Luminosidad",
       "Hidratación Profunda",
       "Manchas e Hiperpigmentación"
-    ]
+    ],
+    "ficha": "img/fichas/TOCOBO8.jpg"
   },
   {
     "id": "TOCOBO12",
@@ -63,7 +66,8 @@
       "Hidratación Profunda",
       "Manchas e Hiperpigmentación",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/TOCOBO12.jpg"
   },
   {
     "id": "TOCOBO54",
@@ -148,7 +152,8 @@
       "Hidratación Profunda",
       "Manchas e Hiperpigmentación",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/TOCOBO9.jpg"
   },
   {
     "id": "TOCOBO42",
@@ -201,7 +206,8 @@
       "Piel Grasa y Poros",
       "Piel Sensible y Calmante",
       "Protección Solar"
-    ]
+    ],
+    "ficha": "img/fichas/TOCOBO31.jpg"
   },
   {
     "id": "TOCOBO32",
@@ -219,7 +225,8 @@
       "Manchas e Hiperpigmentación",
       "Piel Sensible y Calmante",
       "Protección Solar"
-    ]
+    ],
+    "ficha": "img/fichas/TOCOBO32.jpg"
   },
   {
     "id": "TOCOBO39",
@@ -271,7 +278,8 @@
       "Piel Grasa y Poros",
       "Piel Sensible y Calmante",
       "Protección Solar"
-    ]
+    ],
+    "ficha": "img/fichas/TOCOBO40.jpg"
   },
   {
     "id": "TOCOBO56",
@@ -321,7 +329,8 @@
       "Manchas e Hiperpigmentación",
       "Piel Sensible y Calmante",
       "Protección Solar"
-    ]
+    ],
+    "ficha": "img/fichas/TOCOBO34.jpg"
   },
   {
     "id": "TOCOBO57",
@@ -337,7 +346,8 @@
     "tipos_piel": [
       "Manchas e Hiperpigmentación",
       "Protección Solar"
-    ]
+    ],
+    "ficha": "img/fichas/TOCOBO57.jpg"
   },
   {
     "id": "TOCOBO36",
@@ -442,7 +452,8 @@
     "nuevo": false,
     "tipos_piel": [
       "Protección Solar"
-    ]
+    ],
+    "ficha": "img/fichas/TOCOBO44.jpg"
   },
   {
     "id": "TOCOBO45",
@@ -457,7 +468,8 @@
     "nuevo": false,
     "tipos_piel": [
       "Protección Solar"
-    ]
+    ],
+    "ficha": "img/fichas/TOCOBO45.jpg"
   },
   {
     "id": "TOCOBO25",
@@ -534,7 +546,8 @@
     "tipos_piel": [
       "Hidratación Profunda",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/TOCOBO46.jpg"
   },
   {
     "id": "TOCOBO47",
@@ -549,7 +562,8 @@
     "nuevo": true,
     "tipos_piel": [
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/TOCOBO47.jpg"
   },
   {
     "id": "TOCOBO51",
@@ -685,7 +699,8 @@
     "nuevo": false,
     "tipos_piel": [
       "Piel Grasa y Poros"
-    ]
+    ],
+    "ficha": "img/fichas/MIXSOON1.jpg"
   },
   {
     "id": "MIXSOON31",
@@ -719,7 +734,8 @@
       "Hidratación Profunda",
       "Piel Grasa y Poros",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/MIXSOON8.jpg"
   },
   {
     "id": "MIXSOON26",
@@ -737,7 +753,8 @@
       "Piel Grasa y Poros",
       "Piel Sensible y Calmante",
       "Protección Solar"
-    ]
+    ],
+    "ficha": "img/fichas/MIXSOON26.jpg"
   },
   {
     "id": "MIXSOON39",
@@ -754,7 +771,8 @@
       "Anti-edad",
       "Hidratación Profunda",
       "Piel Grasa y Poros"
-    ]
+    ],
+    "ficha": "img/fichas/MIXSOON39.jpg"
   },
   {
     "id": "MIXSOON9",
@@ -775,7 +793,8 @@
       "Manchas e Hiperpigmentación",
       "Piel Sensible y Calmante",
       "Protección Solar"
-    ]
+    ],
+    "ficha": "img/fichas/MIXSOON9.jpg"
   },
   {
     "id": "MIXSOON37",
@@ -794,7 +813,8 @@
       "Hidratación Profunda",
       "Manchas e Hiperpigmentación",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/MIXSOON37.jpg"
   },
   {
     "id": "MIXSOON40",
@@ -809,7 +829,8 @@
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda"
-    ]
+    ],
+    "ficha": "img/fichas/MIXSOON40.jpg"
   },
   {
     "id": "MIXSOON41",
@@ -858,7 +879,8 @@
     "tipos_piel": [
       "Brillo y Luminosidad",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/MIXSOON2.jpg"
   },
   {
     "id": "MIXSOON4",
@@ -875,7 +897,8 @@
       "Brillo y Luminosidad",
       "Hidratación Profunda",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/MIXSOON4.jpg"
   },
   {
     "id": "MIXSOON3",
@@ -905,7 +928,8 @@
     "nuevo": false,
     "tipos_piel": [
       "Brillo y Luminosidad"
-    ]
+    ],
+    "ficha": "img/fichas/MIXSOON13.jpg"
   },
   {
     "id": "MIXSOON6",
@@ -920,7 +944,8 @@
     "nuevo": false,
     "tipos_piel": [
       "Brillo y Luminosidad"
-    ]
+    ],
+    "ficha": "img/fichas/MIXSOON6.jpg"
   },
   {
     "id": "MIXSOON12",
@@ -935,7 +960,8 @@
     "nuevo": false,
     "tipos_piel": [
       "Brillo y Luminosidad"
-    ]
+    ],
+    "ficha": "img/fichas/MIXSOON12.jpg"
   },
   {
     "id": "MIXSOON42",
@@ -950,7 +976,8 @@
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad"
-    ]
+    ],
+    "ficha": "img/fichas/MIXSOON42.jpg"
   },
   {
     "id": "MIXSOON34",
@@ -967,7 +994,8 @@
       "Brillo y Luminosidad",
       "Manchas e Hiperpigmentación",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/MIXSOON34.jpg"
   },
   {
     "id": "MIXSOON35",
@@ -987,7 +1015,8 @@
       "Manchas e Hiperpigmentación",
       "Piel Sensible y Calmante",
       "Protección Solar"
-    ]
+    ],
+    "ficha": "img/fichas/MIXSOON35.jpg"
   },
   {
     "id": "MIXSOON36",
@@ -1002,7 +1031,8 @@
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad"
-    ]
+    ],
+    "ficha": "img/fichas/MIXSOON36.jpg"
   },
   {
     "id": "MIXSOON38",
@@ -1021,7 +1051,8 @@
       "Hidratación Profunda",
       "Piel Grasa y Poros",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/MIXSOON38.jpg"
   },
   {
     "id": "MIXSOON15",
@@ -1053,7 +1084,8 @@
     "tipos_piel": [
       "Brillo y Luminosidad",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/MIXSOON24.jpg"
   },
   {
     "id": "MIXSOON25",
@@ -1068,7 +1100,8 @@
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda"
-    ]
+    ],
+    "ficha": "img/fichas/MIXSOON25.jpg"
   },
   {
     "id": "MIXSOON28",
@@ -1086,7 +1119,8 @@
       "Hidratación Profunda",
       "Manchas e Hiperpigmentación",
       "Protección Solar"
-    ]
+    ],
+    "ficha": "img/fichas/MIXSOON28.jpg"
   },
   {
     "id": "MIXSOON29",
@@ -1104,7 +1138,8 @@
       "Hidratación Profunda",
       "Manchas e Hiperpigmentación",
       "Protección Solar"
-    ]
+    ],
+    "ficha": "img/fichas/MIXSOON29.jpg"
   },
   {
     "id": "MIXSOON18",
@@ -1121,7 +1156,8 @@
       "Manchas e Hiperpigmentación",
       "Piel Grasa y Poros",
       "Protección Solar"
-    ]
+    ],
+    "ficha": "img/fichas/MIXSOON18.jpg"
   },
   {
     "id": "MIXSOON19",
@@ -1173,7 +1209,8 @@
       "Hidratación Profunda",
       "Piel Sensible y Calmante",
       "Protección Solar"
-    ]
+    ],
+    "ficha": "img/fichas/MIXSOON17.jpg"
   },
   {
     "id": "MIXSOON30",
@@ -1191,7 +1228,8 @@
       "Manchas e Hiperpigmentación",
       "Piel Sensible y Calmante",
       "Protección Solar"
-    ]
+    ],
+    "ficha": "img/fichas/MIXSOON30.jpg"
   },
   {
     "id": "MIXSOON11",
@@ -1209,7 +1247,8 @@
       "Manchas e Hiperpigmentación",
       "Piel Sensible y Calmante",
       "Protección Solar"
-    ]
+    ],
+    "ficha": "img/fichas/MIXSOON11.jpg"
   },
   {
     "id": "MIXSOON21",
@@ -1224,7 +1263,8 @@
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda"
-    ]
+    ],
+    "ficha": "img/fichas/MIXSOON21.jpg"
   },
   {
     "id": "MIXSOON22",
@@ -1370,7 +1410,8 @@
     "nuevo": false,
     "tipos_piel": [
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/MIXSOON20.jpg"
   },
   {
     "id": "ANUA31",
@@ -1389,7 +1430,8 @@
       "Manchas e Hiperpigmentación",
       "Piel Grasa y Poros",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/ANUA31.jpg"
   },
   {
     "id": "ANUA7",
@@ -1409,7 +1451,8 @@
       "Piel Grasa y Poros",
       "Piel Sensible y Calmante",
       "Protección Solar"
-    ]
+    ],
+    "ficha": "img/fichas/ANUA7.jpg"
   },
   {
     "id": "ANUA18",
@@ -1426,7 +1469,8 @@
       "Acné",
       "Piel Grasa y Poros",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/ANUA18.jpg"
   },
   {
     "id": "ANUA3",
@@ -1444,7 +1488,8 @@
       "Hidratación Profunda",
       "Piel Grasa y Poros",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/ANUA3.jpg"
   },
   {
     "id": "ANUA19",
@@ -1462,7 +1507,8 @@
       "Hidratación Profunda",
       "Piel Grasa y Poros",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/ANUA19.jpg"
   },
   {
     "id": "ANUA4",
@@ -1517,7 +1563,8 @@
       "Hidratación Profunda",
       "Manchas e Hiperpigmentación",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/ANUA6.jpg"
   },
   {
     "id": "ANUA11",
@@ -1535,7 +1582,8 @@
       "Hidratación Profunda",
       "Manchas e Hiperpigmentación",
       "Piel Grasa y Poros"
-    ]
+    ],
+    "ficha": "img/fichas/ANUA11.jpg"
   },
   {
     "id": "ANUA15",
@@ -1551,7 +1599,8 @@
     "tipos_piel": [
       "Anti-edad",
       "Hidratación Profunda"
-    ]
+    ],
+    "ficha": "img/fichas/ANUA15.jpg"
   },
   {
     "id": "ANUA16",
@@ -1567,7 +1616,8 @@
     "tipos_piel": [
       "Hidratación Profunda",
       "Manchas e Hiperpigmentación"
-    ]
+    ],
+    "ficha": "img/fichas/ANUA16.jpg"
   },
   {
     "id": "ANUA2",
@@ -1584,7 +1634,8 @@
       "Hidratación Profunda",
       "Manchas e Hiperpigmentación",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/ANUA2.jpg"
   },
   {
     "id": "ANUA26",
@@ -1601,7 +1652,8 @@
       "Hidratación Profunda",
       "Manchas e Hiperpigmentación",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/ANUA26.jpg"
   },
   {
     "id": "ANUA24",
@@ -1619,7 +1671,8 @@
       "Hidratación Profunda",
       "Manchas e Hiperpigmentación",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/ANUA24.jpg"
   },
   {
     "id": "ANUA32",
@@ -1656,7 +1709,8 @@
       "Hidratación Profunda",
       "Manchas e Hiperpigmentación",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/ANUA12.jpg"
   },
   {
     "id": "ANUA8",
@@ -1673,7 +1727,8 @@
       "Acné",
       "Hidratación Profunda",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/ANUA8.jpg"
   },
   {
     "id": "ANUA27",
@@ -1690,7 +1745,8 @@
       "Hidratación Profunda",
       "Manchas e Hiperpigmentación",
       "Protección Solar"
-    ]
+    ],
+    "ficha": "img/fichas/ANUA27.jpg"
   },
   {
     "id": "ANUA25",
@@ -1708,7 +1764,8 @@
       "Hidratación Profunda",
       "Piel Sensible y Calmante",
       "Protección Solar"
-    ]
+    ],
+    "ficha": "img/fichas/ANUA25.jpg"
   },
   {
     "id": "ANUA17",
@@ -1726,7 +1783,8 @@
       "Hidratación Profunda",
       "Piel Grasa y Poros",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/ANUA17.jpg"
   },
   {
     "id": "ANUA1",
@@ -1745,7 +1803,8 @@
       "Manchas e Hiperpigmentación",
       "Piel Grasa y Poros",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/ANUA1.jpg"
   },
   {
     "id": "ANUA20",
@@ -1763,7 +1822,8 @@
       "Brillo y Luminosidad",
       "Hidratación Profunda",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/ANUA20.jpg"
   },
   {
     "id": "ANUA21",
@@ -1781,7 +1841,8 @@
       "Anti-edad",
       "Hidratación Profunda",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/ANUA21.jpg"
   },
   {
     "id": "ANUA22",
@@ -1814,7 +1875,8 @@
       "Acné",
       "Hidratación Profunda",
       "Manchas e Hiperpigmentación"
-    ]
+    ],
+    "ficha": "img/fichas/ANUA23.jpg"
   },
   {
     "id": "ANUA29",
@@ -1832,7 +1894,8 @@
       "Anti-edad",
       "Hidratación Profunda",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/ANUA29.jpg"
   },
   {
     "id": "ANUA30",
@@ -1849,7 +1912,8 @@
       "Anti-edad",
       "Manchas e Hiperpigmentación",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/ANUA30.jpg"
   },
   {
     "id": "ANUA9",
@@ -1867,7 +1931,8 @@
       "Hidratación Profunda",
       "Piel Grasa y Poros",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/ANUA9.jpg"
   },
   {
     "id": "ANUA34",
@@ -2395,7 +2460,8 @@
       "Brillo y Luminosidad",
       "Manchas e Hiperpigmentación",
       "Protección Solar"
-    ]
+    ],
+    "ficha": "img/fichas/BIODANCE4.jpg"
   },
   {
     "id": "BIODANCE5",
@@ -3158,7 +3224,8 @@
       "Brillo y Luminosidad",
       "Manchas e Hiperpigmentación",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/MEDICUBE10.jpg"
   },
   {
     "id": "MEDICUBE33",
@@ -3349,7 +3416,8 @@
       "Anti-edad",
       "Brillo y Luminosidad",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/MEDICUBE18.jpg"
   },
   {
     "id": "MEDICUBE61",
@@ -3475,7 +3543,8 @@
       "Anti-edad",
       "Brillo y Luminosidad",
       "Hidratación Profunda"
-    ]
+    ],
+    "ficha": "img/fichas/MEDICUBE21.jpg"
   },
   {
     "id": "MEDICUBE20",
@@ -3526,7 +3595,8 @@
     "tipos_piel": [
       "Anti-edad",
       "Hidratación Profunda"
-    ]
+    ],
+    "ficha": "img/fichas/MEDICUBE48.jpg"
   },
   {
     "id": "MEDICUBE8",
@@ -3628,7 +3698,8 @@
       "Hidratación Profunda",
       "Manchas e Hiperpigmentación",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/MEDICUBE16.jpg"
   },
   {
     "id": "MEDICUBE81",
@@ -3679,7 +3750,8 @@
       "Hidratación Profunda",
       "Manchas e Hiperpigmentación",
       "Piel Grasa y Poros"
-    ]
+    ],
+    "ficha": "img/fichas/MEDICUBE26.jpg"
   },
   {
     "id": "MEDICUBE27",
@@ -3697,7 +3769,8 @@
       "Hidratación Profunda",
       "Manchas e Hiperpigmentación",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/MEDICUBE27.jpg"
   },
   {
     "id": "MEDICUBE70",
@@ -3977,7 +4050,8 @@
     "nuevo": true,
     "tipos_piel": [
       "Hidratación Profunda"
-    ]
+    ],
+    "ficha": "img/fichas/MEDICUBE92.jpg"
   },
   {
     "id": "MEDICUBE93",
@@ -4821,7 +4895,8 @@
       "Hidratación Profunda",
       "Piel Sensible y Calmante",
       "Protección Solar"
-    ]
+    ],
+    "ficha": "img/fichas/SKIN1004-25.jpg"
   },
   {
     "id": "SKIN1004-32",
@@ -4856,7 +4931,8 @@
       "Hidratación Profunda",
       "Piel Grasa y Poros",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/SKIN1004-1.jpg"
   },
   {
     "id": "SKIN1004-33",
@@ -4873,7 +4949,8 @@
       "Brillo y Luminosidad",
       "Hidratación Profunda",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/SKIN1004-33.jpg"
   },
   {
     "id": "SKIN1004-5",
@@ -4889,7 +4966,8 @@
     "tipos_piel": [
       "Hidratación Profunda",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/SKIN1004-5.jpg"
   },
   {
     "id": "SKIN1004-16",
@@ -4906,7 +4984,8 @@
       "Hidratación Profunda",
       "Piel Sensible y Calmante",
       "Protección Solar"
-    ]
+    ],
+    "ficha": "img/fichas/SKIN1004-16.jpg"
   },
   {
     "id": "SKIN1004-21",
@@ -4921,7 +5000,8 @@
     "nuevo": false,
     "tipos_piel": [
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/SKIN1004-21.jpg"
   },
   {
     "id": "SKIN1004-35",
@@ -4992,7 +5072,8 @@
       "Manchas e Hiperpigmentación",
       "Piel Grasa y Poros",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/SKIN1004-7.jpg"
   },
   {
     "id": "SKIN1004-24",
@@ -5426,7 +5507,8 @@
       "Hidratación Profunda",
       "Piel Grasa y Poros",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/DR-ALTHEA8.jpg"
   },
   {
     "id": "DR-ALTHEA9",
@@ -5443,7 +5525,8 @@
       "Hidratación Profunda",
       "Piel Grasa y Poros",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/DR-ALTHEA9.jpg"
   },
   {
     "id": "DR-ALTHEA3",
@@ -5459,7 +5542,8 @@
     "tipos_piel": [
       "Piel Sensible y Calmante",
       "Protección Solar"
-    ]
+    ],
+    "ficha": "img/fichas/DR-ALTHEA3.jpg"
   },
   {
     "id": "DR-ALTHEA6",
@@ -5476,7 +5560,8 @@
       "Hidratación Profunda",
       "Piel Grasa y Poros",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/DR-ALTHEA6.jpg"
   },
   {
     "id": "DR-ALTHEA24",
@@ -5511,7 +5596,8 @@
       "Contorno de Ojos",
       "Hidratación Profunda",
       "Manchas e Hiperpigmentación"
-    ]
+    ],
+    "ficha": "img/fichas/DR-ALTHEA7.jpg"
   },
   {
     "id": "DR-ALTHEA14",
@@ -5529,7 +5615,8 @@
       "Hidratación Profunda",
       "Manchas e Hiperpigmentación",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/DR-ALTHEA14.jpg"
   },
   {
     "id": "DR-ALTHEA20",
@@ -5546,7 +5633,8 @@
       "Anti-edad",
       "Contorno de Ojos",
       "Hidratación Profunda"
-    ]
+    ],
+    "ficha": "img/fichas/DR-ALTHEA20.jpg"
   },
   {
     "id": "DR-ALTHEA15",
@@ -5563,7 +5651,8 @@
       "Brillo y Luminosidad",
       "Hidratación Profunda",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/DR-ALTHEA15.jpg"
   },
   {
     "id": "DR-ALTHEA16",
@@ -5581,7 +5670,8 @@
       "Hidratación Profunda",
       "Manchas e Hiperpigmentación",
       "Piel Grasa y Poros"
-    ]
+    ],
+    "ficha": "img/fichas/DR-ALTHEA16.jpg"
   },
   {
     "id": "DR-ALTHEA25",
@@ -5618,7 +5708,8 @@
       "Hidratación Profunda",
       "Manchas e Hiperpigmentación",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/DR-ALTHEA2.jpg"
   },
   {
     "id": "DR-ALTHEA5",
@@ -5635,7 +5726,8 @@
       "Anti-edad",
       "Hidratación Profunda",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/DR-ALTHEA5.jpg"
   },
   {
     "id": "DR-ALTHEA10",
@@ -5654,7 +5746,8 @@
       "Hidratación Profunda",
       "Manchas e Hiperpigmentación",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/DR-ALTHEA10.jpg"
   },
   {
     "id": "DR-ALTHEA13",
@@ -5673,7 +5766,8 @@
       "Hidratación Profunda",
       "Manchas e Hiperpigmentación",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/DR-ALTHEA13.jpg"
   },
   {
     "id": "DR-ALTHEA4",
@@ -5691,7 +5785,8 @@
       "Manchas e Hiperpigmentación",
       "Piel Sensible y Calmante",
       "Protección Solar"
-    ]
+    ],
+    "ficha": "img/fichas/DR-ALTHEA4.jpg"
   },
   {
     "id": "DR-ALTHEA26",
@@ -5724,7 +5819,8 @@
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda"
-    ]
+    ],
+    "ficha": "img/fichas/DR-ALTHEA17.jpg"
   },
   {
     "id": "DR-ALTHEA18",
@@ -5740,7 +5836,8 @@
     "tipos_piel": [
       "Hidratación Profunda",
       "Manchas e Hiperpigmentación"
-    ]
+    ],
+    "ficha": "img/fichas/DR-ALTHEA18.jpg"
   },
   {
     "id": "DR-ALTHEA19",
@@ -5757,7 +5854,8 @@
       "Anti-edad",
       "Hidratación Profunda",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/DR-ALTHEA19.jpg"
   },
   {
     "id": "DR-ALTHEA1",
@@ -5774,7 +5872,8 @@
       "Hidratación Profunda",
       "Manchas e Hiperpigmentación",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/DR-ALTHEA1.jpg"
   },
   {
     "id": "DR-ALTHEA21",
@@ -5792,7 +5891,8 @@
       "Hidratación Profunda",
       "Manchas e Hiperpigmentación",
       "Piel Sensible y Calmante"
-    ]
+    ],
+    "ficha": "img/fichas/DR-ALTHEA21.jpg"
   },
   {
     "id": "DR-ALTHEA11",
@@ -5811,7 +5911,8 @@
       "Hidratación Profunda",
       "Manchas e Hiperpigmentación",
       "Protección Solar"
-    ]
+    ],
+    "ficha": "img/fichas/DR-ALTHEA11.jpg"
   },
   {
     "id": "DR-ALTHEA12",
@@ -5831,7 +5932,8 @@
       "Piel Grasa y Poros",
       "Piel Sensible y Calmante",
       "Protección Solar"
-    ]
+    ],
+    "ficha": "img/fichas/DR-ALTHEA12.jpg"
   },
   {
     "id": "ROUND-LAB4",
