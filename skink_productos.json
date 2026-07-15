@@ -4331,7 +4331,7 @@
     "categoria": "Hidratación",
     "descripcion": "Un gel exfoliante que ofrece un cuidado exfoliante suave para eliminar puntos negros, puntos blancos y células muertas de la piel. La hoja de árbol de té y la celulosa proporcionan un doble efecto peeling para eliminar las impurezas de la piel. Ingredientes claves: Extracto de té verde, agua hoja de té, pantenol, ácido salicilico.",
     "imagen": "img/skink/SKIN1004-74.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -5682,7 +5682,7 @@
     "categoria": "Sérum",
     "descripcion": "Ingredientes claves: Pantenol, aceite de soja, jugo de alba, retinol, extracto de flor, lavanda. 15% Niacinamide Purity Serum (Serum de niacinamida) uso diario diseñado para aliviar la irritación, hidratar profundamente y fortalecer la barrera cutánea en un solo paso. Es ideal para pieles sensibles y con tendencia al acné, proporciona hidratación duradera y una sensación de confort. Ingredientes claves: Niacinamida, pantenol, Arbol de té, ácido hialuronico,",
     "imagen": "img/skink/DR-ALTHEA25.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -7368,7 +7368,7 @@
     "categoria": "Segunda Limpieza",
     "descripcion": "Limpiador tipo con té verde, hamamelis y agua de arroz fermentada, con textura densa y esponjosa. La opción más vendida de la línea: potente en eliminar puntos negros, refinar textura y equilibrar sebo sin irritar. Ingredientes claves: Extracto de té verde, agua de arroz, mugwort, polvo de arroz, surfactantes, glicerina, antioxidantes naturales.",
     "imagen": "img/skink/AREN-04.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Piel Grasa y Poros",
