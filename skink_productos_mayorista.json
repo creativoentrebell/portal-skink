@@ -510,7 +510,7 @@
     "categoria": "Protección Solar",
     "descripcion": "",
     "imagen": "img/skink/TOCOBO14.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Protección Solar"
@@ -525,7 +525,7 @@
     "categoria": "Protección Solar",
     "descripcion": "",
     "imagen": "img/skink/TOCOBO35.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Piel Sensible y Calmante",
@@ -940,7 +940,7 @@
     "categoria": "Esencia",
     "descripcion": "",
     "imagen": "img/skink/MIXSOON6.webp",
-    "agotado": true,
+    "agotado": false,
     "nuevo": false,
     "tipos_piel": [
       "Brillo y Luminosidad"
@@ -956,7 +956,7 @@
     "categoria": "Esencia",
     "descripcion": "",
     "imagen": "img/skink/MIXSOON12.webp",
-    "agotado": true,
+    "agotado": false,
     "nuevo": false,
     "tipos_piel": [
       "Brillo y Luminosidad"
@@ -3340,7 +3340,7 @@
     "categoria": "Contorno de Ojos",
     "descripcion": "Esta crema para ojos está formulada con niacinamida, péptidos, retinol y PDRN de salmón que ayudan a reducir la apariencia de las áreas oscurecidas y mejoran las áreas opacas de los ojos con una hidratación intensiva. Ingredientes claves: Niacinamida, retinol, extracto de café, ácido hialurónico, péptidos.",
     "imagen": "img/skink/MEDICUBE22.webp",
-    "agotado": true,
+    "agotado": false,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -5866,7 +5866,7 @@
     "categoria": "Hidratación",
     "descripcion": "Crema calmante vegana ideal para hidratar y proteger la piel sensible. Formulada con ingredientes naturales como Centella Asiatica Extract, esta crema ofrece un alivio efectivo para irritaciones y ayuda a restaurar la barrera cutánea. Ingredientes claves:Niacinamida, pantenol, ácido hiaulónico, extracto de centella asiática. 345 Relief Cream (Crema de alivio 345)",
     "imagen": "img/skink/DR-ALTHEA1.webp",
-    "agotado": true,
+    "agotado": false,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -7413,7 +7413,7 @@
     "referencia": "AREN-07",
     "nombre": "Retinal Booster Shot 30ml",
     "marca": "ARENCIA",
-    "precio": 85000,
+    "precio": 65000,
     "categoria": "Sérum",
     "descripcion": "",
     "imagen": "img/skink/AREN-07.webp",
@@ -7428,7 +7428,7 @@
     "referencia": "AREN-08",
     "nombre": "Vitamin C Booster Shot 30ml",
     "marca": "ARENCIA",
-    "precio": 85000,
+    "precio": 65000,
     "categoria": "Sérum",
     "descripcion": "",
     "imagen": "img/skink/AREN-08.webp",
@@ -7944,7 +7944,7 @@
     "categoria": "Sérum",
     "descripcion": "",
     "imagen": "img/skink/PURI-03.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Piel Sensible y Calmante"
