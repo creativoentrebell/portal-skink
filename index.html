@@ -385,6 +385,81 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
   40%,80% { transform: translateX(6px); }
 }
 
+/* ── CARRITO — BOTÓN HEADER ── */
+.cart-btn { position: relative; background: var(--white); border: 1.5px solid var(--beige-mid); border-radius: 8px; width: 40px; height: 34px; font-size: 16px; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all 0.18s; }
+.cart-btn:hover { border-color: var(--taupe); }
+.cart-count { position: absolute; top: -6px; right: -7px; min-width: 17px; height: 17px; padding: 0 4px; background: var(--taupe-dark); color: var(--white); font-size: 10px; font-weight: 600; border-radius: 9px; display: none; align-items: center; justify-content: center; line-height: 1; }
+.cart-count.show { display: flex; }
+
+/* ── CARRITO — CONTROLES EN MODAL ── */
+.order-controls { margin-top: 14px; }
+.order-note-label { font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--taupe); margin-bottom: 6px; }
+.order-note { width: 100%; padding: 9px 12px; border: 1.5px solid var(--beige-mid); border-radius: 8px; font-size: 13px; font-family: inherit; color: var(--text); background: var(--beige-light); outline: none; margin-bottom: 12px; transition: border-color 0.18s; }
+.order-note:focus { border-color: var(--taupe); }
+.order-note::placeholder { color: var(--text-light); }
+.order-row { display: flex; align-items: center; gap: 10px; }
+.qty-select { display: flex; align-items: center; border: 1.5px solid var(--beige-mid); border-radius: 8px; overflow: hidden; flex-shrink: 0; background: var(--white); }
+.qty-select button { background: none; border: none; width: 32px; height: 36px; font-size: 17px; cursor: pointer; color: var(--taupe-dark); font-family: inherit; transition: background 0.15s; }
+.qty-select button:hover { background: var(--beige); }
+.qty-select span { min-width: 30px; text-align: center; font-size: 14px; font-weight: 600; color: var(--text); }
+.add-cart-btn { flex: 1; padding: 10px 14px; background: var(--taupe); color: var(--white); border: none; border-radius: 8px; font-size: 13.5px; font-weight: 600; font-family: inherit; cursor: pointer; transition: background 0.18s; white-space: nowrap; }
+.add-cart-btn:hover { background: var(--taupe-dark); }
+.add-cart-btn.added { background: var(--taupe-xdark); }
+
+/* ── CARRITO — DRAWER ── */
+.cart-overlay { position: fixed; inset: 0; background: rgba(30,20,15,0.45); backdrop-filter: blur(2px); -webkit-backdrop-filter: blur(2px); z-index: 250; opacity: 0; pointer-events: none; transition: opacity 0.2s; }
+.cart-overlay.open { opacity: 1; pointer-events: all; }
+.cart-drawer { position: fixed; top: 0; right: 0; height: 100%; width: 400px; max-width: 94vw; background: var(--white); z-index: 260; transform: translateX(105%); transition: transform 0.28s cubic-bezier(0.22,1,0.36,1); display: flex; flex-direction: column; box-shadow: -12px 0 40px rgba(30,20,15,0.18); }
+.cart-drawer.open { transform: translateX(0); }
+.cart-head { padding: 18px 20px; border-bottom: 1px solid var(--beige-mid); display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; }
+.cart-head h3 { font-size: 15px; font-weight: 600; color: var(--taupe-xdark); }
+.cart-head button { background: none; border: none; font-size: 17px; cursor: pointer; color: var(--text-mid); padding: 4px; }
+.cart-items { flex: 1; overflow-y: auto; padding: 8px 20px; -webkit-overflow-scrolling: touch; }
+.cart-empty { text-align: center; color: var(--text-light); font-size: 13px; line-height: 1.6; padding: 48px 12px; }
+.cart-item { padding: 14px 0; border-bottom: 1px solid var(--beige); }
+.cart-item-top { display: flex; justify-content: space-between; gap: 10px; align-items: flex-start; }
+.cart-item-name { font-size: 13px; font-weight: 500; color: var(--text); line-height: 1.35; }
+.cart-item-ref { font-size: 11px; color: var(--text-light); margin-top: 2px; }
+.cart-item-nota { font-size: 11.5px; color: var(--text-mid); font-style: italic; margin-top: 3px; }
+.cart-item-del { background: none; border: none; color: var(--text-light); cursor: pointer; font-size: 14px; padding: 2px 4px; flex-shrink: 0; }
+.cart-item-del:hover { color: var(--badge-out); }
+.cart-item-bottom { display: flex; align-items: center; justify-content: space-between; margin-top: 10px; gap: 10px; }
+.cart-item-bottom .qty-select button { height: 28px; width: 28px; font-size: 14px; }
+.cart-item-bottom .qty-select span { font-size: 12.5px; min-width: 26px; }
+.cart-item-prices { text-align: right; }
+.cart-item-unit { font-size: 11px; color: var(--text-light); }
+.cart-item-sub { font-size: 13.5px; font-weight: 600; color: var(--taupe-dark); }
+.cart-item-sub.pendiente { font-size: 11px; font-weight: 400; font-style: italic; color: var(--text-light); }
+.cart-foot { border-top: 1px solid var(--beige-mid); padding: 16px 20px 20px; flex-shrink: 0; }
+.cart-total-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; }
+.cart-total-label { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-mid); }
+.cart-total { font-size: 20px; font-weight: 600; color: var(--taupe-dark); }
+.cart-total.pendiente { font-size: 13px; font-weight: 400; font-style: italic; color: var(--text-light); }
+.cart-total-note { font-size: 10.5px; color: var(--text-light); margin-bottom: 6px; min-height: 4px; }
+.cart-send-btn { width: 100%; margin-top: 8px; padding: 13px; background: #21a15c; color: #fff; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; font-family: inherit; cursor: pointer; transition: background 0.18s; }
+.cart-send-btn:hover { background: #1b8a4e; }
+.cart-clear-btn { display: block; margin: 10px auto 0; background: none; border: none; color: var(--text-light); font-size: 12px; cursor: pointer; font-family: inherit; text-decoration: underline; }
+.cart-clear-btn:hover { color: var(--badge-out); }
+
+/* ── MENÚ DESTINOS WHATSAPP ── */
+.dest-overlay { position: fixed; inset: 0; background: rgba(30,20,15,0.5); backdrop-filter: blur(3px); -webkit-backdrop-filter: blur(3px); z-index: 320; display: flex; align-items: center; justify-content: center; padding: 20px; opacity: 0; pointer-events: none; transition: opacity 0.2s; }
+.dest-overlay.open { opacity: 1; pointer-events: all; }
+.dest-modal { background: var(--white); border-radius: 14px; padding: 24px 22px 16px; width: 100%; max-width: 410px; box-shadow: 0 16px 48px rgba(30,20,15,0.2); text-align: center; }
+.dest-modal h3 { font-size: 16px; font-weight: 600; color: var(--taupe-xdark); margin-bottom: 4px; }
+.dest-modal p { font-size: 12.5px; color: var(--text-light); margin-bottom: 14px; }
+.dest-list { max-height: 52vh; overflow-y: auto; text-align: left; display: flex; flex-direction: column; gap: 6px; padding-right: 2px; -webkit-overflow-scrolling: touch; }
+.dest-group { font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--taupe); padding: 10px 2px 2px; }
+.dest-item { display: flex; flex-direction: column; gap: 1px; padding: 10px 12px; border: 1.5px solid var(--beige-mid); border-radius: 10px; background: var(--white); cursor: pointer; font-family: inherit; text-align: left; transition: all 0.15s; }
+.dest-item:hover { border-color: var(--taupe); background: var(--beige-light); }
+.dest-item .dest-label { font-size: 13px; font-weight: 500; color: var(--text); }
+.dest-item .dest-sub { font-size: 11px; color: var(--text-light); }
+
+@media (max-width: 600px) {
+  .cart-drawer { width: 100%; max-width: 100%; }
+  .dest-modal { max-height: 86vh; overflow: hidden; display: flex; flex-direction: column; }
+  .dest-list { max-height: none; flex: 1; }
+}
+
 /* Loading / empty */
 #loading { text-align: center; padding: 80px 24px; color: var(--text-light); }
 .spinner { width: 32px; height: 32px; border: 3px solid var(--beige-mid); border-top-color: var(--taupe); border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 16px; }
@@ -416,6 +491,7 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
     </div>
     <div class="header-spacer"></div>
     <div class="header-stats" id="headerStats"></div>
+    <button class="cart-btn" id="cartBtn" onclick="openCart()" title="Ver pedido">🛍️<span class="cart-count" id="cartCount">0</span></button>
     <div class="price-mode-toggle">
       <button id="btnCatalogo" class="active" onclick="goPublico()">Catálogo</button>
       <button id="btnDetal" onclick="requestMode('detal')">Detal <span class="lock-icon" id="lockDetal">🔒</span></button>
@@ -494,6 +570,19 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
       </div>
       <div class="modal-footer">
         <div id="modalPrice" class="modal-price"></div>
+        <div class="order-controls" id="orderControls">
+          <div class="order-note-label">Color / Nota (opcional)</div>
+          <input type="text" class="order-note" id="modalNota" maxlength="140"
+                 placeholder="Ej. color turquesa, o alguna observación para tu asesora…">
+          <div class="order-row">
+            <div class="qty-select">
+              <button onclick="modalQtyDelta(-1)" title="Menos">−</button>
+              <span id="modalQty">1</span>
+              <button onclick="modalQtyDelta(1)" title="Más">+</button>
+            </div>
+            <button class="add-cart-btn" id="addCartBtn" onclick="addCurrentToCart()">Agregar al pedido</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -503,6 +592,35 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
 <div class="ficha-overlay" id="fichaOverlay" onclick="closeFicha(event)">
   <button class="ficha-close" onclick="closeFicha()" title="Cerrar">✕</button>
   <img id="fichaFullImg" src="" alt="Ficha técnica">
+</div>
+
+<!-- CARRITO — DRAWER -->
+<div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Tu pedido">
+  <div class="cart-head">
+    <h3>Tu pedido</h3>
+    <button onclick="closeCart()" title="Cerrar">✕</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-foot" id="cartFoot" style="display:none">
+    <div class="cart-total-row">
+      <span class="cart-total-label">Total</span>
+      <span class="cart-total" id="cartTotal"></span>
+    </div>
+    <div class="cart-total-note" id="cartTotalNote"></div>
+    <button class="cart-send-btn" onclick="openDestinos()">Enviar pedido por WhatsApp</button>
+    <button class="cart-clear-btn" onclick="clearCart()">Vaciar pedido</button>
+  </div>
+</aside>
+
+<!-- CARRITO — MENÚ DE DESTINOS WHATSAPP -->
+<div class="dest-overlay" id="destOverlay" onclick="closeDestinosIfOutside(event)">
+  <div class="dest-modal">
+    <h3>Enviar pedido</h3>
+    <p id="destDesc">Elige a quién enviar tu pedido por WhatsApp</p>
+    <div class="dest-list" id="destList"></div>
+    <button class="pwd-cancel" onclick="closeDestinos()">Cancelar</button>
+  </div>
 </div>
 
 <script>
@@ -630,6 +748,10 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') {
     const fichaOv = document.getElementById('fichaOverlay');
     if (fichaOv && fichaOv.classList.contains('open')) { closeFicha(); return; }
+    const destOv = document.getElementById('destOverlay');
+    if (destOv && destOv.classList.contains('open')) { closeDestinos(); return; }
+    const drawer = document.getElementById('cartDrawer');
+    if (drawer && drawer.classList.contains('open')) { closeCart(); return; }
     closePwd(); closeModal();
   }
 });
@@ -878,6 +1000,15 @@ function openModal(idx) {
     priceEl.className   = 'modal-price' + (p.precio==='pendiente'||p.precio===undefined ? ' pendiente' : '');
   }
 
+  // Pedido: resetear cantidad y nota; los agotados no se pueden pedir
+  modalQtyVal = 1;
+  document.getElementById('modalQty').textContent = '1';
+  document.getElementById('modalNota').value = '';
+  document.getElementById('orderControls').style.display = p.agotado ? 'none' : '';
+  const addBtn = document.getElementById('addCartBtn');
+  addBtn.textContent = 'Agregar al pedido';
+  addBtn.classList.remove('added');
+
   // Open
   document.getElementById('modalOverlay').classList.add('open');
   document.body.style.overflow = 'hidden';
@@ -1065,7 +1196,7 @@ function appendPage() {
 
 // ── RENDER ────────────────────────────────────────────────────
 function render() {
-  buildPills(); updateStats();
+  buildPills(); updateStats(); updateCartUI();
 
   // Resetear estado de paginado
   renderList   = buildRenderList();
@@ -1113,6 +1244,279 @@ function updateStats() {
   const n = allProducts.filter(p=>p.nuevo).length;
   const m = new Set(allProducts.map(p=>p.marca)).size;
   document.getElementById('headerStats').textContent = t+' referencias · '+d+' disponibles · '+n+' nuevos · '+m+' marcas';
+}
+
+// ── CARRITO DE PEDIDOS ────────────────────────────────────────
+const CART_KEY = 'entrebell_skin_pedido';
+const CATALOG_NAME = 'Entrebell Skin';
+
+const WHATSAPP_DESTINOS = {
+  sinprecios: [ { label: 'Elegir entre tus contactos', numero: null } ],
+  detal: [
+    { label: 'Elegir entre tus contactos', numero: null },
+    { label: 'Asesora', numero: '573217337623' }
+  ],
+  mayorista: [
+    { label: 'Elegir entre tus contactos', numero: null },
+    { grupo: 'Antioquia', label: 'Sur Medellín, Nordeste, Occidente y Suroeste', asesora: 'Yuri', numero: '573245402583' },
+    { grupo: 'Antioquia', label: 'Centro Medellín', asesora: 'Aide Isabel', numero: '573042343068' },
+    { grupo: 'Antioquia', label: 'Norte', asesora: 'Gloria', numero: '573013408198' },
+    { grupo: 'Antioquia', label: 'Oriente', asesora: 'Gloria', numero: '573013405737' },
+    { grupo: 'Costa y Eje Cafetero', label: 'Costa (Córdoba, Sucre)', asesora: 'Doly', numero: '573007556223' },
+    { grupo: 'Costa y Eje Cafetero', label: 'Costa Atlántico', asesora: 'Doly', numero: '573013406153' },
+    { grupo: 'Costa y Eje Cafetero', label: 'Eje Cafetero', asesora: 'Doly', numero: '573013409222' },
+    { grupo: 'Bogotá y Llanos', label: 'Centro Bogotá', asesora: 'Leydi', numero: '573013408038' },
+    { grupo: 'Bogotá y Llanos', label: 'Periferia Bogotá', asesora: 'Leydi', numero: '573245391366' },
+    { grupo: 'Bogotá y Llanos', label: 'Llanos Orientales (Villavicencio)', asesora: 'Leydi', numero: '573013404640' }
+  ]
+};
+
+// Cada ítem: { ref, qty, nota }. Los precios NO se guardan: se resuelven
+// siempre según el modo activo (detal / mayorista / catálogo sin precios).
+let cart = loadCart();
+let modalQtyVal = 1;
+
+function loadCart() {
+  try {
+    const arr = JSON.parse(localStorage.getItem(CART_KEY) || '[]');
+    if (!Array.isArray(arr)) return [];
+    return arr
+      .filter(i => i && typeof i.ref === 'string' && Number(i.qty) > 0)
+      .map(i => ({
+        ref: i.ref,
+        qty: Math.min(999, Math.max(1, Math.floor(Number(i.qty)))),
+        nota: typeof i.nota === 'string' ? i.nota.slice(0, 140) : ''
+      }));
+  } catch (e) { return []; }
+}
+function saveCart() {
+  try { localStorage.setItem(CART_KEY, JSON.stringify(cart)); } catch (e) {}
+}
+
+function productByRef(ref) { return (detalProducts || []).find(p => p.referencia === ref); }
+function pricedProductByRef(ref) {
+  const list = priceMode === 'mayorista' ? mayoristasProducts : detalProducts;
+  return (list || []).find(p => p.referencia === ref);
+}
+// Precio unitario numérico según modo activo; null si no aplica (modo catálogo,
+// precio "pendiente"/"Muestra" o producto no encontrado)
+function unitPriceNum(ref) {
+  if (priceMode === 'publico') return null;
+  const p = pricedProductByRef(ref);
+  return (p && typeof p.precio === 'number') ? p.precio : null;
+}
+function unitPriceRaw(ref) {
+  if (priceMode === 'publico') return null;
+  const p = pricedProductByRef(ref);
+  return p ? p.precio : null;
+}
+function money(n) { return '$' + Number(n).toLocaleString('es-CO'); }
+function cartUnits() { return cart.reduce((s, i) => s + i.qty, 0); }
+function escHTML(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+// ── Modal: cantidad y agregar ──
+function modalQtyDelta(d) {
+  modalQtyVal = Math.max(1, Math.min(999, modalQtyVal + d));
+  document.getElementById('modalQty').textContent = modalQtyVal;
+}
+function addCurrentToCart() {
+  if (!currentProduct || currentProduct.agotado) return;
+  const nota = (document.getElementById('modalNota').value || '').trim();
+  const found = cart.find(i => i.ref === currentProduct.referencia && i.nota === nota);
+  if (found) found.qty = Math.min(999, found.qty + modalQtyVal);
+  else cart.push({ ref: currentProduct.referencia, qty: modalQtyVal, nota });
+  saveCart(); updateCartUI();
+  const btn = document.getElementById('addCartBtn');
+  btn.textContent = 'Agregado ✓';
+  btn.classList.add('added');
+  setTimeout(() => { btn.textContent = 'Agregar al pedido'; btn.classList.remove('added'); }, 1200);
+}
+
+// ── Drawer ──
+function openCart() {
+  updateCartUI();
+  document.getElementById('cartOverlay').classList.add('open');
+  document.getElementById('cartDrawer').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeCart() {
+  document.getElementById('cartOverlay').classList.remove('open');
+  document.getElementById('cartDrawer').classList.remove('open');
+  if (!document.getElementById('modalOverlay').classList.contains('open')) {
+    document.body.style.overflow = '';
+  }
+}
+function cartQtyDelta(idx, d) {
+  const it = cart[idx];
+  if (!it) return;
+  it.qty = Math.max(1, Math.min(999, it.qty + d));
+  saveCart(); updateCartUI();
+}
+function removeCartItem(idx) {
+  cart.splice(idx, 1);
+  saveCart(); updateCartUI();
+}
+function clearCart() {
+  if (!cart.length) return;
+  if (!confirm('¿Vaciar todo el pedido?')) return;
+  cart = [];
+  saveCart(); updateCartUI();
+}
+
+function updateCartUI() {
+  // Badge del header
+  const n = cartUnits();
+  const badge = document.getElementById('cartCount');
+  badge.textContent = n > 99 ? '99+' : n;
+  badge.classList.toggle('show', n > 0);
+
+  // Lista de ítems
+  const wrap = document.getElementById('cartItems');
+  const foot = document.getElementById('cartFoot');
+  if (!cart.length) {
+    wrap.innerHTML = '<div class="cart-empty">Tu pedido está vacío.<br>Abre un producto y pulsa "Agregar al pedido".</div>';
+    foot.style.display = 'none';
+    return;
+  }
+  foot.style.display = '';
+
+  let total = 0, hasPending = false;
+  wrap.innerHTML = cart.map((it, idx) => {
+    const p = productByRef(it.ref);
+    const nombre = p ? p.nombre : it.ref;
+    let pricesHTML;
+    if (priceMode === 'publico') {
+      pricesHTML = '<div class="cart-item-sub pendiente">Precio a confirmar</div>';
+    } else {
+      const num = unitPriceNum(it.ref);
+      if (num === null) {
+        hasPending = true;
+        pricesHTML = '<div class="cart-item-sub pendiente">' + escHTML(fmtPrice(unitPriceRaw(it.ref))) + '</div>';
+      } else {
+        total += num * it.qty;
+        pricesHTML = '<div class="cart-item-unit">' + it.qty + ' × ' + money(num) + '</div>'
+                   + '<div class="cart-item-sub">' + money(num * it.qty) + '</div>';
+      }
+    }
+    return '<div class="cart-item">'
+      + '<div class="cart-item-top"><div>'
+      +   '<div class="cart-item-name">' + escHTML(nombre) + '</div>'
+      +   '<div class="cart-item-ref">Ref: ' + escHTML(it.ref) + '</div>'
+      +   (it.nota ? '<div class="cart-item-nota">Nota: ' + escHTML(it.nota) + '</div>' : '')
+      + '</div><button class="cart-item-del" onclick="removeCartItem(' + idx + ')" title="Eliminar">✕</button></div>'
+      + '<div class="cart-item-bottom">'
+      +   '<div class="qty-select">'
+      +     '<button onclick="cartQtyDelta(' + idx + ',-1)" title="Menos">−</button>'
+      +     '<span>' + it.qty + '</span>'
+      +     '<button onclick="cartQtyDelta(' + idx + ',1)" title="Más">+</button>'
+      +   '</div>'
+      +   '<div class="cart-item-prices">' + pricesHTML + '</div>'
+      + '</div></div>';
+  }).join('');
+
+  // Total
+  const totalEl = document.getElementById('cartTotal');
+  const noteEl  = document.getElementById('cartTotalNote');
+  if (priceMode === 'publico') {
+    totalEl.textContent = 'Precios a confirmar';
+    totalEl.className = 'cart-total pendiente';
+    noteEl.textContent = 'Tu asesora te confirmará los precios.';
+  } else {
+    totalEl.textContent = money(total);
+    totalEl.className = 'cart-total';
+    noteEl.textContent = hasPending ? 'Algunos precios se confirman con tu asesora.' : '';
+  }
+}
+
+// ── Menú de destinos WhatsApp ──
+function destKey() {
+  return priceMode === 'mayorista' ? 'mayorista' : (priceMode === 'detal' ? 'detal' : 'sinprecios');
+}
+function openDestinos() {
+  if (!cart.length) return;
+  const dests = WHATSAPP_DESTINOS[destKey()] || [];
+  let html = '', lastGroup = null;
+  dests.forEach((d, i) => {
+    if (d.grupo && d.grupo !== lastGroup) {
+      html += '<div class="dest-group">' + escHTML(d.grupo) + '</div>';
+      lastGroup = d.grupo;
+    }
+    const sub = d.asesora
+      ? '<span class="dest-sub">' + escHTML(d.asesora) + ' · +' + escHTML(d.numero) + '</span>'
+      : (d.numero ? '<span class="dest-sub">+' + escHTML(d.numero) + '</span>'
+                  : '<span class="dest-sub">Abre WhatsApp y eliges tú el contacto</span>');
+    html += '<button class="dest-item" onclick="sendOrder(' + i + ')">'
+      + '<span class="dest-label">' + escHTML(d.label) + '</span>' + sub + '</button>';
+  });
+  document.getElementById('destList').innerHTML = html;
+  document.getElementById('destOverlay').classList.add('open');
+}
+function closeDestinos() { document.getElementById('destOverlay').classList.remove('open'); }
+function closeDestinosIfOutside(e) {
+  if (e.target === document.getElementById('destOverlay')) closeDestinos();
+}
+function sendOrder(i) {
+  const d = (WHATSAPP_DESTINOS[destKey()] || [])[i];
+  if (!d) return;
+  const msg = encodeURIComponent(buildOrderMessage());
+  const url = d.numero
+    ? 'https://wa.me/' + d.numero + '?text=' + msg
+    : 'https://wa.me/?text=' + msg;
+  window.open(url, '_blank');
+  closeDestinos();
+}
+
+// ── Mensaje del pedido (sin emojis) ──
+function buildOrderMessage() {
+  const SEP = '━━━━━━━━━━━━━━━━━━━';
+  const modeLabel = priceMode === 'mayorista' ? 'Mayorista'
+                  : priceMode === 'detal' ? 'Detal'
+                  : 'Precios a confirmar';
+  const lines = [];
+  lines.push('*NUEVO PEDIDO — ' + CATALOG_NAME.toUpperCase() + '*');
+  lines.push('Lista de precios: *' + modeLabel + '*');
+  lines.push(SEP);
+  lines.push('');
+
+  let total = 0, units = 0, hasPending = false;
+  cart.forEach((it, idx) => {
+    const p = productByRef(it.ref);
+    const nombre = p ? p.nombre : it.ref;
+    units += it.qty;
+    lines.push('*' + (idx + 1) + '. ' + nombre + '*');
+    lines.push('- Ref: ' + it.ref);
+    if (it.nota) lines.push('- Nota: ' + it.nota);
+    if (priceMode === 'publico') {
+      lines.push('- Cantidad: ' + it.qty);
+    } else {
+      const num = unitPriceNum(it.ref);
+      if (num === null) {
+        hasPending = true;
+        lines.push('- Cantidad: ' + it.qty);
+        lines.push('- Precio: por confirmar');
+      } else {
+        total += num * it.qty;
+        lines.push('- Cantidad: ' + it.qty + ' × ' + money(num));
+        lines.push('- Subtotal: *' + money(num * it.qty) + '*');
+      }
+    }
+    lines.push('');
+  });
+
+  lines.push(SEP);
+  lines.push('Productos: ' + cart.length + '  ·  Unidades: ' + units);
+  if (priceMode === 'publico') {
+    lines.push('*TOTAL: precios a confirmar*');
+  } else if (hasPending) {
+    lines.push('*TOTAL: ' + money(total) + '* (mas precios por confirmar)');
+  } else {
+    lines.push('*TOTAL: ' + money(total) + '*');
+  }
+  lines.push('');
+  lines.push('_Enviado desde el catálogo ' + CATALOG_NAME + '_');
+  return lines.join('\n');
 }
 </script>
 
