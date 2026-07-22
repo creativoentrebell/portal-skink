@@ -129,7 +129,7 @@
     "categoria": "Primera Limpieza",
     "descripcion": "Hidratació Este dúo une el poder del Calamine Pore Control Cleansing Oil, que disuelve maquillaje y elimina puntos negros, con el Coconut Clay Cleansing Foam, una espuma hidratante que limpia profundamente los poros con microburbujas suaves y calmantes. Ingredientes claves: aceite de oliva, calamina, extracto de arroz, extracto de harina de avena, extracto de soja.",
     "imagen": "img/skink/TOCOBO43.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -218,7 +218,7 @@
     "categoria": "Protección Solar",
     "descripcion": "El Tocobo Cica Cooling Sun Stick ofrece protección solar mineral SPF50+ PA++++ en un formato en barra de rápida aplicación. Combina óxido de zinc y dióxido de titanio micronizados para brindar cobertura de amplio espectro, mientras un complejo de centella asiática y mentol natural proporciona efecto refrescante inmediato. Ingredientes claves: Extracto de té verde, niacinamida, extracto de centella, ácido hialurónico.",
     "imagen": "img/skink/TOCOBO32.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -1887,7 +1887,7 @@
     "categoria": "Mascarillas",
     "descripcion": "La Mascarilla Calmante de Colágeno Anua Heartleaf 70 está formulada para calmar y aliviar la piel irritada, a la vez que refuerza la barrera de hidratación cutánea. Es una mascarilla hidratante enriquecida con 2000 ppm de extracto de colágeno. Ingredientes claves: agua de flor, hoja y tallo de Houttuynia Cordata y extracto de hoja de Aloe, acido hialuronico.",
     "imagen": "img/skink/ANUA29.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -3010,7 +3010,7 @@
     "categoria": "Tónico",
     "descripcion": "TONER (Tonico iluminador) Ingredientes claves: Niacinamida, alantoína, perejil, glutation, lavanda, manzanilla, curcuma, peptidos, ácido tióctico. Este tónico está enriquecido con ácido kójico, cúrcuma y ácido glicólico, que deja la piel suave, tonificada y luminosa. El ácido kójico difumina las imperfecciones, la cúrcuma alivia la irritación y el ácido glicólico exfolia para refinar la piel. Clínicamente probado mejora en 2 semanas para una apariencia más clara y radiante. Ingredientes claves: Niacinamida, Ácido Kójico, aceite de recino, pantenol, Ácido Cítrico, acido glicolico.",
     "imagen": "img/skink/MEDICUBE72.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -3132,7 +3132,7 @@
     "categoria": "Sérum",
     "descripcion": "Un sérum de lujo formulado con una alta concentración de glutathione que ilumina tu piel durante 24 horas. Ayuda a reducir manchas, líneas de expresión y signos de la edad para un rostro más firme y brillante. Ingredientes claves: Fermento de bífida, pantenol, ceramida, ácido hialurónico. DEEP VITA C CAPSULE SERUM (Serum en capsula Vita C)",
     "imagen": "img/skink/MEDICUBE19.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -3236,7 +3236,7 @@
     "categoria": "Mascarillas",
     "descripcion": "Esta mascarilla de gel será tu aliado ideal para disminuir visiblemente la apariencia de manchas oscuras e hiperpigmentación, incluyendo las que se encuentran en las capas más profundas de la piel. Ingredientes claves: Niacinamida, curcuma, retinol, ceramida, colágeno.",
     "imagen": "img/skink/MEDICUBE33.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -3691,7 +3691,7 @@
     "categoria": "Mascarillas",
     "descripcion": "Enriquecido con ADN de salmón PDRN y colágeno de bajo peso molecular para una tez jugosa y brillante. PDRN aumenta la hidratación y apoya la producción de colágeno. El colágeno hidrolizado penetra profundamente para hacer que tu piel se vea suave. Ingredientes claves: Pantenol, colágeno, aminoacidos de trigo, ácido hialurónico. Ingredientes claves: Niacinamida, péptidos, colageno, ADN de salmón.",
     "imagen": "img/skink/MEDICUBE16.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -4171,7 +4171,7 @@
     "categoria": "Parches",
     "descripcion": "Azul : cuidado de los poros y control del sebo Naranja : iluminador Verde : voluminizador Rojo : elasticidad Púrpura : potencia el cuidado de la Los colores de LED para cada modo están preestablecidos y los cambios de color de LED solo se pueden realizar a través de la aplicación AGE-R. Beauty device- age booster pro ex yellow (dispositivo) REF: MEDICUBE74 Parches hidrocoloides para espinillas en forma de estrella, vienen en cinco colores.",
     "imagen": "img/skink/OOTD1.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -5831,7 +5831,7 @@
     "categoria": "Hidratación",
     "descripcion": "Una crema vegana para el cuidado de la piel, formulada con TXA y niacinamida, que combate las irregularidades en el tono de la piel causadas por el exceso de melanina, ayudando a atenuar las manchas oscuras a la vez que mejora la claridad y el equilibrio general de la piel. Ingredientes claves:Niacinamida, ácido tranexico, extracto de malta, acido hialurónico, ceramida. MELACLEAR CREAM (Crema hidratante)",
     "imagen": "img/skink/DR-ALTHEA18.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -5963,7 +5963,7 @@
     "categoria": "Bruma",
     "descripcion": "Serum en spray desarrollado para ofrecer un tratamiento multifuncional en un solo paso, funcionando como tónico, sérum y fijador de maquillaje. Su aplicación es rápida y versátil, lo que lo convierte en un must-have para cualquier rutina de belleza, especialmente para aquellas mujeres que buscan un piel radiante, saludable y protegida en todo momento. Ingredientes claves: Niacinamida, extracto de avena, semilla de girasol, extracto de soja. Marca vegana italiana en auge en el mercado coreano del cuidado de la piel. Todos sus productos utilizan trufa blanca, recolectada cada diez años en Piamonte, Italia. Alcanzó recientemente un hito importante como la marca independiente de cuidado de la piel con mayor generación de ingresos en Corea.",
     "imagen": "img/skink/D-ALBA3.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Manchas e Hiperpigmentación"
@@ -7010,7 +7010,7 @@
     "categoria": "Sérum",
     "descripcion": "",
     "imagen": "img/skink/CELI-10.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -7226,7 +7226,7 @@
     "categoria": "Labial",
     "descripcion": "SEOUL 1988 Cream : Snail Mucin 93% + Rice (Crema caracol + arroz) Ingredientes claves: Filtrado de arroz, filtrado de baba de caracol, pantenol. (Piel seca) Esta crema para ojos enriquecida con un 4% de liposoma de retina y extracto de fermento de soja/Lactobacillus proporciona efectos antienvejecimiento e iluminadores, ayuda a mejorar la textura de la piel y a reducir la aparición de arrugas con una irritación mínima. Ingredientes claves: vitamina C, E, péptidos, niacinamida, semilla macadamia, extracto de soja. sérum cuidadosamente formulado para brindar cuidado intensivo a la piel. Enriquecido con un 2% de retinal encapsulado en liposomas y extracto de ginseng negro, este sérum ayuda a mejorar la apariencia de la piel, dejándola con un aspecto más suave y revitalizado.",
     "imagen": "img/skink/KSEC-02.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -8155,7 +8155,7 @@
     "categoria": "Hidratación",
     "descripcion": "",
     "imagen": "img/skink/DR-MELAXIN02.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Manchas e Hiperpigmentación"
@@ -8170,7 +8170,7 @@
     "categoria": "Exfoliante",
     "descripcion": "",
     "imagen": "img/skink/DR-MELAXIN03.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Manchas e Hiperpigmentación",
@@ -8186,7 +8186,7 @@
     "categoria": "Exfoliante",
     "descripcion": "",
     "imagen": "img/skink/DR-MELAXIN04.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Manchas e Hiperpigmentación",
