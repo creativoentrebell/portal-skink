@@ -386,8 +386,10 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
 }
 
 /* ── CARRITO — BOTÓN HEADER ── */
-.cart-btn { position: relative; background: var(--white); border: 1.5px solid var(--beige-mid); border-radius: 8px; width: 40px; height: 34px; font-size: 16px; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all 0.18s; }
+.cart-btn { position: relative; background: var(--white); border: 1.5px solid var(--beige-mid); border-radius: 8px; height: 34px; padding: 0 12px; font-size: 16px; font-family: inherit; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 7px; flex-shrink: 0; transition: all 0.18s; }
 .cart-btn:hover { border-color: var(--taupe); }
+.cart-label { font-size: 13px; font-weight: 500; color: var(--text); white-space: nowrap; }
+@media (max-width: 600px) { .cart-label { display: none; } .cart-btn { padding: 0; width: 40px; } }
 .cart-count { position: absolute; top: -6px; right: -7px; min-width: 17px; height: 17px; padding: 0 4px; background: var(--taupe-dark); color: var(--white); font-size: 10px; font-weight: 600; border-radius: 9px; display: none; align-items: center; justify-content: center; line-height: 1; }
 .cart-count.show { display: flex; }
 
@@ -460,6 +462,18 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
   .dest-list { max-height: none; flex: 1; }
 }
 
+/* ── CARRITO — FORMULARIO DATOS DEL CLIENTE (previo a envío WhatsApp) ── */
+.cliente-modal { max-width: 430px; max-height: 88vh; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+.cliente-form { text-align: left; margin-top: 4px; }
+.cliente-field { margin-bottom: 2px; }
+.cliente-field .order-note.error { border-color: var(--badge-out); animation: shake 0.35s ease; background: #fdf3f2; }
+.cliente-error-msg { font-size: 11px; color: var(--badge-out); min-height: 15px; margin: -8px 0 8px 2px; }
+.cliente-error-general { font-size: 12px; color: var(--badge-out); min-height: 16px; margin: 2px 0 8px; text-align: center; }
+
+@media (max-width: 600px) {
+  .cliente-modal { max-height: 90vh; }
+}
+
 /* Loading / empty */
 #loading { text-align: center; padding: 80px 24px; color: var(--text-light); }
 .spinner { width: 32px; height: 32px; border: 3px solid var(--beige-mid); border-top-color: var(--taupe); border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 16px; }
@@ -491,12 +505,12 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
     </div>
     <div class="header-spacer"></div>
     <div class="header-stats" id="headerStats"></div>
-    <button class="cart-btn" id="cartBtn" onclick="openCart()" title="Ver pedido">🛍️<span class="cart-count" id="cartCount">0</span></button>
     <div class="price-mode-toggle">
       <button id="btnCatalogo" class="active" onclick="goPublico()">Catálogo</button>
       <button id="btnDetal" onclick="requestMode('detal')">Detal <span class="lock-icon" id="lockDetal">🔒</span></button>
       <button id="btnMayorista" onclick="requestMode('mayorista')">Mayorista <span class="lock-icon" id="lockMay">🔒</span></button>
     </div>
+    <button class="cart-btn" id="cartBtn" onclick="openCart()" title="Ver pedido">🛍️<span class="cart-label">Carrito</span><span class="cart-count" id="cartCount">0</span></button>
   </div>
 </header>
 
@@ -608,7 +622,7 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
       <span class="cart-total" id="cartTotal"></span>
     </div>
     <div class="cart-total-note" id="cartTotalNote"></div>
-    <button class="cart-send-btn" onclick="openDestinos()">Enviar pedido por WhatsApp</button>
+    <button class="cart-send-btn" onclick="abrirFormularioCliente()">Enviar pedido por WhatsApp</button>
     <button class="cart-clear-btn" onclick="clearCart()">Vaciar pedido</button>
   </div>
 </aside>
@@ -620,6 +634,44 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
     <p id="destDesc">Elige a quién enviar tu pedido por WhatsApp</p>
     <div class="dest-list" id="destList"></div>
     <button class="pwd-cancel" onclick="closeDestinos()">Cancelar</button>
+  </div>
+</div>
+
+<!-- CARRITO — FORMULARIO DATOS DEL CLIENTE (previo a envío WhatsApp) -->
+<div class="dest-overlay" id="clienteOverlay" onclick="closeClienteFormIfOutside(event)">
+  <div class="dest-modal cliente-modal">
+    <h3>Datos para tu pedido</h3>
+    <p>Completa tus datos antes de enviar el pedido por WhatsApp</p>
+    <div class="cliente-form">
+      <div class="cliente-field">
+        <div class="order-note-label">Cédula</div>
+        <input type="text" class="order-note" id="clienteCedula" maxlength="20" placeholder="Ej. 1017123456">
+        <div class="cliente-error-msg" id="errClienteCedula"></div>
+      </div>
+      <div class="cliente-field">
+        <div class="order-note-label">Nombre completo</div>
+        <input type="text" class="order-note" id="clienteNombre" maxlength="80" placeholder="Ej. Laura Gómez Ríos">
+        <div class="cliente-error-msg" id="errClienteNombre"></div>
+      </div>
+      <div class="cliente-field">
+        <div class="order-note-label">Dirección</div>
+        <input type="text" class="order-note" id="clienteDireccion" maxlength="120" placeholder="Ej. Cra 45 #23-10, apto 302">
+        <div class="cliente-error-msg" id="errClienteDireccion"></div>
+      </div>
+      <div class="cliente-field">
+        <div class="order-note-label">Ciudad</div>
+        <input type="text" class="order-note" id="clienteCiudad" maxlength="60" placeholder="Ej. Medellín">
+        <div class="cliente-error-msg" id="errClienteCiudad"></div>
+      </div>
+      <div class="cliente-field">
+        <div class="order-note-label">Teléfono de contacto</div>
+        <input type="text" class="order-note" id="clienteTelefono" maxlength="20" placeholder="Ej. 3001234567">
+        <div class="cliente-error-msg" id="errClienteTelefono"></div>
+      </div>
+    </div>
+    <div class="cliente-error-general" id="clienteErrorGeneral"></div>
+    <button class="pwd-submit" onclick="validarYContinuarFormularioCliente()">Continuar</button>
+    <button class="pwd-cancel" onclick="closeClienteForm()">Cancelar</button>
   </div>
 </div>
 
@@ -1430,6 +1482,68 @@ function updateCartUI() {
   }
 }
 
+// ── Datos del cliente (obligatorios antes de enviar por WhatsApp) ──
+// Variable global: se conserva durante toda la sesión aunque el cliente
+// cierre el carrito, agregue más productos o reabra el formulario.
+let clienteData = { cedula: '', nombre: '', direccion: '', ciudad: '', telefono: '' };
+
+const CLIENTE_CAMPOS = [
+  { id: 'clienteCedula',    err: 'errClienteCedula',    key: 'cedula' },
+  { id: 'clienteNombre',    err: 'errClienteNombre',    key: 'nombre' },
+  { id: 'clienteDireccion', err: 'errClienteDireccion', key: 'direccion' },
+  { id: 'clienteCiudad',    err: 'errClienteCiudad',    key: 'ciudad' },
+  { id: 'clienteTelefono',  err: 'errClienteTelefono',  key: 'telefono' }
+];
+
+function abrirFormularioCliente() {
+  if (!cart.length) return;
+  CLIENTE_CAMPOS.forEach(c => {
+    document.getElementById(c.id).value = clienteData[c.key] || '';
+    document.getElementById(c.id).classList.remove('error');
+    document.getElementById(c.err).textContent = '';
+  });
+  document.getElementById('clienteErrorGeneral').textContent = '';
+  document.getElementById('clienteOverlay').classList.add('open');
+}
+function closeClienteForm() {
+  document.getElementById('clienteOverlay').classList.remove('open');
+}
+function closeClienteFormIfOutside(e) {
+  if (e.target === document.getElementById('clienteOverlay')) closeClienteForm();
+}
+function validarYContinuarFormularioCliente() {
+  let valido = true;
+  const valores = {};
+  CLIENTE_CAMPOS.forEach(c => {
+    const input = document.getElementById(c.id);
+    const val = (input.value || '').trim();
+    valores[c.key] = val;
+    if (!val) {
+      valido = false;
+      input.classList.add('error');
+      document.getElementById(c.err).textContent = 'Este campo es obligatorio';
+    } else {
+      input.classList.remove('error');
+      document.getElementById(c.err).textContent = '';
+    }
+  });
+  const generalErr = document.getElementById('clienteErrorGeneral');
+  if (!valido) {
+    generalErr.textContent = 'Completa todos los campos para continuar.';
+    return;
+  }
+  generalErr.textContent = '';
+  clienteData = valores; // se conserva en la variable global durante la sesión
+  closeClienteForm();
+  // Continúa el flujo normal: menú de destinos si existe, o directo a WhatsApp si no.
+  if (typeof openDestinos === 'function') {
+    openDestinos();
+  } else {
+    const msg = encodeURIComponent(buildOrderMessage());
+    window.open('https://wa.me/?text=' + msg, '_blank');
+  }
+}
+
 // ── Menú de destinos WhatsApp ──
 function destKey() {
   return priceMode === 'mayorista' ? 'mayorista' : (priceMode === 'detal' ? 'detal' : 'sinprecios');
@@ -1475,6 +1589,14 @@ function buildOrderMessage() {
                   : priceMode === 'detal' ? 'Detal'
                   : 'Precios a confirmar';
   const lines = [];
+  lines.push('*Datos del cliente*');
+  lines.push('• Nombre: ' + (clienteData.nombre || ''));
+  lines.push('• Cédula: ' + (clienteData.cedula || ''));
+  lines.push('• Dirección: ' + (clienteData.direccion || ''));
+  lines.push('• Ciudad: ' + (clienteData.ciudad || ''));
+  lines.push('• Teléfono: ' + (clienteData.telefono || ''));
+  lines.push(SEP);
+  lines.push('');
   lines.push('*NUEVO PEDIDO — ' + CATALOG_NAME.toUpperCase() + '*');
   lines.push('Lista de precios: *' + modeLabel + '*');
   lines.push(SEP);
