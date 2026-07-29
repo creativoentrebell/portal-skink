@@ -268,7 +268,7 @@
     "categoria": "Protección Solar",
     "descripcion": "El Tocobo Cica Cooling Sun Stick ofrece protección solar mineral SPF50+ PA++++ en un formato en barra de rápida aplicación. Combina óxido de zinc y dióxido de titanio micronizados para brindar cobertura de amplio espectro, mientras un complejo de centella asiática y mentol natural proporciona efecto refrescante inmediato. Ingredientes claves: Extracto de té verde, niacinamida, extracto de centella, ácido hialurónico. CICA COOLING SUN STICK MINI (Barra solar refrescante mini)",
     "imagen": "img/skink/TOCOBO38.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -1312,7 +1312,7 @@
     "categoria": "Protección Solar",
     "descripcion": "Nutrición Es un protector solar tipo sérum con textura ligera e hidratante que se absorbe suavemente en la piel, dejando una sensación confortable. Formulado para todo tipo de piel, incluyendo pieles sensibles, ofrece protección de amplio espectro SPF 50+ PA++++ contra los rayos UVA y UVB. Ingredientes claves: Extracto de frijol, niacinamida, extracto de raiz, fermento de soja, aceite de coco.",
     "imagen": "img/skink/MIXSOON11.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -1505,7 +1505,7 @@
     "categoria": "Segunda Limpieza",
     "descripcion": "Rica en niacinamida y melocotón, esta espuma limpiadora purifica los poros e ilumina la piel. Contiene glucósido de glicerilo y ceramida para una limpieza sin sensación de tirantez. Su formulación ligeramente ácida ofrece una limpieza suave pero profunda y es adecuada para pieles grasas y propensas al acné. Ingredientes claves: Niacinamida, extracto de fruta, melocotón, ceramida, Centella asiatica.",
     "imagen": "img/skink/ANUA31.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -1587,7 +1587,7 @@
     "categoria": "Segunda Limpieza",
     "descripcion": "Heartleaf quercetinol pore cleansing foam (espuma limpiadora hoja de corazón) de crueldad animal Un limpiador facial suave en gel, formulado con 8 tipos de ácido hialurónico y pantenol para hidratar instantáneamente la piel y reponer la barrera cutánea, mientras limpia profundamente los poros sin dañar la piel. Ingredientes claves: Ácido hialurónico, pantenol, proteina vegetal.",
     "imagen": "img/skink/ANUA19.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -1722,7 +1722,7 @@
     "categoria": "Sérum",
     "descripcion": "(Mixtas, pieles maduras) Niacinamide 10% + TXA 4% serum (serum de niacinamida de crueldad animal Suero calmante de enrojecimiento para pieles sensibles, ácido hialurónico, niacinamida, cuidado de las manchas, color natural, vegano, cuidado de la piel. Ingredientes claves: proteína de arroz hidrolizada, ceramida, ácido láctico. Este sérum subácido, formulado con un 70% de agua de abedul blanco japonés, equilibra el pH de la piel y previene la pérdida de hidratación. Su textura ligera penetra rápidamente, proporcionando una base ideal para una piel fresca y equilibrada.",
     "imagen": "img/skink/ANUA2.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -1976,7 +1976,7 @@
     "categoria": "Mascarillas",
     "descripcion": "MASK (Mascarilla Niacinamida) Ingredientes claves: Vitamina B12, ácido hialurónico, fermento de levadura, ceramidas. Mascarillas Una mascarilla iluminadora que ayuda a reducir la aparición de manchas e ilumina el tono de la piel al mismo tiempo que la mantiene hidratada. Revitaliza la piel fatigada y opaca. Ingredientes claves: Vitamina E, extracto de curcuma, extracto de apio, brócoli y aguacate.",
     "imagen": "img/skink/ANUA23.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -2071,7 +2071,7 @@
     "categoria": "Bruma",
     "descripcion": "",
     "imagen": "img/skink/ANUA35.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Hidratación Profunda"
@@ -2087,7 +2087,7 @@
     "categoria": "Mascarillas",
     "descripcion": "",
     "imagen": "img/skink/ANUA36.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Anti-edad",
@@ -2634,7 +2634,7 @@
     "categoria": "Primera Limpieza",
     "descripcion": "Aceite Limpiador Profundo Todo en Uno: Disuelve el sebo, los puntos negros y el maquillaje en un solo paso. Ingredientes especializados actúan sobre el sebo y ayudan a eliminar las impurezas endurecidas dentro de los poros. Ingredientes claves: Aceite de soja, aceite de jojoba, ácido salicílico, extracto de fruta, extracto de macadamia.",
     "imagen": "img/skink/MEDICUBE45.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -3492,7 +3492,7 @@
     "categoria": "Segunda Limpieza",
     "descripcion": "Ingredientes claves: Extracto de fruta, ácido hialurónico, PDRN de salmón, niacinamida, pantenol. Sérum Ingredientes claves: Pantenol, ácido hialurónico, ceramidas, colágeno, vitamina B12, ácido desoxirribonucleico) (Limpiador PDRN) espuma limpiadora facial iluminadora y reafirmante diseñada para eliminar impurezas, poros obstruidos y células muertas mientras hidrata. Su formato en cápsulas dobles, ofrece una piel radiante, elástica y un tono uniforme sin sensación de tirantez. Ingredientes claves: Niacinamida, PDRN de salmón, ácido hialuronico, ceramidas, glutathione.",
     "imagen": "img/skink/MEDICUBE79.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -3661,7 +3661,7 @@
     "categoria": "Sérum",
     "descripcion": "El sérum antiedad contiene 2000 ppm de exosomas, PDRN de salmón y colágeno para promover la regeneración celular, mejorar la elasticidad y cerrar los poros dilatados. probado para ser apto para todo tipo de piel, incluso la sensible. Ingredientes claves: Exosomas, colágeno, ácido hialurónico, PDRN de salmón, niacinamida, pantenol. 99% PDRN de Salmón de Alta Pureza: Absorción mejorada con mínimo residuo debido a su tamaño de partícula pequeña. La concentración uniforme y estable asegura una mejor absorción y beneficios más efectivos para el cuidado de la piel.",
     "imagen": "img/skink/MEDICUBE50.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -3738,7 +3738,7 @@
     "categoria": "Hidratación",
     "descripcion": "Una crema enriquecida con cápsulas de colágeno rosa que mejora el tono desigual de la piel y aumenta la luminosidad para pieles apagadas y flácidas. Las cápsulas mantienen los efectos reafirmantes e hidratantes del PDRN hasta que se absorben en la piel, logrando un brillo máximo. Ingredientes claves: Extracto de colágeno, aceite de moringa, extracto de salmon, ceramida.",
     "imagen": "img/skink/MEDICUBE21.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -4448,7 +4448,7 @@
     "categoria": "Segunda Limpieza",
     "descripcion": "Tónico para pieles grasas o propensas al acné, que buscan una piel purificada y equilibrada. Purifica y limpia, calma y reduce la inflamacion,. Ingredientes claves: Extracto de flor de Lavanda, agua hoja de té, ácido cítrico.",
     "imagen": "img/skink/SKIN1004-13.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -4503,7 +4503,7 @@
     "categoria": "Sérum",
     "descripcion": "Esta hidratante en crema, aparte de ser vegana, combina un 5% de vitamina B5, con extractos de árbol del té y centella asiática, con lo cual proporciona una hidratación profunda, fortalece la barrera cutánea, calma la piel irritada, y controla la producción de grasa. Ingredientes claves: Extracto de centella, niacinamida, extracto arbol de té.",
     "imagen": "img/skink/SKIN1004-44.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Brillo y Luminosidad",
@@ -4857,7 +4857,7 @@
     "categoria": "Hidratación",
     "descripcion": "Ofrece una alta protección SPF50+ PA++++, mientras suaviza visiblemente la textura de la piel gracias al extracto puro de Centella de Madagascar y un complejo de ingredientes que ayudan a minimizar poros y controlar el exceso de sebo. Ingredientes claves: Niacinamida, extracto de centella asíatica, extracto de semillas, sal marina, glicerina.",
     "imagen": "img/skink/SKIN1004-75.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -4963,7 +4963,7 @@
     "categoria": "Sérum",
     "descripcion": "Bruma facial (Bruma Facial) Ingredientes claves: Extracto de centella, ácido hialuronico, extracto de pera, ceramidas. Es un limpiador en textura leche, ideal para retirar impurezas, suciedad y residuos de maquillaje sin resecar la piel. Su fórmula combina Centella Asiática con Hyal-Cica, aportando una limpieza suave, calmante e hidratante, perfecta para pieles sensibles o deshidratadas. Ingredientes claves: Ácido hialuronico, pantenol, centella asiatica, aceite vegetal.",
     "imagen": "img/skink/SKIN1004-70.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -5038,7 +5038,7 @@
     "categoria": "Tónico",
     "descripcion": "Madagascar Centella Hyalu-Cica Blue Serum (suero azul centella y hialurónico) (Hyalu-Cica) Hidratación y rellenadora madagascar centella hyalu-cica moisture cream (Crema madagascar ácido hialurónico) (piel seca) Esta crema de propiedades calmantes es una fuente de hidratación duradera, capaz de nutrir la piel seca desde sus capas más profundas y proporcionar múltiples niveles de humectación para una piel óptimamente equilibrada. Ingredientes claves: extracto de centella, ácido hialurónico, extracto de fruta, pantenol.",
     "imagen": "img/skink/SKIN1004-62.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -5335,7 +5335,7 @@
     "categoria": "Segunda Limpieza",
     "descripcion": "(Centella) Línea calmante y reparadora Crema hidratante con un 72% de extracto de centella asiática pura de Madagascar y 4 tipos diferentes de ceramidas obtenidos de ingredientes botánicos para fortalecer y reafirmar la. Ingredientes claves: Extracto de centella, extracto hoja de menta, extracto de cacao, ceramida.",
     "imagen": "img/skink/SKIN1004-59.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -5354,7 +5354,7 @@
     "categoria": "Sets y Kits",
     "descripcion": "Madagascar centella soothing cream (crema calmante de centella) (Centella) Línea calmante y reparadora Este kit incluye todos los productos de la más famosa línea de SKIN1004 (madagascar centella) El set incluye: Centella Light Cleansing Oil 30ml Centella Ampoule Foam 20ml Centella Toning Toner 30ml Centella Ampoule 30ml Centella Soothing Cream 30ml. Ingredientes claves: Extracto de centella, niacinamida, extracto de romero, extracto de manzanilla.",
     "imagen": "img/skink/SKIN1004-7.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Brillo y Luminosidad",
@@ -5711,7 +5711,7 @@
     "categoria": "Sets y Kits",
     "descripcion": "",
     "imagen": "img/skink/SKIN1004-86.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Piel Sensible y Calmante"
@@ -5727,7 +5727,7 @@
     "categoria": "Sets y Kits",
     "descripcion": "",
     "imagen": "img/skink/SKIN1004-87.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Acné",
@@ -6108,7 +6108,7 @@
     "categoria": "Hidratación",
     "descripcion": "La Crema 147 Barrier es un tratamiento avanzado de cuidado de la piel diseñado para fortalecer la barrera cutánea, proporcionar nutrición y garantizar una hidratación profunda. Su formulación está enriquecida con ingredientes que refuerza la función protectora de la piel. Ingredientes claves:Niacinamida, ceramidas, centella asiatica, aceite de macadamia, ácido hialuronico. 147 Barrier Cream (Crema protectora 147)",
     "imagen": "img/skink/DR-ALTHEA4.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -6201,7 +6201,7 @@
     "categoria": "Hidratación",
     "descripcion": "Crema calmante vegana ideal para hidratar y proteger la piel sensible. Formulada con ingredientes naturales como Centella Asiatica Extract, esta crema ofrece un alivio efectivo para irritaciones y ayuda a restaurar la barrera cutánea. Ingredientes claves:Niacinamida, pantenol, ácido hiaulónico, extracto de centella asiática. 345 Relief Cream (Crema de alivio 345)",
     "imagen": "img/skink/DR-ALTHEA1.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -7242,7 +7242,7 @@
     "categoria": "Sérum",
     "descripcion": "Producto diseñado para penetrar directamente los poros y mejorar la absorción, proporciona retina profundamente en la piel para atacar las arrugas y los poros dilatados, promoviendo una piel más suave y firme. Ingredientes claves: Vitamina A, péptidos, niacinamida, ácido ascórbico, pantenol.",
     "imagen": "img/skink/CELI-01.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
