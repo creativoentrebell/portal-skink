@@ -61,7 +61,7 @@
     "categoria": "Contorno de Ojos",
     "descripcion": "Contorno de ojos en gel para aumentar la vitalidad y la elasticidad gracias a u a formulación con un 81 % de agua de flor de lavanda. Cuenta con un sistema de red dual de colageno y 1000 ppm de D-pantenol para formar una barrera rica en humedad, la cual garantiza la mejor absorción de los demás ingredientes. ingredientes que suavizan, hidratan y mejoran la textura de la piel, Cica Calming Aqua Toner proporciona una sensación refrescante sin dejar sensación pesada.",
     "imagen": "img/skink/TOCOBO12.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -704,7 +704,7 @@
     "categoria": "Protección Solar",
     "descripcion": "",
     "imagen": "img/skink/TOCOBO66.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Protección Solar"
@@ -1567,7 +1567,7 @@
     "categoria": "Segunda Limpieza",
     "descripcion": "Ingredientes claves:Extracto de romero, aceite de girasol, extracto hoja de corazón. Heartleaf pore control cleansing oil mild (aceite limpiador control suave) Limpiador en espuma ideal para quienes buscan una limpieza profunda y eficaz sin irritaciones. Esta espuma exfolia suavemente las células muertas y elimina las impurezas de los poros, dejando la piel fresca y renovada. Ingredientes claves: Ácido hialurónico,",
     "imagen": "img/skink/ANUA3.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -2689,7 +2689,7 @@
     "categoria": "Segunda Limpieza",
     "descripcion": "Ingredientes claves: Extracto de hoja de Aspalathus linearis, extracto de acerola, ácido láurico, . Piel grasa (sensible) Zero foam cleanser (limpiador en espuma) Esta espuma limpiadora de limpieza profunda combina ácido azelaico puro al la apariencia de los poros, suavizar la textura y equilibrar la hidratación.La glicerina promueve una tez equilibrada y más refinada. Ingredientes claves: Áglicerina, ácido mirístico, ácido esteárico, extracto de romero, extracto de frutas, cacao.",
     "imagen": "img/skink/MEDICUBE57.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Manchas e Hiperpigmentación",
@@ -3021,7 +3021,7 @@
     "categoria": "Mascarillas",
     "descripcion": "Ofrece un enfoque innovador para el cuidado de los poros, combinando efectos refrescantes y tensores en una potente fórmula. Esta avanzada mascarilla de barro está específicamente diseñada para combatir los puntos negros y el exceso de sebo de forma eficaz y suave. Ingredientes claves: Ácido glicólico, ácido salicílico, arcilla, extracto de caolín.",
     "imagen": "img/skink/MEDICUBE36.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -3474,7 +3474,7 @@
     "categoria": "Segunda Limpieza",
     "descripcion": "Es un limpiador en espuma que combina las propiedades regeneradoras del PDRN con los beneficios unificadores de tono de la niacinamida. Su textura única, permite usarlo como limpiador diario o como una mascarilla purificante. Ingredientes claves: Extracto de fruta, ácido hialurónico, PDRN de salmón, niacinamida, pantenol.",
     "imagen": "img/skink/MEDICUBE68.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -3623,7 +3623,7 @@
     "categoria": "Bruma",
     "descripcion": "PDRN Pink peptide serum (serum de PDRN y péptidos) una fórmula única de gelatina que combina el poder de un suero con la comodidad de una niebla. Hidratación rápida, brillo duradero: enriquecida con 99% de pureza de salmón PDRN y colágeno, esta fórmula de doble textura ofrece una hidratación rápida y un brillo húmedo duradero. Ingredientes claves: Niacinamida, glutation, ceramida, ácido hialuronico. Suero de burbujas de colágeno rosa PDRN, una fórmula liviana de microburbujas que estalla instantáneamente después de la aplicación. Infundido con PDRN 99% de pureza, niacinamida 5% y colágeno de alta pureza, este suero brinda hidratación profunda, luminosidad y beneficios reafirmantes de la piel.",
     "imagen": "img/skink/MEDICUBE61.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -3956,7 +3956,7 @@
     "categoria": "Sérum",
     "descripcion": "Hypochlorous Acid Rice Peel Shot (Serum en shot ácido hipocloroso y arroz) Ingredientes claves: Salvado de arroz, cafeina, ácido hipocloroso, ceramida, ácido hialurónico. Formulado con ácido tranexámico, niacinamida y arbutina, este sérum aclara el tono desigual de la piel y las manchas oscuras, a la vez que refina su textura. Su fórmula ligera y no pegajosa se absorbe rápidamente para un acabado limpio y. Ingredientes claves: Niacinamida, tranexamico, extracto de flor, pantenol, ácido hialurónico, péptido.",
     "imagen": "img/skink/MEDICUBE26.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -4014,7 +4014,7 @@
     "categoria": "Sérum",
     "descripcion": "(Cantidad tolerable) Enriquecido con un 99 % de PDRN y un rosa en gel se funde en la piel para una reparación profunda: piel firme y elástica sin sensación pegajosa. Clínicamente probado para resultados visibles. Ingredientes claves: Extracto de PDRN, colágeno, Niacinamida, acido hialurónico, ceramidas.",
     "imagen": "img/skink/MEDICUBE80.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -4117,7 +4117,7 @@
     "categoria": "Accesorios",
     "descripcion": "Dispositivo tecnológico (con cuatro modos diferentes) Beauty device- age booster pro ex (dispositivo) Beauty device- age booster pro ex pink (dispositivo)",
     "imagen": "img/skink/MEDICUBE7.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [],
     "mas_vendido": false
@@ -6375,7 +6375,7 @@
     "categoria": "Bruma",
     "descripcion": "",
     "imagen": "img/skink/D-ALBA1.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Universal"
@@ -6391,7 +6391,7 @@
     "categoria": "Capilar",
     "descripcion": "",
     "imagen": "img/skink/D-ALBA10.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Capilar"
@@ -6407,7 +6407,7 @@
     "categoria": "Hidratación",
     "descripcion": "",
     "imagen": "img/skink/D-ALBA11.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -6424,7 +6424,7 @@
     "categoria": "Bruma",
     "descripcion": "",
     "imagen": "img/skink/D-ALBA12.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Manchas e Hiperpigmentación"
@@ -6440,7 +6440,7 @@
     "categoria": "Sérum",
     "descripcion": "",
     "imagen": "img/skink/D-ALBA13.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -6457,7 +6457,7 @@
     "categoria": "Sérum",
     "descripcion": "",
     "imagen": "img/skink/D-ALBA14.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -6474,7 +6474,7 @@
     "categoria": "Maquillaje",
     "descripcion": "",
     "imagen": "img/skink/D-ALBA15.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Universal"
@@ -6490,7 +6490,7 @@
     "categoria": "Sérum",
     "descripcion": "",
     "imagen": "img/skink/D-ALBA16.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda"
@@ -6506,7 +6506,7 @@
     "categoria": "Bruma",
     "descripcion": "",
     "imagen": "img/skink/D-ALBA17.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda"
@@ -6522,7 +6522,7 @@
     "categoria": "Capilar",
     "descripcion": "",
     "imagen": "img/skink/D-ALBA18.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Capilar"
@@ -6571,7 +6571,7 @@
     "categoria": "Contorno de Ojos",
     "descripcion": "Este producto está formulado con 73,7% de filtrado de baba de caracol, 2% de niacinamida y 5 tipos de péptidos que ayudan a regenerar las células, aclarar e hidratar la zona y reducir las líneas de expresión. Actúa como antioxidante y es conocido por sus habilidades para curar heridas y cicatrices de acné. Ingredientes claves: Filtrado de caracol, aceite de girasol, niacinamida, pantenol.",
     "imagen": "img/skink/COSRX5.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
