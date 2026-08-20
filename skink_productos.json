@@ -210,7 +210,7 @@
     "categoria": "Protección Solar",
     "descripcion": "Ingredientes claves: Niacinamida, extracto de algodón, extracto de flor y corteza. STAR KEYRING (Protector) Un protector solar en barra que no solo protege tu piel de los daños causados por los rayos UVA y UVB con FPS50+ PA++++, sino que también la calma y controla la producción de sebo gracias a sus complejos herbales. Su aplicación suave y fácil te permite retocar tu protección solar durante el día. Ingredientes claves: Extracto de curcuma, extracto de algodón, aceite de girasol.",
     "imagen": "img/skink/TOCOBO31.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Manchas e Hiperpigmentación",
@@ -324,7 +324,7 @@
     "categoria": "Protección Solar",
     "descripcion": "Ultra ligero y cómodo, este protector solar con textura refrescante de suero hidrata tu piel y la protege de los rayos UVA y UVB con FPS50+ PA++++. Es indetectable sobre la piel y se absorbe fácilmente, así que no debes preocuparte por residuos blancos o grasosos. Ingredientes claves: Niacinamida, extracto de algodón, extracto de flor y corteza.",
     "imagen": "img/skink/TOCOBO33.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Manchas e Hiperpigmentación",
@@ -1488,7 +1488,7 @@
     "categoria": "Mascarillas",
     "descripcion": "",
     "imagen": "img/skink/MIXSOON20.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Piel Sensible y Calmante"
@@ -1526,7 +1526,7 @@
     "categoria": "Primera Limpieza",
     "descripcion": "Ingredientes claves: Niacinamida, extracto de fruta, melocotón, ceramida, Centella asiatica. CLEANSING FOAM (Espuma limpiadora) Limpiador o aceite que ataca de forma no agresiva las pieles grasas y propensas a acné y ayuda a prevenir los puntos negros. Es un limpiador en aceite suave y efectivo adecuado para todo tipo de pieles. Ingredientes claves: Semilla de macadamia, aceite de jojoba, aceite de oliva, aceite de uva.",
     "imagen": "img/skink/ANUA7.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -1858,7 +1858,7 @@
     "categoria": "Protección Solar",
     "descripcion": "Protección solar Crema protectora enriquecida con extracto de hoja de corazón y ácido hialurónico, esta fórmula ligera e hidratante se aplica con suavidad y deja la piel hidratada, a la vez que ayuda a mantener el equilibrio de hidratación.",
     "imagen": "img/skink/ANUA25.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -2054,7 +2054,7 @@
     "categoria": "Segunda Limpieza",
     "descripcion": "",
     "imagen": "img/skink/ANUA34.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -2229,7 +2229,7 @@
     "categoria": "Parches",
     "descripcion": "",
     "imagen": "img/skink/ABIB7.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Acné",
@@ -2266,7 +2266,7 @@
     "categoria": "Segunda Limpieza",
     "descripcion": "(Mixta +15) Beauty of Joseon es una marca de belleza de gama alta especializada en el cuidado natural de la piel. Su misión es ofrecer productos naturales, eficaces e innovadores con ingredientes de la máxima calidad. Ginseng Cleansing Oil (Aceite limpiador de ginseng) Contiene extracto de frijol mungo que crea un efecto sinérgico, ayuda a eliminar las células muertas de la piel y el sebo, es un limpiador hipoalergénico de tipo gel ligero, ligeramente ácido que no reseca la piel fácilmente y ayuda a retener la humedad. Ingredientes claves: Agua de fruta, extracto de corbata, extracto de arroz, ácido cítrico.",
     "imagen": "img/skink/BEAUTY14.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Piel Grasa y Poros"
@@ -2452,7 +2452,7 @@
     "categoria": "Hidratación",
     "descripcion": "(Mixta +15) Dynasty Cream (crema hidratante dynasty) 100ml Dynasty Cream (crema hidratante dynasty) 50ml",
     "imagen": "img/skink/BEAUTY4.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda"
@@ -2670,7 +2670,7 @@
     "categoria": "Segunda Limpieza",
     "descripcion": "Limpiador facial especialmente diseñado para pieles sensibles y delicadas. Su fórmula de espuma y enriquecida con ingredientes hidratantes asegura una limpieza profunda sin comprometer la barrera protectora de la piel. Ingredientes claves: Extracto de hoja de Aspalathus linearis, extracto de acerola, ácido láurico, . Piel grasa (sensible)",
     "imagen": "img/skink/MEDICUBE2.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -2764,7 +2764,7 @@
     "categoria": "Sérum",
     "descripcion": "SERUM (Serum calmante de ácido azelaico) Ingredientes claves: Ácido azelaico, niacinamida, ácido pantoténico, curcuma, ácido cítrico. Sérum Suero para calmar y disminuir visiblemente la apariencia de los poros. Este suero esta formulado con BHA, AHA y extractos herbales que ayudan a mejorar la apariencia de la piel, dejándola con una textura suave y libre de brotes de acné. Ingredientes claves: Niacinamida, ácido cítrico, acido salicílico, ácido glicólico, ácido hialurónico, centella.",
     "imagen": "img/skink/MEDICUBE1.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -2886,7 +2886,7 @@
     "categoria": "Sérum",
     "descripcion": "SHOT 7500 (inyeccion exosomas azelaico) Ingredientes claves: Extracto de flor, berenjena, ácido cítrico, calageno, centella asiatica, ceramida. Sérum Piel grasa Ingredientes claves: Extracto de flor, berenjena, ácido cítrico, calageno, centella asiatica, ceramida (mayor cantidad de agujas). es una fórmula revolucionaria diseñada para transformar tu piel. Este sérum premium combina ácido hialurónico de alta pureza al 99 % con potentes péptidos para brindar una hidratación intensa y beneficios antiedad. Ingredientes claves: Niacinamida, pantenol, aceite de fruto, semilla de jojoba, colágeno, peptidos, ácido hialuronico.",
     "imagen": "img/skink/MEDICUBE49.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -3400,7 +3400,7 @@
     "categoria": "Hidratación",
     "descripcion": "Crema iluminadora con cápsulas de vitamina C, brinda un brillo importante al mismo tiempo que reafirma, hidrata y refina la piel. La fórmula suave pero potente está dermatológicamente probada para ser adecuada para pieles sensibles. Ideal para pieles apagadas, con tez desigual o con manchas pigmentarias, aporta una luminosidad natural. Ingredientes claves: Niacinamida, aceite de soja, Vitamina C.",
     "imagen": "img/skink/MEDICUBE10.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -3456,7 +3456,7 @@
     "categoria": "Segunda Limpieza",
     "descripcion": "Gel limpiador con fórmula que limpia profundamente, apoya la regeneración y repara la barrera de la piel, mientras hidrata intensamente, mejora textura y tono, promueve regeneración celular. Ingredientes claves: Extracto de fruta, ácido hialurónico, PDRN de salmón, niacinamida, pantenol.",
     "imagen": "img/skink/MEDICUBE35.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -3604,7 +3604,7 @@
     "categoria": "Sérum",
     "descripcion": "Ampolla antienvejecimiento enriquecida con PDRN de salmón, complejo de colágeno de salmón y péptidos mejora la elasticidad de la piel, atenúa las imperfecciones y reduce la pigmentación de melanina. La ampolla es hipoalergénica y segura para usar en pieles sensibles. Ingredientes claves: Ácido acrílico, extracto de curcuma, colágeno hidrolizado, péptidos.",
     "imagen": "img/skink/MEDICUBE18.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -3757,7 +3757,7 @@
     "categoria": "Hidratación",
     "descripcion": "Esta crema facial de Triple Colágeno está enriquecida con elastina premium de Francia, formulada para mejorar la elasticidad y restaurar la juventud de tu piel. Gracias al colágeno y a los extractos naturales, esta hidratante promueve una piel más firme, radiante y libre de signos de envejecimiento. Ingredientes claves: Niacinamida, colágeno,",
     "imagen": "img/skink/MEDICUBE20.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -3776,7 +3776,7 @@
     "categoria": "Hidratación",
     "descripcion": "Triple Collagen Cream (Crema triple colágeno) Ingredientes claves: Niacinamida, colágeno, Hidratación ácido hialurónico, manteca de kárite. Esta crema está formulada con niacinamida y salmón PDRN que ayudan a borrar la imperfección y reponer la humedad después de dos semanas, previene la aparición de imperfecciones futuras. Ingredientes claves: Ceramida, niacinamida, ácido cítrico, péptido, ácido hialurónico.",
     "imagen": "img/skink/MEDICUBE25.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -3866,7 +3866,7 @@
     "categoria": "Mascarillas",
     "descripcion": "Es una mascarilla nocturna de skincare coreano diseñada para transformar tu piel mientras duermes. Su innovadora textura perlada rosa crea una película ligera que envuelve el rostro, sellando la hidratación y potenciando la reparación cutánea durante toda la noche. Ingredientes claves: Aceite de flor de rosa, ácido ascórbico, cafeina, ácido hialuronico, peptidos.",
     "imagen": "img/skink/MEDICUBE37.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad"
@@ -3976,7 +3976,7 @@
     "categoria": "Hidratación",
     "descripcion": "Crema iluminadora con ácido tranexámico, niacinamida, alpha-arbutina y glutatión. Unifica el tono, hidrata y mejora la textura desde el primer uso. No comedogénica y apta para piel sensible o con tendencia acneica. Ingredientes claves: Niacinamida, ácido tranexámico, pantenol, extracto de fresa, ceramida.",
     "imagen": "img/skink/MEDICUBE27.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -3996,7 +3996,7 @@
     "categoria": "Sérum",
     "descripcion": "SERUM (Suero refuerzo de retinol) Es un suero facial antiedad diseñado para mejorar la firmeza y elasticidad de la piel, reducir líneas de expresión y unificar el tono. Combina retinol encapsulado y NMN de alta pureza para minimizar la irritación y potenciar los resultados. Ingredientes claves: Retinol, retinal, ceramidas, patenol, niacinamida, acido hialuronico, peptidos, vitamina C.",
     "imagen": "img/skink/MEDICUBE70.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -4229,7 +4229,7 @@
     "categoria": "Tónico",
     "descripcion": "",
     "imagen": "img/skink/MEDICUBE89.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Anti-edad",
@@ -4278,7 +4278,7 @@
     "categoria": "Hidratación",
     "descripcion": "",
     "imagen": "img/skink/MEDICUBE92.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Hidratación Profunda"
@@ -4311,7 +4311,7 @@
     "categoria": "Primera Limpieza",
     "descripcion": "",
     "imagen": "img/skink/MEDICUBE94.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Anti-edad"
@@ -4360,7 +4360,7 @@
     "categoria": "Sérum",
     "descripcion": "",
     "imagen": "img/skink/MEDICUBE97.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Acné",
@@ -4522,7 +4522,7 @@
     "categoria": "Sérum",
     "descripcion": "Madagascar Centella tea-trica soothing sun milk (leche solar calmante té y centella). Ingredientes claves: Extracto de centella, hojas de pino, calamina.",
     "imagen": "img/skink/SKIN1004-36.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -5872,7 +5872,7 @@
     "categoria": "Segunda Limpieza",
     "descripcion": "Un limpiador tipo gel con pH ácido suave que brinda una limpieza suave pero completa de las impurezas de la piel y ayuda a mantener el equilibrio de la piel. Está formulado con ingredientes naturales como el té verde y el extracto de centella asiática, que tienen propiedades calmantes. Ingredientes claves: Jugo de betula, ácido cítrico, ceramida, ácido hualurónico. Green Relief Amino Gel Cleanser (Limpiador en gel aminoacidos)",
     "imagen": "img/skink/DR-ALTHEA6.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -6027,7 +6027,7 @@
     "categoria": "Esencia",
     "descripcion": "Althea 345 Relief Serum (Serum calmante 345) Ingredientes claves: Niacinamida, pantenol, Arbol de té, ácido hialuronico, Sérum Centella asiatica. Natural Radiance Essence es una esencia que ilumina la piel opaca y la ayuda a recuperar su estado original. Ayuda de manera eficaz a que la piel quede clara y luminosa. Ingredientes claves: Niacinamida, pantenol, fermento de arroz, ácido hialurónico.",
     "imagen": "img/skink/DR-ALTHEA2.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Brillo y Luminosidad",
@@ -6128,7 +6128,7 @@
     "categoria": "Sérum",
     "descripcion": "Ingredientes claves:Niacinamida, ceramidas, centella asiatica, aceite de macadamia, ácido hialuronico. protectora 147) Un sérum facial vegano ligero que proporciona una hidratación profunda para todo tipo de piel. De rápida absorción y no pegajosa, proporciona una hidratación duradera a la vez que refuerza la barrera cutánea y calma la piel. Ingredientes claves: Agua de bambusa, niacinamida, pantenol, centella asiatica, ácido hialuronico.",
     "imagen": "img/skink/DR-ALTHEA26.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -7357,7 +7357,7 @@
     "categoria": "Hidratación",
     "descripcion": "Heart Pink Tone Up Sun Cream (Crema solar Tone Up) (Ideal pieles secas) Esta crema inhibe la producción de melanina para minimizar las manchas oscuras y unificar el tono de la piel. La ceramida NP y el ácido hialurónico hidrolizado en la mezcla proporcionan una hidratación profunda. Ingredientes claves: Niacinamida, ácido tranexámico, macadamia, ceramida, ácido hialurónico, cacao.",
     "imagen": "img/skink/CELI-07.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -7859,7 +7859,7 @@
     "categoria": "Sérum",
     "descripcion": "",
     "imagen": "img/skink/AREN-08.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Manchas e Hiperpigmentación"
@@ -8022,7 +8022,7 @@
     "categoria": "Capilar",
     "descripcion": "Tónico capilar nutritivo formulado con cafeína y 50 tipos de proteínas para brindar una hidratación duradera al cabello encrespado y añadir brillo a las hebras opacas, ayudando a reducir la caída del cabello. Ingredientes clave: aceite glutámico, ácido cítrico, extracto de manzana, ceramida, ácido hialurónico, tomillo.",
     "imagen": "img/skink/MOEV-03.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Capilar"
@@ -8038,7 +8038,7 @@
     "categoria": "Capilar",
     "descripcion": "Champú ligeramente ácido con infusión de cafeína y biotina para estimular los folículos pilosos y promover el crecimiento del cabello, eliminando eficazmente las impurezas del cabello y el cuero cabelludo. Ingredientes clave: ácido de coco, cafeína, extracto de manzana, ácido cítrico.",
     "imagen": "img/skink/MOEV-04.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Capilar"
@@ -8054,7 +8054,7 @@
     "categoria": "Capilar",
     "descripcion": "Tratamiento nutritivo para el cabello con extracto de manzana y biotina para mejorar la elasticidad y el grosor del cabello, dejando el cabello áspero y encrespado suave y sedoso. Textura de gel hidratante sin residuos. Ingredientes clave: aceite de semilla de camelia, niacinamida, cafeína, semilla de uva, aceite de jojoba, ceramidas.",
     "imagen": "img/skink/MOEV-05.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Capilar"
@@ -8245,7 +8245,7 @@
     "categoria": "Hidratación",
     "descripcion": "Madeca Mela Capture Ampoule Capsule Cream (Crema en capsulas Madeca) (No piel sensible) Desarrollada a partir de la exitosa crema Madeca Cream Time Reverse, esta crema edición Zero se centra en la hidratación y elasticidad de la piel. La textura en crema ligera proporciona un acabado hidratado y refrescante. Ingredientes claves: ácido esteárico, ceramida, niacinamida, pantenol, ácido madecásico, lavanda, romero, centella asiatica.",
     "imagen": "img/skink/CENTELLIAN24-06.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
