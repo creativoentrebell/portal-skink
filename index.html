@@ -21,6 +21,7 @@
   --badge-new: #d4a853;
   --badge-out: #c0392b;
   --badge-best: #8a7362;
+  --badge-restock: #5f8a6b;
   --radius: 12px;
   --shadow: 0 2px 12px rgba(46,37,32,0.08);
   --shadow-hover: 0 8px 28px rgba(46,37,32,0.15);
@@ -60,6 +61,8 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
 .nuevo-btn.active { background: var(--badge-new); border-color: var(--badge-new); color: var(--white); }
 .nuevo-btn .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--badge-new); }
 .nuevo-btn.active .dot { background: rgba(255,255,255,0.7); }
+.restock-btn.active { background: var(--badge-restock); border-color: var(--badge-restock); color: var(--white); }
+.restock-btn .dot { background: var(--badge-restock); }
 .sort-select { padding: 7px 10px; border: 1.5px solid var(--beige-mid); border-radius: 8px; font-size: 12px; font-family: inherit; color: var(--text-mid); background: var(--white); cursor: pointer; outline: none; flex-shrink: 0; }
 .sort-select:focus { border-color: var(--taupe); }
 .pills-row { display: flex; gap: 6px; flex-wrap: wrap; }
@@ -140,6 +143,7 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
 .badge-agotado { background: #fdecea; color: var(--badge-out); }
 .badge-nuevo { background: #fef6e4; color: var(--badge-new); }
 .badge-vendidos { background: var(--beige); color: var(--badge-best); }
+.badge-restock { background: #eaf3ec; color: var(--badge-restock); }
 
 /* Color dots on card (small) */
 .card-color-dots { display: flex; gap: 4px; padding: 6px 13px 0; flex-wrap: wrap; }
@@ -567,6 +571,9 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
         <button class="nuevo-btn" id="nuevoBtn" onclick="toggleNuevo()">
           <span class="dot"></span> Solo nuevos
         </button>
+        <button class="nuevo-btn restock-btn" id="restockBtn" onclick="toggleRestock()">
+          <span class="dot"></span> Solo restock
+        </button>
         <select class="sort-select" id="sortSelect" onchange="render()">
           <option value="default">Ordenar por defecto</option>
           <option value="price-asc">Precio: menor a mayor</option>
@@ -716,6 +723,7 @@ let view = 'rutina';
 let activeFilter = 'all';
 let searchText = '';
 let showNuevo = false;
+let showRestock = false;
 
 // Estado del scroll infinito
 let renderList   = [];
@@ -889,12 +897,18 @@ function toggleNuevo() {
   document.getElementById('nuevoBtn').classList.toggle('active', showNuevo);
   render();
 }
+function toggleRestock() {
+  showRestock = !showRestock;
+  document.getElementById('restockBtn').classList.toggle('active', showRestock);
+  render();
+}
 
 function filterProducts() {
   const showAgot = document.getElementById('toggleAgotados').checked;
   return allProducts.filter(p => {
     if (!showAgot && p.agotado) return false;
     if (showNuevo && !p.nuevo) return false;
+    if (showRestock && !p.restock) return false;
     if (searchText) {
       const searchNorm = normalizeRef(searchText);
       if (!( p.nombre.toLowerCase().includes(searchText)
@@ -927,6 +941,7 @@ function buildPills() {
   const base = allProducts.filter(p => {
     if (!showAgot && p.agotado) return false;
     if (showNuevo && !p.nuevo) return false;
+    if (showRestock && !p.restock) return false;
     if (searchText) return p.nombre.toLowerCase().includes(searchText)||normalizeRef(p.referencia).includes(normalizeRef(searchText))||p.marca.toLowerCase().includes(searchText);
     return true;
   });
@@ -969,6 +984,7 @@ function cardHTML(p, eager) {
   if (isMasVendido(p)) badges += '<span class="badge badge-vendidos">Más vendidos</span>';
   if (p.agotado) badges += '<span class="badge badge-agotado">Agotado</span>';
   if (p.nuevo)   badges += '<span class="badge badge-nuevo">Nuevo</span>';
+  if (p.restock) badges += '<span class="badge badge-restock">Restock</span>';
 
   // Tiny color preview dots (siempre eager — son miniaturas pequeñas)
   let dots = '';
@@ -1063,6 +1079,7 @@ function openModal(idx) {
   if (isMasVendido(p)) badges += '<span class="badge badge-vendidos">Más vendidos</span>';
   if (p.agotado) badges += '<span class="badge badge-agotado">Agotado</span>';
   if (p.nuevo)   badges += '<span class="badge badge-nuevo">Nuevo</span>';
+  if (p.restock) badges += '<span class="badge badge-restock">Restock</span>';
   document.getElementById('modalBadges').innerHTML = badges;
 
   // Text fields
