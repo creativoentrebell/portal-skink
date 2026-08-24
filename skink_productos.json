@@ -569,7 +569,7 @@
     "descripcion": "",
     "imagen": "img/skink/TOCOBO14.jpg",
     "agotado": true,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Protección Solar"
     ],
@@ -586,7 +586,7 @@
     "descripcion": "",
     "imagen": "img/skink/TOCOBO35.jpg",
     "agotado": true,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Piel Sensible y Calmante",
       "Protección Solar"
@@ -604,7 +604,7 @@
     "descripcion": "",
     "imagen": "img/skink/TOCOBO46.webp",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda",
       "Piel Sensible y Calmante"
@@ -623,7 +623,7 @@
     "descripcion": "",
     "imagen": "img/skink/TOCOBO47.webp",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Piel Sensible y Calmante"
     ],
@@ -641,7 +641,7 @@
     "descripcion": "",
     "imagen": "img/skink/TOCOBO51.jpg",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda"
     ],
@@ -658,7 +658,7 @@
     "descripcion": "",
     "imagen": "img/skink/TOCOBO55.jpg",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Manchas e Hiperpigmentación",
       "Protección Solar"
@@ -676,7 +676,7 @@
     "descripcion": "",
     "imagen": "img/skink/TOCOBO61.webp",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Manchas e Hiperpigmentación"
     ],
@@ -693,7 +693,7 @@
     "descripcion": "",
     "imagen": "img/skink/TOCOBO62.webp",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Universal"
     ],
@@ -710,7 +710,7 @@
     "descripcion": "",
     "imagen": "img/skink/TOCOBO64.jpg",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Capilar"
     ],
@@ -727,7 +727,7 @@
     "descripcion": "",
     "imagen": "img/skink/TOCOBO65.jpg",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Protección Solar"
     ],
@@ -744,7 +744,7 @@
     "descripcion": "",
     "imagen": "img/skink/TOCOBO66.webp",
     "agotado": true,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Protección Solar"
     ],
@@ -761,7 +761,7 @@
     "descripcion": "",
     "imagen": "img/skink/TOCOBO67.png",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Protección Solar"
     ],
@@ -1539,7 +1539,7 @@
     "descripcion": "",
     "imagen": "img/skink/MIXSOON52.jpg",
     "agotado": true,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Manchas e Hiperpigmentación",
       "Piel Sensible y Calmante"
@@ -1557,7 +1557,7 @@
     "descripcion": "",
     "imagen": "img/skink/MIXSOON53.webp",
     "agotado": true,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Universal"
     ],
@@ -1574,7 +1574,7 @@
     "descripcion": "",
     "imagen": "img/skink/MIXSOON54.jpg",
     "agotado": true,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [],
     "mas_vendido": false,
     "restock": false
@@ -2184,7 +2184,7 @@
     "descripcion": "",
     "imagen": "img/skink/ANUA34.webp",
     "agotado": true,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda",
       "Piel Grasa y Poros"
@@ -2202,7 +2202,7 @@
     "descripcion": "",
     "imagen": "img/skink/ANUA35.webp",
     "agotado": true,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda"
     ],
@@ -2219,7 +2219,7 @@
     "descripcion": "",
     "imagen": "img/skink/ANUA36.webp",
     "agotado": true,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
       "Brillo y Luminosidad"
@@ -2237,7 +2237,7 @@
     "descripcion": "",
     "imagen": "img/skink/ANUA37.jpg",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Universal"
     ],
@@ -2369,7 +2369,7 @@
     "descripcion": "",
     "imagen": "img/skink/ABIB7.jpg",
     "agotado": true,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Acné",
       "Anti-edad",
@@ -4388,7 +4388,7 @@
     "descripcion": "",
     "imagen": "img/skink/MEDICUBE3.webp",
     "agotado": true,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
       "Hidratación Profunda"
@@ -4406,7 +4406,7 @@
     "descripcion": "",
     "imagen": "img/skink/MEDICUBE83.webp",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Capilar"
     ],
@@ -4423,7 +4423,7 @@
     "descripcion": "",
     "imagen": "img/skink/MEDICUBE84.webp",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Capilar"
     ],
@@ -4440,7 +4440,7 @@
     "descripcion": "",
     "imagen": "img/skink/MEDICUBE85.jpg",
     "agotado": true,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Acné",
       "Anti-edad",
@@ -4459,7 +4459,7 @@
     "descripcion": "",
     "imagen": "img/skink/MEDICUBE86.jpg",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Acné",
       "Piel Grasa y Poros"
@@ -4477,7 +4477,7 @@
     "descripcion": "",
     "imagen": "img/skink/MEDICUBE89.jpg",
     "agotado": true,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
       "Manchas e Hiperpigmentación"
@@ -4495,7 +4495,7 @@
     "descripcion": "",
     "imagen": "img/skink/MEDICUBE90.jpg",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Piel Grasa y Poros"
     ],
@@ -4512,7 +4512,7 @@
     "descripcion": "",
     "imagen": "img/skink/MEDICUBE91.jpg",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Universal"
     ],
@@ -4529,7 +4529,7 @@
     "descripcion": "",
     "imagen": "img/skink/MEDICUBE92.webp",
     "agotado": true,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda"
     ],
@@ -4547,7 +4547,7 @@
     "descripcion": "",
     "imagen": "img/skink/MEDICUBE93.jpg",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Acné"
     ],
@@ -4564,7 +4564,7 @@
     "descripcion": "",
     "imagen": "img/skink/MEDICUBE94.jpg",
     "agotado": true,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Anti-edad"
     ],
@@ -4581,7 +4581,7 @@
     "descripcion": "",
     "imagen": "img/skink/MEDICUBE95.jpg",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Manchas e Hiperpigmentación",
       "Piel Sensible y Calmante"
@@ -4599,7 +4599,7 @@
     "descripcion": "",
     "imagen": "img/skink/MEDICUBE96.webp",
     "agotado": true,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Anti-edad"
     ],
@@ -4616,7 +4616,7 @@
     "descripcion": "",
     "imagen": "img/skink/MEDICUBE97.jpg",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Acné",
       "Anti-edad",
@@ -4635,7 +4635,7 @@
     "descripcion": "",
     "imagen": "img/skink/MEDICUBE98.jpg",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Capilar"
     ],
@@ -6056,7 +6056,7 @@
     "descripcion": "",
     "imagen": "img/skink/SKIN1004-86.webp",
     "agotado": true,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Piel Sensible y Calmante"
     ],
@@ -6073,7 +6073,7 @@
     "descripcion": "",
     "imagen": "img/skink/SKIN1004-87.jpg",
     "agotado": true,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Acné",
       "Piel Sensible y Calmante"
@@ -6148,7 +6148,7 @@
     "descripcion": "",
     "imagen": "img/skink/AXIS-Y3.webp",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Brillo y Luminosidad",
       "Contorno de Ojos",
@@ -6774,7 +6774,7 @@
     "descripcion": "",
     "imagen": "img/skink/D-ALBA1.jpg",
     "agotado": true,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Universal"
     ],
@@ -7553,7 +7553,7 @@
     "descripcion": "",
     "imagen": "img/skink/VT-COS23.jpg",
     "agotado": true,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Contorno de Ojos"
     ],
@@ -7832,7 +7832,7 @@
     "descripcion": "",
     "imagen": "img/skink/CELI-08.jpg",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Universal"
     ],
@@ -7849,7 +7849,7 @@
     "descripcion": "",
     "imagen": "img/skink/CELI-09.jpg",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Acné",
       "Brillo y Luminosidad",
@@ -8324,7 +8324,7 @@
     "descripcion": "",
     "imagen": "img/skink/AREN-07.webp",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Anti-edad"
     ],
@@ -8341,7 +8341,7 @@
     "descripcion": "",
     "imagen": "img/skink/AREN-08.webp",
     "agotado": true,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Manchas e Hiperpigmentación"
     ],
@@ -8358,7 +8358,7 @@
     "descripcion": "",
     "imagen": "img/skink/AREN-09.webp",
     "agotado": true,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Piel Grasa y Poros"
     ],
@@ -8427,7 +8427,7 @@
     "descripcion": "",
     "imagen": "img/skink/ELROEL-04.jpg",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Universal"
     ],
@@ -8565,7 +8565,7 @@
     "descripcion": "",
     "imagen": "img/skink/MOEV-06.jpg",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Capilar"
     ],
@@ -8641,7 +8641,7 @@
     "descripcion": "",
     "imagen": "img/skink/NINE01.jpg",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Manchas e Hiperpigmentación"
     ],
@@ -8658,7 +8658,7 @@
     "descripcion": "",
     "imagen": "img/skink/NINE02.jpg",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Manchas e Hiperpigmentación"
     ],
@@ -8675,7 +8675,7 @@
     "descripcion": "",
     "imagen": "img/skink/NINE03.jpg",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Manchas e Hiperpigmentación"
     ],
@@ -8692,7 +8692,7 @@
     "descripcion": "",
     "imagen": "img/skink/NINE07.jpg",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Universal"
     ],
@@ -8812,7 +8812,7 @@
     "descripcion": "",
     "imagen": "img/skink/CENTELLIAN24-04.jpg",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Universal"
     ],
@@ -8829,7 +8829,7 @@
     "descripcion": "",
     "imagen": "img/skink/CENTELLIAN24-09.jpg",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
       "Contorno de Ojos"
@@ -8847,7 +8847,7 @@
     "descripcion": "",
     "imagen": "img/skink/CENTELLIAN24-10.jpg",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Universal"
     ],
@@ -8864,7 +8864,7 @@
     "descripcion": "",
     "imagen": "img/skink/JUMI-04.jpg",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda",
       "Piel Sensible y Calmante"
@@ -8882,7 +8882,7 @@
     "descripcion": "",
     "imagen": "img/skink/JUMI-05.jpg",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Manchas e Hiperpigmentación"
     ],
@@ -8899,7 +8899,7 @@
     "descripcion": "",
     "imagen": "img/skink/SUNGBOON-01.jpg",
     "agotado": true,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
       "Brillo y Luminosidad"
@@ -8917,7 +8917,7 @@
     "descripcion": "",
     "imagen": "img/skink/PURI-03.jpg",
     "agotado": true,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Piel Sensible y Calmante"
     ],
@@ -8934,7 +8934,7 @@
     "descripcion": "",
     "imagen": "img/skink/PURI-05.jpg",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Contorno de Ojos",
       "Piel Sensible y Calmante"
@@ -8952,7 +8952,7 @@
     "descripcion": "",
     "imagen": "img/skink/TIRTIR23.webp",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Universal"
     ],
@@ -8969,7 +8969,7 @@
     "descripcion": "",
     "imagen": "img/skink/TIRTIR05.webp",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Universal"
     ],
@@ -8986,7 +8986,7 @@
     "descripcion": "",
     "imagen": "img/skink/TIRTIR06.webp",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Universal"
     ],
@@ -9003,7 +9003,7 @@
     "descripcion": "",
     "imagen": "img/skink/TIRTIR24.webp",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Universal"
     ],
@@ -9020,7 +9020,7 @@
     "descripcion": "",
     "imagen": "img/skink/TIRTIR07.jpg",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Universal"
     ],
@@ -9037,7 +9037,7 @@
     "descripcion": "",
     "imagen": "img/skink/TIRTIR08.jpg",
     "agotado": true,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Universal"
     ],
@@ -9054,7 +9054,7 @@
     "descripcion": "",
     "imagen": "img/skink/TIRTIR09.webp",
     "agotado": true,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Universal"
     ],
@@ -9071,7 +9071,7 @@
     "descripcion": "",
     "imagen": "img/skink/TIRTIR10.webp",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Universal"
     ],
@@ -9088,7 +9088,7 @@
     "descripcion": "",
     "imagen": "img/skink/TIRTIR11.webp",
     "agotado": true,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Universal"
     ],
@@ -9105,7 +9105,7 @@
     "descripcion": "",
     "imagen": "img/skink/TIRTIR12.webp",
     "agotado": false,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Universal"
     ],
@@ -9122,7 +9122,7 @@
     "descripcion": "",
     "imagen": "img/skink/TIRTIR13.webp",
     "agotado": true,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Universal"
     ],
@@ -9139,7 +9139,7 @@
     "descripcion": "",
     "imagen": "img/skink/TIRTIR14.webp",
     "agotado": true,
-    "nuevo": true,
+    "nuevo": false,
     "tipos_piel": [
       "Universal"
     ],
