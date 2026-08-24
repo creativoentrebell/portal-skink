@@ -728,6 +728,23 @@
     "mas_vendido": false
   },
   {
+    "id": "TOCOBO68",
+    "referencia": "TOCOBO68",
+    "nombre": "(Set) Mini Cotton Soft Sun Stick + Keyring",
+    "marca": "TOCOBO",
+    "precio": "pendiente",
+    "categoria": "Sets y Kits",
+    "descripcion": "",
+    "imagen": "img/skink/TOCOBO68.webp",
+    "agotado": true,
+    "nuevo": true,
+    "tipos_piel": [
+      "Protección Solar",
+      "Piel Sensible y Calmante"
+    ],
+    "mas_vendido": false
+  },
+  {
     "id": "MIXSOON1",
     "referencia": "MIXSOON1",
     "nombre": "Bean Cleansing Oil 195ml",
@@ -4403,6 +4420,22 @@
     "mas_vendido": false
   },
   {
+    "id": "MEDICUBE106",
+    "referencia": "MEDICUBE106",
+    "nombre": "Vanilla Hair & Body Fragrance Mist 100ml",
+    "marca": "MEDICUBE",
+    "precio": "pendiente",
+    "categoria": "Capilar",
+    "descripcion": "",
+    "imagen": "img/skink/MEDICUBE106.webp",
+    "agotado": true,
+    "nuevo": true,
+    "tipos_piel": [
+      "Capilar"
+    ],
+    "mas_vendido": false
+  },
+  {
     "id": "OOTD1",
     "referencia": "OOTD1",
     "nombre": "Star Spot Patch 80 unidades",
@@ -6272,6 +6305,24 @@
       "Protección Solar"
     ],
     "ficha": "img/fichas/DR-ALTHEA12.jpg",
+    "mas_vendido": false
+  },
+  {
+    "id": "DR-ALTHEA22",
+    "referencia": "DR-ALTHEA22",
+    "nombre": "345 Relief Cream Mist 100ml",
+    "marca": "DR-ALTHEA",
+    "precio": "pendiente",
+    "categoria": "Bruma",
+    "descripcion": "Formulada con ácido hialurónico, esta bruma ultrafina hidrata profundamente la piel seca al instante, ayudándola a mantener una hidratación duradera y confort durante todo el día. Con una exclusiva fórmula 2 en 1 de crema y esencia de agua, proporciona una nutrición rica y una hidratación refrescante para una piel perfectamente equilibrada. Ingredientes claves: Agua de arroz, jugo de manzana, pantenol, ácido hialurónico, centela asiatica. 345 Relief Cream Mist (345 Crema bruma alivio)",
+    "imagen": "img/skink/DR-ALTHEA22.webp",
+    "agotado": true,
+    "nuevo": true,
+    "tipos_piel": [
+      "Brillo y Luminosidad",
+      "Hidratación Profunda",
+      "Piel Sensible y Calmante"
+    ],
     "mas_vendido": false
   },
   {
