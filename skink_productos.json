@@ -777,7 +777,7 @@
     "categoria": "Sets y Kits",
     "descripcion": "",
     "imagen": "img/skink/TOCOBO68.webp",
-    "agotado": true,
+    "agotado": false,
     "nuevo": true,
     "tipos_piel": [
       "Protección Solar",
@@ -4669,7 +4669,7 @@
     "categoria": "Capilar",
     "descripcion": "",
     "imagen": "img/skink/MEDICUBE106.webp",
-    "agotado": true,
+    "agotado": false,
     "nuevo": true,
     "tipos_piel": [
       "Capilar"
@@ -6656,8 +6656,8 @@
     "precio": 84000,
     "categoria": "Bruma",
     "descripcion": "Formulada con ácido hialurónico, esta bruma ultrafina hidrata profundamente la piel seca al instante, ayudándola a mantener una hidratación duradera y confort durante todo el día. Con una exclusiva fórmula 2 en 1 de crema y esencia de agua, proporciona una nutrición rica y una hidratación refrescante para una piel perfectamente equilibrada. Ingredientes claves: Agua de arroz, jugo de manzana, pantenol, ácido hialurónico, centela asiatica. 345 Relief Cream Mist (345 Crema bruma alivio)",
-    "imagen": "img/skink/DR-ALTHEA22.webp",
-    "agotado": true,
+    "imagen": "img/skink/DR-ALTHEA22.jpg",
+    "agotado": false,
     "nuevo": true,
     "tipos_piel": [
       "Brillo y Luminosidad",
