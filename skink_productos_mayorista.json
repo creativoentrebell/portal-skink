@@ -9215,5 +9215,58 @@
     ],
     "mas_vendido": false,
     "preventa": false
+  },
+  {
+    "id": "NIDA-01",
+    "referencia": "NIDA-01",
+    "nombre": "Youthful Formula Ultimate Moisturizing Cream 100ml",
+    "marca": "NIDA",
+    "precio": 59000,
+    "categoria": "Hidratación",
+    "descripcion": "",
+    "imagen": "img/skink/NIDA-01.webp",
+    "agotado": false,
+    "nuevo": true,
+    "tipos_piel": [
+      "Hidratación Profunda",
+      "Anti-edad"
+    ],
+    "mas_vendido": false,
+    "preventa": true
+  },
+  {
+    "id": "NIDA-02",
+    "referencia": "NIDA-02",
+    "nombre": "Revive Eye Cream for Face and Neck 40ml",
+    "marca": "NIDA",
+    "precio": "pendiente",
+    "categoria": "Contorno de Ojos",
+    "descripcion": "",
+    "imagen": "img/skink/NIDA-02.webp",
+    "agotado": false,
+    "nuevo": true,
+    "tipos_piel": [
+      "Contorno de Ojos",
+      "Anti-edad"
+    ],
+    "mas_vendido": false,
+    "preventa": true
+  },
+  {
+    "id": "NIDA-03",
+    "referencia": "NIDA-03",
+    "nombre": "Centella Deep Pore Cleansing Foam 120ml",
+    "marca": "NIDA",
+    "precio": "pendiente",
+    "categoria": "Segunda Limpieza",
+    "descripcion": "",
+    "imagen": "img/skink/NIDA-03.webp",
+    "agotado": false,
+    "nuevo": true,
+    "tipos_piel": [
+      "Piel Grasa y Poros"
+    ],
+    "mas_vendido": false,
+    "preventa": true
   }
 ]
