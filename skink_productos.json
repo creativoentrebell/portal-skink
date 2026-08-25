@@ -784,7 +784,7 @@
       "Piel Sensible y Calmante"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": true
   },
   {
     "id": "MIXSOON1",
@@ -4675,7 +4675,7 @@
       "Capilar"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": true
   },
   {
     "id": "OOTD1",
@@ -6665,7 +6665,7 @@
       "Piel Sensible y Calmante"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": true
   },
   {
     "id": "ROUND-LAB4",
