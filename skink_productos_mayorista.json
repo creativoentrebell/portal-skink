@@ -434,7 +434,7 @@
     "referencia": "TOCOBO48",
     "nombre": "Mini Sun Stick Keyring 11g (colores)",
     "marca": "TOCOBO",
-    "precio": 40000,
+    "precio": 19000,
     "categoria": "Protección Solar",
     "descripcion": "El Tocobo Mini Sun Stick + Keyring es la solución ideal para llevar protección solar a todas partes. Este producto combina la efectividad de los populares sun sticks de TOCOBO en formato miniatura (11g) con un práctico llavero (keyring) que permite sujetarlo fácilmente a bolsos, mochilas o estuches. Ideal para la reaplicación. Ingredientes claves: zinc, ácido madecásico, asiaticósido, ácido asiático, centella asiatica. MINI SUN STICK KEY RING (Mini charm para barra prtector solar)",
     "imagen": "img/skink/TOCOBO48_1.webp",
@@ -764,24 +764,6 @@
     "nuevo": false,
     "tipos_piel": [
       "Protección Solar"
-    ],
-    "mas_vendido": false,
-    "preventa": true
-  },
-  {
-    "id": "TOCOBO68",
-    "referencia": "TOCOBO68",
-    "nombre": "(Set) Mini Cotton Soft Sun Stick + Keyring",
-    "marca": "TOCOBO",
-    "precio": "pendiente",
-    "categoria": "Sets y Kits",
-    "descripcion": "",
-    "imagen": "img/skink/TOCOBO68.webp",
-    "agotado": false,
-    "nuevo": true,
-    "tipos_piel": [
-      "Protección Solar",
-      "Piel Sensible y Calmante"
     ],
     "mas_vendido": false,
     "preventa": true
@@ -2728,11 +2710,11 @@
   {
     "id": "BIODANCE3",
     "referencia": "BIODANCE3",
-    "nombre": "Ground Rice and Honey Glow Mask 34g",
+    "nombre": "Radiant Vita Niacinamide Real Deep Mask 34g",
     "marca": "BIODANCE",
-    "precio": 25000,
+    "precio": 18900,
     "categoria": "Mascarillas",
-    "descripcion": "Mascarilla de hidrogel vitamínico con ingredientes de mezcla multivitamínica ayuda a mejorar el tono, la textura y la luminosidad de la piel. Ingredientes claves: extracto de cólageno, extracto de fruta, agua de rosas, fermento bífido. Ingredientes claves: Niacinamida, agua de piña, acido hialurónico, extracto de pera, agua de rosa.",
+    "descripcion": "Mascarilla de hidrogel con niacinamida que mejora el tono, la textura y la luminosidad de la piel. Ingredientes claves: niacinamida, agua de piña, ácido hialurónico, extracto de pera, agua de rosas.",
     "imagen": "img/skink/BIODANCE3.webp",
     "agotado": false,
     "nuevo": false,
@@ -2809,7 +2791,7 @@
     "referencia": "MEDICUBE34",
     "nombre": "Zero Pore Clearing Capsule Cleansing Foam 120g",
     "marca": "MEDICUBE",
-    "precio": 77000,
+    "precio": 62000,
     "categoria": "Segunda Limpieza",
     "descripcion": "Ingredientes claves: Aceite de soja, aceite de jojoba, ácido salicílico, extracto de fruta, extracto de macadamia. Marca coreana líder en cuidado de la piel con respaldo dermatológico. Sus productos están clínicamente probados para tratar imperfecciones, reducir arrugas y mejorar la hidratación. DEEP CLEANSING OIL (Aceite limpiador) Espuma limpiadora profunda con cápsulas de exosomas, lo que permite limpiar en profundidad sin resecar. Ingredientes claves: Ácido cítrico, centella asiatica, extracto de semilla decafé, ácido salicílico.",
     "imagen": "img/skink/MEDICUBE34.webp",
@@ -4675,7 +4657,7 @@
       "Capilar"
     ],
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "OOTD1",
@@ -5419,17 +5401,17 @@
   {
     "id": "SKIN1004-49",
     "referencia": "SKIN1004-49",
-    "nombre": "Madagascar Centella Hyalu-Cica Soothing Toner 210ml",
+    "nombre": "Madagascar Centella Hyalu-Cica Water-Fit Sun Serum 50ml",
     "marca": "SKIN 1004",
-    "precio": 85000,
-    "categoria": "Tónico",
-    "descripcion": "Ingredientes claves: Extracto de centella asiática, complejo de ácido hialurónico, ceramida",
+    "precio": 65000,
+    "categoria": "Protección Solar",
+    "descripcion": "Sérum solar de textura ligera tipo agua con centella asiática y complejo de ácido hialurónico. Protege, hidrata y calma sin dejar sensación pegajosa ni residuo blanco.",
     "imagen": "img/skink/SKIN1004-49.webp",
     "agotado": false,
     "nuevo": false,
     "tipos_piel": [
+      "Protección Solar",
       "Hidratación Profunda",
-      "Manchas e Hiperpigmentación",
       "Piel Sensible y Calmante"
     ],
     "mas_vendido": true,
@@ -6653,7 +6635,7 @@
     "referencia": "DR-ALTHEA22",
     "nombre": "345 Relief Cream Mist 100ml",
     "marca": "DR-ALTHEA",
-    "precio": 66000,
+    "precio": 73000,
     "categoria": "Bruma",
     "descripcion": "Formulada con ácido hialurónico, esta bruma ultrafina hidrata profundamente la piel seca al instante, ayudándola a mantener una hidratación duradera y confort durante todo el día. Con una exclusiva fórmula 2 en 1 de crema y esencia de agua, proporciona una nutrición rica y una hidratación refrescante para una piel perfectamente equilibrada. Ingredientes claves: Agua de arroz, jugo de manzana, pantenol, ácido hialurónico, centela asiatica. 345 Relief Cream Mist (345 Crema bruma alivio)",
     "imagen": "img/skink/DR-ALTHEA22.jpg",
@@ -6665,7 +6647,7 @@
       "Piel Sensible y Calmante"
     ],
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "ROUND-LAB4",
@@ -9232,7 +9214,7 @@
       "Anti-edad"
     ],
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "NIDA-02",
@@ -9250,7 +9232,7 @@
       "Anti-edad"
     ],
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "NIDA-03",
@@ -9267,6 +9249,6 @@
       "Piel Grasa y Poros"
     ],
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   }
 ]
