@@ -2829,7 +2829,7 @@
     "categoria": "Segunda Limpieza",
     "descripcion": "Ingredientes claves: Aceite de soja, aceite de jojoba, ácido salicílico, extracto de fruta, extracto de macadamia. Marca coreana líder en cuidado de la piel con respaldo dermatológico. Sus productos están clínicamente probados para tratar imperfecciones, reducir arrugas y mejorar la hidratación. DEEP CLEANSING OIL (Aceite limpiador) Espuma limpiadora profunda con cápsulas de exosomas, lo que permite limpiar en profundidad sin resecar. Ingredientes claves: Ácido cítrico, centella asiatica, extracto de semilla decafé, ácido salicílico.",
     "imagen": "img/skink/MEDICUBE34.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -6607,7 +6607,7 @@
     "categoria": "Hidratación",
     "descripcion": "Ingredientes claves:Niacinamida, pantenol, ácido hiaulónico, extracto de centella asiática. de alivio 345). Ingredientes claves: Extracto de flor de loto, niacinamida, ácido hialurónico, adenosina.",
     "imagen": "img/skink/DR-ALTHEA21.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
