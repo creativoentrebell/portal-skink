@@ -8,7 +8,7 @@
     "categoria": "Primera Limpieza",
     "descripcion": "",
     "imagen": "img/skink/TOCOBO7.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Piel Grasa y Poros"
