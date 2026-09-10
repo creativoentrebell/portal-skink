@@ -9658,7 +9658,7 @@
     "precio": "pendiente",
     "categoria": "Sérum",
     "descripcion": "",
-    "imagen": "img/skink/AREN-10.webp",
+    "imagen": "img/skink/AREN-10.jpg",
     "agotado": false,
     "nuevo": false,
     "tipos_piel": [
@@ -9752,7 +9752,7 @@
     "precio": "pendiente",
     "categoria": "Sets y Kits",
     "descripcion": "",
-    "imagen": "img/skink/MEDICUBE104.webp",
+    "imagen": "img/skink/MEDICUBE104.png",
     "agotado": false,
     "nuevo": true,
     "tipos_piel": [
@@ -9806,7 +9806,7 @@
     "precio": "pendiente",
     "categoria": "Sérum",
     "descripcion": "",
-    "imagen": "img/skink/ROUND-LAB19.webp",
+    "imagen": "img/skink/ROUND-LAB19.jpg",
     "agotado": false,
     "nuevo": false,
     "tipos_piel": [
