@@ -98,6 +98,21 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
   /* El boton "Filtros" ahora solo despliega las categorias */
   .pills-row { display: none; }
   .filters-bar.filters-open .pills-row { display: flex; }
+
+  /* ── Cabecera compacta al hacer scroll (solo móvil) ──
+     El logo y los modos de precio siguen fijos, pero en una sola línea;
+     los filtros rápidos se ocultan y vuelven al tocar "Filtros". */
+  body.is-scrolled header { padding: 0 14px; }
+  body.is-scrolled .header-inner { flex-wrap: nowrap; padding: 5px 0; gap: 8px; row-gap: 0; }
+  body.is-scrolled .logo-area { width: auto; flex: 0 1 auto; min-width: 0; gap: 6px; }
+  body.is-scrolled .header-logo { height: 26px; }
+  body.is-scrolled .brand-subtitle { display: none; }
+  body.is-scrolled .lock-icon { display: none; }
+  body.is-scrolled .price-mode-toggle button { padding: 6px 5px; font-size: 11px; }
+  body.is-scrolled .cart-btn { height: 30px; }
+  body.is-scrolled .filters-bar { padding: 7px 14px; }
+  body.is-scrolled .filters-bar:not(.filters-open) .view-toggle,
+  body.is-scrolled .filters-bar:not(.filters-open) .filters-extra { display: none; }
 }
 
 /* ── MAIN ── */
@@ -263,11 +278,16 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
 .modal-img-placeholder { color: var(--taupe); font-size: 11px; text-align: center; padding: 24px; text-transform: uppercase; letter-spacing: 0.06em; }
 
 /* Color dots in modal */
-.modal-dots { display: flex; gap: 8px; padding: 12px 16px; justify-content: center; flex-wrap: wrap; background: rgba(255,255,255,0.7); width: 100%; }
-.modal-dot { width: 26px; height: 26px; border-radius: 50%; border: 2px solid var(--beige-mid); cursor: pointer; overflow: hidden; flex-shrink: 0; transition: border-color 0.15s, transform 0.15s; }
-.modal-dot:hover { border-color: var(--taupe); transform: scale(1.1); }
-.modal-dot.active { border-color: var(--taupe-dark); box-shadow: 0 0 0 2px var(--taupe-dark); }
-.modal-dot img { width: 100%; height: 100%; object-fit: cover; }
+.modal-dots { display: flex; gap: 6px; padding: 8px 16px 10px; justify-content: center; align-items: center; flex-wrap: wrap; background: rgba(255,255,255,0.7); width: 100%; }
+.modal-dot {
+  width: 6px; height: 6px; padding: 0; border-radius: 50%;
+  border: none; background: var(--beige-mid); cursor: pointer;
+  flex-shrink: 0; transition: background 0.15s, width 0.15s, opacity 0.15s;
+}
+.modal-dot:hover { background: var(--taupe); }
+.modal-dot.active { background: var(--taupe-dark); width: 16px; border-radius: 3px; }
+.modal-dot.is-ficha-dot { background: transparent; border: 1.5px solid var(--beige-mid); width: 7px; height: 7px; }
+.modal-dot.is-ficha-dot.active { background: var(--taupe-dark); border-color: var(--taupe-dark); width: 16px; border-radius: 3px; }
 
 /* Modal: info derecha */
 .modal-info { flex: 1; padding: 32px 28px; overflow: hidden; display: flex; flex-direction: column; min-width: 0; min-height: 0; }
@@ -314,7 +334,8 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
 .modal-img-side img.is-ficha { cursor: zoom-in; padding: 10px; }
 .modal-img-side img.is-zoomable { cursor: zoom-in; }
 .ficha-zoom-hint {
-  position: absolute; bottom: 44px; left: 50%; transform: translateX(-50%);
+  position: static; align-self: center; flex-shrink: 0;
+  margin: 0 0 8px;
   font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;
   background: rgba(30,20,15,0.65); color: #fff;
   padding: 4px 12px; border-radius: 20px; pointer-events: none;
@@ -1494,14 +1515,19 @@ function cardHTML(p, eager) {
 
 // ── MODAL ──────────────────────────────────────────────────────
 let currentProduct = null;
-let modalSlide = 0;        // 0 = foto producto · 1 = ficha técnica
+let modalSlide = 0;        // índice dentro de modalSlides
 let modalColorSrc = null;  // foto activa cuando hay variantes de color
+let modalSlides = [];      // [fotos del producto..., ficha técnica (si existe)]
+let modalHasFicha = false; // la ficha siempre es la última slide
 
 function openModal(idx) {
   const p = allProducts[idx];
   currentProduct = p;
   modalSlide = 0;
-  modalColorSrc = p.colores ? p.colores[0] : p.imagen;
+  modalHasFicha = !!(p.ficha && p.ficha.trim && p.ficha.trim());
+  modalSlides = (p.colores && p.colores.length) ? p.colores.slice() : [p.imagen];
+  if (modalHasFicha) modalSlides.push(p.ficha);
+  modalColorSrc = modalSlides[0];
 
   // Image (slide inicial: foto del producto)
   const modalImg = document.getElementById('modalImg');
@@ -1517,35 +1543,37 @@ function openModal(idx) {
   };
 
   // Carrusel foto / ficha técnica
-  const hasFicha = !!(p.ficha && p.ficha.trim && p.ficha.trim());
+  const hasFicha = modalHasFicha;
   const arrowPrev = document.getElementById('modalArrowPrev');
   const arrowNext = document.getElementById('modalArrowNext');
   const tabsEl    = document.getElementById('modalSlideTabs');
   document.getElementById('fichaZoomHint').style.display = 'block';
   document.getElementById('modalImgSide').classList.remove('showing-ficha');
+  // Flechas: hay algo que navegar si existe más de una slide
+  const multi = modalSlides.length > 1;
+  arrowPrev.style.display = multi ? 'flex' : 'none';
+  arrowNext.style.display = multi ? 'flex' : 'none';
   if (hasFicha) {
-    arrowPrev.style.display = 'flex';
-    arrowNext.style.display = 'flex';
     tabsEl.style.display = 'flex';
     tabsEl.innerHTML =
       '<div class="modal-slide-tab active" onclick="modalGoSlide(0)">Foto</div>'
-      + '<div class="modal-slide-tab" onclick="modalGoSlide(1)">Ficha técnica</div>';
+      + '<div class="modal-slide-tab" onclick="modalGoSlide(' + (modalSlides.length - 1) + ')">Ficha técnica</div>';
   } else {
-    arrowPrev.style.display = 'none';
-    arrowNext.style.display = 'none';
     tabsEl.style.display = 'none';
     tabsEl.innerHTML = '';
   }
 
   // Color dots
   const dotsEl = document.getElementById('modalDots');
-  if (p.colores && p.colores.length > 1) {
+  const fotoCount = modalSlides.length - (modalHasFicha ? 1 : 0);
+  if (fotoCount > 1) {
     dotsEl.style.display = 'flex';
-    dotsEl.innerHTML = p.colores.map((src,i)=>
-      '<div class="modal-dot'+(i===0?' active':'')+'" onclick="modalSwap(\''+src+'\',this)">'
-      +'<img src="'+src+'" onerror="this.parentElement.style.background=\'var(--beige-mid)\'">'
-      +'</div>'
-    ).join('');
+    let dotsHtml = '';
+    for (let i = 0; i < fotoCount; i++) {
+      dotsHtml += '<button class="modal-dot' + (i===0?' active':'') + '" aria-label="Foto ' + (i+1) + '" onclick="modalGoSlide(' + i + ')"></button>';
+    }
+    if (modalHasFicha) dotsHtml += '<button class="modal-dot is-ficha-dot" aria-label="Ficha técnica" onclick="modalGoSlide(' + (modalSlides.length-1) + ')"></button>';
+    dotsEl.innerHTML = dotsHtml;
   } else {
     dotsEl.style.display = 'none';
     dotsEl.innerHTML = '';
@@ -1609,55 +1637,48 @@ function closeModalIfOutside(e) {
   if (e.target === document.getElementById('modalOverlay')) closeModal();
 }
 
-function modalSwap(src, dot) {
-  modalColorSrc = src;
-  if (modalSlide !== 0) modalGoSlide(0);   // al elegir un color, volver a la foto
-  const img = document.getElementById('modalImg');
-  if (img) img.src = src;
-  document.getElementById('modalDots').querySelectorAll('.modal-dot').forEach(d=>d.classList.remove('active'));
-  dot.classList.add('active');
+function modalSwap(src) {
+  const i = modalSlides.indexOf(src);
+  if (i >= 0) modalGoSlide(i);
 }
 
-// ── CARRUSEL FOTO / FICHA TÉCNICA ──────────────────────────────
+// ── CARRUSEL: fotos del producto primero, ficha técnica al final ──
 function modalGoSlide(n) {
-  if (!currentProduct) return;
-  const p = currentProduct;
-  const hasFicha = !!(p.ficha && p.ficha.trim && p.ficha.trim());
-  if (n === 1 && !hasFicha) return;
+  if (!currentProduct || !modalSlides.length) return;
+  const p     = currentProduct;
+  const total = modalSlides.length;
+  n = ((n % total) + total) % total;
   modalSlide = n;
+  const isFicha = modalHasFicha && n === total - 1;
 
   const img     = document.getElementById('modalImg');
-  const dotsEl  = document.getElementById('modalDots');
   const hint    = document.getElementById('fichaZoomHint');
   const imgSide = document.getElementById('modalImgSide');
   const tabs    = document.getElementById('modalSlideTabs').querySelectorAll('.modal-slide-tab');
-  tabs.forEach((t,i)=>t.classList.toggle('active', i===n));
+  tabs.forEach((t,i)=>t.classList.toggle('active', i === (isFicha ? 1 : 0)));
 
-  if (n === 1) {
-    img.classList.add('is-ficha');
-    img.classList.remove('is-zoomable');
-    img.src = p.ficha;
+  const src = modalSlides[n];
+  img.src = src;
+  img.classList.toggle('is-ficha', isFicha);
+  img.classList.toggle('is-zoomable', !isFicha);
+  if (isFicha) {
     img.alt = 'Ficha técnica ' + p.referencia;
-    img.onclick = function(){ openFicha(p.ficha, 'Ficha técnica ' + p.referencia); };
-    img.onerror = function(){ this.onerror=null; modalGoSlide(0); };
-    hint.style.display = 'block';
-    imgSide.classList.add('showing-ficha');
-    if (p.colores && p.colores.length > 1) dotsEl.style.display = 'none';
+    img.onclick = function(){ openFicha(src, 'Ficha técnica ' + p.referencia); };
+    img.onerror = function(){ this.onerror = null; modalGoSlide(0); };
   } else {
-    img.classList.remove('is-ficha');
-    img.src = modalColorSrc || p.imagen;
+    modalColorSrc = src;
     img.alt = p.nombre;
-    // La foto normal también abre el lightbox, igual que la ficha técnica
-    img.classList.add('is-zoomable');
-    img.onclick = function(){ openFicha(img.src, p.nombre); };
+    img.onclick = function(){ openFicha(src, p.nombre); };
     img.onerror = null;
-    hint.style.display = 'block';
-    imgSide.classList.remove('showing-ficha');
-    if (p.colores && p.colores.length > 1) dotsEl.style.display = 'flex';
   }
+  hint.style.display = 'block';
+  imgSide.classList.toggle('showing-ficha', isFicha);
+
+  const dots = document.getElementById('modalDots').querySelectorAll('.modal-dot');
+  dots.forEach((d,i)=>d.classList.toggle('active', i === n));
 }
-function modalNextSlide(e) { if (e) e.stopPropagation(); modalGoSlide(modalSlide === 0 ? 1 : 0); }
-function modalPrevSlide(e) { if (e) e.stopPropagation(); modalGoSlide(modalSlide === 0 ? 1 : 0); }
+function modalNextSlide(e) { if (e) e.stopPropagation(); modalGoSlide(modalSlide + 1); }
+function modalPrevSlide(e) { if (e) e.stopPropagation(); modalGoSlide(modalSlide - 1); }
 
 // ── LIGHTBOX FICHA (pantalla completa) ─────────────────────────
 function openFicha(src, alt) {
@@ -2274,6 +2295,23 @@ function buildOrderMessage() {
   lines.push('_Enviado desde el catálogo ' + CATALOG_NAME + '_');
   return lines.join('\n');
 }
+
+/* ── Cabecera compacta al hacer scroll ── */
+(function compactHeaderOnScroll() {
+  var ticking = false;
+  function apply() {
+    ticking = false;
+    var y = window.scrollY || document.documentElement.scrollTop || 0;
+    var on = document.body.classList.contains('is-scrolled');
+    // Histéresis para que no parpadee justo en el umbral
+    if (!on && y > 90) document.body.classList.add('is-scrolled');
+    else if (on && y < 40) document.body.classList.remove('is-scrolled');
+  }
+  window.addEventListener('scroll', function() {
+    if (!ticking) { ticking = true; requestAnimationFrame(apply); }
+  }, { passive: true });
+  apply();
+})();
 
 /* ── Altura real del header -> offset sticky de la barra de filtros ── */
 (function syncHeaderHeight() {
