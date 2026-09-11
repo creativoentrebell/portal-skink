@@ -99,30 +99,7 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
   .pills-row { display: none; }
   .filters-bar.filters-open .pills-row { display: flex; }
 
-  header, .header-inner, .logo-area, .header-logo,
-  .price-mode-toggle button, .cart-btn, .filters-bar {
-    transition: height 0.22s ease, padding 0.22s ease, gap 0.22s ease, font-size 0.22s ease;
-  }
-  .brand-subtitle { transition: opacity 0.18s ease; }
-  body.is-scrolled .brand-subtitle { opacity: 0; }
-
-  /* ── Cabecera compacta al hacer scroll (solo móvil) ──
-     El logo y los modos de precio siguen fijos, pero en una sola línea;
-     los filtros rápidos se ocultan y vuelven al tocar "Filtros". */
-  body.is-scrolled header { padding: 0 14px; }
-  body.is-scrolled .header-inner { flex-wrap: nowrap; padding: 5px 0; gap: 8px; row-gap: 0; }
-  body.is-scrolled .logo-area { width: auto; flex: 0 1 auto; min-width: 0; gap: 6px; }
-  body.is-scrolled .header-logo { height: 26px; }
-  body.is-scrolled .brand-subtitle { display: none; }
-  body.is-scrolled .lock-icon { display: none; }
-  body.is-scrolled .price-mode-toggle button { padding: 6px 5px; font-size: 11px; }
-  body.is-scrolled .cart-btn { height: 30px; }
-  body.is-scrolled .filters-bar { padding: 7px 14px; }
-  body.is-scrolled .filters-bar:not(.filters-open) .view-toggle,
-  body.is-scrolled .filters-bar:not(.filters-open) .filters-extra { display: none; }
 }
-
-#scrollSentinel { height: 1px; margin: 0; }
 
 /* ── MAIN ── */
 .main { max-width: 1400px; margin: 0 auto; padding: 24px; }
@@ -847,7 +824,6 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
     <div class="pills-row" id="pillsRow" style="display:none"></div>
   </div>
 </div>
-<div id="scrollSentinel" aria-hidden="true"></div>
 
 <!-- MAIN -->
 <main class="main">
@@ -2305,25 +2281,6 @@ function buildOrderMessage() {
   lines.push('_Enviado desde el catálogo ' + CATALOG_NAME + '_');
   return lines.join('\n');
 }
-
-/* ── Cabecera compacta al hacer scroll ──
-   Se usa un centinela + IntersectionObserver en vez de umbrales de scrollY:
-   al compactarse el header el contenido sube ~100px, lo que con umbrales
-   provocaba un bucle expandir/compactar (parpadeo). Con el centinela el
-   propio desplazamiento aleja el punto de disparo, así que no oscila. */
-(function compactHeaderOnScroll() {
-  var sentinel = document.getElementById('scrollSentinel');
-  if (!sentinel || !window.IntersectionObserver) return;
-  new IntersectionObserver(function(entries) {
-    // Con un modal abierto el body queda con overflow:hidden; eso puede
-    // disparar el observer y provocar un parpadeo del header detrás del
-    // modal. Mientras haya algo abierto, se congela el estado actual.
-    if (document.body.style.overflow === 'hidden') return;
-    var e = entries[0];
-    var passed = !e.isIntersecting && e.boundingClientRect.top < 0;
-    document.body.classList.toggle('is-scrolled', passed);
-  }, { threshold: 0 }).observe(sentinel);
-})();
 
 /* ── Altura real del header -> offset sticky de la barra de filtros ── */
 (function syncHeaderHeight() {
