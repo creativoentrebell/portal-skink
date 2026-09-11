@@ -237,6 +237,7 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
 .modal-overlay.open { opacity: 1; pointer-events: all; }
 
 .modal {
+  position: relative;
   background: var(--white);
   border-radius: 16px;
   max-width: 780px; width: 100%;
@@ -269,7 +270,8 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
 .modal-dot img { width: 100%; height: 100%; object-fit: cover; }
 
 /* Modal: info derecha */
-.modal-info { flex: 1; padding: 32px 28px; overflow-y: auto; display: flex; flex-direction: column; min-width: 0; }
+.modal-info { flex: 1; padding: 32px 28px; overflow: hidden; display: flex; flex-direction: column; min-width: 0; min-height: 0; }
+#modalDescWrap { flex: 1 1 auto; min-height: 60px; overflow-y: auto; -webkit-overflow-scrolling: touch; overscroll-behavior: contain; }
 .modal-close { position: absolute; top: 14px; right: 14px; background: var(--white); border: none; border-radius: 50%; width: 32px; height: 32px; font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center; color: var(--text-mid); box-shadow: var(--shadow); transition: background 0.15s; z-index: 10; }
 .modal-close:hover { background: var(--beige); }
 .modal-badges { display: flex; gap: 6px; margin-bottom: 14px; flex-wrap: wrap; align-items: center; }
@@ -277,8 +279,8 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
 .modal-nombre { font-size: 20px; font-weight: 500; color: var(--text); line-height: 1.25; margin-bottom: 4px; }
 .modal-ref { font-size: 12px; color: var(--text-light); margin-bottom: 20px; }
 .modal-desc-label { font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--taupe); margin-bottom: 8px; }
-.modal-desc { font-size: 13.5px; color: var(--text-mid); line-height: 1.65; font-weight: 300; flex: 1; margin-bottom: 24px; }
-.modal-footer { padding-top: 18px; border-top: 1px solid var(--beige-mid); }
+.modal-desc { font-size: 13.5px; color: var(--text-mid); line-height: 1.65; font-weight: 300; margin-bottom: 8px; }
+.modal-footer { padding-top: 18px; border-top: 1px solid var(--beige-mid); flex-shrink: 0; margin-top: auto; background: var(--white); }
 .modal-price { font-size: 24px; font-weight: 600; color: var(--taupe-dark); }
 .modal-price.pendiente { font-size: 14px; font-weight: 400; color: var(--text-light); font-style: italic; }
 
@@ -353,8 +355,8 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
 @media (max-width: 600px) {
   .modal { flex-direction: column; max-height: 92vh; border-radius: 16px 16px 0 0; align-self: flex-end; }
   .modal-overlay { align-items: flex-end; padding: 0; }
-  .modal-img-side { width: 100%; height: 46vh; min-height: 260px; max-height: 400px; flex-shrink: 0; }
-  .modal-img-side.showing-ficha { height: 56vh; min-height: 320px; max-height: 460px; }
+  .modal-img-side { width: 100%; height: 40vh; min-height: 210px; max-height: 380px; flex-shrink: 0; }
+  .modal-img-side.showing-ficha { height: 48vh; min-height: 260px; max-height: 440px; }
   .modal-img-side img { padding: 14px; }
   .modal-info { padding: 20px 20px 28px; }
   .modal-nombre { font-size: 17px; }
