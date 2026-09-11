@@ -161,20 +161,26 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
 .card-marca { font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--taupe); margin-bottom: 3px; }
 .card-name { font-size: 12.5px; font-weight: 400; color: var(--text); line-height: 1.35; flex: 1; margin-bottom: 6px; }
 .card-ref { font-size: 11px; color: var(--text-light); margin-bottom: 8px; }
-.card-footer { display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-top: auto; }
+.card-footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 7px; margin-top: auto; }
 .card-price { font-size: 15px; font-weight: 600; color: var(--taupe-dark); }
 .card-price.pendiente { font-size: 11px; font-weight: 400; color: var(--text-light); font-style: italic; }
 .card-hint { font-size: 10px; color: var(--text-light); opacity: 0.7; }
+/* Mismo lenguaje visual que el botón "Carrito" del header: fondo blanco,
+   borde beige, icono de bolsa y texto oscuro. Así el cliente los relaciona. */
 .card-add-btn {
-  flex-shrink: 0; display: inline-flex; align-items: center; gap: 4px;
-  border: 1px solid var(--taupe); background: var(--taupe); color: var(--white);
-  font-family: inherit; font-size: 11px; font-weight: 600; letter-spacing: 0.03em;
-  padding: 6px 11px; border-radius: 6px; cursor: pointer; line-height: 1;
-  transition: background .15s, border-color .15s, opacity .15s;
+  width: 100%; display: inline-flex; align-items: center; justify-content: center;
+  gap: 7px; background: var(--white); border: 1.5px solid var(--beige-mid);
+  color: var(--text); font-family: inherit; font-size: 12px; font-weight: 500;
+  padding: 8px 10px; border-radius: 8px; cursor: pointer; line-height: 1;
+  transition: all 0.18s;
 }
-.card-add-btn:hover { background: var(--taupe-dark); border-color: var(--taupe-dark); }
-.card-add-btn.added { background: #5f8a6b; border-color: #5f8a6b; }
-.card-add-ico { font-size: 12.5px; line-height: 1; }
+.card-add-btn:hover { border-color: var(--taupe); }
+.card-add-btn.added { background: #5f8a6b; border-color: #5f8a6b; color: var(--white); }
+.card-add-ico { font-size: 14px; line-height: 1; }
+@media (max-width: 420px) {
+  .card-add-btn { font-size: 11px; gap: 5px; padding: 8px 6px; }
+  .card-add-ico { font-size: 13px; }
+}
 .card-footer .card-hint { display: none; }
 
 /* Badges on card */
@@ -304,6 +310,7 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
 .modal-slide-tab:hover:not(.active) { background: var(--beige); }
 
 .modal-img-side img.is-ficha { cursor: zoom-in; padding: 10px; }
+.modal-img-side img.is-zoomable { cursor: zoom-in; }
 .ficha-zoom-hint {
   position: absolute; bottom: 44px; left: 50%; transform: translateX(-50%);
   font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;
@@ -1146,6 +1153,15 @@ function clearSearch() { document.getElementById('searchInput').value=''; onSear
 function toggleFilters() {
   document.querySelector('.filters-bar').classList.toggle('filters-open');
 }
+// Tras elegir un paso en móvil, desplaza la subfila recién aparecida
+// hasta que quede visible, sin cerrar el panel.
+function scrollSubfiltros() {
+  if (window.innerWidth > 600) return;
+  requestAnimationFrame(() => {
+    const w = document.querySelector('.subfilter-wrap');
+    if (w) w.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  });
+}
 function collapseFiltersMobile() {
   if (window.innerWidth <= 600) {
     document.querySelector('.filters-bar').classList.remove('filters-open');
@@ -1256,12 +1272,14 @@ function buildPanelRutina(panel) {
 
   mkCard(SVG.todo, 'Ver Todo', 'Catálogo', base.length,
          !fPaso && !fCategoria,
-         () => { fPaso = null; fCategoria = null; render(); collapseFiltersMobile(); });
+         () => { fPaso = null; fCategoria = null; render(); });
 
   PASOS.forEach(ps => {
     const n = ps.cats.reduce((a, c) => a + cnt(c), 0);
     mkCard(SVG[ps.id], ps.nombre, ps.paso, n, fPaso === ps.id,
-           () => { fPaso = ps.id; fCategoria = null; render(); collapseFiltersMobile(); },
+           // No cerramos el desplegable: el usuario necesita ver las
+           // subcategorías que acaban de aparecer debajo.
+           () => { fPaso = ps.id; fCategoria = null; render(); scrollSubfiltros(); },
            n === 0);
   });
   panel.appendChild(grid);
@@ -1450,7 +1468,7 @@ function cardHTML(p, eager) {
     +   '<div class="card-ref">Ref: '+p.referencia+'</div>'
     +   '<div class="card-footer">'
     +     priceHTML
-    +     (p.agotado ? '<span class="card-hint" style="display:inline">Ver más →</span>' : '<button class="card-add-btn" onclick="quickAddToCart(event, '+idx+')"><span class="card-add-ico">\uD83D\uDECD\uFE0F</span>Agregar</button>')
+    +     (p.agotado ? '<span class="card-hint" style="display:inline">Ver más →</span>' : '<button class="card-add-btn" onclick="quickAddToCart(event, '+idx+')"><span class="card-add-ico">\uD83D\uDECD\uFE0F</span>Agregar al carrito</button>')
     +   '</div>'
     + '</div></div>';
 }
@@ -1469,10 +1487,13 @@ function openModal(idx) {
   // Image (slide inicial: foto del producto)
   const modalImg = document.getElementById('modalImg');
   modalImg.classList.remove('is-ficha');
-  modalImg.onclick = null;
+  // La foto del producto se amplía igual que la ficha técnica
+  modalImg.classList.add('is-zoomable');
+  modalImg.onclick = function(){ openFicha(modalImg.src, p.nombre); };
   modalImg.src = modalColorSrc;
   modalImg.alt = p.nombre;
   modalImg.onerror = function() {
+    document.getElementById('fichaZoomHint').style.display = 'none';
     this.parentElement.innerHTML = '<div class="modal-img-placeholder">'+p.referencia+'</div>';
   };
 
@@ -1481,7 +1502,7 @@ function openModal(idx) {
   const arrowPrev = document.getElementById('modalArrowPrev');
   const arrowNext = document.getElementById('modalArrowNext');
   const tabsEl    = document.getElementById('modalSlideTabs');
-  document.getElementById('fichaZoomHint').style.display = 'none';
+  document.getElementById('fichaZoomHint').style.display = 'block';
   document.getElementById('modalImgSide').classList.remove('showing-ficha');
   if (hasFicha) {
     arrowPrev.style.display = 'flex';
@@ -1595,9 +1616,10 @@ function modalGoSlide(n) {
 
   if (n === 1) {
     img.classList.add('is-ficha');
+    img.classList.remove('is-zoomable');
     img.src = p.ficha;
     img.alt = 'Ficha técnica ' + p.referencia;
-    img.onclick = function(){ openFicha(p.ficha); };
+    img.onclick = function(){ openFicha(p.ficha, 'Ficha técnica ' + p.referencia); };
     img.onerror = function(){ this.onerror=null; modalGoSlide(0); };
     hint.style.display = 'block';
     imgSide.classList.add('showing-ficha');
@@ -1606,8 +1628,11 @@ function modalGoSlide(n) {
     img.classList.remove('is-ficha');
     img.src = modalColorSrc || p.imagen;
     img.alt = p.nombre;
-    img.onclick = null;
-    hint.style.display = 'none';
+    // La foto normal también abre el lightbox, igual que la ficha técnica
+    img.classList.add('is-zoomable');
+    img.onclick = function(){ openFicha(img.src, p.nombre); };
+    img.onerror = null;
+    hint.style.display = 'block';
     imgSide.classList.remove('showing-ficha');
     if (p.colores && p.colores.length > 1) dotsEl.style.display = 'flex';
   }
@@ -1616,8 +1641,10 @@ function modalNextSlide(e) { if (e) e.stopPropagation(); modalGoSlide(modalSlide
 function modalPrevSlide(e) { if (e) e.stopPropagation(); modalGoSlide(modalSlide === 0 ? 1 : 0); }
 
 // ── LIGHTBOX FICHA (pantalla completa) ─────────────────────────
-function openFicha(src) {
-  document.getElementById('fichaFullImg').src = src;
+function openFicha(src, alt) {
+  const im = document.getElementById('fichaFullImg');
+  im.src = src;
+  im.alt = alt || 'Imagen ampliada';
   document.getElementById('fichaOverlay').classList.add('open');
 }
 function closeFicha(e) {
@@ -1971,7 +1998,7 @@ function quickAddToCart(ev, idx) {
   const btn = ev.currentTarget;
   btn.innerHTML = '<span class="card-add-ico">\u2713</span>Agregado';
   btn.classList.add('added');
-  setTimeout(() => { btn.innerHTML = '<span class="card-add-ico">\uD83D\uDECD\uFE0F</span>Agregar'; btn.classList.remove('added'); }, 1200);
+  setTimeout(() => { btn.innerHTML = '<span class="card-add-ico">\uD83D\uDECD\uFE0F</span>Agregar al carrito'; btn.classList.remove('added'); }, 1200);
 }
 
 // ── Drawer ──
