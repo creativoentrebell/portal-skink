@@ -172,6 +172,7 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
 }
 .card-add-btn:hover { background: var(--taupe-dark); border-color: var(--taupe-dark); }
 .card-add-btn.added { background: #5f8a6b; border-color: #5f8a6b; }
+.card-add-ico { font-size: 12.5px; line-height: 1; }
 .card-footer .card-hint { display: none; }
 
 /* Badges on card */
@@ -1097,7 +1098,7 @@ function cardHTML(p, eager) {
     +   '<div class="card-ref">Ref: '+p.referencia+'</div>'
     +   '<div class="card-footer">'
     +     priceHTML
-    +     (p.agotado ? '<span class="card-hint" style="display:inline">Ver más →</span>' : '<button class="card-add-btn" onclick="quickAddToCart(event, '+idx+')">+ Agregar</button>')
+    +     (p.agotado ? '<span class="card-hint" style="display:inline">Ver más →</span>' : '<button class="card-add-btn" onclick="quickAddToCart(event, '+idx+')"><span class="card-add-ico">\uD83D\uDECD\uFE0F</span>Agregar</button>')
     +   '</div>'
     + '</div></div>';
 }
@@ -1615,9 +1616,9 @@ function quickAddToCart(ev, idx) {
   else cart.push({ ref: p.referencia, qty: 1, nota: '' });
   saveCart(); updateCartUI();
   const btn = ev.currentTarget;
-  btn.textContent = 'Agregado ✓';
+  btn.innerHTML = '<span class="card-add-ico">\u2713</span>Agregado';
   btn.classList.add('added');
-  setTimeout(() => { btn.textContent = '+ Agregar'; btn.classList.remove('added'); }, 1200);
+  setTimeout(() => { btn.innerHTML = '<span class="card-add-ico">\uD83D\uDECD\uFE0F</span>Agregar'; btn.classList.remove('added'); }, 1200);
 }
 
 // ── Drawer ──
