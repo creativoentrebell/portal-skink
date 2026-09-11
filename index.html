@@ -163,6 +163,16 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
 .card-price { font-size: 15px; font-weight: 600; color: var(--taupe-dark); }
 .card-price.pendiente { font-size: 11px; font-weight: 400; color: var(--text-light); font-style: italic; }
 .card-hint { font-size: 10px; color: var(--text-light); opacity: 0.7; }
+.card-add-btn {
+  flex-shrink: 0; display: inline-flex; align-items: center; gap: 4px;
+  border: 1px solid var(--taupe); background: var(--taupe); color: var(--white);
+  font-family: inherit; font-size: 11px; font-weight: 600; letter-spacing: 0.03em;
+  padding: 6px 11px; border-radius: 6px; cursor: pointer; line-height: 1;
+  transition: background .15s, border-color .15s, opacity .15s;
+}
+.card-add-btn:hover { background: var(--taupe-dark); border-color: var(--taupe-dark); }
+.card-add-btn.added { background: #5f8a6b; border-color: #5f8a6b; }
+.card-footer .card-hint { display: none; }
 
 /* Badges on card */
 .card-top-badges { position: absolute; top: 8px; right: 8px; display: flex; flex-direction: column; gap: 4px; align-items: flex-end; z-index: 1; }
@@ -170,7 +180,7 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
 .badge-agotado { background: #fdecea; color: var(--badge-out); }
 .badge-nuevo { background: #fef6e4; color: var(--badge-new); }
 .badge-vendidos { background: var(--beige); color: var(--badge-best); }
-.badge-preventa { background: #eaf3ec; color: var(--badge-preventa); font-size: 10.5px; padding: 4px 9px; letter-spacing: 0.07em; }
+.badge-preventa { background: #eaf3ec; color: var(--badge-preventa); font-size: 11.5px; padding: 5px 10px; letter-spacing: 0.07em; }
 
 /* Color dots on card (small) */
 .card-color-dots { display: flex; gap: 4px; padding: 6px 13px 0; flex-wrap: wrap; }
@@ -1087,7 +1097,7 @@ function cardHTML(p, eager) {
     +   '<div class="card-ref">Ref: '+p.referencia+'</div>'
     +   '<div class="card-footer">'
     +     priceHTML
-    +     '<span class="card-hint">Ver más →</span>'
+    +     (p.agotado ? '<span class="card-hint" style="display:inline">Ver más →</span>' : '<button class="card-add-btn" onclick="quickAddToCart(event, '+idx+')">+ Agregar</button>')
     +   '</div>'
     + '</div></div>';
 }
@@ -1593,6 +1603,21 @@ function addCurrentToCart() {
   btn.textContent = 'Agregado ✓';
   btn.classList.add('added');
   setTimeout(() => { btn.textContent = 'Agregar al pedido'; btn.classList.remove('added'); }, 1200);
+}
+
+// Agregar al pedido directamente desde la tarjeta (sin abrir el producto)
+function quickAddToCart(ev, idx) {
+  ev.stopPropagation();
+  const p = allProducts[idx];
+  if (!p || p.agotado) return;
+  const found = cart.find(i => i.ref === p.referencia && i.nota === '');
+  if (found) found.qty = Math.min(999, found.qty + 1);
+  else cart.push({ ref: p.referencia, qty: 1, nota: '' });
+  saveCart(); updateCartUI();
+  const btn = ev.currentTarget;
+  btn.textContent = 'Agregado ✓';
+  btn.classList.add('added');
+  setTimeout(() => { btn.textContent = '+ Agregar'; btn.classList.remove('added'); }, 1200);
 }
 
 // ── Drawer ──
