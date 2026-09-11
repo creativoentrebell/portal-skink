@@ -99,6 +99,13 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
   .pills-row { display: none; }
   .filters-bar.filters-open .pills-row { display: flex; }
 
+  header, .header-inner, .logo-area, .header-logo,
+  .price-mode-toggle button, .cart-btn, .filters-bar {
+    transition: height 0.22s ease, padding 0.22s ease, gap 0.22s ease, font-size 0.22s ease;
+  }
+  .brand-subtitle { transition: opacity 0.18s ease; }
+  body.is-scrolled .brand-subtitle { opacity: 0; }
+
   /* ── Cabecera compacta al hacer scroll (solo móvil) ──
      El logo y los modos de precio siguen fijos, pero en una sola línea;
      los filtros rápidos se ocultan y vuelven al tocar "Filtros". */
@@ -114,6 +121,8 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
   body.is-scrolled .filters-bar:not(.filters-open) .view-toggle,
   body.is-scrolled .filters-bar:not(.filters-open) .filters-extra { display: none; }
 }
+
+#scrollSentinel { height: 1px; margin: 0; }
 
 /* ── MAIN ── */
 .main { max-width: 1400px; margin: 0 auto; padding: 24px; }
@@ -838,6 +847,7 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
     <div class="pills-row" id="pillsRow" style="display:none"></div>
   </div>
 </div>
+<div id="scrollSentinel" aria-hidden="true"></div>
 
 <!-- MAIN -->
 <main class="main">
@@ -2296,21 +2306,23 @@ function buildOrderMessage() {
   return lines.join('\n');
 }
 
-/* ── Cabecera compacta al hacer scroll ── */
+/* ── Cabecera compacta al hacer scroll ──
+   Se usa un centinela + IntersectionObserver en vez de umbrales de scrollY:
+   al compactarse el header el contenido sube ~100px, lo que con umbrales
+   provocaba un bucle expandir/compactar (parpadeo). Con el centinela el
+   propio desplazamiento aleja el punto de disparo, así que no oscila. */
 (function compactHeaderOnScroll() {
-  var ticking = false;
-  function apply() {
-    ticking = false;
-    var y = window.scrollY || document.documentElement.scrollTop || 0;
-    var on = document.body.classList.contains('is-scrolled');
-    // Histéresis para que no parpadee justo en el umbral
-    if (!on && y > 90) document.body.classList.add('is-scrolled');
-    else if (on && y < 40) document.body.classList.remove('is-scrolled');
-  }
-  window.addEventListener('scroll', function() {
-    if (!ticking) { ticking = true; requestAnimationFrame(apply); }
-  }, { passive: true });
-  apply();
+  var sentinel = document.getElementById('scrollSentinel');
+  if (!sentinel || !window.IntersectionObserver) return;
+  new IntersectionObserver(function(entries) {
+    // Con un modal abierto el body queda con overflow:hidden; eso puede
+    // disparar el observer y provocar un parpadeo del header detrás del
+    // modal. Mientras haya algo abierto, se congela el estado actual.
+    if (document.body.style.overflow === 'hidden') return;
+    var e = entries[0];
+    var passed = !e.isIntersecting && e.boundingClientRect.top < 0;
+    document.body.classList.toggle('is-scrolled', passed);
+  }, { threshold: 0 }).observe(sentinel);
 })();
 
 /* ── Altura real del header -> offset sticky de la barra de filtros ── */
