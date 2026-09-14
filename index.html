@@ -802,6 +802,25 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
   .fchip { font-size: 11.5px; padding: 4px 7px 4px 11px; }
   .header-inner { height: auto; }
 }
+/* En pantallas tactiles se desactiva el desenfoque del velo. Crear una capa
+   de backdrop-filter a pantalla completa es caro en GPU de movil y en Chrome
+   Android produce un repintado de toda la pagina al abrir (el parpadeo).
+   El velo oscuro se mantiene: solo se pierde el desenfoque del fondo.
+   Para revertirlo, borra este bloque. */
+@media (pointer: coarse) {
+  .modal-overlay,
+  .ficha-overlay,
+  .cart-overlay,
+  .dest-overlay {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+  /* Compensa la perdida de desenfoque oscureciendo un poco el velo */
+  .modal-overlay { background: rgba(30,20,15,0.66); }
+  .cart-overlay  { background: rgba(30,20,15,0.56); }
+  .dest-overlay  { background: rgba(30,20,15,0.60); }
+}
+
 </style>
 </head>
 <body>
