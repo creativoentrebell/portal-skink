@@ -248,12 +248,6 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
   padding: 20px;
   opacity: 0; pointer-events: none;
   transition: opacity 0.25s ease;
-  /* Capa de composicion permanente: evita el destello a pantalla completa
-     que produce crear/destruir la capa del backdrop-filter al abrir. */
-  transform: translateZ(0);
-  backface-visibility: hidden;
-  will-change: opacity;
-  contain: paint;
 }
 .modal-overlay.open { opacity: 1; pointer-events: all; }
 
@@ -402,7 +396,10 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
 /* Modal responsive — mobile */
 @media (max-width: 600px) {
   .modal { flex-direction: column; max-height: 90vh; border-radius: 20px; align-self: center; width: calc(100% - 24px); max-width: 460px; margin: 0 auto; }
-  @supports (height: 100dvh) { .modal { max-height: 88dvh; } }
+  /* svh (viewport pequeno) es constante; dvh cambia cuando el navegador
+     movil muestra u oculta la barra de direcciones y eso redimensiona el
+     modal justo al abrirlo. */
+  @supports (height: 100svh) { .modal { max-height: 88svh; } }
   /* X más grande y separado del borde para que sea fácil de tocar */
   .modal-close { top: 10px; right: 10px; width: 38px; height: 38px; font-size: 20px; }
   .modal-overlay { align-items: center; padding: 12px; }
@@ -1611,6 +1608,26 @@ function unlockBodyScroll() {
   document.body.style.paddingRight = '';
 }
 
+// ── Precarga de imagenes del producto ──
+// Evita que el modal aparezca con el recuadro de foto vacio (parpadeo)
+// y que el carrusel muestre un blanco al cambiar de foto.
+var modalImgToken = 0;
+function preloadModalSlides() {
+  for (var i = 0; i < modalSlides.length; i++) {
+    if (i === modalVideoIndex) continue;
+    var src = modalSlides[i];
+    if (src) { var im = new Image(); im.src = src; }
+  }
+}
+// Cambia la foto solo cuando la nueva ya esta cargada.
+function setSlideImage(img, src) {
+  var pre = new Image();
+  pre.src = src;
+  if (pre.complete) { img.src = src; return; }
+  var token = ++modalImgToken;
+  pre.onload = pre.onerror = function () { if (token === modalImgToken) img.src = src; };
+}
+
 function openModal(idx) {
   const p = allProducts[idx];
   currentProduct = p;
@@ -1723,12 +1740,29 @@ function openModal(idx) {
 
   // Open
   const modalWasOpen = document.getElementById('modalOverlay').classList.contains('open');
-  document.getElementById('modalOverlay').classList.add('open');
-  if (!modalWasOpen) lockBodyScroll();
+  preloadModalSlides();
 
-  // Avance automático del carrusel
-  stopModalAuto();
-  if (modalSlides.length > 1) { modalAutoOn = true; scheduleModalAuto(); }
+  const token = ++modalImgToken;
+  let shown = false;
+  const reveal = function () {
+    if (shown || token !== modalImgToken) return;
+    shown = true;
+    document.getElementById('modalOverlay').classList.add('open');
+    if (!modalWasOpen) lockBodyScroll();
+    // Avance automático del carrusel
+    stopModalAuto();
+    if (modalSlides.length > 1) { modalAutoOn = true; scheduleModalAuto(); }
+  };
+
+  // Si la foto ya esta en cache se abre al instante; si no, se espera a que
+  // cargue (con tope de 250 ms para no dejar al usuario sin respuesta).
+  if (modalImg.complete && modalImg.naturalWidth > 0) {
+    reveal();
+  } else {
+    modalImg.addEventListener('load', reveal, { once: true });
+    modalImg.addEventListener('error', reveal, { once: true });
+    setTimeout(reveal, 250);
+  }
 }
 
 function closeModal() {
@@ -1791,7 +1825,6 @@ function modalGoSlide(n, auto) {
   }
   stopModalVideo();
   img.style.display = '';
-  img.src = src;
   img.classList.toggle('is-ficha', isFicha);
   img.classList.toggle('is-zoomable', !isFicha);
   if (isFicha) {
@@ -1804,6 +1837,7 @@ function modalGoSlide(n, auto) {
     img.onclick = function(){ openFicha(src, p.nombre); };
     img.onerror = null;
   }
+  setSlideImage(img, src);
   hint.style.display = 'block';
   imgSide.classList.toggle('showing-ficha', isFicha);
 
