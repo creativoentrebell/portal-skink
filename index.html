@@ -1591,9 +1591,43 @@ function scheduleModalAuto() {
 
 // ── Bloqueo de scroll sin salto de layout ──
 var _scrollLockCount = 0;
+var _touchBlocker = null;
+
+// En tactil (Chrome Android sobre todo) poner overflow:hidden en el body
+// vuelve la pagina no desplazable, y el navegador responde desplegando su
+// barra de direcciones. Eso cambia el alto del viewport y toda la pagina se
+// reacomoda: ese es el parpadeo al abrir un producto. Safari en iOS no lo
+// hace, por eso alli no se veia. Solucion: en tactil se bloquea el gesto de
+// desplazamiento, no el scroll del documento.
+function _isTouchUI() {
+  return window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
+}
+// ¿El elemento (o alguno de sus padres) tiene scroll propio? Si lo tiene,
+// el gesto se deja pasar para que la ficha o el carrito sigan desplazandose.
+function _hasOwnScroll(el) {
+  var st = window.getComputedStyle(el);
+  var o = st.overflowY;
+  return (o === 'auto' || o === 'scroll') && el.scrollHeight > el.clientHeight + 1;
+}
+
 function lockBodyScroll() {
   _scrollLockCount++;
   if (_scrollLockCount > 1) return;
+
+  if (_isTouchUI()) {
+    _touchBlocker = function (e) {
+      if (e.touches && e.touches.length > 1) return;   // pellizco para ampliar
+      var n = e.target;
+      while (n && n.nodeType === 1 && n !== document.body) {
+        if (_hasOwnScroll(n)) return;
+        n = n.parentElement;
+      }
+      if (e.cancelable) e.preventDefault();
+    };
+    document.addEventListener('touchmove', _touchBlocker, { passive: false });
+    return;
+  }
+
   var gutterOK = window.CSS && CSS.supports && CSS.supports('scrollbar-gutter', 'stable');
   if (!gutterOK) {
     var sb = window.innerWidth - document.documentElement.clientWidth;
@@ -1601,9 +1635,14 @@ function lockBodyScroll() {
   }
   document.body.style.overflow = 'hidden';
 }
+
 function unlockBodyScroll() {
   _scrollLockCount = Math.max(0, _scrollLockCount - 1);
   if (_scrollLockCount > 0) return;
+  if (_touchBlocker) {
+    document.removeEventListener('touchmove', _touchBlocker, { passive: false });
+    _touchBlocker = null;
+  }
   document.body.style.overflow = '';
   document.body.style.paddingRight = '';
 }
