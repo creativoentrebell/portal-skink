@@ -95,14 +95,15 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
   .search-wrap { order: 4; }
   .toggle-label { order: 5; }
   .fbreak.b2 { order: 6; }
+  /* Filtros + Solo nuevos + Solo preventa + Ordenar: un solo renglon */
   .filters-toggle-btn { order: 7; }
   #nuevoBtn { order: 8; }
   #preventaBtn { order: 9; }
-  .fbreak.b3 { order: 10; }
-  .sort-select { order: 11; }
-  .sort-select { max-width: 100%; }
+  .sort-select { order: 10; }
+  .fbreak.b3 { display: none; }
+  .filters-toggle-btn, #nuevoBtn, #preventaBtn { padding: 6px 8px; font-size: 11px; gap: 4px; }
+  .sort-select { flex: 1 1 auto; min-width: 0; width: auto; padding: 6px 22px 6px 8px; font-size: 11px; }
   .toggle-label { font-size: 12px; }
-  .nuevo-btn, .sort-select { font-size: 11.5px; padding: 6px 10px; }
   /* El boton "Filtros" ahora solo despliega las categorias */
   .pills-row { display: none; }
   .filters-bar.filters-open .pills-row { display: flex; }
@@ -645,12 +646,12 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
   .header-stats { display: none; }
   .header-spacer { display: none; }
   /* Logo y modos en un solo renglon */
-  .header-inner { flex-wrap: nowrap; height: 54px; padding: 0; gap: 8px; }
+  .header-inner { flex-wrap: nowrap; height: auto; min-height: 64px; padding: 10px 0; gap: 10px; }
   .logo-area { width: auto; gap: 8px; flex: 0 1 auto; min-width: 0; }
   .header-logo { height: 30px; }
   .brand-subtitle { display: none; }
-  .price-mode-toggle { flex: 0 0 auto; margin-left: auto; padding: 2px; }
-  .price-mode-toggle button { flex: 0 0 auto; padding: 6px 8px; font-size: 11px; gap: 3px; }
+  .price-mode-toggle { flex: 0 0 auto; margin-left: auto; padding: 3px; }
+  .price-mode-toggle button { flex: 0 0 auto; padding: 7px 9px; font-size: 11px; gap: 3px; }
   .lock-icon { font-size: 9.5px; }
   .cart-btn { height: 34px; }
 }
