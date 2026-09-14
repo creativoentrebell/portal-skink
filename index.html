@@ -248,6 +248,12 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
   padding: 20px;
   opacity: 0; pointer-events: none;
   transition: opacity 0.25s ease;
+  /* Capas de composicion permanentes. Sin esto Chrome crea la capa al abrir y
+     la descarta al terminar la animacion, y en ese instante muestra un
+     fotograma con los fondos sin pintar: se ve el catalogo de atras a traves
+     del velo y del panel del modal. Ese es el parpadeo. */
+  transform: translateZ(0);
+  will-change: opacity;
 }
 .modal-overlay.open { opacity: 1; pointer-events: all; }
 
@@ -263,6 +269,8 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
   box-shadow: 0 24px 60px rgba(30,20,15,0.25);
   transform: translateY(16px) scale(0.97);
   transition: transform 0.28s cubic-bezier(0.34,1.56,0.64,1);
+  will-change: transform;
+  backface-visibility: hidden;
 }
 .modal-overlay.open .modal { transform: translateY(0) scale(1); }
 
