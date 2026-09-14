@@ -248,6 +248,12 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
   padding: 20px;
   opacity: 0; pointer-events: none;
   transition: opacity 0.25s ease;
+  /* Capa de composicion permanente: evita el destello a pantalla completa
+     que produce crear/destruir la capa del backdrop-filter al abrir. */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: opacity;
+  contain: paint;
 }
 .modal-overlay.open { opacity: 1; pointer-events: all; }
 
