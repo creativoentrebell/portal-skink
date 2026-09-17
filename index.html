@@ -631,6 +631,22 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
 /* ── CARRITO — FORMULARIO DATOS DEL CLIENTE (previo a envío WhatsApp) ── */
 .cliente-modal { max-width: 430px; max-height: 88vh; overflow-y: auto; -webkit-overflow-scrolling: touch; }
 .cliente-form { text-align: left; margin-top: 4px; }
+.mayorista-notice {
+  font-size: 11.5px; color: var(--text-mid); text-align: center;
+  padding: 4px 12px 6px; background: transparent;
+}
+.mayorista-notice-box {
+  font-size: 12px; color: #6b5a20; background: #fdf3d0;
+  border: 1px solid #e8d27a; border-radius: 6px;
+  padding: 8px 10px; margin: 8px 0; text-align: center;
+}
+.agente-retenedor-toggle { display: flex; gap: 8px; margin-top: 4px; }
+.agente-ret-btn {
+  flex: 1; padding: 8px 0; border-radius: 6px; cursor: pointer;
+  border: 1px solid var(--taupe); background: #fff; color: var(--text-mid);
+  font-size: 13px; font-weight: 600;
+}
+.agente-ret-btn.active { background: var(--taupe-dark); color: #fff; border-color: var(--taupe-dark); }
 .cliente-field { margin-bottom: 2px; }
 .cliente-field .order-note.error { border-color: var(--badge-out); animation: shake 0.35s ease; background: #fdf3f2; }
 .cliente-error-msg { font-size: 11px; color: var(--badge-out); min-height: 15px; margin: -8px 0 8px 2px; }
@@ -850,6 +866,7 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
     </div>
     <button class="cart-btn" id="cartBtn" onclick="openCart()" title="Ver pedido">🛍️<span class="cart-label">Carrito</span><span class="cart-count" id="cartCount">0</span></button>
   </div>
+  <div class="mayorista-notice" id="mayoristaHeaderNotice" style="display:none">⏳ Pendiente verificar unidades disponibles con tu asesora.</div>
 </header>
 
 <!-- FILTERS -->
@@ -944,6 +961,7 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
             </div>
             <button class="add-cart-btn" id="addCartBtn" onclick="addCurrentToCart()">Agregar al pedido</button>
           </div>
+          <div class="mayorista-notice-box" id="mayoristaModalNotice" style="display:none">Pendiente verificar unidades disponibles con tu asesora.</div>
         </div>
       </div>
     </div>
@@ -970,6 +988,7 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
       <span class="cart-total" id="cartTotal"></span>
     </div>
     <div class="cart-total-note" id="cartTotalNote"></div>
+    <div class="mayorista-notice-box" id="mayoristaCartNotice" style="display:none">Pendiente verificar unidades disponibles con tu asesora.</div>
     <button class="cart-send-btn" onclick="abrirFormularioCliente()">Enviar pedido por WhatsApp</button>
     <button class="cart-clear-btn" onclick="clearCart()">Vaciar pedido</button>
   </div>
@@ -1015,6 +1034,14 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
         <div class="order-note-label">Teléfono de contacto</div>
         <input type="text" class="order-note" id="clienteTelefono" maxlength="20" placeholder="Ej. 3001234567">
         <div class="cliente-error-msg" id="errClienteTelefono"></div>
+      </div>
+      <div class="cliente-field" id="clienteAgenteRetenedorField" style="display:none">
+        <div class="order-note-label">¿Eres agente retenedor en la fuente?</div>
+        <div class="agente-retenedor-toggle">
+          <button type="button" class="agente-ret-btn" id="btnAgenteRetSi" onclick="setAgenteRetenedor('si')">Sí</button>
+          <button type="button" class="agente-ret-btn" id="btnAgenteRetNo" onclick="setAgenteRetenedor('no')">No</button>
+        </div>
+        <div class="cliente-error-msg" id="errClienteAgenteRetenedor"></div>
       </div>
     </div>
     <div class="cliente-error-general" id="clienteErrorGeneral"></div>
@@ -1103,6 +1130,12 @@ let imgObserver      = null;
 // ── PRICE MODE ────────────────────────────────────────────────
 const PWD_DETAL = '121212';
 const PWD_MAY   = '000000';
+
+// ── Retención en la fuente (solo modo Mayorista) ──
+const IVA_FACTOR            = 1.19;   // total con IVA ÷ este factor = base
+const RETENCION_TARIFA      = 0.025;  // 2.5%
+const RETENCION_BASE_MINIMA = 524000; // por debajo de esto, no aplica
+
 let pendingMode = null;
 let priceMode = 'publico';
 let detalProducts = [];
@@ -1115,6 +1148,14 @@ function fmtPrice(precio) {
   return '$ ' + Number(precio).toLocaleString('es-CO');
 }
 
+// Muestra u oculta los 3 avisos "pendiente verificar unidades" (header, modal, carrito)
+function updateMayoristaNotices() {
+  const isMay = priceMode === 'mayorista';
+  document.getElementById('mayoristaHeaderNotice').style.display = isMay ? '' : 'none';
+  document.getElementById('mayoristaModalNotice').style.display  = isMay ? '' : 'none';
+  document.getElementById('mayoristaCartNotice').style.display   = isMay ? '' : 'none';
+}
+
 function goPublico() {
   priceMode   = 'publico';
   allProducts = detalProducts;
@@ -1123,6 +1164,7 @@ function goPublico() {
   document.getElementById('btnMayorista').classList.remove('active');
   document.getElementById('lockDetal').textContent = '🔒';
   document.getElementById('lockMay').textContent   = '🔒';
+  updateMayoristaNotices();
   render();
 }
 
@@ -1164,6 +1206,7 @@ function activateDetal() {
   document.getElementById('btnMayorista').classList.remove('active');
   document.getElementById('lockDetal').textContent = '🔓';
   document.getElementById('lockMay').textContent   = '🔒';
+  updateMayoristaNotices();
   render();
 }
 
@@ -1187,6 +1230,7 @@ function switchToMayorista() {
   document.getElementById('btnDetal').classList.remove('active');
   document.getElementById('lockMay').textContent   = '🔓';
   document.getElementById('lockDetal').textContent = '🔒';
+  updateMayoristaNotices();
   render();
 }
 
@@ -2464,7 +2508,7 @@ function updateCartUI() {
 // ── Datos del cliente (obligatorios antes de enviar por WhatsApp) ──
 // Variable global: se conserva durante toda la sesión aunque el cliente
 // cierre el carrito, agregue más productos o reabra el formulario.
-let clienteData = { cedula: '', nombre: '', direccion: '', ciudad: '', telefono: '' };
+let clienteData = { cedula: '', nombre: '', direccion: '', ciudad: '', telefono: '', agenteRetenedor: '' };
 
 const CLIENTE_CAMPOS = [
   { id: 'clienteCedula',    err: 'errClienteCedula',    key: 'cedula' },
@@ -2474,6 +2518,16 @@ const CLIENTE_CAMPOS = [
   { id: 'clienteTelefono',  err: 'errClienteTelefono',  key: 'telefono' }
 ];
 
+// Selección temporal del formulario (Sí/No no es un <input> de texto normal)
+let agenteRetenedorSeleccion = '';
+
+function setAgenteRetenedor(val) {
+  agenteRetenedorSeleccion = val;
+  document.getElementById('btnAgenteRetSi').classList.toggle('active', val === 'si');
+  document.getElementById('btnAgenteRetNo').classList.toggle('active', val === 'no');
+  document.getElementById('errClienteAgenteRetenedor').textContent = '';
+}
+
 function abrirFormularioCliente() {
   if (!cart.length) return;
   CLIENTE_CAMPOS.forEach(c => {
@@ -2481,6 +2535,16 @@ function abrirFormularioCliente() {
     document.getElementById(c.id).classList.remove('error');
     document.getElementById(c.err).textContent = '';
   });
+  const campoAgente = document.getElementById('clienteAgenteRetenedorField');
+  if (priceMode === 'mayorista') {
+    campoAgente.style.display = '';
+    agenteRetenedorSeleccion = clienteData.agenteRetenedor || '';
+    setAgenteRetenedor(agenteRetenedorSeleccion);
+  } else {
+    campoAgente.style.display = 'none';
+    agenteRetenedorSeleccion = '';
+  }
+  document.getElementById('errClienteAgenteRetenedor').textContent = '';
   document.getElementById('clienteErrorGeneral').textContent = '';
   document.getElementById('clienteOverlay').classList.add('open');
 }
@@ -2506,6 +2570,15 @@ function validarYContinuarFormularioCliente() {
       document.getElementById(c.err).textContent = '';
     }
   });
+  if (priceMode === 'mayorista') {
+    if (agenteRetenedorSeleccion !== 'si' && agenteRetenedorSeleccion !== 'no') {
+      valido = false;
+      document.getElementById('errClienteAgenteRetenedor').textContent = 'Selecciona una opción';
+    } else {
+      document.getElementById('errClienteAgenteRetenedor').textContent = '';
+    }
+  }
+  valores.agenteRetenedor = priceMode === 'mayorista' ? agenteRetenedorSeleccion : '';
   const generalErr = document.getElementById('clienteErrorGeneral');
   if (!valido) {
     generalErr.textContent = 'Completa todos los campos para continuar.';
@@ -2555,7 +2628,7 @@ function sendOrder(i) {
   if (!d) return;
   const msg = encodeURIComponent(buildOrderMessage());
   const url = d.numero
-    ? 'https://wa.me/' + d.numero + '?text=' + msg
+    ? 'https://api.whatsapp.com/send?phone=' + d.numero + '&text=' + msg
     : 'https://wa.me/?text=' + msg;
   window.open(url, '_blank');
   closeDestinos();
@@ -2574,6 +2647,9 @@ function buildOrderMessage() {
   lines.push('• Dirección: ' + (clienteData.direccion || ''));
   lines.push('• Ciudad: ' + (clienteData.ciudad || ''));
   lines.push('• Teléfono: ' + (clienteData.telefono || ''));
+  if (priceMode === 'mayorista') {
+    lines.push('• Agente retenedor: ' + (clienteData.agenteRetenedor === 'si' ? 'Sí' : 'No'));
+  }
   lines.push(SEP);
   lines.push('');
   lines.push('*NUEVO PEDIDO — ' + CATALOG_NAME.toUpperCase() + '*');
@@ -2608,12 +2684,32 @@ function buildOrderMessage() {
 
   lines.push(SEP);
   lines.push('Productos: ' + cart.length + '  ·  Unidades: ' + units);
+  const esAgenteRetenedor = priceMode === 'mayorista' && clienteData.agenteRetenedor === 'si';
   if (priceMode === 'publico') {
     lines.push('*TOTAL: precios a confirmar*');
   } else if (hasPending) {
     lines.push('*TOTAL: ' + money(total) + '* (mas precios por confirmar)');
+    if (esAgenteRetenedor) lines.push('Retención a calcular por la asesora');
   } else {
     lines.push('*TOTAL: ' + money(total) + '*');
+    if (esAgenteRetenedor) {
+      const baseRetencion = Math.round(total / IVA_FACTOR);
+      if (baseRetencion >= RETENCION_BASE_MINIMA) {
+        const retencion  = Math.round(baseRetencion * RETENCION_TARIFA);
+        const valorFinal = total - retencion;
+        const SEP_RET = '━━━━━━━━━━━━━━━';
+        lines.push('Base a aplicar retención: ' + money(baseRetencion));
+        lines.push('Retención en la fuente (2,5%): ' + money(retencion));
+        lines.push(SEP_RET);
+        lines.push('➤ *VALOR FINAL A PAGAR: ' + money(valorFinal) + '*');
+        lines.push(SEP_RET);
+      } else {
+        lines.push('Retención en la fuente: no aplica (base inferior a ' + money(RETENCION_BASE_MINIMA) + ')');
+      }
+    }
+  }
+  if (priceMode === 'mayorista') {
+    lines.push('*Pendiente verificar unidades disponibles con tu asesora.*');
   }
   lines.push('');
   lines.push('_Enviado desde el catálogo ' + CATALOG_NAME + '_');
