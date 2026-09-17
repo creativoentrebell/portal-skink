@@ -569,7 +569,14 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
 .qty-select { display: flex; align-items: center; border: 1.5px solid var(--beige-mid); border-radius: 8px; overflow: hidden; flex-shrink: 0; background: var(--white); }
 .qty-select button { background: none; border: none; width: 32px; height: 36px; font-size: 17px; cursor: pointer; color: var(--taupe-dark); font-family: inherit; transition: background 0.15s; }
 .qty-select button:hover { background: var(--beige); }
-.qty-select span { min-width: 30px; text-align: center; font-size: 14px; font-weight: 600; color: var(--text); }
+.qty-select span, .qty-select input.qty-input { min-width: 30px; text-align: center; font-size: 14px; font-weight: 600; color: var(--text); }
+.qty-select input.qty-input {
+  border: none; background: transparent; font-family: inherit; padding: 0;
+  -moz-appearance: textfield;
+}
+.qty-select input.qty-input::-webkit-outer-spin-button,
+.qty-select input.qty-input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.qty-select input.qty-input:focus { outline: none; background: var(--beige-light); }
 .add-cart-btn { flex: 1; padding: 10px 14px; background: var(--taupe); color: var(--white); border: none; border-radius: 8px; font-size: 13.5px; font-weight: 600; font-family: inherit; cursor: pointer; transition: background 0.18s; white-space: nowrap; }
 .add-cart-btn:hover { background: var(--taupe-dark); }
 .add-cart-btn.added { background: var(--taupe-xdark); }
@@ -593,7 +600,7 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
 .cart-item-del:hover { color: var(--badge-out); }
 .cart-item-bottom { display: flex; align-items: center; justify-content: space-between; margin-top: 10px; gap: 10px; }
 .cart-item-bottom .qty-select button { height: 28px; width: 28px; font-size: 14px; }
-.cart-item-bottom .qty-select span { font-size: 12.5px; min-width: 26px; }
+.cart-item-bottom .qty-select span, .cart-item-bottom .qty-select input.qty-input { font-size: 12.5px; min-width: 26px; width: 26px; }
 .cart-item-prices { text-align: right; }
 .cart-item-unit { font-size: 11px; color: var(--text-light); }
 .cart-item-sub { font-size: 13.5px; font-weight: 600; color: var(--taupe-dark); }
@@ -631,10 +638,6 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
 /* ── CARRITO — FORMULARIO DATOS DEL CLIENTE (previo a envío WhatsApp) ── */
 .cliente-modal { max-width: 430px; max-height: 88vh; overflow-y: auto; -webkit-overflow-scrolling: touch; }
 .cliente-form { text-align: left; margin-top: 4px; }
-.mayorista-notice {
-  font-size: 11.5px; color: var(--text-mid); text-align: center;
-  padding: 4px 12px 6px; background: transparent;
-}
 .mayorista-notice-box {
   font-size: 12px; color: #6b5a20; background: #fdf3d0;
   border: 1px solid #e8d27a; border-radius: 6px;
@@ -866,7 +869,6 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
     </div>
     <button class="cart-btn" id="cartBtn" onclick="openCart()" title="Ver pedido">🛍️<span class="cart-label">Carrito</span><span class="cart-count" id="cartCount">0</span></button>
   </div>
-  <div class="mayorista-notice" id="mayoristaHeaderNotice" style="display:none">⏳ Pendiente verificar unidades disponibles con tu asesora.</div>
 </header>
 
 <!-- FILTERS -->
@@ -956,7 +958,8 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
           <div class="order-row">
             <div class="qty-select">
               <button onclick="modalQtyDelta(-1)" title="Menos">−</button>
-              <span id="modalQty">1</span>
+              <input type="number" class="qty-input" id="modalQty" value="1" min="1" max="999"
+                     inputmode="numeric" onchange="modalQtySet(this.value)">
               <button onclick="modalQtyDelta(1)" title="Más">+</button>
             </div>
             <button class="add-cart-btn" id="addCartBtn" onclick="addCurrentToCart()">Agregar al pedido</button>
@@ -1151,7 +1154,6 @@ function fmtPrice(precio) {
 // Muestra u oculta los 3 avisos "pendiente verificar unidades" (header, modal, carrito)
 function updateMayoristaNotices() {
   const isMay = priceMode === 'mayorista';
-  document.getElementById('mayoristaHeaderNotice').style.display = isMay ? '' : 'none';
   document.getElementById('mayoristaModalNotice').style.display  = isMay ? '' : 'none';
   document.getElementById('mayoristaCartNotice').style.display   = isMay ? '' : 'none';
 }
@@ -1858,7 +1860,7 @@ function openModal(idx) {
 
   // Pedido: resetear cantidad y nota; los agotados no se pueden pedir
   modalQtyVal = 1;
-  document.getElementById('modalQty').textContent = '1';
+  document.getElementById('modalQty').value = '1';
   document.getElementById('modalNota').value = '';
   document.getElementById('orderControls').style.display = p.agotado ? 'none' : '';
   const addBtn = document.getElementById('addCartBtn');
@@ -2379,7 +2381,13 @@ function escHTML(s) {
 // ── Modal: cantidad y agregar ──
 function modalQtyDelta(d) {
   modalQtyVal = Math.max(1, Math.min(999, modalQtyVal + d));
-  document.getElementById('modalQty').textContent = modalQtyVal;
+  document.getElementById('modalQty').value = modalQtyVal;
+}
+function modalQtySet(val) {
+  let n = parseInt(val, 10);
+  if (isNaN(n)) n = 1;
+  modalQtyVal = Math.max(1, Math.min(999, n));
+  document.getElementById('modalQty').value = modalQtyVal;
 }
 function addCurrentToCart() {
   if (!currentProduct || currentProduct.agotado) return;
@@ -2427,6 +2435,14 @@ function cartQtyDelta(idx, d) {
   const it = cart[idx];
   if (!it) return;
   it.qty = Math.max(1, Math.min(999, it.qty + d));
+  saveCart(); updateCartUI();
+}
+function cartQtySet(idx, val) {
+  const it = cart[idx];
+  if (!it) return;
+  let n = parseInt(val, 10);
+  if (isNaN(n)) n = 1;
+  it.qty = Math.max(1, Math.min(999, n));
   saveCart(); updateCartUI();
 }
 function removeCartItem(idx) {
@@ -2484,7 +2500,7 @@ function updateCartUI() {
       + '<div class="cart-item-bottom">'
       +   '<div class="qty-select">'
       +     '<button onclick="cartQtyDelta(' + idx + ',-1)" title="Menos">−</button>'
-      +     '<span>' + it.qty + '</span>'
+      +     '<input type="number" class="qty-input" value="' + it.qty + '" min="1" max="999" inputmode="numeric" onchange="cartQtySet(' + idx + ', this.value)">'
       +     '<button onclick="cartQtyDelta(' + idx + ',1)" title="Más">+</button>'
       +   '</div>'
       +   '<div class="cart-item-prices">' + pricesHTML + '</div>'
@@ -2707,9 +2723,6 @@ function buildOrderMessage() {
         lines.push('Retención en la fuente: no aplica (base inferior a ' + money(RETENCION_BASE_MINIMA) + ')');
       }
     }
-  }
-  if (priceMode === 'mayorista') {
-    lines.push('*Pendiente verificar unidades disponibles con tu asesora.*');
   }
   lines.push('');
   lines.push('_Enviado desde el catálogo ' + CATALOG_NAME + '_');
