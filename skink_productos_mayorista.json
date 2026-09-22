@@ -132,7 +132,7 @@
       "Piel Sensible y Calmante"
     ],
     "mas_vendido": false,
-    "preventa": true,
+    "preventa": false,
     "ficha": "img/fichas/TOCOBO52.png",
     "video": "img/videos/TOCOBO52.mp4"
   },
@@ -234,7 +234,7 @@
     "ficha": "img/fichas/TOCOBO31.png",
     "video": "img/videos/TOCOBO31.mp4",
     "mas_vendido": true,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "TOCOBO32",
@@ -256,7 +256,7 @@
     "ficha": "img/fichas/TOCOBO32.png",
     "video": "img/videos/TOCOBO32.mp4",
     "mas_vendido": true,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "TOCOBO39",
@@ -275,7 +275,7 @@
       "Protección Solar"
     ],
     "mas_vendido": true,
-    "preventa": true,
+    "preventa": false,
     "ficha": "img/fichas/TOCOBO39.png",
     "video": "img/videos/TOCOBO39.mp4"
   },
@@ -297,7 +297,7 @@
       "Protección Solar"
     ],
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "TOCOBO40",
@@ -458,7 +458,7 @@
     ],
     "video": "img/videos/TOCOBO48.mp4",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "TOCOBO49",
@@ -773,7 +773,7 @@
       "Protección Solar"
     ],
     "mas_vendido": true,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "MIXSOON1",
@@ -2691,7 +2691,7 @@
       "Piel Sensible y Calmante"
     ],
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "BIODANCE2",
@@ -2713,7 +2713,7 @@
     ],
     "video": "img/videos/BIODANCE2.mp4",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "BIODANCE3",
@@ -2732,7 +2732,7 @@
       "Manchas e Hiperpigmentación"
     ],
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "BIODANCE4",
@@ -2813,7 +2813,7 @@
     ],
     "video": "img/videos/MEDICUBE34.mp4",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "MEDICUBE2",
@@ -3102,7 +3102,7 @@
     ],
     "video": "img/videos/MEDICUBE9.mp4",
     "mas_vendido": true,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "MEDICUBE44",
@@ -4643,7 +4643,7 @@
     ],
     "video": "img/videos/MEDICUBE97.mp4",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "MEDICUBE98",
@@ -5456,7 +5456,7 @@
     ],
     "video": "img/videos/SKIN1004-49.mp4",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "SKIN1004-48",
@@ -6360,7 +6360,7 @@
     ],
     "ficha": "img/fichas/DR-ALTHEA15.jpg",
     "mas_vendido": true,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "DR-ALTHEA16",
@@ -6509,7 +6509,7 @@
     "ficha": "img/fichas/DR-ALTHEA4.png",
     "video": "img/videos/DR-ALTHEA4.mp4",
     "mas_vendido": true,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "DR-ALTHEA26",
@@ -6607,7 +6607,7 @@
     "ficha": "img/fichas/DR-ALTHEA1.png",
     "video": "img/videos/DR-ALTHEA1.mp4",
     "mas_vendido": true,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "DR-ALTHEA21",
@@ -6628,7 +6628,7 @@
     ],
     "ficha": "img/fichas/DR-ALTHEA21.jpg",
     "mas_vendido": true,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "DR-ALTHEA11",
@@ -8481,7 +8481,7 @@
     ],
     "video": "img/videos/KAHI-01.mp4",
     "mas_vendido": true,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "KAHI-02",
@@ -9316,7 +9316,7 @@
       "Manchas e Hiperpigmentación"
     ],
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "B.LAB-01",
@@ -9334,7 +9334,7 @@
       "Brillo y Luminosidad"
     ],
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "DR-ALTHEA27",
@@ -9372,7 +9372,7 @@
     ],
     "ficha": "img/fichas/JUMI-07.png",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "IM.FROM-01",
@@ -9390,7 +9390,7 @@
       "Hidratación Profunda"
     ],
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "MEDICUBE104",
@@ -9447,7 +9447,7 @@
     "ficha": "img/fichas/MEDICUBE107.png",
     "video": "img/videos/MEDICUBE107.mp4",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "ROUND-LAB19",
@@ -9465,6 +9465,6 @@
       "Acné"
     ],
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   }
 ]
