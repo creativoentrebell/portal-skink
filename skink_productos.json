@@ -9594,20 +9594,20 @@
     "preventa": false
   },
   {
-    "id": "MEDICUBE116",
-    "referencia": "MEDICUBE116",
-    "nombre": "3H Drying Lotion 20ml",
+    "id": "MEDICUBE87",
+    "referencia": "MEDICUBE87",
+    "nombre": "3H Overnight Drying Lotion 20ml",
     "marca": "MEDICUBE",
     "precio": "pendiente",
     "categoria": "Sérum",
     "descripcion": "",
-    "imagen": "img/skink/MEDICUBE116.webp",
+    "imagen": "img/skink/MEDICUBE87.webp",
     "agotado": false,
     "nuevo": true,
     "tipos_piel": [
       "Acné"
     ],
-    "ficha": "img/fichas/MEDICUBE116.png",
+    "ficha": "img/fichas/MEDICUBE87.png",
     "mas_vendido": false,
     "preventa": false
   }
