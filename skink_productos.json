@@ -4534,7 +4534,7 @@
     "referencia": "MEDICUBE85",
     "nombre": "PDRN Pink Caffeine Collagen Eye Patch 60 unidades",
     "marca": "MEDICUBE",
-    "precio": 140000,
+    "precio": 105000,
     "categoria": "Parches",
     "descripcion": "Parches de hidrogel para el contorno de ojos que se adaptan a la zona y dan sensación refrescante. Ayudan a disimular ojeras y bolsas, a desinflamar y a mejorar la apariencia de firmeza y suavidad. Aptos para todo tipo de piel. Ingredientes claves: PDRN de salmón, cafeína, retinol y colágeno.",
     "imagen": "img/skink/MEDICUBE85.jpg",
@@ -5535,7 +5535,7 @@
     "categoria": "Protección Solar",
     "descripcion": "Sérum solar de textura ligera tipo agua con centella asiática y complejo de ácido hialurónico. Protege, hidrata y calma sin dejar sensación pegajosa ni residuo blanco.",
     "imagen": "img/skink/SKIN1004-49.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Protección Solar",
