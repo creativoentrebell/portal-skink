@@ -14,6 +14,7 @@
       "Piel Grasa y Poros"
     ],
     "ficha": "img/fichas/TOCOBO7.jpg",
+    "video": "img/videos/Tocobo7.mp4",
     "mas_vendido": false,
     "preventa": false
   },
@@ -32,6 +33,7 @@
       "Piel Grasa y Poros"
     ],
     "ficha": "img/fichas/TOCOBO3.jpg",
+    "video": "img/videos/Tocobo3.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -297,6 +299,7 @@
       "Protección Solar"
     ],
     "ficha": "img/fichas/TOCOBO38.png",
+    "video": "img/videos/Tocobo38.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -317,6 +320,7 @@
       "Protección Solar"
     ],
     "ficha": "img/fichas/TOCOBO40.png",
+    "video": "img/videos/Tocobo40.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -355,6 +359,7 @@
       "Protección Solar"
     ],
     "ficha": "img/fichas/TOCOBO33.png",
+    "video": "img/videos/Tocobo33.mp4",
     "mas_vendido": false,
     "preventa": false
   },
@@ -416,6 +421,7 @@
       "Protección Solar"
     ],
     "ficha": "img/fichas/TOCOBO36.png",
+    "video": "img/videos/Tocobo36.mp4",
     "mas_vendido": false,
     "preventa": false
   },
@@ -779,6 +785,7 @@
       "Protección Solar"
     ],
     "ficha": "img/fichas/TOCOBO67.png",
+    "video": "img/videos/Tocobo67.mp4",
     "mas_vendido": true,
     "preventa": true
   },
@@ -1612,6 +1619,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/ANUA31.jpg",
+    "video": "img/videos/Anua31.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -1635,6 +1643,7 @@
       "Protección Solar"
     ],
     "ficha": "img/fichas/ANUA7.jpg",
+    "video": "img/videos/Anua7.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -1655,6 +1664,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/ANUA18.jpg",
+    "video": "img/videos/Anua18.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -1676,6 +1686,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/ANUA3.jpg",
+    "video": "img/videos/Anua3.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -1697,6 +1708,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/ANUA19.jpg",
+    "video": "img/videos/Anua19.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -1717,6 +1729,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/ANUA4.png",
+    "video": "img/videos/Anua4.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -1800,6 +1813,7 @@
       "Hidratación Profunda"
     ],
     "ficha": "img/fichas/ANUA15.jpg",
+    "video": "img/videos/Anua15.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -1839,6 +1853,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/ANUA2.jpg",
+    "video": "img/videos/Anua2.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -2004,6 +2019,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/ANUA17.jpg",
+    "video": "img/videos/Anua17.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -2047,6 +2063,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/ANUA20.jpg",
+    "video": "img/videos/Anua20.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -2068,6 +2085,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/ANUA21.jpg",
+    "video": "img/videos/Anua21.mp4",
     "mas_vendido": false,
     "preventa": false
   },
@@ -2127,6 +2145,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/ANUA29.jpg",
+    "video": "img/videos/Anua29.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -2204,6 +2223,7 @@
       "Hidratación Profunda"
     ],
     "ficha": "img/fichas/ANUA35.png",
+    "video": "img/videos/Anua35.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -2319,6 +2339,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/ABIB4.png",
+    "video": "img/videos/Abib4.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -2376,6 +2397,7 @@
       "Contorno de Ojos"
     ],
     "ficha": "img/fichas/ABIB7.png",
+    "video": "img/videos/Abib7.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -2396,6 +2418,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/BEAUTY6.png",
+    "video": "img/videos/Beauty6.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -2414,6 +2437,7 @@
       "Piel Grasa y Poros"
     ],
     "ficha": "img/fichas/BEAUTY14.png",
+    "video": "img/videos/Beauty14.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -2455,6 +2479,7 @@
       "Manchas e Hiperpigmentación"
     ],
     "ficha": "img/fichas/BEAUTY5.png",
+    "video": "img/videos/Beauty5.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -2612,6 +2637,7 @@
       "Hidratación Profunda"
     ],
     "ficha": "img/fichas/BEAUTY4.png",
+    "video": "img/videos/Beauty4.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -2706,6 +2732,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/BIODANCE1.png",
+    "video": "img/videos/Biodance1.mp4",
     "mas_vendido": false,
     "preventa": false
   },
@@ -2749,6 +2776,7 @@
       "Manchas e Hiperpigmentación"
     ],
     "ficha": "img/fichas/BIODANCE3.png",
+    "video": "img/videos/Biodance3.mp4",
     "mas_vendido": false,
     "preventa": false
   },
@@ -2770,6 +2798,7 @@
       "Protección Solar"
     ],
     "ficha": "img/fichas/BIODANCE4.jpg",
+    "video": "img/videos/Biodance4.mp4",
     "mas_vendido": false,
     "preventa": false
   },
@@ -2810,6 +2839,7 @@
       "Piel Grasa y Poros"
     ],
     "ficha": "img/fichas/MEDICUBE45.png",
+    "video": "img/videos/Medicube45.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -2853,6 +2883,7 @@
       "Protección Solar"
     ],
     "ficha": "img/fichas/MEDICUBE2.png",
+    "video": "img/videos/Medicube2.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -2873,6 +2904,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/MEDICUBE57.png",
+    "video": "img/videos/Medicube57.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -2894,6 +2926,7 @@
       "Piel Grasa y Poros"
     ],
     "ficha": "img/fichas/MEDICUBE58.png",
+    "video": "img/videos/Medicube58.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -2915,6 +2948,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/MEDICUBE64.png",
+    "video": "img/videos/Medicube64.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -2957,6 +2991,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/MEDICUBE1.png",
+    "video": "img/videos/Medicube1.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -3085,6 +3120,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/MEDICUBE49.png",
+    "video": "img/videos/Medicube49.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -3107,6 +3143,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/MEDICUBE52.png",
+    "video": "img/videos/Medicube52.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -3150,6 +3187,7 @@
       "Piel Grasa y Poros"
     ],
     "ficha": "img/fichas/MEDICUBE44.png",
+    "video": "img/videos/Medicube44.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -3171,6 +3209,7 @@
       "Protección Solar"
     ],
     "ficha": "img/fichas/MEDICUBE55.png",
+    "video": "img/videos/Medicube55.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -3193,6 +3232,7 @@
       "Protección Solar"
     ],
     "ficha": "img/fichas/MEDICUBE54.png",
+    "video": "img/videos/Medicube54.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -3233,6 +3273,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/MEDICUBE36.png",
+    "video": "img/videos/Medicube36.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -3403,6 +3444,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/MEDICUBE72.png",
+    "video": "img/videos/Medicube72.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -3541,6 +3583,7 @@
       "Manchas e Hiperpigmentación"
     ],
     "ficha": "img/fichas/MEDICUBE19.png",
+    "video": "img/videos/Medicube19.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -3579,6 +3622,7 @@
       "Manchas e Hiperpigmentación"
     ],
     "ficha": "img/fichas/MEDICUBE77.png",
+    "video": "img/videos/Medicube77.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -3638,6 +3682,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/MEDICUBE10.jpg",
+    "video": "img/videos/Medicube10.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -3658,6 +3703,7 @@
       "Manchas e Hiperpigmentación"
     ],
     "ficha": "img/fichas/MEDICUBE33.png",
+    "video": "img/videos/Medicube33.mp4",
     "mas_vendido": false,
     "preventa": false
   },
@@ -3697,6 +3743,7 @@
       "Piel Grasa y Poros"
     ],
     "ficha": "img/fichas/MEDICUBE35.png",
+    "video": "img/videos/Medicube35.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -3717,6 +3764,7 @@
       "Manchas e Hiperpigmentación"
     ],
     "ficha": "img/fichas/MEDICUBE68.png",
+    "video": "img/videos/Medicube68.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -3738,6 +3786,7 @@
       "Piel Grasa y Poros"
     ],
     "ficha": "img/fichas/MEDICUBE79.png",
+    "video": "img/videos/Medicube79.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -3779,6 +3828,7 @@
       "Manchas e Hiperpigmentación"
     ],
     "ficha": "img/fichas/MEDICUBE22.png",
+    "video": "img/videos/Medicube22.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -3801,6 +3851,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/MEDICUBE59.png",
+    "video": "img/videos/Medicube59.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -3840,6 +3891,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/MEDICUBE71.png",
+    "video": "img/videos/Medicube71.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -3900,6 +3952,7 @@
       "Manchas e Hiperpigmentación"
     ],
     "ficha": "img/fichas/MEDICUBE61.png",
+    "video": "img/videos/Medicube61.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -4064,6 +4117,7 @@
       "Manchas e Hiperpigmentación"
     ],
     "ficha": "img/fichas/MEDICUBE25.png",
+    "video": "img/videos/Medicube25.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -4103,6 +4157,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/MEDICUBE8.png",
+    "video": "img/videos/Medicube8.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -4159,6 +4214,7 @@
       "Anti-edad"
     ],
     "ficha": "img/fichas/MEDICUBE37.png",
+    "video": "img/videos/Medicube37.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -4200,6 +4256,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/MEDICUBE16.jpg",
+    "video": "img/videos/Medicube16.mp4",
     "mas_vendido": false,
     "preventa": false
   },
@@ -4258,6 +4315,7 @@
       "Piel Grasa y Poros"
     ],
     "ficha": "img/fichas/MEDICUBE26.jpg",
+    "video": "img/videos/Medicube26.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -4279,6 +4337,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/MEDICUBE27.jpg",
+    "video": "img/videos/Medicube27.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -4299,6 +4358,7 @@
       "Manchas e Hiperpigmentación"
     ],
     "ficha": "img/fichas/MEDICUBE70.png",
+    "video": "img/videos/Medicube70.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -4320,6 +4380,7 @@
       "Manchas e Hiperpigmentación"
     ],
     "ficha": "img/fichas/MEDICUBE80.png",
+    "video": "img/videos/Medicube80.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -4458,6 +4519,7 @@
       "Hidratación Profunda"
     ],
     "ficha": "img/fichas/MEDICUBE3.png",
+    "video": "img/videos/Medicube3.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -4550,6 +4612,7 @@
       "Manchas e Hiperpigmentación"
     ],
     "ficha": "img/fichas/MEDICUBE89.png",
+    "video": "img/videos/Medicube89.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -4602,6 +4665,7 @@
       "Hidratación Profunda"
     ],
     "ficha": "img/fichas/MEDICUBE92.jpg",
+    "video": "img/videos/Medicube92.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -4730,6 +4794,7 @@
       "Hidratación Profunda"
     ],
     "ficha": "img/fichas/MEDICUBE99.png",
+    "video": "img/videos/Medicube99.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -4769,6 +4834,7 @@
       "Piel Grasa y Poros"
     ],
     "ficha": "img/fichas/OOTD1.png",
+    "video": "img/videos/Ootd1.mp4",
     "mas_vendido": false,
     "preventa": false
   },
@@ -6253,6 +6319,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/DR-ALTHEA8.jpg",
+    "video": "img/videos/Dr-Althea8.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -6373,6 +6440,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/DR-ALTHEA14.jpg",
+    "video": "img/videos/Dr-Althea14.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -6456,6 +6524,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/DR-ALTHEA25.png",
+    "video": "img/videos/Dr-Althea25.mp4",
     "mas_vendido": false,
     "preventa": false
   },
@@ -6601,6 +6670,7 @@
       "Hidratación Profunda"
     ],
     "ficha": "img/fichas/DR-ALTHEA17.jpg",
+    "video": "img/videos/Dr-Althea17.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -6682,6 +6752,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/DR-ALTHEA21.jpg",
+    "video": "img/videos/Dr-Althea21.mp4",
     "mas_vendido": true,
     "preventa": true
   },
@@ -6786,6 +6857,7 @@
       "Manchas e Hiperpigmentación"
     ],
     "ficha": "img/fichas/D-ALBA3.png",
+    "video": "img/videos/D-Alba3.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -6863,6 +6935,7 @@
       "Universal"
     ],
     "ficha": "img/fichas/D-ALBA1.png",
+    "video": "img/videos/D-Alba1.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -7944,6 +8017,7 @@
       "Piel Grasa y Poros"
     ],
     "ficha": "img/fichas/CELI-09.png",
+    "video": "img/videos/Celi-09.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -8108,6 +8182,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/ELI-08.png",
+    "video": "img/videos/Eli-08.mp4",
     "mas_vendido": false,
     "preventa": false
   },
@@ -8128,6 +8203,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/ELI-09.png",
+    "video": "img/videos/Eli-09.mp4",
     "mas_vendido": false,
     "preventa": false
   },
@@ -8149,6 +8225,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/ELI-10.png",
+    "video": "img/videos/Eli-10.mp4",
     "mas_vendido": false,
     "preventa": false
   },
@@ -8211,6 +8288,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/KSEC-02.png",
+    "video": "img/videos/Ksec-02.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -8232,6 +8310,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/KSEC-03.png",
+    "video": "img/videos/Ksec-03.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -8313,6 +8392,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/AREN-01.png",
+    "video": "img/videos/Aren-01.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -8332,6 +8412,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/AREN-02.png",
+    "video": "img/videos/Aren-02.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -8370,6 +8451,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/AREN-04.png",
+    "video": "img/videos/Aren-04.mp4",
     "mas_vendido": false,
     "preventa": false
   },
@@ -8835,6 +8917,7 @@
       "Protección Solar"
     ],
     "ficha": "img/fichas/CENTELLIAN24-05.png",
+    "video": "img/videos/Centellian24-05.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -8857,6 +8940,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/CENTELLIAN24-06.png",
+    "video": "img/videos/Centellian24-06.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -8934,6 +9018,7 @@
       "Contorno de Ojos"
     ],
     "ficha": "img/fichas/CENTELLIAN24-09.png",
+    "video": "img/videos/Centellian24-09.mp4",
     "mas_vendido": false,
     "preventa": false
   },
@@ -8952,6 +9037,7 @@
       "Universal"
     ],
     "ficha": "img/fichas/CENTELLIAN24-10.png",
+    "video": "img/videos/Centellian24-10.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -9280,6 +9366,7 @@
       "Brillo y Luminosidad"
     ],
     "ficha": "img/fichas/DR-MELAXIN03.png",
+    "video": "img/videos/Dr-Melaxin03.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -9299,6 +9386,7 @@
       "Brillo y Luminosidad"
     ],
     "ficha": "img/fichas/DR-MELAXIN04.png",
+    "video": "img/videos/Dr-Melaxin04.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -9552,6 +9640,7 @@
     "nuevo": true,
     "tipos_piel": [],
     "ficha": "img/fichas/MEDICUBE112.png",
+    "video": "img/videos/Medicube112.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -9705,6 +9794,7 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/DR-ALTHEA28.png",
+    "video": "img/videos/Dr-Althea28.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -9724,6 +9814,7 @@
       "Brillo y Luminosidad"
     ],
     "ficha": "img/fichas/DR-MELAXIN01.png",
+    "video": "img/videos/Dr-Melaxin01.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -9740,6 +9831,7 @@
     "nuevo": true,
     "tipos_piel": [],
     "ficha": "img/fichas/MEDICUBE111.png",
+    "video": "img/videos/Medicube111.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -9756,6 +9848,7 @@
     "nuevo": true,
     "tipos_piel": [],
     "ficha": "img/fichas/MEDICUBE113.png",
+    "video": "img/videos/Medicube113.mp4",
     "mas_vendido": false,
     "preventa": false
   },
@@ -9776,6 +9869,7 @@
       "Hidratación Profunda"
     ],
     "ficha": "img/fichas/MEDICUBE105.png",
+    "video": "img/videos/Medicube105.mp4",
     "mas_vendido": false,
     "preventa": true
   },
@@ -9795,6 +9889,7 @@
       "Hidratación Profunda"
     ],
     "ficha": "img/fichas/MEDICUBE109.png",
+    "video": "img/videos/Medicube109.mp4",
     "mas_vendido": false,
     "preventa": false
   }
