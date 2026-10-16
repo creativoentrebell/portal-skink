@@ -379,7 +379,7 @@
       "Piel Sensible y Calmante",
       "Protección Solar"
     ],
-    "ficha": "img/fichas/TOCOBO34.jpg",
+    "ficha": "img/fichas/TOCOBO34.png",
     "mas_vendido": true,
     "preventa": false
   },
@@ -2458,6 +2458,7 @@
       "Hidratación Profunda",
       "Manchas e Hiperpigmentación"
     ],
+    "ficha": "img/fichas/BEAUTY3.png",
     "mas_vendido": false,
     "preventa": false
   },
@@ -3358,6 +3359,7 @@
       "Hidratación Profunda",
       "Manchas e Hiperpigmentación"
     ],
+    "ficha": "img/fichas/MEDICUBE78.png",
     "mas_vendido": false,
     "preventa": false
   },
@@ -3562,6 +3564,7 @@
       "Manchas e Hiperpigmentación",
       "Piel Grasa y Poros"
     ],
+    "ficha": "img/fichas/MEDICUBE60.png",
     "mas_vendido": false,
     "preventa": false
   },
@@ -4903,7 +4906,7 @@
     "precio": 35900,
     "categoria": "Tónico",
     "descripcion": "Ampolla no comedogénica para piel con tendencia acneica, grasa y sensible, que ayuda a calmar la irritación y la inflamación. Ingredientes claves: extracto de centella asiática, agua de hoja de árbol de té, extracto de hoja de pino, extracto de onagra, agua de ciprés y complejo Anti-Sebum P.",
-    "imagen": "img/skink/skin1004-66.webp",
+    "imagen": "img/skink/SKIN1004-65.jpg",
     "agotado": true,
     "nuevo": false,
     "tipos_piel": [
@@ -4912,6 +4915,7 @@
       "Manchas e Hiperpigmentación",
       "Piel Sensible y Calmante"
     ],
+    "ficha": "img/fichas/SKIN1004-66.png",
     "mas_vendido": false,
     "preventa": false
   },
@@ -4972,6 +4976,7 @@
       "Piel Sensible y Calmante",
       "Protección Solar"
     ],
+    "ficha": "img/fichas/SKIN1004-34.png",
     "mas_vendido": false,
     "preventa": false
   },
@@ -5153,6 +5158,7 @@
       "Piel Sensible y Calmante",
       "Protección Solar"
     ],
+    "ficha": "img/fichas/SKIN1004-37.png",
     "mas_vendido": false,
     "preventa": false
   },
@@ -5868,6 +5874,7 @@
       "Piel Sensible y Calmante",
       "Protección Solar"
     ],
+    "ficha": "img/fichas/SKIN1004-50.png",
     "mas_vendido": false,
     "preventa": false
   },
@@ -7878,6 +7885,7 @@
       "Manchas e Hiperpigmentación",
       "Piel Grasa y Poros"
     ],
+    "ficha": "img/fichas/CELI-02.png",
     "mas_vendido": false,
     "preventa": false
   },
@@ -8627,6 +8635,7 @@
       "Anti-edad",
       "Piel Sensible y Calmante"
     ],
+    "ficha": "img/fichas/KAHI01.png",
     "video": "img/videos/KAHI-01.mp4",
     "mas_vendido": true,
     "preventa": false
