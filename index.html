@@ -200,6 +200,7 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
 .badge-agotado { background: #fdecea; color: var(--badge-out); }
 .badge-nuevo { background: #fef6e4; color: var(--badge-new); }
 .badge-vendidos { background: var(--beige); color: var(--badge-best); }
+.badge-combo { background: var(--white); color: var(--taupe-dark); border: 1px solid var(--taupe); }
 .badge-preventa { background: #eaf3ec; color: var(--badge-preventa); font-size: 11.5px; padding: 5px 10px; letter-spacing: 0.07em; }
 
 /* Color dots on card (small) */
@@ -318,6 +319,21 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
 .modal-footer { padding-top: 18px; border-top: 1px solid var(--beige-mid); flex-shrink: 0; margin-top: auto; background: var(--white); }
 .modal-price { font-size: 24px; font-weight: 600; color: var(--taupe-dark); }
 .modal-price.pendiente { font-size: 14px; font-weight: 400; color: var(--text-light); font-style: italic; }
+
+/* ── COMBO EN MODAL ── */
+.modal-combo { flex-shrink: 0; display: flex; align-items: center; gap: 12px; margin: 6px 0 14px; padding: 12px; border: 1px solid var(--beige-mid); border-radius: 10px; background: var(--beige-light); }
+.modal-combo-img { width: 56px; height: 56px; flex-shrink: 0; object-fit: contain; background: var(--white); border-radius: 8px; padding: 4px; }
+.modal-combo-body { flex: 1; min-width: 0; }
+.modal-combo-label { font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--taupe); margin-bottom: 3px; }
+.modal-combo-name { font-size: 13px; color: var(--text); line-height: 1.3; }
+.modal-combo-price { font-size: 12.5px; color: var(--taupe-dark); margin-top: 4px; }
+.modal-combo-note { font-size: 11px; color: var(--text-light); margin-top: 1px; }
+.modal-combo-btn { flex-shrink: 0; font-family: inherit; font-size: 11.5px; font-weight: 600; padding: 8px 14px; border-radius: 20px; border: 1px solid var(--taupe); background: var(--white); color: var(--taupe-dark); cursor: pointer; white-space: nowrap; transition: background 0.15s; }
+.modal-combo-btn:hover { background: var(--beige); }
+@media (max-width: 600px) {
+  .modal-combo { flex-wrap: wrap; }
+  .modal-combo-btn { width: 100%; }
+}
 
 /* ── CARRUSEL FOTO / FICHA TÉCNICA EN MODAL ── */
 .modal-arrow {
@@ -956,6 +972,7 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
         <div class="modal-desc-label">Descripción</div>
         <div class="modal-desc" id="modalDesc"></div>
       </div>
+      <div class="modal-combo" id="modalCombo" style="display:none"></div>
       <div class="modal-footer">
         <div id="modalPrice" class="modal-price"></div>
         <div class="order-controls" id="orderControls">
@@ -1605,6 +1622,7 @@ function cardHTML(p, eager) {
   if (p.agotado) badges += '<span class="badge badge-agotado">Agotado</span>';
   if (p.nuevo)   badges += '<span class="badge badge-nuevo">Nuevo</span>';
   if (p.preventa) badges += '<span class="badge badge-preventa">Preventa</span>';
+  if (p.combo)   badges += '<span class="badge badge-combo">Combo</span>';
 
   // Miniaturas sobre la foto: fotos adicionales + ficha tecnica
   const hasFichaCard = !!(p.ficha && p.ficha.trim && p.ficha.trim());
@@ -1837,6 +1855,7 @@ function openModal(idx) {
   if (p.agotado) badges += '<span class="badge badge-agotado">Agotado</span>';
   if (p.nuevo)   badges += '<span class="badge badge-nuevo">Nuevo</span>';
   if (p.preventa) badges += '<span class="badge badge-preventa">Preventa</span>';
+  if (p.combo)   badges += '<span class="badge badge-combo">Combo</span>';
   document.getElementById('modalBadges').innerHTML = badges;
 
   // Text fields
@@ -1852,6 +1871,31 @@ function openModal(idx) {
     descWrap.style.display = 'block';
   } else {
     descWrap.style.display = 'none';
+  }
+
+  // Combo: recuadro con acceso directo al otro producto del combo
+  const comboEl = document.getElementById('modalCombo');
+  const comboIdx = p.combo ? allProducts.findIndex(x => x.referencia === p.combo) : -1;
+  if (comboIdx >= 0) {
+    const o = allProducts[comboIdx];
+    const oImg = o.colores ? o.colores[0] : o.imagen;
+    let comboPrecio = '';
+    if (priceMode !== 'publico' && typeof p.precio_combo === 'number') {
+      comboPrecio = '<div class="modal-combo-price">Los dos por <strong>' + fmtPrice(p.precio_combo) + '</strong></div>'
+                  + '<div class="modal-combo-note">El precio especial se aplica al facturar.</div>';
+    }
+    comboEl.innerHTML =
+        (oImg ? '<img class="modal-combo-img" src="' + oImg + '" alt="" onerror="this.style.display=\'none\'">' : '')
+      + '<div class="modal-combo-body">'
+      +   '<div class="modal-combo-label">Disponible en combo con</div>'
+      +   '<div class="modal-combo-name">' + o.nombre + '</div>'
+      +   comboPrecio
+      + '</div>'
+      + '<button class="modal-combo-btn" onclick="openModal(' + comboIdx + ')">Ver producto →</button>';
+    comboEl.style.display = '';
+  } else {
+    comboEl.style.display = 'none';
+    comboEl.innerHTML = '';
   }
 
   // Price
