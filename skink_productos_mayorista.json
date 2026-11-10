@@ -9950,7 +9950,7 @@
     "precio": 79000,
     "categoria": "Sérum",
     "descripcion": "",
-    "imagen": "",
+    "imagen": "img/skink/MEDICUBE133.jpg",
     "agotado": false,
     "nuevo": true,
     "tipos_piel": [
@@ -9970,7 +9970,7 @@
     "precio": 59000,
     "categoria": "Sérum",
     "descripcion": "",
-    "imagen": "",
+    "imagen": "img/skink/NIDA-05.webp",
     "agotado": false,
     "nuevo": true,
     "tipos_piel": [
@@ -9989,7 +9989,7 @@
     "precio": 38000,
     "categoria": "Hidratación",
     "descripcion": "La Crema 147 Barrier es un tratamiento avanzado de cuidado de la piel diseñado para fortalecer la barrera cutánea, proporcionar nutrición y garantizar una hidratación profunda. Su formulación está enriquecida con ingredientes que refuerzan la función protectora de la piel. Ingredientes claves: Niacinamida, ceramidas, centella asiática, aceite de macadamia, ácido hialurónico. 147 Barrier Cream (Crema protectora 147)",
-    "imagen": "",
+    "imagen": "img/skink/DR-ALTHEA23.jpg",
     "agotado": false,
     "nuevo": true,
     "tipos_piel": [
@@ -10010,7 +10010,7 @@
     "precio": 129000,
     "categoria": "Sets y Kits",
     "descripcion": "",
-    "imagen": "",
+    "imagen": "img/skink/CENTELLIAN24-13.webp",
     "agotado": false,
     "nuevo": true,
     "tipos_piel": [
@@ -10029,7 +10029,7 @@
     "precio": "pendiente",
     "categoria": "Hidratación",
     "descripcion": "",
-    "imagen": "",
+    "imagen": "img/skink/ANUA46.jpg",
     "agotado": false,
     "nuevo": true,
     "tipos_piel": [
@@ -10048,7 +10048,7 @@
     "precio": "pendiente",
     "categoria": "Hidratación",
     "descripcion": "",
-    "imagen": "",
+    "imagen": "img/skink/ANUA45.jpg",
     "agotado": false,
     "nuevo": true,
     "tipos_piel": [
@@ -10067,7 +10067,7 @@
     "precio": "pendiente",
     "categoria": "Hidratación",
     "descripcion": "",
-    "imagen": "",
+    "imagen": "img/skink/ANUA44.webp",
     "agotado": false,
     "nuevo": true,
     "tipos_piel": [
