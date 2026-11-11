@@ -39,6 +39,22 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
 .header-spacer { flex: 1; }
 .header-stats { font-size: 12px; color: var(--text-light); white-space: nowrap; }
 
+/* ── INVITACIÓN AL CATÁLOGO DE PREVENTA ── */
+.preventa-cta { max-width: 1400px; margin: 0 auto 18px; display: flex; align-items: center; gap: 18px; padding: 18px 22px; background: linear-gradient(135deg, #6b5040 0%, #4a3628 100%); color: #fff; border-radius: 14px; text-decoration: none; box-shadow: 0 6px 20px rgba(74,54,40,0.22); transition: transform .18s, box-shadow .18s; }
+.preventa-cta:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(74,54,40,0.30); }
+.preventa-cta .pc-icon { font-size: 34px; line-height: 1; flex-shrink: 0; }
+.preventa-cta .pc-text { flex: 1; min-width: 0; }
+.preventa-cta .pc-title { font-size: 19px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
+.preventa-cta .pc-sub { font-size: 14px; opacity: .9; margin-top: 3px; }
+.preventa-cta .pc-btn { flex-shrink: 0; background: #fff; color: #4a3628; font-weight: 600; font-size: 14px; padding: 11px 20px; border-radius: 999px; white-space: nowrap; }
+@media (max-width: 600px) {
+  .preventa-cta { flex-wrap: wrap; gap: 10px 12px; padding: 14px 16px; margin-bottom: 14px; }
+  .preventa-cta .pc-icon { font-size: 26px; }
+  .preventa-cta .pc-title { font-size: 15px; }
+  .preventa-cta .pc-sub { font-size: 12.5px; }
+  .preventa-cta .pc-btn { width: 100%; text-align: center; padding: 10px 14px; font-size: 13.5px; }
+}
+
 /* ── FILTERS ── */
 .filters-bar { background: var(--white); border-bottom: 1px solid var(--beige-mid); padding: 12px 24px; position: sticky; top: var(--header-h, 68px); z-index: 99; }
 .filters-inner { max-width: 1400px; margin: 0 auto; display: flex; flex-direction: column; gap: 10px; }
@@ -943,6 +959,14 @@ header { background: var(--white); border-bottom: 1px solid var(--beige-mid); pa
 
 <!-- MAIN -->
 <main class="main">
+  <a class="preventa-cta" href="https://tinyurl.com/skink-preventa" target="_blank" rel="noopener">
+    <span class="pc-icon">✨</span>
+    <span class="pc-text">
+      <span class="pc-title" style="display:block">¿Buscas la preventa?</span>
+      <span class="pc-sub" style="display:block">Los productos en preventa tienen su propio catálogo. Entra y aparta los tuyos.</span>
+    </span>
+    <span class="pc-btn">Ver catálogo de preventa →</span>
+  </a>
   <div id="loading"><div class="spinner"></div><p>Cargando catálogo…</p></div>
   <div id="catalogContent" style="display:none"></div>
 </main>
