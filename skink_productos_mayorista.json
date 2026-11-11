@@ -468,7 +468,8 @@
     "ficha": "img/fichas/TOCOBO48.png",
     "video": "img/videos/TOCOBO48.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "oculto": true
   },
   {
     "id": "TOCOBO49",
@@ -683,7 +684,8 @@
     ],
     "ficha": "img/fichas/TOCOBO55.png",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "oculto": true
   },
   {
     "id": "TOCOBO61",
@@ -734,7 +736,8 @@
       "Capilar"
     ],
     "mas_vendido": false,
-    "preventa": true
+    "preventa": true,
+    "oculto": true
   },
   {
     "id": "TOCOBO65",
@@ -787,7 +790,8 @@
     "ficha": "img/fichas/TOCOBO67.png",
     "video": "img/videos/Tocobo67.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "oculto": true
   },
   {
     "id": "MIXSOON1",
@@ -805,7 +809,8 @@
     ],
     "ficha": "img/fichas/MIXSOON1.jpg",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": true,
+    "oculto": true
   },
   {
     "id": "MIXSOON31",
@@ -1731,7 +1736,8 @@
     "ficha": "img/fichas/ANUA4.png",
     "video": "img/videos/Anua4.mp4",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": true,
+    "oculto": true
   },
   {
     "id": "ANUA5",
@@ -1834,7 +1840,8 @@
     ],
     "ficha": "img/fichas/ANUA16.png",
     "mas_vendido": true,
-    "preventa": false
+    "preventa": false,
+    "oculto": true
   },
   {
     "id": "ANUA2",
@@ -2225,7 +2232,8 @@
     "ficha": "img/fichas/ANUA35.png",
     "video": "img/videos/Anua35.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "oculto": true
   },
   {
     "id": "ANUA36",
@@ -2377,7 +2385,8 @@
       "Protección Solar"
     ],
     "mas_vendido": false,
-    "preventa": true
+    "preventa": true,
+    "oculto": true
   },
   {
     "id": "ABIB7",
@@ -2735,7 +2744,8 @@
     "ficha": "img/fichas/BIODANCE1.png",
     "video": "img/videos/Biodance1.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "oculto": true
   },
   {
     "id": "BIODANCE2",
@@ -2758,7 +2768,8 @@
     "ficha": "img/fichas/BIODANCE2.png",
     "video": "img/videos/BIODANCE2.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "oculto": true
   },
   {
     "id": "BIODANCE3",
@@ -2779,7 +2790,8 @@
     "ficha": "img/fichas/BIODANCE3.png",
     "video": "img/videos/Biodance3.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "oculto": true
   },
   {
     "id": "BIODANCE4",
@@ -2822,7 +2834,8 @@
       "Protección Solar"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "oculto": true
   },
   {
     "id": "MEDICUBE45",
@@ -3708,7 +3721,8 @@
     "ficha": "img/fichas/MEDICUBE33.png",
     "video": "img/videos/Medicube33.mp4",
     "mas_vendido": true,
-    "preventa": false
+    "preventa": false,
+    "oculto": true
   },
   {
     "id": "MEDICUBE39",
@@ -4017,7 +4031,8 @@
       "Manchas e Hiperpigmentación"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "oculto": true
   },
   {
     "id": "MEDICUBE51",
@@ -4261,7 +4276,8 @@
     "ficha": "img/fichas/MEDICUBE16.png",
     "video": "img/videos/Medicube16.mp4",
     "mas_vendido": true,
-    "preventa": false
+    "preventa": false,
+    "oculto": true
   },
   {
     "id": "MEDICUBE81",
@@ -4579,7 +4595,8 @@
     "mas_vendido": false,
     "preventa": false,
     "ficha": "img/fichas/MEDICUBE85.png",
-    "video": "img/videos/MEDICUBE85.mp4"
+    "video": "img/videos/MEDICUBE85.mp4",
+    "oculto": true
   },
   {
     "id": "MEDICUBE86",
@@ -4617,7 +4634,8 @@
     "ficha": "img/fichas/MEDICUBE89.png",
     "video": "img/videos/Medicube89.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "oculto": true
   },
   {
     "id": "MEDICUBE90",
@@ -4706,7 +4724,8 @@
     "mas_vendido": false,
     "preventa": false,
     "ficha": "img/fichas/MEDICUBE94.png",
-    "video": "img/videos/MEDICUBE94.mp4"
+    "video": "img/videos/MEDICUBE94.mp4",
+    "oculto": true
   },
   {
     "id": "MEDICUBE95",
@@ -5180,7 +5199,8 @@
       "Piel Sensible y Calmante"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "oculto": true
   },
   {
     "id": "SKIN1004-29",
@@ -5461,7 +5481,8 @@
       "Piel Sensible y Calmante"
     ],
     "mas_vendido": false,
-    "preventa": true
+    "preventa": true,
+    "oculto": true
   },
   {
     "id": "SKIN1004-19",
@@ -5522,7 +5543,8 @@
       "Protección Solar"
     ],
     "mas_vendido": false,
-    "preventa": true
+    "preventa": true,
+    "oculto": true
   },
   {
     "id": "SKIN1004-38",
@@ -5602,7 +5624,8 @@
       "Piel Sensible y Calmante"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "oculto": true
   },
   {
     "id": "SKIN1004-15",
@@ -6548,7 +6571,8 @@
     ],
     "ficha": "img/fichas/DR-ALTHEA16.jpg",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": true,
+    "oculto": true
   },
   {
     "id": "DR-ALTHEA25",
@@ -6777,7 +6801,8 @@
     "ficha": "img/fichas/DR-ALTHEA1.png",
     "video": "img/videos/DR-ALTHEA1.mp4",
     "mas_vendido": true,
-    "preventa": true
+    "preventa": true,
+    "oculto": true
   },
   {
     "id": "DR-ALTHEA21",
@@ -6799,7 +6824,8 @@
     "ficha": "img/fichas/DR-ALTHEA21.png",
     "video": "img/videos/Dr-Althea21.mp4",
     "mas_vendido": true,
-    "preventa": true
+    "preventa": true,
+    "oculto": true
   },
   {
     "id": "DR-ALTHEA11",
@@ -7761,7 +7787,8 @@
       "Contorno de Ojos"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "oculto": true
   },
   {
     "id": "APLB-01",
@@ -9009,7 +9036,8 @@
       "Piel Sensible y Calmante"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "oculto": true
   },
   {
     "id": "CENTELLIAN24-08",
@@ -9121,7 +9149,8 @@
       "Manchas e Hiperpigmentación"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "oculto": true
   },
   {
     "id": "SUNGBOON-01",
@@ -9415,7 +9444,8 @@
     "ficha": "img/fichas/DR-MELAXIN03.png",
     "video": "img/videos/Dr-Melaxin03.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "oculto": true
   },
   {
     "id": "DR-MELAXIN04",
@@ -9435,7 +9465,8 @@
     "ficha": "img/fichas/DR-MELAXIN04.png",
     "video": "img/videos/Dr-Melaxin04.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "oculto": true
   },
   {
     "id": "LILYEVE-01",
@@ -9561,7 +9592,8 @@
     "ficha": "img/fichas/DR-ALTHEA27.png",
     "video": "img/videos/DR-ALTHEA27.mp4",
     "mas_vendido": true,
-    "preventa": true
+    "preventa": true,
+    "oculto": true
   },
   {
     "id": "JUMI-07",
@@ -9616,7 +9648,8 @@
     "ficha": "img/fichas/MEDICUBE104.png",
     "video": "img/videos/MEDICUBE104.mp4",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": true,
+    "oculto": true
   },
   {
     "id": "MEDICUBE100",
@@ -9635,7 +9668,8 @@
     "ficha": "img/fichas/MEDICUBE100.png",
     "video": "img/videos/MEDICUBE100.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "oculto": true
   },
   {
     "id": "MEDICUBE107",
@@ -9654,7 +9688,8 @@
     "ficha": "img/fichas/MEDICUBE107.png",
     "video": "img/videos/MEDICUBE107.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "oculto": true
   },
   {
     "id": "ROUND-LAB19",
@@ -9708,7 +9743,8 @@
     ],
     "ficha": "img/fichas/DR-ALTHEA29.png",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "oculto": true
   },
   {
     "id": "MEDICUBE114",
@@ -9746,7 +9782,8 @@
     ],
     "ficha": "img/fichas/DR-ALTHEA30.png",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "oculto": true
   },
   {
     "id": "MEDICUBE115",
@@ -9765,7 +9802,8 @@
     ],
     "ficha": "img/fichas/MEDICUBE115.png",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "oculto": true
   },
   {
     "id": "MEDICUBE87",
@@ -9959,7 +9997,8 @@
     ],
     "ficha": "img/fichas/MEDICUBE133.png",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": true,
+    "oculto": true
   },
   {
     "id": "NIDA-05",
@@ -9978,7 +10017,8 @@
     ],
     "ficha": "img/fichas/NIDA-05.png",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": true,
+    "oculto": true
   },
   {
     "id": "DR-ALTHEA23",
@@ -9999,7 +10039,8 @@
     ],
     "ficha": "img/fichas/DR-ALTHEA23.png",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": true,
+    "oculto": true
   },
   {
     "id": "CENTELLIAN24-13",
@@ -10018,7 +10059,8 @@
     ],
     "ficha": "img/fichas/CENTELLIAN24-13.png",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": true,
+    "oculto": true
   },
   {
     "id": "ANUA46",
@@ -10132,7 +10174,8 @@
     ],
     "ficha": "img/fichas/DR-ALTHEA33.png",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": true,
+    "oculto": true
   },
   {
     "id": "DR-ALTHEA31",
@@ -10151,7 +10194,8 @@
     ],
     "ficha": "img/fichas/DR-ALTHEA31.png",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": true,
+    "oculto": true
   },
   {
     "id": "DR-ALTHEA32",
@@ -10170,7 +10214,8 @@
     ],
     "ficha": "img/fichas/DR-ALTHEA32.png",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": true,
+    "oculto": true
   },
   {
     "id": "MEDICUBE129",
@@ -10225,7 +10270,8 @@
     ],
     "ficha": "img/fichas/DR-ALTHEA34.png",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": true,
+    "oculto": true
   },
   {
     "id": "Dr Reju-01",
@@ -10280,7 +10326,8 @@
     ],
     "ficha": "img/fichas/TOCOBO69.png",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": true,
+    "oculto": true
   },
   {
     "id": "MEDICUBE101",
@@ -10298,7 +10345,8 @@
     ],
     "ficha": "img/fichas/MEDICUBE101.png",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": true,
+    "oculto": true
   },
   {
     "id": "MEDICUBE120",

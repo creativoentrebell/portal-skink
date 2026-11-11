@@ -1265,7 +1265,7 @@ function activateMayorista() {
   fetch('skink_productos_mayorista.json')
     .then(r => r.json())
     .then(data => {
-      mayoristasProducts = data;
+      mayoristasProducts = data.filter(p => p.oculto !== true); // "oculto": true = desactivado (no se muestra)
       mayoristasLoaded   = true;
       switchToMayorista();
     })
@@ -1311,6 +1311,7 @@ document.addEventListener('keydown', e => {
 fetch('skink_productos.json')
   .then(r => r.json())
   .then(data => {
+    data = data.filter(p => p.oculto !== true); // "oculto": true = desactivado (no se muestra)
     allProducts   = data;
     detalProducts = data;
     document.getElementById('loading').style.display = 'none';
