@@ -4129,7 +4129,8 @@
     "ficha": "img/fichas/MEDICUBE21.png",
     "video": "img/videos/MEDICUBE21.mp4",
     "mas_vendido": true,
-    "preventa": false
+    "preventa": false,
+    "oculto": true
   },
   {
     "id": "MEDICUBE20",
@@ -7218,7 +7219,8 @@
       "Piel Sensible y Calmante"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "oculto": true
   },
   {
     "id": "COSRX1",
@@ -8739,7 +8741,8 @@
     "ficha": "img/fichas/KAHI01.png",
     "video": "img/videos/KAHI-01.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "oculto": true
   },
   {
     "id": "KAHI-02",
@@ -9006,7 +9009,8 @@
       "Piel Sensible y Calmante"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "oculto": true
   },
   {
     "id": "CENTELLIAN24-05",
