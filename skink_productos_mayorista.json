@@ -126,7 +126,7 @@
     "categoria": "Hidratación",
     "descripcion": "Gel crema ligero de rápida absorción que calma y refresca la piel sensible o irritada, la hidrata y ayuda a fortalecer la barrera cutánea, sin sensación pegajosa. Ingredientes claves: Centella asiática y complejo de cica fermentada, ácido hialurónico, árbol de té, niacinamida, pantenol, ceramida NP.",
     "imagen": "img/skink/TOCOBO52.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -134,7 +134,7 @@
       "Piel Sensible y Calmante"
     ],
     "mas_vendido": false,
-    "preventa": true,
+    "preventa": false,
     "ficha": "img/fichas/TOCOBO52.png",
     "video": "img/videos/TOCOBO52.mp4"
   },
@@ -186,7 +186,7 @@
     "categoria": "Protección Solar",
     "descripcion": "Presentación mini (10 ml) del protector solar en sérum SPF50+ PA++++ de la línea Cica Calming. Textura ligera y húmeda de rápida absorción, sin residuo pegajoso, que además calma y refresca la piel irritada por el sol. No comedogénico, vegano, apto para piel sensible o con tendencia al acné. Ingredientes claves: Complejo de centella fermentada, 10 tipos de ácido hialurónico, aloe vera, niacinamida.",
     "imagen": "img/skink/TOCOBO42.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -196,7 +196,7 @@
       "Protección Solar"
     ],
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "TOCOBO41",
@@ -247,7 +247,7 @@
     "categoria": "Protección Solar",
     "descripcion": "El Tocobo Cica Cooling Sun Stick ofrece protección solar mineral SPF50+ PA++++ en un formato en barra de rápida aplicación. Combina óxido de zinc y dióxido de titanio micronizados para brindar cobertura de amplio espectro, mientras un complejo de centella asiática y mentol natural proporciona efecto refrescante inmediato. Ingredientes claves: Extracto de té verde, niacinamida, extracto de centella, ácido hialurónico.",
     "imagen": "img/skink/TOCOBO32.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -290,7 +290,7 @@
     "categoria": "Protección Solar",
     "descripcion": "El Tocobo Cica Cooling Sun Stick ofrece protección solar mineral SPF50+ PA++++ en un formato en barra de rápida aplicación. Combina óxido de zinc y dióxido de titanio micronizados para brindar cobertura de amplio espectro, mientras un complejo de centella asiática y mentol natural proporciona efecto refrescante inmediato. Ingredientes claves: Extracto de té verde, niacinamida, extracto de centella, ácido hialurónico. CICA COOLING SUN STICK MINI (Barra solar refrescante mini)",
     "imagen": "img/skink/TOCOBO38.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -312,7 +312,7 @@
     "categoria": "Protección Solar",
     "descripcion": "De textura ligera, resistente al agua, a la humedad, al sudor y al sebo durante mucho tiempo y con una potente protección UV. Tiene una maravillosa textura ligera que no resulta pegajosa ni pesada, pero que ofrece una potente protección frente a los rayos UV. Ingredientes claves: zinc, ácido madecásico, asiaticósido, ácido asiático, centella asiática. VITA WATERPROOF SUN STICK MINI (Vita barra solar)",
     "imagen": "img/skink/TOCOBO40.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Piel Grasa y Poros",
@@ -676,7 +676,7 @@
     "categoria": "Protección Solar",
     "descripcion": "Ultra ligero y cómodo, este protector solar con textura refrescante de suero hidrata tu piel y la protege de los rayos UVA y UVB con FPS50+ PA++++. Es indetectable sobre la piel y se absorbe fácilmente, así que no debes preocuparte por residuos blancos o grasosos. Ingredientes claves: Niacinamida, extracto de algodón, extracto de flor y corteza.",
     "imagen": "img/skink/TOCOBO55.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Manchas e Hiperpigmentación",
@@ -1637,7 +1637,7 @@
     "categoria": "Primera Limpieza",
     "descripcion": "Aceite limpiador ligero que disuelve maquillaje, protector solar, grasa e impurezas en un solo paso, sin dejar residuo graso. Se masajea sobre la piel seca, se emulsiona con agua y se enjuaga antes del segundo limpiador. Baja irritación y no comedogénico, apto para todo tipo de piel, incluso sensible o con tendencia al acné. Ingredientes claves: Extracto de hoja de corazón, aceites de girasol, macadamia, oliva, jojoba y semilla de uva, vitamina E.",
     "imagen": "img/skink/ANUA7.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -2378,14 +2378,14 @@
     "categoria": "Protección Solar",
     "descripcion": "Esta barra solar orgánica defiende fácilmente los rayos UV mientras calma y fortalece la piel. La fórmula resistente al agua. Diseño curvo que se adhiere perfectamente a la cara para una mejor aplicación. Formulado con ingredientes naturales para hidratar y calmar tu piel para una tez suave. Ingredientes claves: Aceite vegetal, semilla de camelia, semilla de girasol.",
     "imagen": "img/skink/ABIB6.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Piel Sensible y Calmante",
       "Protección Solar"
     ],
     "mas_vendido": false,
-    "preventa": true,
+    "preventa": false,
     "oculto": true
   },
   {
@@ -4880,7 +4880,7 @@
       "Piel Sensible y Calmante"
     ],
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "SKIN1004-13",
@@ -5061,7 +5061,7 @@
       "Piel Sensible y Calmante"
     ],
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "SKIN1004-20",
@@ -5219,7 +5219,7 @@
       "Piel Sensible y Calmante"
     ],
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "SKIN1004-40",
@@ -5256,7 +5256,7 @@
       "Piel Sensible y Calmante"
     ],
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "SKIN1004-6",
@@ -5382,7 +5382,7 @@
       "Piel Sensible y Calmante"
     ],
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "SKIN1004-46",
@@ -5606,7 +5606,7 @@
     ],
     "video": "img/videos/SKIN1004-49.mp4",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "SKIN1004-48",
@@ -5727,7 +5727,7 @@
     ],
     "ficha": "img/fichas/SKIN1004-33.jpg",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "SKIN1004-5",
@@ -5864,7 +5864,7 @@
     ],
     "ficha": "img/fichas/SKIN1004-7.png",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "SKIN1004-24",
@@ -5921,7 +5921,7 @@
       "Protección Solar"
     ],
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "SKIN1004-58",
@@ -6256,7 +6256,7 @@
     ],
     "ficha": "img/fichas/SKIN1004-87.png",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "SKIN1004-73",
@@ -6293,7 +6293,7 @@
     ],
     "ficha": "img/fichas/SKIN1004-68.png",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "SKIN1004-101",
@@ -9009,7 +9009,7 @@
     "categoria": "Hidratación",
     "descripcion": "Crema antiedad ligera para rostro y cuello, de base acuosa y sensación fresca no pegajosa, ideal para clima cálido y húmedo. Hidrata, calma la irritación, apoya la barrera y ayuda a mejorar la elasticidad, las líneas finas y la opacidad. Para todo tipo de piel, especialmente grasa o mixta y sensible. Ingredientes claves: Madecasósido, asiaticósido, centella asiática, niacinamida, pantenol, ácido hialurónico, ceramida NP, adenosina.",
     "imagen": "img/skink/CENTELLIAN24-06.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -10076,7 +10076,7 @@
     "categoria": "Hidratación",
     "descripcion": "",
     "imagen": "img/skink/ANUA46.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -10084,7 +10084,7 @@
     ],
     "ficha": "img/fichas/ANUA46.png",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "ANUA45",
@@ -10095,7 +10095,7 @@
     "categoria": "Hidratación",
     "descripcion": "",
     "imagen": "img/skink/ANUA45.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -10103,7 +10103,7 @@
     ],
     "ficha": "img/fichas/ANUA45.png",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "ANUA44",
@@ -10114,7 +10114,7 @@
     "categoria": "Hidratación",
     "descripcion": "",
     "imagen": "img/skink/ANUA44.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -10122,7 +10122,7 @@
     ],
     "ficha": "img/fichas/ANUA44.png",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "MEDICUBE130",
@@ -10211,7 +10211,7 @@
     "categoria": "Tónico",
     "descripcion": "",
     "imagen": "img/skink/DR-ALTHEA32.png",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Piel Grasa y Poros",
@@ -10219,7 +10219,7 @@
     ],
     "ficha": "img/fichas/DR-ALTHEA32.png",
     "mas_vendido": false,
-    "preventa": true,
+    "preventa": false,
     "oculto": true
   },
   {
@@ -10250,14 +10250,14 @@
     "categoria": "Parches",
     "descripcion": "",
     "imagen": "img/skink/ANUA47.png",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Acné"
     ],
     "ficha": "img/fichas/ANUA47.png",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "DR-ALTHEA34",
@@ -10324,14 +10324,14 @@
     "categoria": "Capilar",
     "descripcion": "",
     "imagen": "img/skink/TOCOBO69.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Capilar"
     ],
     "ficha": "img/fichas/TOCOBO69.png",
     "mas_vendido": false,
-    "preventa": true,
+    "preventa": false,
     "oculto": true
   },
   {
