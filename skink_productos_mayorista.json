@@ -263,7 +263,7 @@
   {
     "id": "TOCOBO39",
     "referencia": "TOCOBO39",
-    "nombre": "Cotton Airy Sun Stick Mini 19g",
+    "nombre": "Mini Cotton Soft Sun Stick",
     "marca": "TOCOBO",
     "precio": 36000,
     "categoria": "Protección Solar",
@@ -684,8 +684,7 @@
     ],
     "ficha": "img/fichas/TOCOBO55.png",
     "mas_vendido": false,
-    "preventa": false,
-    "oculto": true
+    "preventa": false
   },
   {
     "id": "TOCOBO61",
@@ -707,7 +706,7 @@
   {
     "id": "TOCOBO62",
     "referencia": "TOCOBO62",
-    "nombre": "Double Cleanser Mini Duo (15ml + 20ml)",
+    "nombre": "Double Cleansing Mini Duo (15ml + 20ml)",
     "marca": "TOCOBO",
     "precio": 35000,
     "categoria": "Maquillaje",
@@ -1720,7 +1719,7 @@
   {
     "id": "ANUA4",
     "referencia": "ANUA4",
-    "nombre": "Hyaluronic Acid Hydrating Gentle Foaming Cleanser 150ml",
+    "nombre": "8 Hyaluronic Acid Hydrating Gentle Foaming Cleanser 150ml",
     "marca": "ANUA",
     "precio": 62000,
     "categoria": "Segunda Limpieza",
@@ -2385,8 +2384,7 @@
       "Protección Solar"
     ],
     "mas_vendido": false,
-    "preventa": false,
-    "oculto": true
+    "preventa": false
   },
   {
     "id": "ABIB7",
@@ -2846,7 +2844,7 @@
     "categoria": "Primera Limpieza",
     "descripcion": "Aceite Limpiador Profundo Todo en Uno: Disuelve el sebo, los puntos negros y el maquillaje en un solo paso. Ingredientes especializados actúan sobre el sebo y ayudan a eliminar las impurezas endurecidas dentro de los poros. Ingredientes claves: Aceite de soja, aceite de jojoba, ácido salicílico, extracto de fruta, extracto de macadamia.",
     "imagen": "img/skink/MEDICUBE45.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -2910,7 +2908,7 @@
     "categoria": "Segunda Limpieza",
     "descripcion": "Limpiador en espuma de base acuosa para uso diario, pensado para piel grasa, sensible o con tendencia a brotes. Ayuda a destapar los poros, controlar el sebo y calmar el enrojecimiento. Ingredientes claves: ácido salicílico, niacinamida, ácido azelaico, glutatión, ceramidas, ácido hialurónico y centella asiática.",
     "imagen": "img/skink/MEDICUBE57.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Manchas e Hiperpigmentación",
@@ -3125,7 +3123,7 @@
     "categoria": "Sérum",
     "descripcion": "Sérum bifásico (capa de aceite y capa hidratante; agitar antes de usar) que mejora la hidratación y la elasticidad para una piel más rellena, suave y luminosa, y ayuda a unificar el tono. Textura ligera de rápida absorción. Ideal para piel seca o deshidratada. Ingredientes claves: Ácido hialurónico, PDRN de salmón, péptidos.",
     "imagen": "img/skink/MEDICUBE49.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -3192,7 +3190,7 @@
     "categoria": "Hidratación",
     "descripcion": "Crema hidratante para refinar los poros y que se vean más pequeños, apta para todo tipo de piel. Su fórmula fresca y no pegajosa ayuda a controlar el exceso de grasa, la textura irregular y los puntos negros. Ingredientes claves: pantenol, ácido salicílico y niacinamida.",
     "imagen": "img/skink/MEDICUBE44.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -3259,7 +3257,7 @@
     "categoria": "Mascarillas",
     "descripcion": "Mascarilla en tela de la línea Zero Pore enfocada en el cuidado de los poros. Su ingrediente refrescante sin alcohol calma y baja la temperatura de la piel sin irritarla, y su lámina de Cupra Tencel aporta hidratación. Ingredientes claves: niacinamida, adenosina, palmitoil tripéptido-5, alantoína y rutina.",
     "imagen": "img/skink/MEDICUBE30.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -3268,7 +3266,7 @@
       "Piel Sensible y Calmante"
     ],
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "MEDICUBE36",
@@ -3364,7 +3362,7 @@
     "categoria": "Contorno de Ojos",
     "descripcion": "Gel sérum para el contorno de ojos que ilumina y desinflama durante el día, atacando bolsas, ojeras y apariencia apagada. Textura ligera, de rápida absorción y no pegajosa, con sensación refrescante; también ayuda a suavizar líneas finas. Ingredientes claves: ácido kójico, cúrcuma, vitamina C, retinol, cafeína, ácido hialurónico y pantenol.",
     "imagen": "img/skink/MEDICUBE78.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -3585,7 +3583,7 @@
   {
     "id": "MEDICUBE19",
     "referencia": "MEDICUBE19",
-    "nombre": "AGE-R Glutathione Glow Serum 30ml",
+    "nombre": "AGE-R Glutathione Glow Serum 30g",
     "marca": "MEDICUBE",
     "precio": 61000,
     "categoria": "Sérum",
@@ -3774,7 +3772,7 @@
     "categoria": "Segunda Limpieza",
     "descripcion": "Es un limpiador en espuma que combina las propiedades regeneradoras del PDRN con los beneficios unificadores de tono de la niacinamida. Su textura única, permite usarlo como limpiador diario o como una mascarilla purificante. Ingredientes claves: Extracto de fruta, ácido hialurónico, PDRN de salmón, niacinamida, pantenol.",
     "imagen": "img/skink/MEDICUBE68.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -3795,7 +3793,7 @@
     "categoria": "Segunda Limpieza",
     "descripcion": "Limpiador facial en crema que se convierte en espuma de microburbujas, con cápsulas rosadas de PDRN y glutatión. Elimina impurezas, ayuda a limpiar los poros, refina la textura y aporta luminosidad, sin dejar la piel tirante. Ingredientes claves: Niacinamida, glutatión, PDRN de salmón, colágeno hidrolizado.",
     "imagen": "img/skink/MEDICUBE79.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -4095,8 +4093,7 @@
     "ficha": "img/fichas/MEDICUBE21.png",
     "video": "img/videos/MEDICUBE21.mp4",
     "mas_vendido": true,
-    "preventa": false,
-    "oculto": true
+    "preventa": false
   },
   {
     "id": "MEDICUBE20",
@@ -4636,8 +4633,7 @@
     "ficha": "img/fichas/MEDICUBE89.png",
     "video": "img/videos/Medicube89.mp4",
     "mas_vendido": false,
-    "preventa": false,
-    "oculto": true
+    "preventa": false
   },
   {
     "id": "MEDICUBE90",
@@ -4738,7 +4734,7 @@
     "categoria": "Sérum",
     "descripcion": "Sérum calmante para piel con tendencia acneica y grasa que ayuda a calmar el enrojecimiento, controlar el exceso de sebo y refinar la textura. Textura ligera y no pegajosa; puede dejar un leve residuo blanco, lo cual es normal. Ingredientes claves: complejo de ácido azelaico, niacinamida, ácido pantoténico, pantenol y alantoína.",
     "imagen": "img/skink/MEDICUBE95.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Manchas e Hiperpigmentación",
@@ -4866,7 +4862,7 @@
   {
     "id": "SKIN1004-2",
     "referencia": "SKIN1004-2",
-    "nombre": "Madagascar Centella Tea-Trica Cleansing Foam",
+    "nombre": "Madagascar Centella Tea-Trica BHA Foam 125ml",
     "marca": "SKIN 1004",
     "precio": 59000,
     "categoria": "Segunda Limpieza",
@@ -4970,7 +4966,7 @@
     "categoria": "Sérum",
     "descripcion": "Madagascar Centella tea-trica soothing sun milk (leche solar calmante té y centella). Ingredientes claves: Extracto de centella, hojas de pino, calamina.",
     "imagen": "img/skink/SKIN1004-36.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -4979,7 +4975,7 @@
       "Protección Solar"
     ],
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "SKIN1004-34",
@@ -5032,7 +5028,7 @@
     "categoria": "Hidratación",
     "descripcion": "Un gel exfoliante que ofrece un cuidado exfoliante suave para eliminar puntos negros, puntos blancos y células muertas de la piel. La hoja de árbol de té y la celulosa proporcionan un doble efecto peeling para eliminar las impurezas de la piel. Ingredientes claves: Extracto de té verde, agua hoja de té, pantenol, ácido salicílico.",
     "imagen": "img/skink/SKIN1004-74.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -5041,7 +5037,7 @@
       "Piel Sensible y Calmante"
     ],
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "SKIN1004-8",
@@ -5052,7 +5048,7 @@
     "categoria": "Segunda Limpieza",
     "descripcion": "Limpiador facial todo en uno de exfoliación profunda para piel grasa, mixta y sensible. Su textura en pasta cremosa se convierte en una espuma rica que absorbe impurezas, exceso de sebo y restos de protector solar, con una exfoliación suave. Ingredientes claves: extracto de centella asiática, sal rosa del Himalaya, caolín, papaína y extracto de manzana.",
     "imagen": "img/skink/SKIN1004-8.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -5114,7 +5110,7 @@
     "categoria": "Tónico",
     "descripcion": "Crema equilibrante del tono que hidrata y ayuda a mejorar la apariencia del tono desigual para un cutis más luminoso. Textura de ligera a media que se absorbe rápido y deja un acabado suave, no pegajoso. Para piel seca, normal o mixta. Ingredientes claves: Centella asiática, niacinamida, ácido tranexámico, madecasósido, pantenol, bisabolol.",
     "imagen": "img/skink/SKIN1004-42.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -5201,8 +5197,7 @@
       "Piel Sensible y Calmante"
     ],
     "mas_vendido": false,
-    "preventa": false,
-    "oculto": true
+    "preventa": false
   },
   {
     "id": "SKIN1004-29",
@@ -5393,7 +5388,7 @@
     "categoria": "Mascarillas",
     "descripcion": "",
     "imagen": "img/skink/SKIN1004-46.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -5404,7 +5399,7 @@
       "Piel Sensible y Calmante"
     ],
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "SKIN1004-45",
@@ -5474,7 +5469,7 @@
     "categoria": "Sérum",
     "descripcion": "",
     "imagen": "img/skink/SKIN1004-9.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -5483,8 +5478,7 @@
       "Piel Sensible y Calmante"
     ],
     "mas_vendido": false,
-    "preventa": true,
-    "oculto": true
+    "preventa": false
   },
   {
     "id": "SKIN1004-19",
@@ -5545,8 +5539,7 @@
       "Protección Solar"
     ],
     "mas_vendido": false,
-    "preventa": false,
-    "oculto": true
+    "preventa": false
   },
   {
     "id": "SKIN1004-38",
@@ -5626,8 +5619,7 @@
       "Piel Sensible y Calmante"
     ],
     "mas_vendido": false,
-    "preventa": false,
-    "oculto": true
+    "preventa": false
   },
   {
     "id": "SKIN1004-15",
@@ -5678,7 +5670,7 @@
     "categoria": "Primera Limpieza",
     "descripcion": "",
     "imagen": "img/skink/SKIN1004-32.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Manchas e Hiperpigmentación",
@@ -5686,7 +5678,7 @@
       "Piel Sensible y Calmante"
     ],
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "SKIN1004-1",
@@ -5718,7 +5710,7 @@
     "categoria": "Hidratación",
     "descripcion": "",
     "imagen": "img/skink/SKIN1004-33.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Brillo y Luminosidad",
@@ -5795,7 +5787,7 @@
     "categoria": "Tónico",
     "descripcion": "Protector solar físico de uso diario SPF30 PA++++ a base de óxido de zinc no nano, pensado para piel sensible. Su fórmula ligera se extiende sin dejar rastro blanco y calma la piel mientras apoya su barrera protectora. Ingredientes claves: óxido de zinc y extracto de centella asiática.",
     "imagen": "img/skink/SKIN1004-35.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Manchas e Hiperpigmentación",
@@ -5803,7 +5795,7 @@
       "Protección Solar"
     ],
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "SKIN1004-18",
@@ -5893,7 +5885,7 @@
     "categoria": "Hidratación",
     "descripcion": "Protector solar mineral SPF50+ PA++++ con filtros físicos y tono beige, que deja un acabado mate natural con efecto tone-up y mínimo rastro blanco. Ideal para piel grasa y mixta; calma la piel y ayuda a iluminar el tono. Ingredientes claves: extracto de centella asiática, madecasósido, niacinamida, raíz de regaliz y óxido de zinc.",
     "imagen": "img/skink/SKIN1004-50.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Piel Sensible y Calmante",
@@ -6068,7 +6060,7 @@
     "categoria": "Sérum",
     "descripcion": "Gel crema que apoya el equilibrio de la piel y la calma, ayuda con el calor y el enrojecimiento visibles, las marcas posteriores a la irritación y el tono desigual, y sella la hidratación sin dejar brillo. Para piel sensible, normal o mixta. Ingredientes claves: Centella TECA, niacinamida, alfa-arbutina, ectoína, adenosina y extracto de corteza de pino.",
     "imagen": "img/skink/SKIN1004-82.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Brillo y Luminosidad",
@@ -6086,7 +6078,7 @@
     "categoria": "Tónico",
     "descripcion": "Tónico exfoliante suave con LHA. Ayuda con la irritación, la resequedad interna y el desequilibrio de hidratación, y mejora la absorción de los siguientes pasos. Apto para todo tipo de piel, especialmente grasa, mixta o con imperfecciones. Ingredientes claves: Centella TECA (madecasósido, asiaticósido, ácido madecásico y ácido asiático), PDRN vegetal, niacinamida y zinc PCA.",
     "imagen": "img/skink/SKIN1004-81.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -6284,7 +6276,7 @@
     "categoria": "Protección Solar",
     "descripcion": "",
     "imagen": "img/skink/SKIN1004-68.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Protección Solar",
@@ -6375,7 +6367,7 @@
   {
     "id": "DR-ALTHEA8",
     "referencia": "DR-ALTHEA8",
-    "nombre": "Gentle Pore Cleansing Oil 150ml",
+    "nombre": "Gentle Pore Vegan Cleansing Oil 150ml",
     "marca": "DR-ALTHEA",
     "precio": 102000,
     "categoria": "Primera Limpieza",
@@ -6461,7 +6453,7 @@
     "categoria": "Segunda Limpieza",
     "descripcion": "Limpiador líquido exfoliante de textura acuosa que retira el exceso de grasa, ayuda a destapar los poros y a prevenir los puntos negros, con acabado fresco y no pegajoso. Se deja un algodón empapado 15 a 20 minutos sobre la zona con grasa, se retiran los puntos negros con un copito y se enjuaga. Para todo tipo de piel, especialmente grasa o con poros dilatados. Ingredientes claves: Hamamelis, corteza de sauce, raíz de escutelaria, pantenol, glicirricinato dipotásico.",
     "imagen": "img/skink/DR-ALTHEA24.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -6826,8 +6818,7 @@
     "ficha": "img/fichas/DR-ALTHEA21.png",
     "video": "img/videos/Dr-Althea21.mp4",
     "mas_vendido": true,
-    "preventa": false,
-    "oculto": true
+    "preventa": false
   },
   {
     "id": "DR-ALTHEA11",
@@ -6924,7 +6915,7 @@
     "categoria": "Bruma",
     "descripcion": "Sérum en spray bifásico de base oleosa que hidrata y deja un acabado luminoso. Se puede usar antes o después del maquillaje para ayudar a que no se cuartee. Dermatológicamente probado y no comedogénico. Ingredientes claves: Trufa blanca con vitamina E, mezcla de 8 aceites (aguacate, girasol, soya), niacinamida, ácido hialurónico, adenosina.",
     "imagen": "img/skink/D-ALBA3.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Manchas e Hiperpigmentación"
@@ -6957,7 +6948,7 @@
   {
     "id": "D-ALBA5",
     "referencia": "D-ALBA5",
-    "nombre": "Vita Toning Capsule Cream 55ml",
+    "nombre": "Vita Toning Capsule Cream 55g",
     "marca": "D'ALBA",
     "precio": 125000,
     "categoria": "Hidratación",
@@ -7184,8 +7175,7 @@
       "Piel Sensible y Calmante"
     ],
     "mas_vendido": false,
-    "preventa": false,
-    "oculto": true
+    "preventa": false
   },
   {
     "id": "COSRX1",
@@ -8393,7 +8383,7 @@
   {
     "id": "KSEC-04",
     "referencia": "KSEC-04",
-    "nombre": "Essence Snail Mucin + Rice 100ml",
+    "nombre": "Essence Snail Mucin 97% + Rice 100ml",
     "marca": "KSECRET",
     "precio": 80000,
     "categoria": "Esencia",
@@ -8481,7 +8471,7 @@
     "categoria": "Segunda Limpieza",
     "descripcion": "Limpiador de textura cremosa tipo mochi que forma una espuma suave con agua. Retira suciedad, grasa y residuos mientras calma la piel, ayuda a reducir el enrojecimiento visible y exfolia suavemente, cuidando la barrera de hidratación. Para piel sensible, seca, normal y todo tipo de piel. Ingredientes claves: Hoja de corazón, extracto de flor de caléndula, polvo de arroz, glicerina.",
     "imagen": "img/skink/AREN-02.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Manchas e Hiperpigmentación",
@@ -9434,7 +9424,7 @@
   {
     "id": "DR-MELAXIN03",
     "referencia": "DR-MELAXIN03",
-    "nombre": "Peel Shot Exfoliating White Ampoule 80ml",
+    "nombre": "Peel Shot Exfoliating White Rice Ampoule 80ml",
     "marca": "DR. MELAXIN",
     "precio": 120000,
     "categoria": "Exfoliante",
@@ -9693,8 +9683,7 @@
     "ficha": "img/fichas/MEDICUBE107.png",
     "video": "img/videos/MEDICUBE107.mp4",
     "mas_vendido": false,
-    "preventa": false,
-    "oculto": true
+    "preventa": false
   },
   {
     "id": "ROUND-LAB19",
@@ -9748,8 +9737,7 @@
     ],
     "ficha": "img/fichas/DR-ALTHEA29.png",
     "mas_vendido": false,
-    "preventa": false,
-    "oculto": true
+    "preventa": false
   },
   {
     "id": "MEDICUBE114",
@@ -9787,8 +9775,7 @@
     ],
     "ficha": "img/fichas/DR-ALTHEA30.png",
     "mas_vendido": false,
-    "preventa": false,
-    "oculto": true
+    "preventa": false
   },
   {
     "id": "MEDICUBE115",
@@ -9918,7 +9905,7 @@
     "categoria": "Accesorios",
     "descripcion": "Dispositivo facial con electroporación, microcorriente, EMS, vibración sónica y luz LED. Su modo booster tiene tres colores: rojo para iluminar y unificar el tono, azul para calmar la piel sensible o seca y morado para potenciar la absorción y la luminosidad, cada uno con cinco niveles de intensidad. Se usa sobre un sérum, ampolla o gel.",
     "imagen": "img/skink/MEDICUBE111.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [],
     "ficha": "img/fichas/MEDICUBE111.png",
@@ -10133,7 +10120,7 @@
     "categoria": "Tónico",
     "descripcion": "",
     "imagen": "img/skink/MEDICUBE130.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Piel Grasa y Poros",
@@ -10141,7 +10128,7 @@
     ],
     "ficha": "img/fichas/MEDICUBE130.png",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "MEDICUBE117",
@@ -10152,7 +10139,7 @@
     "categoria": "Tónico",
     "descripcion": "",
     "imagen": "img/skink/MEDICUBE117.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Piel Grasa y Poros",
@@ -10160,7 +10147,7 @@
     ],
     "ficha": "img/fichas/MEDICUBE117.png",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "DR-ALTHEA33",
@@ -10179,8 +10166,7 @@
     ],
     "ficha": "img/fichas/DR-ALTHEA33.png",
     "mas_vendido": false,
-    "preventa": false,
-    "oculto": true
+    "preventa": false
   },
   {
     "id": "DR-ALTHEA31",
@@ -10191,7 +10177,7 @@
     "categoria": "Sérum",
     "descripcion": "",
     "imagen": "img/skink/DR-ALTHEA31.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Acné",
@@ -10199,8 +10185,7 @@
     ],
     "ficha": "img/fichas/DR-ALTHEA31.png",
     "mas_vendido": false,
-    "preventa": true,
-    "oculto": true
+    "preventa": false
   },
   {
     "id": "DR-ALTHEA32",
@@ -10219,8 +10204,7 @@
     ],
     "ficha": "img/fichas/DR-ALTHEA32.png",
     "mas_vendido": false,
-    "preventa": false,
-    "oculto": true
+    "preventa": false
   },
   {
     "id": "MEDICUBE129",
@@ -10231,7 +10215,7 @@
     "categoria": "Exfoliante",
     "descripcion": "",
     "imagen": "img/skink/MEDICUBE129.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Acné",
@@ -10239,7 +10223,7 @@
     ],
     "ficha": "img/fichas/MEDICUBE129.png",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "ANUA47",
@@ -10306,14 +10290,14 @@
     "categoria": "Labial",
     "descripcion": "",
     "imagen": "img/skink/MEDICUBE134.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Hidratación Profunda"
     ],
     "ficha": "img/fichas/MEDICUBE134.png",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "TOCOBO69",
@@ -10331,8 +10315,7 @@
     ],
     "ficha": "img/fichas/TOCOBO69.png",
     "mas_vendido": false,
-    "preventa": false,
-    "oculto": true
+    "preventa": false
   },
   {
     "id": "MEDICUBE101",
@@ -10362,14 +10345,14 @@
     "categoria": "Capilar",
     "descripcion": "",
     "imagen": "img/skink/MEDICUBE120.png",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Capilar"
     ],
     "ficha": "img/fichas/MEDICUBE120.png",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "MOEV-07",
@@ -10380,14 +10363,14 @@
     "categoria": "Capilar",
     "descripcion": "",
     "imagen": "img/skink/MOEV-07.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Capilar"
     ],
     "ficha": "img/fichas/MOEV-07.png",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "BAREN-01",
@@ -10398,14 +10381,14 @@
     "categoria": "Accesorios",
     "descripcion": "",
     "imagen": "img/skink/BAREN-01.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Universal"
     ],
     "ficha": "img/fichas/BAREN-01.png",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   },
   {
     "id": "BAREN-02",
@@ -10416,13 +10399,13 @@
     "categoria": "Accesorios",
     "descripcion": "",
     "imagen": "img/skink/BAREN-02.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Universal"
     ],
     "ficha": "img/fichas/BAREN-02.png",
     "mas_vendido": false,
-    "preventa": true
+    "preventa": false
   }
 ]
