@@ -620,7 +620,7 @@
     "categoria": "Protección Solar",
     "descripcion": "Ultra ligero y cómodo, este protector solar con textura refrescante de suero hidrata tu piel y la protege de los rayos UVA y UVB con FPS50+ PA++++. Es indetectable sobre la piel y se absorbe fácilmente, así que no debes preocuparte por residuos blancos o grasosos. Ingredientes claves: Niacinamida, extracto de algodón, extracto de flor y corteza.",
     "imagen": "img/skink/TOCOBO14.jpg",
-    "agotado": true,
+    "agotado": false,
     "nuevo": false,
     "tipos_piel": [
       "Protección Solar"
@@ -2834,7 +2834,7 @@
     "categoria": "Mascarillas",
     "descripcion": "Mascarilla de hidrogel hecha de esencia solidificada, sin tela, que ayuda a equilibrar grasa e hidratación y a calmar la piel. Ideal para piel grasa, con tendencia acneica o enrojecimiento; no comedogénica. Se deja de 3 a 4 horas o toda la noche. Ingredientes claves: algas marinas (kelp) fermentadas 10%, agua de mar profundo y fermentado de galactomyces.",
     "imagen": "img/skink/BIODANCE4.webp",
-    "agotado": true,
+    "agotado": false,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -3027,7 +3027,7 @@
     "categoria": "Sérum",
     "descripcion": "Sérum ligero de rápida absorción para piel grasa o mixta que ayuda a minimizar la apariencia de los poros, mejorar la textura irregular y equilibrar el exceso de grasa sin deshidratar. Uso mañana y noche. Ingredientes claves: niacinamida, extracto de flor de camelia y extractos botánicos.",
     "imagen": "img/skink/MEDICUBE1.webp",
-    "agotado": true,
+    "agotado": false,
     "nuevo": false,
     "tipos_piel": [
       "Acné",
@@ -3785,7 +3785,7 @@
     "categoria": "Segunda Limpieza",
     "descripcion": "Gel limpiador con fórmula que limpia profundamente, apoya la regeneración y repara la barrera de la piel, mientras hidrata intensamente, mejora textura y tono, promueve regeneración celular. Ingredientes claves: Extracto de fruta, ácido hialurónico, PDRN de salmón, niacinamida, pantenol.",
     "imagen": "img/skink/MEDICUBE35.webp",
-    "agotado": true,
+    "agotado": false,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda",
@@ -3933,7 +3933,7 @@
     "categoria": "Bruma",
     "descripcion": "Esta innovadora bruma facial 3 en 1 integra la avanzada tecnología coreana para el cuidado de la piel con una selección de potentes ingredientes destinados a mejorar el aspecto general de la piel. Infundido con glutatión para iluminar la piel y tonificarla. Ingredientes claves: ADN de salmón (PDRN), glutatión, niacinamida, adenosina, agua de rosa damascena y péptidos.",
     "imagen": "img/skink/MEDICUBE71.webp",
-    "agotado": true,
+    "agotado": false,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -3972,7 +3972,7 @@
     "categoria": "Sérum",
     "descripcion": "Ampolla antienvejecimiento enriquecida con PDRN de salmón, complejo de colágeno de salmón y péptidos mejora la elasticidad de la piel, atenúa las imperfecciones y reduce la pigmentación de melanina. La ampolla es hipoalergénica y segura para usar en pieles sensibles. Ingredientes claves: Ácido acrílico, extracto de cúrcuma, colágeno hidrolizado, péptidos.",
     "imagen": "img/skink/MEDICUBE18.webp",
-    "agotado": true,
+    "agotado": false,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -5377,7 +5377,7 @@
     "categoria": "Sets y Kits",
     "descripcion": "Kit de viaje con la rutina de 4 pasos para el cuidado de los poros: Poremizing Deep Cleansing Foam (20 ml), Poremizing Clear Toner (30 ml), Poremizing Fresh Ampoule (30 ml) y Poremizing Light Gel Cream (30 ml). Pensado para poros dilatados, exceso de grasa y textura irregular.",
     "imagen": "img/skink/SKIN1004-84.webp",
-    "agotado": true,
+    "agotado": false,
     "nuevo": false,
     "tipos_piel": [
       "Brillo y Luminosidad",
@@ -8545,7 +8545,7 @@
     "categoria": "Segunda Limpieza",
     "descripcion": "Limpiador con té verde, hamamelis y agua de arroz fermentada, con textura densa y esponjosa. La opción más vendida de la línea: potente en eliminar puntos negros, refinar textura y equilibrar sebo sin irritar. Ingredientes claves: Extracto de té verde, agua de arroz, mugwort, polvo de arroz, surfactantes, glicerina, antioxidantes naturales.",
     "imagen": "img/skink/AREN-04.webp",
-    "agotado": true,
+    "agotado": false,
     "nuevo": false,
     "tipos_piel": [
       "Piel Grasa y Poros",
