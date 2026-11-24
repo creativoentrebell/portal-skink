@@ -5318,7 +5318,7 @@
     "categoria": "Tónico",
     "descripcion": "",
     "imagen": "img/skink/SKIN1004-14.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Manchas e Hiperpigmentación",
