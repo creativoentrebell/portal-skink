@@ -659,7 +659,7 @@
     "categoria": "Hidratación",
     "descripcion": "Crema hidratante vegana y sin PEG que hidrata en profundidad, fortalece la barrera de la piel y mejora la elasticidad; ayuda con la resequedad, la falta de luminosidad y la pérdida de firmeza. Textura ligera tipo sorbete que se funde en la piel sin sensación grasosa. Ingredientes claves: ceramidas, escualano, manteca de karité, varios tipos de ácido hialurónico, extracto de chlorella y betaglucano.",
     "imagen": "img/skink/TOCOBO51.jpg",
-    "agotado": true,
+    "agotado": false,
     "nuevo": false,
     "tipos_piel": [
       "Hidratación Profunda"
@@ -820,7 +820,7 @@
     "categoria": "Primera Limpieza",
     "descripcion": "Aceite limpiador ligero que retira maquillaje, protector solar e impurezas sin dejar película grasosa ni resecar. Apto para todo tipo de piel, apoya la barrera y aporta antioxidantes de sus extractos fermentados. Ingredientes claves: soya, granada, cebada y pera fermentadas, y aceites de soya, jojoba y girasol.",
     "imagen": "img/skink/MIXSOON31.webp",
-    "agotado": true,
+    "agotado": false,
     "nuevo": false,
     "tipos_piel": [
       "Piel Grasa y Poros",
@@ -1487,7 +1487,7 @@
     "categoria": "Hidratación",
     "descripcion": "Crema rica pero ligera, no grasosa y de rápida absorción, que hidrata intensamente, fortalece la barrera, calma la irritación y ayuda a prevenir la pérdida de humedad, además de mejorar la textura y la luminosidad. Ideal para piel seca, deshidratada o áspera; apta para todo tipo de piel. Ingredientes claves: Extracto de soya fermentada, fermento de cebada, fermento de granada, fermento de jugo de pera.",
     "imagen": "img/skink/MIXSOON49.jpg",
-    "agotado": true,
+    "agotado": false,
     "nuevo": false,
     "tipos_piel": [
       "Anti-edad",
@@ -1539,52 +1539,58 @@
   {
     "id": "MIXSOON52",
     "referencia": "MIXSOON52",
-    "nombre": "Centella Toner 30ml",
+    "nombre": "(Sample) PDRN Collagen Tinted Moisturizer 23 1ml",
     "marca": "MIXSOON",
     "precio": "pendiente",
-    "categoria": "Tónico",
-    "descripcion": "Tónico vegano sin alcohol elaborado con centella asiática de Jeju. Hidrata, calma la piel sensible o irritada, mejora la textura y refuerza la barrera, preparando la piel para absorber los siguientes pasos. Ingredientes claves: extracto de centella asiática.",
+    "categoria": "Maquillaje",
+    "descripcion": "",
     "imagen": "img/skink/MIXSOON52.jpg",
-    "agotado": true,
-    "nuevo": false,
+    "agotado": false,
+    "nuevo": true,
     "tipos_piel": [
-      "Manchas e Hiperpigmentación",
-      "Piel Sensible y Calmante"
+      "Anti-edad",
+      "Hidratación Profunda"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "ficha": "img/fichas/MIXSOON52.png"
   },
   {
     "id": "MIXSOON53",
     "referencia": "MIXSOON53",
-    "nombre": "9 Step Trial Kit",
+    "nombre": "(Sample) Bean Essence 1.5ml + Bean Cream 1ml",
     "marca": "MIXSOON",
     "precio": "pendiente",
     "categoria": "Sets y Kits",
-    "descripcion": "Kit de prueba con nueve sachets para probar una rutina completa Mixsoon, desde la doble limpieza hasta la hidratación. Incluye: Bean Cleansing Oil, Centella Cleansing Foam, Centella Asiática Toner, Galactomyces Essence, Bífida Essence, Centella Asiática Essence, Bean Essence, Bean Cream y Centella Sun Cream.",
+    "descripcion": "",
     "imagen": "img/skink/MIXSOON53.webp",
-    "agotado": true,
-    "nuevo": false,
+    "agotado": false,
+    "nuevo": true,
     "tipos_piel": [
-      "Universal"
+      "Hidratación Profunda",
+      "Brillo y Luminosidad"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "ficha": "img/fichas/MIXSOON53.png"
   },
   {
     "id": "MIXSOON54",
     "referencia": "MIXSOON54",
-    "nombre": "Smile Eco Bag",
+    "nombre": "(Sample) Glacier Water Hyaluronic Acid Serum 1ml",
     "marca": "MIXSOON",
     "precio": "pendiente",
-    "categoria": "Accesorios",
+    "categoria": "Sérum",
     "descripcion": "",
     "imagen": "img/skink/MIXSOON54.jpg",
-    "agotado": true,
-    "nuevo": false,
-    "tipos_piel": [],
+    "agotado": false,
+    "nuevo": true,
+    "tipos_piel": [
+      "Hidratación Profunda"
+    ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "ficha": "img/fichas/MIXSOON54.png"
   },
   {
     "id": "MIXSOON20",
@@ -1601,6 +1607,82 @@
       "Piel Sensible y Calmante"
     ],
     "ficha": "img/fichas/MIXSOON20.jpg",
+    "mas_vendido": false,
+    "preventa": false
+  },
+  {
+    "id": "MIXSOON55",
+    "referencia": "MIXSOON55",
+    "nombre": "(Sample) PDRN Collagen Tinted Moisturizer 30 1ml",
+    "marca": "MIXSOON",
+    "precio": "pendiente",
+    "categoria": "Maquillaje",
+    "descripcion": "",
+    "imagen": "img/skink/MIXSOON55.webp",
+    "agotado": false,
+    "nuevo": true,
+    "tipos_piel": [
+      "Anti-edad",
+      "Hidratación Profunda"
+    ],
+    "ficha": "img/fichas/MIXSOON55.png",
+    "mas_vendido": false,
+    "preventa": false
+  },
+  {
+    "id": "MIXSOON56",
+    "referencia": "MIXSOON56",
+    "nombre": "(Sample) PDRN Collagen Tinted Moisturizer 40 1ml",
+    "marca": "MIXSOON",
+    "precio": "pendiente",
+    "categoria": "Maquillaje",
+    "descripcion": "",
+    "imagen": "img/skink/MIXSOON56.webp",
+    "agotado": false,
+    "nuevo": true,
+    "tipos_piel": [
+      "Anti-edad",
+      "Hidratación Profunda"
+    ],
+    "ficha": "img/fichas/MIXSOON56.png",
+    "mas_vendido": false,
+    "preventa": false
+  },
+  {
+    "id": "MIXSOON57",
+    "referencia": "MIXSOON57",
+    "nombre": "(Sample) PDRN Collagen Tinted Moisturizer 45 1ml",
+    "marca": "MIXSOON",
+    "precio": "pendiente",
+    "categoria": "Maquillaje",
+    "descripcion": "",
+    "imagen": "img/skink/MIXSOON57.webp",
+    "agotado": false,
+    "nuevo": true,
+    "tipos_piel": [
+      "Anti-edad",
+      "Hidratación Profunda"
+    ],
+    "ficha": "img/fichas/MIXSOON57.png",
+    "mas_vendido": false,
+    "preventa": false
+  },
+  {
+    "id": "MIXSOON58",
+    "referencia": "MIXSOON58",
+    "nombre": "(Sample) PDRN Collagen Tinted Moisturizer 60 1ml",
+    "marca": "MIXSOON",
+    "precio": "pendiente",
+    "categoria": "Maquillaje",
+    "descripcion": "",
+    "imagen": "img/skink/MIXSOON58.webp",
+    "agotado": false,
+    "nuevo": true,
+    "tipos_piel": [
+      "Anti-edad",
+      "Hidratación Profunda"
+    ],
+    "ficha": "img/fichas/MIXSOON58.png",
     "mas_vendido": false,
     "preventa": false
   },
@@ -6299,6 +6381,84 @@
     "preventa": false
   },
   {
+    "id": "SKIN1004-102",
+    "referencia": "SKIN1004-102",
+    "nombre": "(Sachet) Madagascar Centella Ampoule 1.5ml",
+    "marca": "SKIN 1004",
+    "precio": "pendiente",
+    "categoria": "Sérum",
+    "descripcion": "",
+    "imagen": "img/skink/SKIN1004-102.webp",
+    "agotado": false,
+    "nuevo": true,
+    "tipos_piel": [
+      "Brillo y Luminosidad",
+      "Hidratación Profunda",
+      "Piel Sensible y Calmante"
+    ],
+    "ficha": "img/fichas/SKIN1004-102.png",
+    "mas_vendido": false,
+    "preventa": false
+  },
+  {
+    "id": "SKIN1004-55",
+    "referencia": "SKIN1004-55",
+    "nombre": "(Sachet) Madagascar Centella Probio-Cica Bakuchiol Eye Cream 1.5ml",
+    "marca": "SKIN 1004",
+    "precio": "pendiente",
+    "categoria": "Contorno de Ojos",
+    "descripcion": "",
+    "imagen": "img/skink/SKIN1004-55.webp",
+    "agotado": false,
+    "nuevo": true,
+    "tipos_piel": [
+      "Contorno de Ojos",
+      "Hidratación Profunda",
+      "Piel Sensible y Calmante"
+    ],
+    "ficha": "img/fichas/SKIN1004-55.png",
+    "mas_vendido": false,
+    "preventa": false
+  },
+  {
+    "id": "SKIN1004-93",
+    "referencia": "SKIN1004-93",
+    "nombre": "(Sachet) Madagascar Centella Ampoule Foam 1.5ml",
+    "marca": "SKIN 1004",
+    "precio": "pendiente",
+    "categoria": "Segunda Limpieza",
+    "descripcion": "",
+    "imagen": "img/skink/SKIN1004-93.webp",
+    "agotado": false,
+    "nuevo": true,
+    "tipos_piel": [
+      "Hidratación Profunda",
+      "Piel Sensible y Calmante"
+    ],
+    "ficha": "img/fichas/SKIN1004-93.png",
+    "mas_vendido": false,
+    "preventa": false
+  },
+  {
+    "id": "SKIN1004-103",
+    "referencia": "SKIN1004-103",
+    "nombre": "(Sachet) Madagascar Centella Toning Toner 1.5ml",
+    "marca": "SKIN 1004",
+    "precio": "pendiente",
+    "categoria": "Tónico",
+    "descripcion": "",
+    "imagen": "img/skink/SKIN1004-103.webp",
+    "agotado": false,
+    "nuevo": true,
+    "tipos_piel": [
+      "Hidratación Profunda",
+      "Piel Sensible y Calmante"
+    ],
+    "ficha": "img/fichas/SKIN1004-103.png",
+    "mas_vendido": false,
+    "preventa": false
+  },
+  {
     "id": "AXIS-Y1",
     "referencia": "AXIS-Y1",
     "nombre": "Dark Spot Correcting Glow Serum 50ml",
@@ -10325,6 +10485,43 @@
       "Capilar"
     ],
     "ficha": "img/fichas/TOCOBO69.png",
+    "mas_vendido": false,
+    "preventa": false
+  },
+  {
+    "id": "TOCOBO71",
+    "referencia": "TOCOBO71",
+    "nombre": "(Pouch Sample) Cica Calming Aqua Toner 2ml",
+    "marca": "TOCOBO",
+    "precio": "pendiente",
+    "categoria": "Tónico",
+    "descripcion": "",
+    "imagen": "img/skink/TOCOBO71.webp",
+    "agotado": false,
+    "nuevo": true,
+    "tipos_piel": [
+      "Hidratación Profunda",
+      "Piel Sensible y Calmante"
+    ],
+    "ficha": "img/fichas/TOCOBO71.png",
+    "mas_vendido": false,
+    "preventa": false
+  },
+  {
+    "id": "TOCOBO70",
+    "referencia": "TOCOBO70",
+    "nombre": "(Pouch Sample) Cica Calming Serum 1.5ml",
+    "marca": "TOCOBO",
+    "precio": "pendiente",
+    "categoria": "Sérum",
+    "descripcion": "",
+    "imagen": "img/skink/TOCOBO70.webp",
+    "agotado": false,
+    "nuevo": true,
+    "tipos_piel": [
+      "Piel Sensible y Calmante"
+    ],
+    "ficha": "img/fichas/TOCOBO70.png",
     "mas_vendido": false,
     "preventa": false
   },
