@@ -894,7 +894,32 @@
       "Hidratación Profunda"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Hidratante",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Hidratación",
+      "Piel seca",
+      "Piel sensible"
+    ],
+    "resumen": "Muestra de la crema tipo sorbete con 5 ceramidas que hidrata a fondo y fortalece la barrera.",
+    "ingredientes": [
+      {
+        "nombre": "Complejo de 5 ceramidas",
+        "funcion": "Fortalecen la barrera de la piel"
+      },
+      {
+        "nombre": "3 tipos de ácido hialurónico (10 %)",
+        "funcion": "Hidratan a fondo"
+      },
+      {
+        "nombre": "Betaglucano",
+        "funcion": "Calma e hidrata"
+      }
+    ]
   },
   {
     "id": "TOCOBO55",
@@ -930,7 +955,36 @@
       "Manchas e Hiperpigmentación"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Tónico",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Exfoliación",
+      "Grasa y poros",
+      "Luminosidad"
+    ],
+    "resumen": "Dúo mini de tónicos: el de limón con AHA y BHA exfolia suave y da luz, y el de frutos rojos afina los poros e hidrata.",
+    "ingredientes": [
+      {
+        "nombre": "AHA y BHA (Lemon Toner)",
+        "funcion": "Exfolian suave y limpian los poros"
+      },
+      {
+        "nombre": "Agua de espino amarillo (Vita Berry)",
+        "funcion": "Hidrata y ayuda a la elasticidad"
+      },
+      {
+        "nombre": "Extracto de hibisco",
+        "funcion": "Antioxidante que retiene la humedad"
+      },
+      {
+        "nombre": "Betaína",
+        "funcion": "Hidrata y fortalece la barrera"
+      }
+    ]
   },
   {
     "id": "TOCOBO62",
@@ -984,7 +1038,36 @@
       "Protección Solar"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Protector solar",
+    "momento": "mañana",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Protección solar",
+      "Hidratación",
+      "Luminosidad"
+    ],
+    "resumen": "Dúo mini de protectores SPF 50+: uno hidratante tipo sérum y otro con tono rosado que ilumina al instante.",
+    "ingredientes": [
+      {
+        "nombre": "Filtros SPF 50+ PA++++",
+        "funcion": "Protegen de los rayos UVA y UVB"
+      },
+      {
+        "nombre": "Ácido hialurónico (Bio Watery)",
+        "funcion": "Hidrata mientras protege"
+      },
+      {
+        "nombre": "Frijol mungo (Bio Watery)",
+        "funcion": "Calma la piel"
+      },
+      {
+        "nombre": "Vitaminas y tono rosado (Vita Tone Up)",
+        "funcion": "Iluminan y unifican el tono"
+      }
+    ]
   },
   {
     "id": "TOCOBO66",
@@ -1059,6 +1142,30 @@
     "ficha": "img/fichas/MIXSOON1.jpg",
     "mas_vendido": false,
     "preventa": true,
+    "paso": "Aceite limpiador",
+    "momento": "noche",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Hidratación",
+      "Piel sensible"
+    ],
+    "resumen": "Aceite limpiador ligero con soya fermentada que disuelve el maquillaje, incluso a prueba de agua, y el protector sin resecar.",
+    "ingredientes": [
+      {
+        "nombre": "Soya fermentada",
+        "funcion": "Nutre e hidrata mientras limpia"
+      },
+      {
+        "nombre": "Fermentos de cebada, granada y pera",
+        "funcion": "Aportan vitaminas y antioxidantes"
+      },
+      {
+        "nombre": "Aceite de jojoba y vitamina E",
+        "funcion": "Hidratan y calman la piel"
+      }
+    ],
     "oculto": true
   },
   {
@@ -1077,7 +1184,31 @@
       "Piel Sensible y Calmante"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Aceite limpiador",
+    "momento": "noche",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Hidratación",
+      "Piel sensible"
+    ],
+    "resumen": "Aceite limpiador ligero con soya fermentada que disuelve el maquillaje, incluso a prueba de agua, y el protector sin resecar.",
+    "ingredientes": [
+      {
+        "nombre": "Soya fermentada",
+        "funcion": "Nutre e hidrata mientras limpia"
+      },
+      {
+        "nombre": "Fermentos de cebada, granada y pera",
+        "funcion": "Aportan vitaminas y antioxidantes"
+      },
+      {
+        "nombre": "Aceite de jojoba y vitamina E",
+        "funcion": "Hidratan y calman la piel"
+      }
+    ]
   },
   {
     "id": "MIXSOON8",
@@ -1395,7 +1526,32 @@
     ],
     "ficha": "img/fichas/MIXSOON6.jpg",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Esencia",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Hidratación",
+      "Exfoliación",
+      "Grasa y poros"
+    ],
+    "resumen": "Esencia fermentada que hidrata, exfolia suave y alisa la textura de la piel, además de equilibrar la grasa.",
+    "ingredientes": [
+      {
+        "nombre": "Soya fermentada",
+        "funcion": "Hidrata y mejora la textura"
+      },
+      {
+        "nombre": "Granada fermentada (AHA natural)",
+        "funcion": "Exfolia suave"
+      },
+      {
+        "nombre": "Cebada y pera fermentadas",
+        "funcion": "Aportan vitaminas y antioxidantes"
+      }
+    ]
   },
   {
     "id": "MIXSOON12",
@@ -1413,7 +1569,32 @@
     ],
     "ficha": "img/fichas/MIXSOON12.jpg",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Esencia",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Hidratación",
+      "Exfoliación",
+      "Grasa y poros"
+    ],
+    "resumen": "Esencia fermentada que hidrata, exfolia suave y alisa la textura de la piel, además de equilibrar la grasa.",
+    "ingredientes": [
+      {
+        "nombre": "Soya fermentada",
+        "funcion": "Hidrata y mejora la textura"
+      },
+      {
+        "nombre": "Granada fermentada (AHA natural)",
+        "funcion": "Exfolia suave"
+      },
+      {
+        "nombre": "Cebada y pera fermentadas",
+        "funcion": "Aportan vitaminas y antioxidantes"
+      }
+    ]
   },
   {
     "id": "MIXSOON42",
@@ -1981,7 +2162,27 @@
     ],
     "mas_vendido": false,
     "preventa": false,
-    "ficha": "img/fichas/MIXSOON54.png"
+    "ficha": "img/fichas/MIXSOON54.png",
+    "paso": "Serum",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Hidratación",
+      "Piel seca"
+    ],
+    "resumen": "Muestra del sérum con agua de glaciar y tres tipos de ácido hialurónico que hidrata a fondo la piel seca.",
+    "ingredientes": [
+      {
+        "nombre": "Agua de glaciar",
+        "funcion": "Hidrata y calma la piel"
+      },
+      {
+        "nombre": "Tres tipos de ácido hialurónico",
+        "funcion": "Hidratan y forman una barrera de humedad"
+      }
+    ]
   },
   {
     "id": "MIXSOON20",
@@ -2936,6 +3137,37 @@
     "video": "img/videos/Anua35.mp4",
     "mas_vendido": false,
     "preventa": false,
+    "paso": "Esencia",
+    "momento": "ambos",
+    "piel": [
+      "Normal",
+      "Seca",
+      "Sensible"
+    ],
+    "necesidades": [
+      "Hidratación",
+      "Luminosidad",
+      "Antiedad"
+    ],
+    "resumen": "Bruma con cápsulas de aceite y PDRN que hidrata al instante y deja un brillo jugoso; sirve antes o encima del maquillaje.",
+    "ingredientes": [
+      {
+        "nombre": "PDRN 2.000 ppm",
+        "funcion": "Aporta luz y ayuda a la firmeza"
+      },
+      {
+        "nombre": "Ácido hialurónico",
+        "funcion": "Hidrata a fondo"
+      },
+      {
+        "nombre": "Colágeno hidrolizado",
+        "funcion": "Ayuda a mantener la barrera de hidratación"
+      },
+      {
+        "nombre": "Cápsulas de aceite",
+        "funcion": "Dejan un brillo jugoso sin pegajosidad"
+      }
+    ],
     "oculto": true
   },
   {
@@ -3276,7 +3508,7 @@
     "nombre": "Glow Replenishing Rice Milk 150ml",
     "marca": "BEAUTY OF JOSEON",
     "precio": 98000,
-    "categoria": "Sérum",
+    "categoria": "Tónico",
     "descripcion": "Tónico bifásico que hidrata con extracto de arroz y equilibra el exceso de grasa para una piel luminosa sin brillo graso; también ayuda a afinar la apariencia de los poros. Agitar antes de usar. Para todo tipo de piel. Ingredientes claves: Extracto de arroz, aminoácidos de arroz, complejo de polvos equilibrantes de grasa, pantenol, hialuronato de sodio, ceramida NP.",
     "imagen": "img/skink/BEAUTY5.webp",
     "agotado": false,
@@ -3443,7 +3675,28 @@
       "Protección Solar"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Serum",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Luminosidad",
+      "Manchas",
+      "Calmante"
+    ],
+    "resumen": "Sérum ligero de vitamina C estable que le da luz a la piel, atenúa las manchas y la calma.",
+    "ingredientes": [
+      {
+        "nombre": "Vitamina C estable 10 % (etil ascórbico)",
+        "funcion": "Ilumina y atenúa las manchas"
+      },
+      {
+        "nombre": "Centella asiática",
+        "funcion": "Calma la piel"
+      }
+    ]
   },
   {
     "id": "BEAUTY16",
@@ -3659,7 +3912,36 @@
     "ficha": "img/fichas/BIODANCE1.png",
     "video": "img/videos/Biodance1.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Mascarilla",
+    "momento": "noche",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Hidratación",
+      "Calmante",
+      "Piel sensible"
+    ],
+    "resumen": "Mascarilla de hidrogel que calma la piel irritada o sensible y la hidrata a fondo; se deja de 3 a 4 horas o toda la noche.",
+    "ingredientes": [
+      {
+        "nombre": "Ceramidas de 5 capas",
+        "funcion": "Fortalecen la barrera de la piel"
+      },
+      {
+        "nombre": "Ácido hialurónico oligo",
+        "funcion": "Hidrata a fondo"
+      },
+      {
+        "nombre": "Pantenol",
+        "funcion": "Calma la piel"
+      },
+      {
+        "nombre": "Niacinamida",
+        "funcion": "Aporta luminosidad"
+      }
+    ]
   },
   {
     "id": "BIODANCE2",
@@ -3682,7 +3964,36 @@
     "ficha": "img/fichas/BIODANCE2.png",
     "video": "img/videos/BIODANCE2.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Mascarilla",
+    "momento": "noche",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Hidratación",
+      "Antiedad",
+      "Grasa y poros"
+    ],
+    "resumen": "Mascarilla de hidrogel con colágeno que hidrata a fondo, mejora la elasticidad y afina la apariencia de los poros.",
+    "ingredientes": [
+      {
+        "nombre": "Colágeno de muy bajo peso molecular",
+        "funcion": "Mejora la elasticidad y afina los poros"
+      },
+      {
+        "nombre": "Ácido hialurónico oligo",
+        "funcion": "Hidrata a fondo"
+      },
+      {
+        "nombre": "Probióticos (3 tipos)",
+        "funcion": "Fortalecen la barrera de la piel"
+      },
+      {
+        "nombre": "Niacinamida",
+        "funcion": "Aporta luminosidad"
+      }
+    ]
   },
   {
     "id": "BIODANCE3",
@@ -3703,7 +4014,36 @@
     "ficha": "img/fichas/BIODANCE3.png",
     "video": "img/videos/Biodance3.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Mascarilla",
+    "momento": "noche",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Manchas",
+      "Luminosidad",
+      "Hidratación"
+    ],
+    "resumen": "Mascarilla de hidrogel que le da luz a la piel apagada y ayuda a atenuar las manchas y el tono disparejo.",
+    "ingredientes": [
+      {
+        "nombre": "Niacinamida 2 %",
+        "funcion": "Ayuda a atenuar las manchas"
+      },
+      {
+        "nombre": "Glutatión",
+        "funcion": "Ayuda con las manchas más marcadas"
+      },
+      {
+        "nombre": "Agua de piña 10 %",
+        "funcion": "Suaviza la textura y da luz"
+      },
+      {
+        "nombre": "Ácido hialurónico",
+        "funcion": "Hidrata"
+      }
+    ]
   },
   {
     "id": "BIODANCE4",
@@ -3725,7 +4065,34 @@
     "ficha": "img/fichas/BIODANCE4.jpg",
     "video": "img/videos/Biodance4.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Mascarilla",
+    "momento": "noche",
+    "piel": [
+      "Grasa",
+      "Mixta",
+      "Sensible"
+    ],
+    "necesidades": [
+      "Calmante",
+      "Grasa y poros",
+      "Hidratación"
+    ],
+    "resumen": "Mascarilla de hidrogel que calma la piel con brotes, equilibra la grasa y la hidrata sin engrasar.",
+    "ingredientes": [
+      {
+        "nombre": "Fermento de alga kelp 10 %",
+        "funcion": "Calma y equilibra la piel"
+      },
+      {
+        "nombre": "Agua de mar profunda 5 %",
+        "funcion": "Controla el exceso de grasa e hidrata"
+      },
+      {
+        "nombre": "Alantoína",
+        "funcion": "Calma la piel"
+      }
+    ]
   },
   {
     "id": "BIODANCE5",
@@ -3746,7 +4113,28 @@
       "Protección Solar"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Mascarilla",
+    "momento": "noche",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Antiedad",
+      "Hidratación",
+      "Luminosidad"
+    ],
+    "resumen": "Mascarilla de hidrogel con caviar y PDRN que nutre, mejora la firmeza y deja la piel luminosa.",
+    "ingredientes": [
+      {
+        "nombre": "Complejo de caviar 600.000 ppm",
+        "funcion": "Nutre y aporta luminosidad"
+      },
+      {
+        "nombre": "PDRN y extracto de huevas de salmón",
+        "funcion": "Ayudan a la renovación de la piel"
+      }
+    ]
   },
   {
     "id": "MEDICUBE45",
@@ -3853,7 +4241,36 @@
     "ficha": "img/fichas/MEDICUBE58.png",
     "video": "img/videos/Medicube58.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Tónico",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Grasa y poros",
+      "Exfoliación",
+      "Hidratación"
+    ],
+    "resumen": "Tónico 2 en 1 que hidrata, exfolia suave y ayuda a controlar la grasa y afinar los poros.",
+    "ingredientes": [
+      {
+        "nombre": "AHA, BHA y PHA",
+        "funcion": "Exfolian suave y mejoran la textura"
+      },
+      {
+        "nombre": "Ácido hialurónico de bajo peso molecular",
+        "funcion": "Hidrata a fondo"
+      },
+      {
+        "nombre": "Pore Laser™",
+        "funcion": "Ayuda a controlar la grasa y afinar los poros"
+      },
+      {
+        "nombre": "Pantenol y alantoína",
+        "funcion": "Calman e hidratan"
+      }
+    ]
   },
   {
     "id": "MEDICUBE64",
@@ -3875,7 +4292,36 @@
     "ficha": "img/fichas/MEDICUBE64.png",
     "video": "img/videos/Medicube64.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Tónico",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Granitos",
+      "Grasa y poros",
+      "Calmante"
+    ],
+    "resumen": "Tónico ligero que controla la grasa, calma la rojez y ayuda a unificar el tono de la piel con brotes.",
+    "ingredientes": [
+      {
+        "nombre": "Ácido azelaico 4 %",
+        "funcion": "Calma la rojez y ayuda con los granitos"
+      },
+      {
+        "nombre": "Niacinamida 2 %",
+        "funcion": "Ayuda a unificar el tono"
+      },
+      {
+        "nombre": "Ácido hialurónico",
+        "funcion": "Hidrata"
+      },
+      {
+        "nombre": "Aloe vera",
+        "funcion": "Calma e hidrata"
+      }
+    ]
   },
   {
     "id": "MEDICUBE73",
@@ -4215,7 +4661,36 @@
     "ficha": "img/fichas/MEDICUBE54.png",
     "video": "img/videos/Medicube54.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Protector solar",
+    "momento": "mañana",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Protección solar",
+      "Hidratación",
+      "Grasa y poros"
+    ],
+    "resumen": "Protector en sérum ligero que hidrata a fondo, no se siente pegajoso y va bien antes del maquillaje.",
+    "ingredientes": [
+      {
+        "nombre": "Filtros SPF 50+ PA++++",
+        "funcion": "Protegen de los rayos UVA y UVB"
+      },
+      {
+        "nombre": "10 tipos de ácido hialurónico",
+        "funcion": "Hidratan a fondo"
+      },
+      {
+        "nombre": "Pantenol y alantoína",
+        "funcion": "Calman y fortalecen la barrera"
+      },
+      {
+        "nombre": "Niacinamida",
+        "funcion": "Ayuda a unificar el tono"
+      }
+    ]
   },
   {
     "id": "MEDICUBE30",
@@ -4407,7 +4882,31 @@
     ],
     "ficha": "img/fichas/MEDICUBE69.png",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Tónico",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Luminosidad",
+      "Hidratación"
+    ],
+    "resumen": "Tónico lechoso de doble capa que hidrata y le da luz a la piel apagada y de tono disparejo.",
+    "ingredientes": [
+      {
+        "nombre": "Glutatión",
+        "funcion": "Aporta luminosidad y unifica el tono"
+      },
+      {
+        "nombre": "Complejo de 6 péptidos",
+        "funcion": "Ayuda a que la piel se vea firme y lisa"
+      },
+      {
+        "nombre": "Niacinamida",
+        "funcion": "Ayuda a unificar el tono"
+      }
+    ]
   },
   {
     "id": "MEDICUBE72",
@@ -4567,7 +5066,35 @@
       "Piel Sensible y Calmante"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Serum",
+    "momento": "mañana",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Manchas",
+      "Luminosidad"
+    ],
+    "resumen": "Ampolla de vitamina C al 14,5 % que atenúa las manchas y le da luz a la piel apagada.",
+    "ingredientes": [
+      {
+        "nombre": "Vitamina C pura 14,5 %",
+        "funcion": "Atenúa las manchas y da luz"
+      },
+      {
+        "nombre": "Glutatión",
+        "funcion": "Ayuda a atenuar manchas y marcas"
+      },
+      {
+        "nombre": "Pantenol y alantoína",
+        "funcion": "Hidratan y calman"
+      },
+      {
+        "nombre": "Bisabolol",
+        "funcion": "Calma la piel"
+      }
+    ]
   },
   {
     "id": "MEDICUBE76",
@@ -4608,6 +5135,34 @@
     "ficha": "img/fichas/MEDICUBE60.png",
     "mas_vendido": false,
     "preventa": false,
+    "paso": "Serum",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Manchas",
+      "Luminosidad"
+    ],
+    "resumen": "Sérum iluminador que atenúa las manchas y marcas y unifica el tono de la piel apagada.",
+    "ingredientes": [
+      {
+        "nombre": "Ácido kójico",
+        "funcion": "Atenúa las manchas y el tono disparejo"
+      },
+      {
+        "nombre": "Cúrcuma",
+        "funcion": "Antioxidante que aporta luz"
+      },
+      {
+        "nombre": "Niacinamida",
+        "funcion": "Unifica el tono"
+      },
+      {
+        "nombre": "Cápsulas de escualano y ácido tióctico",
+        "funcion": "Hidratan y apoyan la barrera"
+      }
+    ],
     "oculto": true
   },
   {
@@ -4732,7 +5287,32 @@
       "Manchas e Hiperpigmentación"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Hidratante",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Luminosidad",
+      "Antiedad",
+      "Hidratación"
+    ],
+    "resumen": "Crema en gel con cápsulas de glutatión que da luz al instante y ayuda con la firmeza de la piel apagada.",
+    "ingredientes": [
+      {
+        "nombre": "Cápsulas de glutatión 99,4 %",
+        "funcion": "Aportan luminosidad y unifican el tono"
+      },
+      {
+        "nombre": "Niacinamida",
+        "funcion": "Ayuda a unificar el tono"
+      },
+      {
+        "nombre": "Péptidos y colágeno soluble",
+        "funcion": "Ayudan a la firmeza y la elasticidad"
+      }
+    ]
   },
   {
     "id": "MEDICUBE10",
@@ -4775,7 +5355,32 @@
     "ficha": "img/fichas/MEDICUBE33.png",
     "video": "img/videos/Medicube33.mp4",
     "mas_vendido": true,
-    "preventa": false
+    "preventa": false,
+    "paso": "Mascarilla",
+    "momento": "noche",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Manchas",
+      "Luminosidad",
+      "Calmante"
+    ],
+    "resumen": "Mascarilla de gel refrescante que da luz a la piel apagada y ayuda a unificar el tono; se deja de 3 a 4 horas o toda la noche.",
+    "ingredientes": [
+      {
+        "nombre": "Ácido kójico",
+        "funcion": "Atenúa las manchas y el tono disparejo"
+      },
+      {
+        "nombre": "Cúrcuma",
+        "funcion": "Aporta luz y calma la piel"
+      },
+      {
+        "nombre": "Niacinamida",
+        "funcion": "Unifica el tono y suaviza la textura"
+      }
+    ]
   },
   {
     "id": "MEDICUBE39",
@@ -4944,7 +5549,36 @@
     "ficha": "img/fichas/MEDICUBE59.png",
     "video": "img/videos/Medicube59.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Tónico",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Hidratación",
+      "Luminosidad",
+      "Granitos"
+    ],
+    "resumen": "Tónico lechoso que hidrata, fortalece la barrera y da un brillo rosado, apto para piel con brotes.",
+    "ingredientes": [
+      {
+        "nombre": "PDRN de salmón",
+        "funcion": "Ayuda a que la piel se vea renovada y firme"
+      },
+      {
+        "nombre": "Niacinamida",
+        "funcion": "Ilumina y unifica el tono"
+      },
+      {
+        "nombre": "Ceramidas y péptidos",
+        "funcion": "Fortalecen la barrera de la piel"
+      },
+      {
+        "nombre": "Pantenol y centella asiática",
+        "funcion": "Calman la piel"
+      }
+    ]
   },
   {
     "id": "MEDICUBE108",
@@ -4963,7 +5597,36 @@
     ],
     "mas_vendido": false,
     "preventa": false,
-    "ficha": "img/fichas/MEDICUBE108.png"
+    "ficha": "img/fichas/MEDICUBE108.png",
+    "paso": "Tónico",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Calmante",
+      "Hidratación",
+      "Luminosidad"
+    ],
+    "resumen": "Tónico suave que calma la rojez, hidrata a fondo y le da luz a la piel sensible o estresada.",
+    "ingredientes": [
+      {
+        "nombre": "PDRN de salmón",
+        "funcion": "Ayuda a que la piel se vea renovada"
+      },
+      {
+        "nombre": "Centella asiática",
+        "funcion": "Calma la rojez y fortalece la barrera"
+      },
+      {
+        "nombre": "Niacinamida",
+        "funcion": "Ilumina y unifica el tono"
+      },
+      {
+        "nombre": "Hialuronato de sodio",
+        "funcion": "Hidrata a fondo"
+      }
+    ]
   },
   {
     "id": "MEDICUBE71",
@@ -4984,7 +5647,36 @@
     "ficha": "img/fichas/MEDICUBE71.png",
     "video": "img/videos/Medicube71.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Esencia",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Hidratación",
+      "Luminosidad",
+      "Calmante"
+    ],
+    "resumen": "Bruma de tres capas que hidrata, da luz y calma la piel; se puede usar encima del maquillaje.",
+    "ingredientes": [
+      {
+        "nombre": "PDRN de salmón",
+        "funcion": "Ayuda a la elasticidad y la luminosidad"
+      },
+      {
+        "nombre": "Glutatión",
+        "funcion": "Aporta luz y unifica el tono"
+      },
+      {
+        "nombre": "Niacinamida",
+        "funcion": "Ayuda a unificar el tono"
+      },
+      {
+        "nombre": "Aceites de girasol y ricino",
+        "funcion": "Hidratan y calman"
+      }
+    ]
   },
   {
     "id": "MEDICUBE11",
@@ -5002,7 +5694,36 @@
       "Hidratación Profunda"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Serum",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Antiedad",
+      "Hidratación",
+      "Luminosidad"
+    ],
+    "resumen": "Sérum ligero de colágeno que hidrata, mejora la elasticidad y deja la piel con brillo tipo glass skin.",
+    "ingredientes": [
+      {
+        "nombre": "Complejo de triple colágeno",
+        "funcion": "Ayuda a la firmeza y la elasticidad"
+      },
+      {
+        "nombre": "Niacinamida",
+        "funcion": "Aporta luminosidad"
+      },
+      {
+        "nombre": "Ácido hialurónico",
+        "funcion": "Hidrata a fondo"
+      },
+      {
+        "nombre": "Adenosina",
+        "funcion": "Ayuda con las líneas finas"
+      }
+    ]
   },
   {
     "id": "MEDICUBE18",
@@ -5126,6 +5847,35 @@
     ],
     "mas_vendido": false,
     "preventa": false,
+    "paso": "Serum",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Luminosidad",
+      "Hidratación",
+      "Antiedad"
+    ],
+    "resumen": "Sérum en viales de un solo uso con PDRN de salmón que hidrata y da luz a la piel apagada desde la primera aplicación.",
+    "ingredientes": [
+      {
+        "nombre": "PDRN de salmón (99 % de pureza)",
+        "funcion": "Aporta luz e hidratación"
+      },
+      {
+        "nombre": "Colágeno de bajo peso molecular",
+        "funcion": "Ayuda a la elasticidad"
+      },
+      {
+        "nombre": "Glutatión",
+        "funcion": "Ilumina el tono"
+      },
+      {
+        "nombre": "Elastina",
+        "funcion": "Ayuda a la firmeza"
+      }
+    ],
     "oculto": true
   },
   {
@@ -5796,7 +6546,37 @@
     "mas_vendido": false,
     "preventa": false,
     "ficha": "img/fichas/MEDICUBE85.png",
-    "video": "img/videos/MEDICUBE85.mp4"
+    "video": "img/videos/MEDICUBE85.mp4",
+    "paso": "Contorno de ojos",
+    "momento": "noche",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Ojeras y contorno",
+      "Antiedad",
+      "Hidratación"
+    ],
+    "resumen": "Parches de hidrogel para el contorno que deshinchan, hidratan y suavizan las líneas finas en unos 10 minutos.",
+    "ingredientes": [
+      {
+        "nombre": "Cafeína",
+        "funcion": "Ayuda a deshinchar la mirada"
+      },
+      {
+        "nombre": "PDRN",
+        "funcion": "Ayuda a la firmeza y la renovación"
+      },
+      {
+        "nombre": "Colágeno",
+        "funcion": "Suaviza las líneas finas"
+      },
+      {
+        "nombre": "Retinol",
+        "funcion": "Ayuda con las líneas finas"
+      }
+    ],
+    "advertencia": "Lleva vitamina A: úsalo solo de noche, empieza 2 o 3 noches por semana y usa protector solar al día siguiente. No se recomienda en embarazo ni lactancia."
   },
   {
     "id": "MEDICUBE86",
@@ -5868,7 +6648,36 @@
       "Universal"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Hidratante",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Granitos",
+      "Calmante",
+      "Manchas"
+    ],
+    "resumen": "Crema calmante para piel sensible y con granitos que reduce la rojez, ayuda con las marcas y fortalece la barrera.",
+    "ingredientes": [
+      {
+        "nombre": "Niacinamida",
+        "funcion": "Ayuda a atenuar marcas y unificar el tono"
+      },
+      {
+        "nombre": "Pantenol",
+        "funcion": "Calma e hidrata"
+      },
+      {
+        "nombre": "Extracto de verdolaga",
+        "funcion": "Calma la rojez"
+      },
+      {
+        "nombre": "Aceite de jojoba",
+        "funcion": "Forma una barrera de hidratación"
+      }
+    ]
   },
   {
     "id": "MEDICUBE92",
@@ -5887,7 +6696,35 @@
     "ficha": "img/fichas/MEDICUBE92.jpg",
     "video": "img/videos/Medicube92.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Hidratante",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Hidratación",
+      "Piel seca"
+    ],
+    "resumen": "Crema en gel ligera que hidrata a fondo y fortalece la barrera sin dejar sensación grasosa ni pegajosa.",
+    "ingredientes": [
+      {
+        "nombre": "10 tipos de ácido hialurónico",
+        "funcion": "Hidratan y evitan la pérdida de agua"
+      },
+      {
+        "nombre": "Ceramidas",
+        "funcion": "Fortalecen la barrera de la piel"
+      },
+      {
+        "nombre": "Péptidos",
+        "funcion": "Ayudan a la firmeza"
+      },
+      {
+        "nombre": "Niacinamida",
+        "funcion": "Aporta luminosidad"
+      }
+    ]
   },
   {
     "id": "MEDICUBE93",
@@ -5904,7 +6741,36 @@
       "Acné"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Serum",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Granitos",
+      "Grasa y poros",
+      "Manchas"
+    ],
+    "resumen": "Sérum para piel con granitos que ayuda a destapar los poros, controlar la grasa y atenuar las marcas.",
+    "ingredientes": [
+      {
+        "nombre": "Ácido succínico 1 %",
+        "funcion": "Ayuda con los granitos y el exceso de grasa"
+      },
+      {
+        "nombre": "Ácido salicílico 0,2 % (BHA)",
+        "funcion": "Limpia los poros y los puntos negros"
+      },
+      {
+        "nombre": "Centella asiática",
+        "funcion": "Calma la irritación"
+      },
+      {
+        "nombre": "Ácido hialurónico",
+        "funcion": "Mantiene la hidratación"
+      }
+    ]
   },
   {
     "id": "MEDICUBE94",
@@ -5912,7 +6778,7 @@
     "nombre": "PDRN Pink Collagen Volume Multi Balm 10g",
     "marca": "MEDICUBE",
     "precio": 129000,
-    "categoria": "Primera Limpieza",
+    "categoria": "Hidratación",
     "descripcion": "Bálsamo multiusos en barra para rostro y cuerpo que se derrite sobre la piel sin sensación pegajosa ni pesada, fácil de reaplicar durante el día. Pensado para zonas que lucen hundidas como ojeras, pómulos y líneas de expresión, ayudando con la resequedad, arrugas y líneas finas. Ingredientes claves: Volufiline, PDRN, NAD, cafeína, colágeno, péptidos, retinol y vitamina E.",
     "imagen": "img/skink/MEDICUBE94.jpg",
     "agotado": true,
@@ -5924,6 +6790,35 @@
     "preventa": false,
     "ficha": "img/fichas/MEDICUBE94.png",
     "video": "img/videos/MEDICUBE94.mp4",
+    "paso": "Tratamiento puntual",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Antiedad",
+      "Hidratación"
+    ],
+    "resumen": "Bálsamo en barra que hidrata y rellena visualmente las zonas con líneas finas o pérdida de volumen, como ojeras y comisuras.",
+    "ingredientes": [
+      {
+        "nombre": "Volufiline 5 %",
+        "funcion": "Ayuda a que las zonas hundidas se vean más llenas"
+      },
+      {
+        "nombre": "PDRN",
+        "funcion": "Ayuda a la elasticidad"
+      },
+      {
+        "nombre": "Colágeno de bajo peso molecular",
+        "funcion": "Hidrata y suaviza"
+      },
+      {
+        "nombre": "Retinol",
+        "funcion": "Ayuda con las líneas finas"
+      }
+    ],
+    "advertencia": "Lleva retinol: puedes usarlo de mañana y de noche, pero empieza poco a poco y suspende si notas rojez, ardor o descamación. Si tu piel es sensible, pruébalo primero en una zona pequeña. Usa protector solar de día y no se recomienda en embarazo ni lactancia.",
     "oculto": true
   },
   {
@@ -5961,7 +6856,8 @@
       "Anti-edad"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "resumen": "Cabezal limpiador de silicona suave que se acopla al AGE-R Booster Pro Mini Plus; no funciona solo."
   },
   {
     "id": "MEDICUBE97",
@@ -5982,7 +6878,39 @@
     "ficha": "img/fichas/MEDICUBE97.png",
     "video": "img/videos/MEDICUBE97.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Serum",
+    "momento": "noche",
+    "piel": [
+      "Normal",
+      "Grasa",
+      "Mixta"
+    ],
+    "necesidades": [
+      "Grasa y poros",
+      "Exfoliación",
+      "Antiedad"
+    ],
+    "resumen": "Sérum diario que refina los poros, equilibra la grasa y suaviza la textura de la piel.",
+    "ingredientes": [
+      {
+        "nombre": "AHA, BHA, PHA y LHA",
+        "funcion": "Retiran el exceso de grasa y las células muertas"
+      },
+      {
+        "nombre": "Niacinamida 2 %",
+        "funcion": "Unifica el tono alrededor de los poros"
+      },
+      {
+        "nombre": "Complejo de 10 péptidos",
+        "funcion": "Ayuda a que los poros se vean más firmes"
+      },
+      {
+        "nombre": "Centella asiática",
+        "funcion": "Calma la piel"
+      }
+    ],
+    "advertencia": "Exfolia: úsalo de noche, empieza día de por medio y usa protector solar al día siguiente."
   },
   {
     "id": "MEDICUBE98",
@@ -6296,7 +7224,7 @@
     "nombre": "Madagascar Centella Tone Brightening Boosting Toner 210ml",
     "marca": "SKIN 1004",
     "precio": 95000,
-    "categoria": "Contorno de Ojos",
+    "categoria": "Tónico",
     "descripcion": "Tónico de doble acción formulado con extractos de manzana, papaya, uva y durazno, y un derivado estable y poco irritante de vitamina C, para una piel radiante, luminosa, flexible y juvenil. Ingredientes claves: Extracto de centella asiática, niacinamida, pantenol, extracto de fruta.",
     "imagen": "img/skink/SKIN1004-20.webp",
     "agotado": false,
@@ -6465,7 +7393,7 @@
     "nombre": "Madagascar Centella Hyalu-Cica Water-Fit Sun Serum 100ml",
     "marca": "SKIN 1004",
     "precio": 125000,
-    "categoria": "Sérum",
+    "categoria": "Protección Solar",
     "descripcion": "",
     "imagen": "img/skink/SKIN1004-29.webp",
     "agotado": false,
@@ -6474,7 +7402,32 @@
       "Piel Sensible y Calmante"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Protector solar",
+    "momento": "mañana",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Protección solar",
+      "Hidratación",
+      "Calmante"
+    ],
+    "resumen": "Protector en sérum ligero, tipo agua, que hidrata y calma la piel sin dejar rastro blanco.",
+    "ingredientes": [
+      {
+        "nombre": "Filtros SPF 50+ PA++++",
+        "funcion": "Protegen de los rayos UVA y UVB"
+      },
+      {
+        "nombre": "Centella asiática de Madagascar",
+        "funcion": "Calma la piel y la rojez"
+      },
+      {
+        "nombre": "Ácido hialurónico",
+        "funcion": "Hidrata"
+      }
+    ]
   },
   {
     "id": "SKIN1004-40",
@@ -6623,7 +7576,7 @@
     "nombre": "Madagascar Centella Poremizing Quick Clay Stick Mask 27g",
     "marca": "SKIN 1004",
     "precio": 79000,
-    "categoria": "Hidratación",
+    "categoria": "Mascarillas",
     "descripcion": "",
     "imagen": "img/skink/SKIN1004-28.webp",
     "agotado": false,
@@ -6735,7 +7688,7 @@
     "nombre": "Madagascar Centella Hyalu-Cica Brightening Toner 210ml",
     "marca": "SKIN 1004",
     "precio": 95000,
-    "categoria": "Sérum",
+    "categoria": "Tónico",
     "descripcion": "Tónico hidratante con exfoliación suave (AHA y LHA) que calma, ilumina, mejora la textura, mientras apoya la barrera de la piel. Ingredientes claves: Agua de hoja de centella asiática, ácido hialurónico, ceramida NP, ácido cítrico, ácido capriloil salicílico.",
     "imagen": "img/skink/SKIN1004-23.webp",
     "agotado": false,
@@ -6949,7 +7902,32 @@
     ],
     "video": "img/videos/SKIN1004-49.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Protector solar",
+    "momento": "mañana",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Protección solar",
+      "Hidratación",
+      "Calmante"
+    ],
+    "resumen": "Protector en sérum ligero, tipo agua, que hidrata y calma la piel sin dejar rastro blanco.",
+    "ingredientes": [
+      {
+        "nombre": "Filtros SPF 50+ PA++++",
+        "funcion": "Protegen de los rayos UVA y UVB"
+      },
+      {
+        "nombre": "Centella asiática de Madagascar",
+        "funcion": "Calma la piel y la rojez"
+      },
+      {
+        "nombre": "Ácido hialurónico",
+        "funcion": "Hidrata"
+      }
+    ]
   },
   {
     "id": "SKIN1004-48",
@@ -6997,7 +7975,7 @@
     "nombre": "Madagascar Centella Toning Toner 210ml",
     "marca": "SKIN 1004",
     "precio": 95000,
-    "categoria": "Protección Solar",
+    "categoria": "Tónico",
     "descripcion": "Tónico exfoliante suave de uso diario con PHA que alisa la superficie de la piel, retira el exceso de grasa y las células muertas, calma y aporta luminosidad. Textura ligera y acuosa. No comedogénico, apto para todo tipo de piel, incluso sensible o con imperfecciones. Ingredientes claves: Extracto de centella asiática, gluconolactona (PHA), betaína.",
     "imagen": "img/skink/SKIN1004-25.webp",
     "agotado": false,
@@ -7277,7 +8255,7 @@
     "nombre": "Madagascar Centella Double Cleansing Duo (aceite + espuma limpiadora)",
     "marca": "SKIN 1004",
     "precio": 155000,
-    "categoria": "Protección Solar",
+    "categoria": "Primera Limpieza",
     "descripcion": "Set de limpieza que incluye un Madagascar Centella Light Cleansing Oil y una Madagascar Centella Ampoule Foam, ambos de tamaño completo. El aceite limpiador combina aceite MCT derivado del coco y extracto de cica para ofrecer un acabado refrescante. La espuma limpiadora está formulada con bicarbonato de sodio para una limpieza profunda. Ingredientes claves: extracto de centella, aceite de girasol, aceite de oliva, extracto de cacao.",
     "imagen": "img/skink/SKIN1004-57.webp",
     "agotado": false,
@@ -7289,7 +8267,31 @@
       "Protección Solar"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Aceite limpiador",
+    "momento": "noche",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Calmante",
+      "Piel sensible"
+    ],
+    "resumen": "Set de doble limpieza: aceite ligero que retira maquillaje y protector, y espuma suave de pH bajo que limpia sin resecar.",
+    "ingredientes": [
+      {
+        "nombre": "Aceite limpiador ligero con centella",
+        "funcion": "Disuelve maquillaje, protector y grasa"
+      },
+      {
+        "nombre": "Espuma de centella de pH bajo",
+        "funcion": "Limpia sin resecar"
+      },
+      {
+        "nombre": "Centella asiática de Madagascar",
+        "funcion": "Calma la piel"
+      }
+    ]
   },
   {
     "id": "SKIN1004-58",
@@ -7790,7 +8792,24 @@
     ],
     "ficha": "img/fichas/SKIN1004-102.png",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Serum",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Calmante",
+      "Hidratación",
+      "Piel sensible"
+    ],
+    "resumen": "Muestra de la ampolla de centella de Madagascar que calma la rojez, hidrata y fortalece la barrera.",
+    "ingredientes": [
+      {
+        "nombre": "Extracto de centella asiática de Madagascar",
+        "funcion": "Calma la rojez, hidrata y fortalece la barrera"
+      }
+    ]
   },
   {
     "id": "SKIN1004-55",
@@ -7859,7 +8878,27 @@
     ],
     "ficha": "img/fichas/SKIN1004-93.png",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Limpiador",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Calmante",
+      "Piel sensible"
+    ],
+    "resumen": "Muestra de la espuma limpiadora de centella con pH 5 que limpia sin resecar y calma la piel.",
+    "ingredientes": [
+      {
+        "nombre": "Extracto de centella asiática",
+        "funcion": "Calma e hidrata"
+      },
+      {
+        "nombre": "Limpiadores suaves (pH 5)",
+        "funcion": "Limpian sin resecar ni dañar la barrera"
+      }
+    ]
   },
   {
     "id": "SKIN1004-103",
@@ -8120,7 +9159,35 @@
     "ficha": "img/fichas/DR-ALTHEA14.jpg",
     "video": "img/videos/Dr-Althea14.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Esencia",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Hidratación",
+      "Luminosidad"
+    ],
+    "resumen": "Bruma en gel que se vuelve spray al agitarla; hidrata al instante y sirve como sérum, bruma o fijador de maquillaje.",
+    "ingredientes": [
+      {
+        "nombre": "Agua de mar profundo 10 %",
+        "funcion": "Hidrata la piel"
+      },
+      {
+        "nombre": "PDRN vegetal",
+        "funcion": "Ayuda a la elasticidad"
+      },
+      {
+        "nombre": "Triple ácido hialurónico",
+        "funcion": "Hidrata a fondo"
+      },
+      {
+        "nombre": "Betaglucano",
+        "funcion": "Calma e hidrata"
+      }
+    ]
   },
   {
     "id": "DR-ALTHEA20",
@@ -8182,6 +9249,31 @@
     "ficha": "img/fichas/DR-ALTHEA16.jpg",
     "mas_vendido": false,
     "preventa": true,
+    "paso": "Serum",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Grasa y poros",
+      "Manchas",
+      "Luminosidad"
+    ],
+    "resumen": "Sérum con niacinamida al 15 % que unifica el tono, atenúa manchas, afina los poros y controla la grasa.",
+    "ingredientes": [
+      {
+        "nombre": "Niacinamida 15 %",
+        "funcion": "Unifica el tono y afina los poros"
+      },
+      {
+        "nombre": "Zinc PCA",
+        "funcion": "Ayuda a regular la grasa"
+      },
+      {
+        "nombre": "Complejo MELACUT",
+        "funcion": "Calma la piel y mejora la textura"
+      }
+    ],
     "oculto": true
   },
   {
@@ -8380,7 +9472,35 @@
     "ficha": "img/fichas/DR-ALTHEA17.jpg",
     "video": "img/videos/Dr-Althea17.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Hidratante",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Hidratación",
+      "Calmante"
+    ],
+    "resumen": "Crema en gel tipo agua que hidrata a fondo, calma la piel y fortalece la barrera sin sensación grasosa.",
+    "ingredientes": [
+      {
+        "nombre": "Agua de bambú 70 %",
+        "funcion": "Hidrata y refresca"
+      },
+      {
+        "nombre": "Triple ácido hialurónico",
+        "funcion": "Retiene la humedad"
+      },
+      {
+        "nombre": "PDRN vegano",
+        "funcion": "Ayuda a la elasticidad"
+      },
+      {
+        "nombre": "Pantenol",
+        "funcion": "Apoya la barrera de la piel"
+      }
+    ]
   },
   {
     "id": "DR-ALTHEA18",
@@ -8687,7 +9807,36 @@
       "Protección Solar"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Hidratante",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Luminosidad",
+      "Manchas",
+      "Hidratación"
+    ],
+    "resumen": "Crema ligera que le da luz a la piel, unifica el tono y la hidrata en profundidad.",
+    "ingredientes": [
+      {
+        "nombre": "Vitamina C",
+        "funcion": "Ilumina y unifica el tono"
+      },
+      {
+        "nombre": "Glutatión",
+        "funcion": "Ilumina la piel"
+      },
+      {
+        "nombre": "Niacinamida",
+        "funcion": "Ayuda a atenuar las manchas"
+      },
+      {
+        "nombre": "Cápsulas de vitaminas E y K con ceramidas",
+        "funcion": "Hidratan y protegen la barrera"
+      }
+    ]
   },
   {
     "id": "D-ALBA8",
@@ -8695,7 +9844,7 @@
     "nombre": "White Truffle Double Serum and Cream 70g",
     "marca": "D'ALBA",
     "precio": 210000,
-    "categoria": "Sérum",
+    "categoria": "Hidratación",
     "descripcion": "Producto facial vegano 2 en 1 con un sérum acuoso que hidrata y calma y una crema intensa que nutre y reafirma. Se pueden usar juntos o por separado para ajustar la consistencia a lo que la piel necesita cada día. No comedogénico, para todo tipo de piel. Ingredientes claves: Trufa blanca del Piamonte con vitamina E, ceramida NP, centella asiática, pantenol, colágeno vegano.",
     "imagen": "img/skink/D-ALBA8.webp",
     "agotado": false,
@@ -9659,7 +10808,33 @@
       "Protección Solar"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Serum",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Luminosidad",
+      "Hidratación",
+      "Grasa y poros"
+    ],
+    "resumen": "Set de 3 pasos para una piel luminosa: Reedle Shot 100, esencia de PDRN y crema en cápsulas de PDRN.",
+    "ingredientes": [
+      {
+        "nombre": "Reedle Shot 100 (microagujas de cica)",
+        "funcion": "Mejora la absorción y suaviza la textura"
+      },
+      {
+        "nombre": "PDRN Essence (ginseng y PDRN)",
+        "funcion": "Aporta luminosidad"
+      },
+      {
+        "nombre": "PDRN Capsule Cream (ceramidas)",
+        "funcion": "Refuerza la barrera"
+      }
+    ],
+    "advertencia": "Lleva microagujas: puede dar hormigueo y algo de rojez. Empieza 2 o 3 veces por semana y evita los ojos y los labios."
   },
   {
     "id": "VT-COS16",
@@ -9770,6 +10945,35 @@
     ],
     "mas_vendido": false,
     "preventa": false,
+    "paso": "Contorno de ojos",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Ojeras y contorno",
+      "Antiedad",
+      "Hidratación"
+    ],
+    "resumen": "Crema de contorno con aplicador vibratorio de 12.000 vibraciones por minuto que reafirma, hidrata e ilumina las ojeras.",
+    "ingredientes": [
+      {
+        "nombre": "Cica Reedle",
+        "funcion": "Mejora la absorción y alisa la zona"
+      },
+      {
+        "nombre": "PDRN de ginseng",
+        "funcion": "Ayuda a la elasticidad"
+      },
+      {
+        "nombre": "Gold Collagen PDRN",
+        "funcion": "Ayuda a la firmeza"
+      },
+      {
+        "nombre": "Niacinamida",
+        "funcion": "Ilumina las ojeras"
+      }
+    ],
     "oculto": true
   },
   {
@@ -9915,7 +11119,40 @@
     "mas_vendido": true,
     "preventa": false,
     "ficha": "img/fichas/CELI-01.png",
-    "video": "img/videos/CELI-01.mp4"
+    "video": "img/videos/CELI-01.mp4",
+    "paso": "Serum",
+    "momento": "noche",
+    "piel": [
+      "Normal",
+      "Seca",
+      "Grasa",
+      "Mixta"
+    ],
+    "necesidades": [
+      "Antiedad",
+      "Grasa y poros",
+      "Luminosidad"
+    ],
+    "resumen": "Booster concentrado de retinal que suaviza arrugas y líneas finas, afina los poros y mejora la firmeza.",
+    "ingredientes": [
+      {
+        "nombre": "Retinal liposomado 0,1 %",
+        "funcion": "Suaviza las arrugas y afina los poros"
+      },
+      {
+        "nombre": "Matrixyl 3000 3 %",
+        "funcion": "Ayuda a la firmeza y la elasticidad"
+      },
+      {
+        "nombre": "Pantenol 1 %",
+        "funcion": "Calma e hidrata"
+      },
+      {
+        "nombre": "Microespículas A-Shot",
+        "funcion": "Ayudan a que el retinal penetre mejor"
+      }
+    ],
+    "advertencia": "Lleva vitamina A: úsalo solo de noche, empieza 2 o 3 noches por semana y usa protector solar al día siguiente. No se recomienda en embarazo ni lactancia."
   },
   {
     "id": "CELI-02",
@@ -10164,7 +11401,36 @@
     "ficha": "img/fichas/CELI-09.png",
     "video": "img/videos/Celi-09.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Serum",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Manchas",
+      "Luminosidad",
+      "Grasa y poros"
+    ],
+    "resumen": "Sérum iluminador que atenúa manchas y marcas y ayuda a que los poros oscuros se vean más pequeños.",
+    "ingredientes": [
+      {
+        "nombre": "Ácido tranexámico 3 %",
+        "funcion": "Ayuda a frenar la aparición de manchas"
+      },
+      {
+        "nombre": "Niacinamida 5 %",
+        "funcion": "Unifica el tono y afina los poros"
+      },
+      {
+        "nombre": "Melazero V2 1 %",
+        "funcion": "Ayuda con las manchas"
+      },
+      {
+        "nombre": "Ácido hialurónico vegetal",
+        "funcion": "Hidrata"
+      }
+    ]
   },
   {
     "id": "CELI-10",
@@ -10359,7 +11625,7 @@
     "nombre": "Milky Piggy Collagen Coating Protein Ion Injection 50ml",
     "marca": "ELIZAVECCA",
     "precio": 65000,
-    "categoria": "Sérum",
+    "categoria": "Capilar",
     "descripcion": "Tratamiento capilar rápido y sencillo, con resultado tipo salón, para cabello encrespado y áspero. Ingredientes claves: colágeno y proteínas.",
     "imagen": "img/skink/ELI-10.webp",
     "agotado": false,
@@ -10373,7 +11639,8 @@
     "ficha": "img/fichas/ELI-10.png",
     "video": "img/videos/Eli-10.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "resumen": "Tratamiento capilar sin enjuague tipo salón que repara, suaviza y da brillo al cabello seco, maltratado o con frizz."
   },
   {
     "id": "ELI-11",
@@ -10522,7 +11789,25 @@
       "Protección Solar"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Serum",
+    "momento": "noche",
+    "piel": [
+      "Normal",
+      "Seca"
+    ],
+    "necesidades": [
+      "Antiedad",
+      "Hidratación",
+      "Piel seca"
+    ],
+    "resumen": "Bola de colágeno liofilizado que se disuelve en tu sérum o esencia para dar firmeza, elasticidad e hidratación.",
+    "ingredientes": [
+      {
+        "nombre": "Colágeno hidrolizado 100 %",
+        "funcion": "Ayuda a la firmeza y la elasticidad e hidrata"
+      }
+    ]
   },
   {
     "id": "KSEC-06",
@@ -10543,7 +11828,36 @@
       "Protección Solar"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Protector solar",
+    "momento": "mañana",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Protección solar",
+      "Calmante",
+      "Antiedad"
+    ],
+    "resumen": "Protector solar ligero SPF 50+ sin rastro blanco que calma la piel y fortalece la barrera, con acabado luminoso.",
+    "ingredientes": [
+      {
+        "nombre": "Filtros químicos SPF 50+ PA++++",
+        "funcion": "Protegen de los rayos UVA y UVB"
+      },
+      {
+        "nombre": "Extracto de brote de pino",
+        "funcion": "Calma la piel"
+      },
+      {
+        "nombre": "Ceramida NP",
+        "funcion": "Fortalece la barrera"
+      },
+      {
+        "nombre": "Complejo de 8 péptidos",
+        "funcion": "Ayuda a la elasticidad"
+      }
+    ]
   },
   {
     "id": "AREN-01",
@@ -10787,7 +12101,7 @@
     "nombre": "Wrinkle Bounce Multi Balm 9g",
     "marca": "KAHI",
     "precio": 150000,
-    "categoria": "Primera Limpieza",
+    "categoria": "Hidratación",
     "descripcion": "Bounce Multi Balm contiene ingredientes naturales de alta calidad que no dañan la piel. Con una combinación de aceites nutritivos y potentes antioxidantes, este bálsamo ayuda a que su piel esté suave, flexible y protegida de las agresiones externas. Ingredientes claves: Semilla de girasol, Manteca de Karité, aceite de manzana, arroz, cúrcuma, colágeno, ADN sódico.",
     "imagen": "img/skink/KAHI-01.webp",
     "agotado": false,
@@ -11056,7 +12370,7 @@
     "nombre": "Molecule-Clear Salicylic Acid Serum 30ml",
     "marca": "NINE LESS",
     "precio": 99000,
-    "categoria": "Exfoliante",
+    "categoria": "Sérum",
     "descripcion": "Sérum exfoliante de uso diario, ligero y sin fragancia, que limpia los poros, retira el exceso de grasa y las células muertas, y suaviza la textura áspera mientras hidrata. Ideal para piel grasa o mixta con tendencia al acné, puntos negros y poros dilatados. Ingredientes claves: Ácido salicílico (0,15%), betaína, pantenol.",
     "imagen": "img/skink/NINE06.webp",
     "agotado": false,
@@ -11115,7 +12429,36 @@
       "Manchas e Hiperpigmentación"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Serum",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Granitos",
+      "Manchas",
+      "Calmante"
+    ],
+    "resumen": "Sérum con ácido azelaico al 10 % que calma la rojez, ayuda con los granitos y atenúa las marcas.",
+    "ingredientes": [
+      {
+        "nombre": "Ácido azelaico 10 %",
+        "funcion": "Ayuda con los granitos, la rojez y las marcas"
+      },
+      {
+        "nombre": "Niacinamida 2 %",
+        "funcion": "Unifica el tono y controla la grasa"
+      },
+      {
+        "nombre": "Mucina de caracol",
+        "funcion": "Calma e hidrata"
+      },
+      {
+        "nombre": "Centella asiática",
+        "funcion": "Calma la piel irritada"
+      }
+    ]
   },
   {
     "id": "NINE02",
@@ -11132,7 +12475,36 @@
       "Manchas e Hiperpigmentación"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Serum",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Manchas",
+      "Luminosidad",
+      "Antiedad"
+    ],
+    "resumen": "Sérum iluminador con ácido kójico, niacinamida y ácido tranexámico que atenúa manchas y marcas y ayuda a la firmeza.",
+    "ingredientes": [
+      {
+        "nombre": "Ácido kójico 1 %",
+        "funcion": "Atenúa las manchas"
+      },
+      {
+        "nombre": "Niacinamida 10 %",
+        "funcion": "Unifica el tono"
+      },
+      {
+        "nombre": "Ácido tranexámico 2 %",
+        "funcion": "Ayuda con las manchas difíciles"
+      },
+      {
+        "nombre": "Péptidos",
+        "funcion": "Ayudan a la firmeza"
+      }
+    ]
   },
   {
     "id": "NINE03",
@@ -11149,7 +12521,36 @@
       "Manchas e Hiperpigmentación"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Serum",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Grasa y poros",
+      "Manchas",
+      "Luminosidad"
+    ],
+    "resumen": "Sérum con niacinamida al 10 % que afina los poros, regula la grasa y atenúa manchas y marcas.",
+    "ingredientes": [
+      {
+        "nombre": "Niacinamida 10 %",
+        "funcion": "Afina los poros y unifica el tono"
+      },
+      {
+        "nombre": "Ácido tranexámico y glucósido de ascorbilo",
+        "funcion": "Ayudan con las manchas"
+      },
+      {
+        "nombre": "Glutatión",
+        "funcion": "Ilumina la piel"
+      },
+      {
+        "nombre": "Pantenol y péptidos",
+        "funcion": "Hidratan y dan firmeza"
+      }
+    ]
   },
   {
     "id": "NINE07",
@@ -11282,6 +12683,37 @@
     ],
     "mas_vendido": false,
     "preventa": false,
+    "paso": "Serum",
+    "momento": "noche",
+    "piel": [
+      "Normal",
+      "Seca"
+    ],
+    "necesidades": [
+      "Antiedad",
+      "Hidratación",
+      "Luminosidad"
+    ],
+    "resumen": "Sérum antiedad con PDRN, colágeno y retinol que mejora la firmeza y suaviza las líneas finas en frente, ojos, boca y cuello.",
+    "ingredientes": [
+      {
+        "nombre": "Hyper PDRN",
+        "funcion": "Ayuda a la firmeza y la recuperación de la piel"
+      },
+      {
+        "nombre": "Ribbon Collagen",
+        "funcion": "Mejora la elasticidad"
+      },
+      {
+        "nombre": "Retinol",
+        "funcion": "Suaviza las líneas finas"
+      },
+      {
+        "nombre": "Niacinamida",
+        "funcion": "Unifica el tono y da luz"
+      }
+    ],
+    "advertencia": "Lleva vitamina A: úsalo solo de noche, empieza 2 o 3 noches por semana y usa protector solar al día siguiente. No se recomienda en embarazo ni lactancia.",
     "oculto": true
   },
   {
@@ -11290,7 +12722,7 @@
     "nombre": "Madeca Mela Capture Ampoule Capsule Cream 55ml",
     "marca": "CENTELLIAN24",
     "precio": 115000,
-    "categoria": "Sérum",
+    "categoria": "Hidratación",
     "descripcion": "Crema en gel rosado y elástico con cápsulas blancas de ampolla que se mezclan al aplicarla como último paso de la rutina. Ayuda a mejorar las manchas superficiales y profundas, a iluminar la piel apagada y a unificar el tono, mejorando la elasticidad. Ingredientes claves: Activos iluminadores, 6 tipos de péptidos, 6 tipos de colágeno, PDRN, 8 tipos de ácido hialurónico.",
     "imagen": "img/skink/CENTELLIAN24-08.webp",
     "agotado": false,
@@ -11417,7 +12849,36 @@
     "ficha": "img/fichas/CENTELLIAN24-10.png",
     "video": "img/videos/Centellian24-10.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Mascarilla",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Calmante",
+      "Hidratación",
+      "Antiedad"
+    ],
+    "resumen": "Mascarilla de tela que calma la piel reactiva, la hidrata a fondo y ayuda con la firmeza; se deja de 10 a 20 minutos.",
+    "ingredientes": [
+      {
+        "nombre": "TECA (centella asiática)",
+        "funcion": "Calma y ayuda a reparar la piel"
+      },
+      {
+        "nombre": "Oligopéptido-1 (EGF)",
+        "funcion": "Ayuda a la firmeza"
+      },
+      {
+        "nombre": "Niacinamida y adenosina",
+        "funcion": "Iluminan y suavizan las arrugas"
+      },
+      {
+        "nombre": "Propóleo y miel",
+        "funcion": "Nutren e hidratan"
+      }
+    ]
   },
   {
     "id": "JUMI-04",
@@ -11435,7 +12896,36 @@
       "Piel Sensible y Calmante"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Serum",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Calmante",
+      "Granitos",
+      "Piel sensible"
+    ],
+    "resumen": "Sérum ligero que calma la rojez y la irritación, fortalece la barrera y ayuda a la piel con brotes.",
+    "ingredientes": [
+      {
+        "nombre": "D-pantenol (vitamina B5)",
+        "funcion": "Calma y fortalece la barrera"
+      },
+      {
+        "nombre": "10 tipos de ácido hialurónico",
+        "funcion": "Hidratan en varias capas"
+      },
+      {
+        "nombre": "Ácido salicílico (BHA)",
+        "funcion": "Exfolia suave y limpia los poros"
+      },
+      {
+        "nombre": "Niacinamida y zinc PCA",
+        "funcion": "Ayudan a controlar la grasa"
+      }
+    ]
   },
   {
     "id": "JUMI-05",
@@ -11453,6 +12943,35 @@
     ],
     "mas_vendido": false,
     "preventa": false,
+    "paso": "Serum",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Grasa y poros",
+      "Manchas",
+      "Luminosidad"
+    ],
+    "resumen": "Sérum ligero con niacinamida al 10 % que controla la grasa, afina los poros y atenúa manchas y marcas.",
+    "ingredientes": [
+      {
+        "nombre": "Niacinamida 10 %",
+        "funcion": "Unifica el tono y afina los poros"
+      },
+      {
+        "nombre": "Ácido tranexámico y glutatión",
+        "funcion": "Ayudan con manchas y marcas"
+      },
+      {
+        "nombre": "Ácido succínico y zinc PCA",
+        "funcion": "Ayudan a controlar la grasa"
+      },
+      {
+        "nombre": "Centella asiática y verdolaga",
+        "funcion": "Calman la piel"
+      }
+    ],
     "oculto": true
   },
   {
@@ -11749,6 +13268,32 @@
     "video": "img/videos/Dr-Melaxin03.mp4",
     "mas_vendido": false,
     "preventa": false,
+    "paso": "Exfoliante",
+    "momento": "noche",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Exfoliación",
+      "Luminosidad",
+      "Grasa y poros"
+    ],
+    "resumen": "Ampolla exfoliante de enjuague con arroz que retira células muertas y puntos blancos y deja la piel lisa y luminosa.",
+    "ingredientes": [
+      {
+        "nombre": "Agua de salvado de arroz",
+        "funcion": "Nutre e hidrata"
+      },
+      {
+        "nombre": "AHA, BHA y PHA",
+        "funcion": "Retiran células muertas y puntos blancos"
+      },
+      {
+        "nombre": "Niacinamida y extracto de arroz",
+        "funcion": "Dan luz a la piel"
+      }
+    ],
+    "advertencia": "Exfolia: úsalo de noche, empieza día de por medio y usa protector solar al día siguiente.",
     "oculto": true
   },
   {
@@ -11770,6 +13315,38 @@
     "video": "img/videos/Dr-Melaxin04.mp4",
     "mas_vendido": false,
     "preventa": false,
+    "paso": "Exfoliante",
+    "momento": "noche",
+    "piel": [
+      "Normal",
+      "Grasa",
+      "Mixta"
+    ],
+    "necesidades": [
+      "Exfoliación",
+      "Grasa y poros",
+      "Luminosidad"
+    ],
+    "resumen": "Ampolla exfoliante de enjuague con arroz negro que limpia los poros, ayuda con los puntos negros y alisa la textura.",
+    "ingredientes": [
+      {
+        "nombre": "Extracto de arroz negro",
+        "funcion": "Antioxidante"
+      },
+      {
+        "nombre": "Agua de salvado de arroz",
+        "funcion": "Nutre e hidrata"
+      },
+      {
+        "nombre": "AHA, BHA y PHA",
+        "funcion": "Limpian los poros y los puntos negros"
+      },
+      {
+        "nombre": "Niacinamida",
+        "funcion": "Da luz a la piel"
+      }
+    ],
+    "advertencia": "Exfolia: úsalo de noche, empieza día de por medio y usa protector solar al día siguiente.",
     "oculto": true
   },
   {
@@ -11887,7 +13464,35 @@
       "Manchas e Hiperpigmentación"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Serum",
+    "momento": "mañana",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Luminosidad",
+      "Manchas"
+    ],
+    "resumen": "Muestra del sérum de vitamina C que le da luz a la piel apagada y ayuda con las manchas y el tono disparejo.",
+    "ingredientes": [
+      {
+        "nombre": "Complejo de vitamina C 5 % (pura y derivados)",
+        "funcion": "Ilumina y atenúa las manchas"
+      },
+      {
+        "nombre": "Niacinamida",
+        "funcion": "Unifica el tono"
+      },
+      {
+        "nombre": "Glutatión",
+        "funcion": "Ilumina la piel"
+      },
+      {
+        "nombre": "Vitamina E",
+        "funcion": "Protege la piel como antioxidante"
+      }
+    ]
   },
   {
     "id": "B.LAB-01",
@@ -11945,7 +13550,27 @@
     ],
     "ficha": "img/fichas/JUMI-07.png",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Hidratante",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Hidratación",
+      "Piel seca"
+    ],
+    "resumen": "Crema en gel ligera con tres tipos de ácido hialurónico que hidrata a fondo sin tapar los poros.",
+    "ingredientes": [
+      {
+        "nombre": "3 tipos de ácido hialurónico",
+        "funcion": "Hidratan en distintas capas de la piel"
+      },
+      {
+        "nombre": "Pre y probióticos (fermento de bífida)",
+        "funcion": "Fortalecen la barrera"
+      }
+    ]
   },
   {
     "id": "IM.FROM-01",
@@ -11983,6 +13608,7 @@
     "video": "img/videos/MEDICUBE104.mp4",
     "mas_vendido": false,
     "preventa": true,
+    "resumen": "Kit de viaje para el cuerpo: gel de baño (50 ml), bruma para cabello y cuerpo (30 ml) y desodorante en barra (8 g), con estuche llavero.",
     "oculto": true
   },
   {
@@ -12002,7 +13628,36 @@
     "ficha": "img/fichas/MEDICUBE100.png",
     "video": "img/videos/MEDICUBE100.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Tratamiento puntual",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Antiedad",
+      "Hidratación"
+    ],
+    "resumen": "Crema para cuello y escote con aplicador gua sha integrado que suaviza las líneas del cuello y mejora la firmeza.",
+    "ingredientes": [
+      {
+        "nombre": "PDRN",
+        "funcion": "Ayuda a la firmeza y la elasticidad"
+      },
+      {
+        "nombre": "Volufiline 5 %",
+        "funcion": "Ayuda a que la piel se vea más llena"
+      },
+      {
+        "nombre": "Colágeno hidrolizado y péptidos",
+        "funcion": "Suavizan las líneas finas"
+      },
+      {
+        "nombre": "Niacinamida y adenosina",
+        "funcion": "Unifican el tono y suavizan las líneas"
+      }
+    ],
+    "advertencia": "Lleva retinol: puedes usarlo de mañana y de noche, pero empieza poco a poco y suspende si notas rojez, ardor o descamación. Si tu piel es sensible, pruébalo primero en una zona pequeña. Usa protector solar de día y no se recomienda en embarazo ni lactancia."
   },
   {
     "id": "MEDICUBE107",
@@ -12039,7 +13694,32 @@
       "Acné"
     ],
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Serum",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Calmante",
+      "Piel sensible",
+      "Hidratación"
+    ],
+    "resumen": "Muestra del sérum de artemisa que calma la piel irritada o sensible y la hidrata.",
+    "ingredientes": [
+      {
+        "nombre": "Extracto de artemisa",
+        "funcion": "Calma la piel"
+      },
+      {
+        "nombre": "4-CICA (madecasósido, ácido asiático y más)",
+        "funcion": "Calman y fortalecen la barrera"
+      },
+      {
+        "nombre": "Pantenol",
+        "funcion": "Hidrata"
+      }
+    ]
   },
   {
     "id": "MEDICUBE112",
@@ -12134,6 +13814,35 @@
     "ficha": "img/fichas/MEDICUBE115.png",
     "mas_vendido": false,
     "preventa": false,
+    "paso": "Protector solar",
+    "momento": "mañana",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Protección solar",
+      "Hidratación",
+      "Luminosidad"
+    ],
+    "resumen": "Protector SPF 50 sin rastro blanco que hidrata y deja un brillo saludable; también sirve como base de maquillaje.",
+    "ingredientes": [
+      {
+        "nombre": "Filtros SPF 50 de amplio espectro",
+        "funcion": "Protegen de los rayos UVA y UVB"
+      },
+      {
+        "nombre": "Colágeno y péptidos",
+        "funcion": "Ayudan a la firmeza"
+      },
+      {
+        "nombre": "Centella asiática y niacinamida",
+        "funcion": "Calman y unifican el tono"
+      },
+      {
+        "nombre": "Ácido hialurónico y ceramidas",
+        "funcion": "Hidratan y fortalecen la barrera"
+      }
+    ],
     "oculto": true
   },
   {
@@ -12220,7 +13929,38 @@
     ],
     "ficha": "img/fichas/CENTELLIAN24-12.png",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Serum",
+    "momento": "noche",
+    "piel": [
+      "Normal",
+      "Seca"
+    ],
+    "necesidades": [
+      "Antiedad",
+      "Hidratación",
+      "Luminosidad"
+    ],
+    "resumen": "Sérum antiedad con PDRN, colágeno y retinol que mejora la firmeza y suaviza las líneas finas en frente, ojos, boca y cuello.",
+    "ingredientes": [
+      {
+        "nombre": "Hyper PDRN",
+        "funcion": "Ayuda a la firmeza y la recuperación de la piel"
+      },
+      {
+        "nombre": "Ribbon Collagen",
+        "funcion": "Mejora la elasticidad"
+      },
+      {
+        "nombre": "Retinol",
+        "funcion": "Suaviza las líneas finas"
+      },
+      {
+        "nombre": "Niacinamida",
+        "funcion": "Unifica el tono y da luz"
+      }
+    ],
+    "advertencia": "Lleva vitamina A: úsalo solo de noche, empieza 2 o 3 noches por semana y usa protector solar al día siguiente. No se recomienda en embarazo ni lactancia."
   },
   {
     "id": "DR-ALTHEA28",
@@ -12241,7 +13981,36 @@
     "ficha": "img/fichas/DR-ALTHEA28.png",
     "video": "img/videos/Dr-Althea28.mp4",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Serum",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Calmante",
+      "Granitos",
+      "Hidratación"
+    ],
+    "resumen": "Sérum ligero que calma la piel sensible o con granitos, la hidrata a fondo y fortalece la barrera.",
+    "ingredientes": [
+      {
+        "nombre": "Agua de árbol de té y niacinamida",
+        "funcion": "Ayudan con los granitos"
+      },
+      {
+        "nombre": "Pantenol y centella asiática",
+        "funcion": "Calman la piel"
+      },
+      {
+        "nombre": "PDRN",
+        "funcion": "Ayuda a la renovación de la piel"
+      },
+      {
+        "nombre": "Ceramida NP y ácido hialurónico",
+        "funcion": "Hidratan y fortalecen la barrera"
+      }
+    ]
   },
   {
     "id": "DR-MELAXIN01",
@@ -12409,6 +14178,35 @@
     "ficha": "img/fichas/NIDA-05.png",
     "mas_vendido": false,
     "preventa": true,
+    "paso": "Serum",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Hidratación",
+      "Calmante",
+      "Luminosidad"
+    ],
+    "resumen": "Sérum ligero que hidrata a fondo, calma la piel y le da un brillo uniforme sin sensación pesada.",
+    "ingredientes": [
+      {
+        "nombre": "Centella asiática",
+        "funcion": "Calma la piel"
+      },
+      {
+        "nombre": "Ácido hialurónico de varios pesos",
+        "funcion": "Hidrata a fondo"
+      },
+      {
+        "nombre": "Niacinamida",
+        "funcion": "Unifica el tono y da luz"
+      },
+      {
+        "nombre": "Adenosina",
+        "funcion": "Ayuda a que la piel se vea más lisa"
+      }
+    ],
     "oculto": true
   },
   {
@@ -12482,6 +14280,7 @@
     "ficha": "img/fichas/CENTELLIAN24-13.png",
     "mas_vendido": false,
     "preventa": true,
+    "resumen": "Set navideño con Madeca Cream Time Reverse en 80 ml y 15 ml, Time Reverse Zero de 15 ml y un estuche de regalo.",
     "oculto": true
   },
   {
@@ -12691,7 +14490,38 @@
     "ficha": "img/fichas/ANUA33.png",
     "mas_vendido": false,
     "preventa": false,
-    "destacado": true
+    "destacado": true,
+    "paso": "Tratamiento puntual",
+    "momento": "noche",
+    "piel": [
+      "Normal",
+      "Seca",
+      "Mixta"
+    ],
+    "necesidades": [
+      "Antiedad",
+      "Hidratación"
+    ],
+    "resumen": "Crema para cuello, mandíbula y escote con rodillo gua sha integrado que suaviza las líneas y mejora la firmeza.",
+    "ingredientes": [
+      {
+        "nombre": "Retinol encapsulado",
+        "funcion": "Suaviza las líneas finas y la textura"
+      },
+      {
+        "nombre": "Colágeno",
+        "funcion": "Ayuda a la firmeza"
+      },
+      {
+        "nombre": "Péptidos",
+        "funcion": "Mejoran la elasticidad"
+      },
+      {
+        "nombre": "Niacinamida y escualano",
+        "funcion": "Unifican el tono y nutren"
+      }
+    ],
+    "advertencia": "Lleva vitamina A: úsalo solo de noche, empieza 2 o 3 noches por semana y usa protector solar al día siguiente. No se recomienda en embarazo ni lactancia."
   },
   {
     "id": "DR-ALTHEA34",
@@ -12730,7 +14560,7 @@
     ],
     "ficha": "img/fichas/Dr Reju-01.png",
     "mas_vendido": false,
-    "preventa": true,
+    "preventa": false,
     "resumen": "Sérum para labios con PDRN y enzima de hibisco que hidrata, exfolia suave y alisa los labios."
   },
   {
@@ -12786,7 +14616,36 @@
     ],
     "ficha": "img/fichas/TOCOBO71.png",
     "mas_vendido": false,
-    "preventa": false
+    "preventa": false,
+    "paso": "Tónico",
+    "momento": "ambos",
+    "piel": [
+      "Todas"
+    ],
+    "necesidades": [
+      "Calmante",
+      "Hidratación",
+      "Piel sensible"
+    ],
+    "resumen": "Muestra del tónico acuoso de cica que calma la rojez e hidrata la piel sensible o irritada.",
+    "ingredientes": [
+      {
+        "nombre": "Centella fermentada",
+        "funcion": "Calma la piel irritada"
+      },
+      {
+        "nombre": "Complejo de ácido hialurónico",
+        "funcion": "Hidrata a fondo"
+      },
+      {
+        "nombre": "Aloe ferox y niacinamida",
+        "funcion": "Calman la rojez y afinan la textura"
+      },
+      {
+        "nombre": "Pantenol y ceramida NP",
+        "funcion": "Apoyan la barrera"
+      }
+    ]
   },
   {
     "id": "TOCOBO70",

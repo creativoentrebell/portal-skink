@@ -298,6 +298,11 @@ main { min-height: 70vh; padding: 26px 24px 70px; }
 .nr-try .lbl { font-size: 13px; color: var(--text-mid); }
 .nr-chip { border: 1.5px solid var(--beige-mid); background: #fff; color: var(--text); font-size: 12.5px; font-weight: 500; padding: 7px 13px; border-radius: 20px; cursor: pointer; }
 .nr-chip:hover { border-color: var(--taupe); }
+.aviso-busq { background: var(--white); border: 1px solid var(--beige-mid); border-radius: var(--radius); padding: 16px 20px; margin-bottom: 18px; display: flex; gap: 14px; align-items: center; }
+.aviso-busq .nr-icon { width: 44px; height: 44px; flex: 0 0 44px; }
+.aviso-busq .nr-icon svg { width: 22px; height: 22px; }
+.aviso-busq b { display: block; font-size: 15px; font-weight: 500; color: var(--text); overflow-wrap: anywhere; }
+.aviso-busq span { font-size: 13px; color: var(--text-mid); }
 .nr-chip.primary { background: var(--taupe-dark); border-color: var(--taupe-dark); color: #fff; }
 .nr-sug h3 { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--taupe-xdark); margin-bottom: 12px; }
 
@@ -1045,6 +1050,7 @@ footer img { height: 30px; display: block; margin: 0 auto 6px; opacity: .85; }
       <div id="carruseles"></div>
 
       <div id="loading"><div class="spinner"></div><p>Cargando catálogo…</p></div>
+      <div class="aviso-busq" id="avisoBusq" style="display:none"></div>
       <div class="product-grid" id="grid"></div>
       <div class="noresults" id="empty" style="display:none"></div>
       <nav class="pager" id="pager" aria-label="Páginas"></nav>
@@ -1329,7 +1335,7 @@ const NEC_DE_TIPO = {
 };
 const TIPOS_PIEL = ['Normal','Seca','Grasa','Mixta','Sensible'];
 // Muestras, miniaturas y kits de viaje no se recomiendan en la rutina
-const NO_RECOMENDAR = /\b(sample|muestra|miniature|travel)\b|\b[0-3](\.\d)?\s?ml\b/i;
+const NO_RECOMENDAR = /\b(sample|muestra|miniature|travel|sachet|pouch|cleanser head)\b|\b[0-3](\.\d)?\s?(ml|g)\b/i;
 const FUERTE = /retin|peel|\baha\b|\bbha\b|glycol|salicyl|reedle|spicul|needle|succinic/i;
 
 function pasoDe(p){ return p.paso || p._paso || null; }
@@ -1958,6 +1964,11 @@ function render(){
   $('grid').style.display = list.length ? '' : 'none';
   $('empty').style.display = list.length ? 'none' : 'flex';
   if (!list.length) pintarSinResultados();
+  // Búsqueda sin coincidencia exacta: solo hay productos "parecidos" (palabra mal escrita o referencia que no existe)
+  const soloParecidos = q && list.length && list.every(p => { const s = puntaje(p, busqueda); return s === 1 || s === 0.7; });
+  $('avisoBusq').style.display = soloParecidos ? 'flex' : 'none';
+  if (soloParecidos) $('avisoBusq').innerHTML = `<div class="nr-icon">${ICON_LUPA}</div><div>
+    <b>No encontramos “${esc(q)}”</b><span>Quizás te interesen estos productos parecidos.</span></div>`;
   pintarPaginas(total);
   renderCarruseles();
   renderBannerAF();
@@ -2525,6 +2536,7 @@ function avisoCorto(p){
   const a = p.advertencia || '';
   if (/^Lleva vitamina A/.test(a)) return 'Vitamina A: solo de noche y con protector al día siguiente';
   if (/^Exfolia/.test(a)) return 'Exfoliante: de noche, día de por medio';
+  if (/^Lleva retinol/.test(a)) return 'Retinol: empieza poco a poco y usa protector de día';
   if (/^Lleva microagujas/.test(a)) return 'Microagujas: empieza 2 o 3 veces por semana';
   return a || 'Activo fuerte: úsalo con cuidado';
 }
