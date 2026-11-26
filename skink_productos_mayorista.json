@@ -6466,7 +6466,7 @@
     "categoria": "Capilar",
     "descripcion": "Acondicionador ligero para cuero cabelludo y medios a puntas, ideal para cabello fino, seco o débil. Hidrata y fortalece, desenreda sin apelmazar y realza el volumen, la suavidad y el brillo; también ayuda con la descamación y la quiebra. Ingredientes claves: romero, PDRN y complejo de 19 aminoácidos.",
     "imagen": "img/skink/MEDICUBE83.webp",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Capilar"
@@ -13222,7 +13222,7 @@
     "categoria": "Exfoliante",
     "descripcion": "Ampolla exfoliante de enjuague que exfolia e hidrata en un paso: retira células muertas, puntos negros e impurezas, refina los poros e ilumina. Se masajea sobre el rostro, se deja actuar y se enjuaga. Ingredientes claves: agua de salvado de arroz 64%, complejo Pentarice, ácidos AHA, BHA y PHA, niacinamida y extracto de arroz blanco.",
     "imagen": "img/skink/DR-MELAXIN03.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": false,
     "tipos_piel": [
       "Manchas e Hiperpigmentación",
@@ -13257,8 +13257,7 @@
         "funcion": "Dan luz a la piel"
       }
     ],
-    "advertencia": "Exfolia: úsalo de noche, empieza día de por medio y usa protector solar al día siguiente.",
-    "oculto": true
+    "advertencia": "Exfolia: úsalo de noche, empieza día de por medio y usa protector solar al día siguiente."
   },
   {
     "id": "DR-MELAXIN04",
