@@ -9693,7 +9693,7 @@
     "categoria": "Bruma",
     "descripcion": "Formulada con ácido hialurónico, esta bruma ultrafina hidrata profundamente la piel seca al instante, ayudándola a mantener una hidratación duradera y confort durante todo el día. Con una exclusiva fórmula 2 en 1 de crema y esencia de agua, proporciona una nutrición rica y una hidratación refrescante para una piel perfectamente equilibrada. Ingredientes claves: Agua de arroz, jugo de manzana, pantenol, ácido hialurónico, centela asiática. 345 Relief Cream Mist (345 Crema bruma alivio)",
     "imagen": "img/skink/DR-ALTHEA22.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Brillo y Luminosidad",
@@ -14019,7 +14019,7 @@
     "categoria": "Exfoliante",
     "descripcion": "Spray exfoliante corporal que retira células muertas y suaviza la piel áspera para un aspecto más uniforme. Se rocía sobre la piel seca, se masajea suavemente y se enjuaga; usar de noche, empezando 1 a 2 veces por semana, y protector solar al día siguiente. Ingredientes claves: AHA, PHA, ácido kójico, cúrcuma, retinol, niacinamida.",
     "imagen": "img/skink/DR-MELAXIN01.jpg",
-    "agotado": false,
+    "agotado": true,
     "nuevo": true,
     "tipos_piel": [
       "Manchas e Hiperpigmentación",
